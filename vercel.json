@@ -1,11 +1,3 @@
 {
-  "version": 2,
-  "name": "pet-clima-araraquara",
-  "cleanUrls": true,
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ]
+  "cleanUrls": true
 }
