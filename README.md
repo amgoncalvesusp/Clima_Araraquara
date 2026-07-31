@@ -1,4 +1,4 @@
-# 🌿 PET Clima Araraquara: Análise Espacial de Risco Climático e Vulnerabilidade nas Unidades de Saúde
+# 🌿 Clima Araraquara: Análise Espacial de Risco Climático e Vulnerabilidade nas Unidades de Saúde
 
 Este projeto realiza a sobreposição e correlação geográfica entre a **Rede de Atenção à Saúde de Araraquara/SP** (UBS, USF, UPA, CMS e Hospitais) e os dados socioambientais e microclimáticos da plataforma **UrbVerde (USP)**.
 
