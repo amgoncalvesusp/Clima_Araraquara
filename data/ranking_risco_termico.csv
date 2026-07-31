@@ -1,0 +1,42 @@
+﻿id,name,type,suburb,lat,lon,surface_temp_300m,ndvi_300m,vulnerability_score_300m,iecs_score,risk_level,ranking
+SUS-037,USF Roxo,USF (Saúde da Família),Araraquara,-21.7362868,-48.1563495,36.67,0.24,5.0,100.0,Crítico (Altíssimo Risco),1
+SUS-015,UPA Valle Verde,UPA / Pronto Atendimento,Valle Verde,-21.7246497,-48.1579375,36.46,0.25,4.91,96.4,Crítico (Altíssimo Risco),2
+SUS-034,Posto de Saúde Municipal,Posto / Centro de Saúde Público,Araraquara,-21.7251916,-48.1583089,36.44,0.25,4.85,95.7,Crítico (Altíssimo Risco),3
+SUS-023,PSF,USF (Saúde da Família),Araraquara,-21.7251579,-48.1585244,36.42,0.25,4.81,95.1,Crítico (Altíssimo Risco),4
+SUS-013,"PSF ""Adolfo Léo""",USF (Saúde da Família),Araraquara,-21.758703,-48.1585806,36.08,0.27,4.8,90.1,Crítico (Altíssimo Risco),5
+SUS-016,Unidade Básica de Saúde Doutor Herculano Graeff,UBS / CMS (Unidade Básica),Jardim Roberto Selmi Dei IV,-21.727972,-48.1475016,36.61,0.25,4.0,89.4,Crítico (Altíssimo Risco),6
+SUS-040,USF Brasília Prof. Dr. Edmundo Juarez,USF (Saúde da Família),Araraquara,-21.7683425,-48.1582983,35.77,0.28,4.85,86.9,Crítico (Altíssimo Risco),7
+SUS-039,USF Vila Biagioni,USF (Saúde da Família),Araraquara,-21.7713831,-48.1411343,35.28,0.31,5.0,81.0,Crítico (Altíssimo Risco),8
+SUS-018,CMS Jardim Paulistano “Dr. Genaro Granata”,UBS / CMS (Unidade Básica),Jd. Paulistano,-21.7739773,-48.1611068,35.6,0.29,4.26,79.1,Crítico (Altíssimo Risco),9
+SUS-033,USF Luis Alberto Marim Junior,USF (Saúde da Família),Araraquara,-21.7671611,-48.1360224,35.45,0.3,4.5,78.9,Crítico (Altíssimo Risco),10
+SUS-038,"CAPS II - Centro de Atenção Psicossocial ""Dr. Nelson Fernandes""",CAPS (Atenção Psicossocial),Vila Joinville,-21.7765157,-48.1400177,35.15,0.31,4.66,76.8,Crítico (Altíssimo Risco),11
+SUS-025,CISA - Centro Integrado de Saúde Auditiva,Posto / Centro de Saúde Público,Vila Jose Bonifacio,-21.7657695,-48.1812804,35.3,0.31,3.99,72.0,Alto,12
+SUS-009,Posto de Saúde da Família Doutora Neuza Maria Affini Dicenzo,USF (Saúde da Família),Araraquara,-21.7432216,-48.1923563,34.71,0.34,4.42,67.8,Alto,13
+SUS-012,Hospital São Paulo,Hospital / Maternidade Público-Filantrópico,Fonte,-21.778303,-48.1760506,35.13,0.32,2.63,57.3,Alto,14
+SUS-024,"Centro Municipal de Saúde ""João Vitor Nascimento Maurício""",UBS / CMS (Unidade Básica),Araraquara,-21.7832439,-48.1637525,35.3,0.31,2.0,54.0,Moderado,15
+SUS-019,CMS/PACS Gustavo de Moraes Jr.,UBS / CMS (Unidade Básica),Araraquara,-21.7845425,-48.1345896,34.59,0.34,3.0,53.9,Moderado,16
+SUS-006,Programa de Saúde da Família Doutor José Ricardo de Carvalho Angelieri,USF (Saúde da Família),Araraquara,-21.7671123,-48.1930371,34.44,0.35,3.0,51.6,Moderado,17
+SUS-010,Unidade de Pronto Atendimento Doutor Antônio Alonso Martinez,UPA / Pronto Atendimento,Vila Xavier,-21.7859137,-48.1595272,35.07,0.32,2.0,51.0,Moderado,18
+SUS-030,"ESF ""Prof. Dr. Ray de Paula e Silva""",Posto / Centro de Saúde Público,Araraquara,-21.7820613,-48.1248601,34.3,0.36,3.0,49.4,Moderado,19
+SUS-028,Hospital São Francisco,Hospital / Maternidade Público-Filantrópico,Araraquara,-21.7901337,-48.1776166,34.75,0.34,2.0,46.3,Moderado,20
+SUS-014,"NGA-3 -Núcleo de Gestão Ambulatorial ""Dr. Francisco Logatti""",Centro de Referência e Especialidades,Centro,-21.7896043,-48.1780795,34.73,0.34,2.0,46.1,Moderado,21
+SUS-011,Santa Casa de Araraquara,Hospital / Maternidade Público-Filantrópico,Centro,-21.7894956,-48.179867,34.7,0.34,2.0,45.8,Moderado,22
+SUS-017,Maternidade Gota de Leite,Hospital / Maternidade Público-Filantrópico,Centro,-21.7936743,-48.1787087,34.45,0.35,2.0,42.7,Moderado,23
+SUS-021,Hemocentro de Araraquara,Centro de Referência e Especialidades,Araraquara,-21.7940446,-48.1817578,34.35,0.36,2.0,40.8,Moderado,24
+SUS-022,SESA,Centro de Referência e Especialidades,Araraquara,-21.79454,-48.1801092,34.32,0.36,2.0,40.6,Moderado,25
+SUS-035,Centro Municipal de Saúde “Dr. Francisco Oswaldo Castelucci”,UBS / CMS (Unidade Básica),Jardim Residencial Itália,-21.7997891,-48.1497433,34.09,0.37,2.05,38.0,Moderado,26
+SUS-003,Posto de Saúde Municipal,Posto / Centro de Saúde Público,Araraquara,-21.7981265,-48.1797266,34.1,0.37,2.0,37.7,Moderado,27
+SUS-007,PSF Selma Rita Canelas Ferrari Nogueira,USF (Saúde da Família),Araraquara,-21.7618228,-48.2117293,33.21,0.4,3.0,36.0,Moderado,28
+SUS-004,USF Farmacêutico Cristovão Colombo,USF (Saúde da Família),Araraquara,-21.810066,-48.1437854,33.16,0.41,3.0,34.6,Baixo / Confortável,29
+SUS-041,Posto de Saúde Municipal,Posto / Centro de Saúde Público,Araraquara,-21.7885035,-48.1910856,33.79,0.38,2.0,34.0,Baixo / Confortável,30
+SUS-026,PSF Santana,USF (Saúde da Família),Araraquara,-21.7885305,-48.1911834,33.78,0.38,2.0,33.9,Baixo / Confortável,31
+SUS-027,Hospital Psiquiátrico Espírita Cairbar Schutel,Hospital / Maternidade Público-Filantrópico,Araraquara,-21.81133,-48.1475172,33.04,0.41,3.0,33.5,Baixo / Confortável,32
+SUS-008,Centro de Estabilização do Melhado,UPA / Pronto Atendimento,Araraquara,-21.8050865,-48.1711288,33.5,0.39,2.0,30.5,Baixo / Confortável,33
+SUS-031,UBS Dr. Giuseppe Aufiero Sobrinho,UBS / CMS (Unidade Básica),Araraquara,-21.8096526,-48.1664959,33.33,0.4,2.0,28.0,Baixo / Confortável,34
+SUS-020,Hospital Canasol,Hospital / Maternidade Público-Filantrópico,Jardim Higienópolis,-21.8102539,-48.1580192,33.3,0.4,2.0,27.7,Baixo / Confortável,35
+SUS-002,Estratégia de Saúde da Família João Francisco Alves,USF (Saúde da Família),Araraquara,-21.7884802,-48.198867,33.15,0.41,2.0,25.4,Baixo / Confortável,36
+SUS-001,Estratégia de Saúde da Família Doutor Euclides Crocci,USF (Saúde da Família),Araraquara,-21.7737811,-48.2072602,33.3,0.4,1.68,24.8,Baixo / Confortável,37
+SUS-005,CMS Cecap,UBS / CMS (Unidade Básica),Araraquara,-21.83278,-48.1469706,31.47,0.49,4.0,21.0,Baixo / Confortável,38
+SUS-032,USF Parque das Laranjeiras,USF (Saúde da Família),Araraquara,-21.7926302,-48.2036181,32.6,0.44,2.0,17.7,Baixo / Confortável,39
+SUS-029,CMS Carmo,UBS / CMS (Unidade Básica),Araraquara,-21.809614,-48.1827921,32.58,0.44,2.0,17.5,Baixo / Confortável,40
+SUS-036,Centro de Referência do Idoso,Centro de Referência e Especialidades,Araraquara,-21.8013107,-48.1978366,32.4,0.45,1.98,14.8,Baixo / Confortável,41
