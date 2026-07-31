@@ -1,0 +1,66 @@
+{
+  "total_units_analyzed": 41,
+  "buffer_radius_meters": 300,
+  "avg_surface_temp_araraquara": 34.46,
+  "max_surface_temp": 36.67,
+  "min_surface_temp": 31.47,
+  "avg_ndvi": 0.35,
+  "units_by_risk_level": {
+    "Moderado": 14,
+    "Baixo / Confortável": 13,
+    "Crítico (Altíssimo Risco)": 11,
+    "Alto": 3
+  },
+  "top_5_critical_units": [
+    {
+      "ranking": 1,
+      "name": "USF Roxo",
+      "type": "USF (Saúde da Família)",
+      "suburb": "Araraquara",
+      "surface_temp_300m": 36.67,
+      "ndvi_300m": 0.24,
+      "iecs_score": 100.0,
+      "risk_level": "Crítico (Altíssimo Risco)"
+    },
+    {
+      "ranking": 2,
+      "name": "UPA Valle Verde",
+      "type": "UPA / Pronto Atendimento",
+      "suburb": "Valle Verde",
+      "surface_temp_300m": 36.46,
+      "ndvi_300m": 0.25,
+      "iecs_score": 96.4,
+      "risk_level": "Crítico (Altíssimo Risco)"
+    },
+    {
+      "ranking": 3,
+      "name": "Posto de Saúde Municipal",
+      "type": "Posto / Centro de Saúde Público",
+      "suburb": "Araraquara",
+      "surface_temp_300m": 36.44,
+      "ndvi_300m": 0.25,
+      "iecs_score": 95.7,
+      "risk_level": "Crítico (Altíssimo Risco)"
+    },
+    {
+      "ranking": 4,
+      "name": "PSF",
+      "type": "USF (Saúde da Família)",
+      "suburb": "Araraquara",
+      "surface_temp_300m": 36.42,
+      "ndvi_300m": 0.25,
+      "iecs_score": 95.1,
+      "risk_level": "Crítico (Altíssimo Risco)"
+    },
+    {
+      "ranking": 5,
+      "name": "PSF \"Adolfo Léo\"",
+      "type": "USF (Saúde da Família)",
+      "suburb": "Araraquara",
+      "surface_temp_300m": 36.08,
+      "ndvi_300m": 0.27,
+      "iecs_score": 90.1,
+      "risk_level": "Crítico (Altíssimo Risco)"
+    }
+  ]
+}

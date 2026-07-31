@@ -1,0 +1,412 @@
+[
+  {
+    "id": "SUS-001",
+    "name": "Estratégia de Saúde da Família Doutor Euclides Crocci",
+    "type": "USF (Saúde da Família)",
+    "lat": -21.7737811,
+    "lon": -48.2072602,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-002",
+    "name": "Estratégia de Saúde da Família João Francisco Alves",
+    "type": "USF (Saúde da Família)",
+    "lat": -21.7884802,
+    "lon": -48.198867,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-003",
+    "name": "Posto de Saúde Municipal",
+    "type": "Posto / Centro de Saúde Público",
+    "lat": -21.7981265,
+    "lon": -48.1797266,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-004",
+    "name": "USF Farmacêutico Cristovão Colombo",
+    "type": "USF (Saúde da Família)",
+    "lat": -21.810066,
+    "lon": -48.1437854,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-005",
+    "name": "CMS Cecap",
+    "type": "UBS / CMS (Unidade Básica)",
+    "lat": -21.83278,
+    "lon": -48.1469706,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-006",
+    "name": "Programa de Saúde da Família Doutor José Ricardo de Carvalho Angelieri",
+    "type": "USF (Saúde da Família)",
+    "lat": -21.7671123,
+    "lon": -48.1930371,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-007",
+    "name": "PSF Selma Rita Canelas Ferrari Nogueira",
+    "type": "USF (Saúde da Família)",
+    "lat": -21.7618228,
+    "lon": -48.2117293,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-008",
+    "name": "Centro de Estabilização do Melhado",
+    "type": "UPA / Pronto Atendimento",
+    "lat": -21.8050865,
+    "lon": -48.1711288,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-009",
+    "name": "Posto de Saúde da Família Doutora Neuza Maria Affini Dicenzo",
+    "type": "USF (Saúde da Família)",
+    "lat": -21.7432216,
+    "lon": -48.1923563,
+    "address": "Avenida Alfeu Gonçalves Belchior",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-010",
+    "name": "Unidade de Pronto Atendimento Doutor Antônio Alonso Martinez",
+    "type": "UPA / Pronto Atendimento",
+    "lat": -21.7859137,
+    "lon": -48.1595272,
+    "address": "Rua José do Patrocínio",
+    "suburb": "Vila Xavier",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-011",
+    "name": "Santa Casa de Araraquara",
+    "type": "Hospital / Maternidade Público-Filantrópico",
+    "lat": -21.7894956,
+    "lon": -48.179867,
+    "address": "Rua Voluntários da Pátria",
+    "suburb": "Centro",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-012",
+    "name": "Hospital São Paulo",
+    "type": "Hospital / Maternidade Público-Filantrópico",
+    "lat": -21.778303,
+    "lon": -48.1760506,
+    "address": "Rua Major Carvalho Filho",
+    "suburb": "Fonte",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-013",
+    "name": "PSF \"Adolfo Léo\"",
+    "type": "USF (Saúde da Família)",
+    "lat": -21.758703,
+    "lon": -48.1585806,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-014",
+    "name": "NGA-3 -Núcleo de Gestão Ambulatorial \"Dr. Francisco Logatti\"",
+    "type": "Centro de Referência e Especialidades",
+    "lat": -21.7896043,
+    "lon": -48.1780795,
+    "address": "Avenida José Bonifácio",
+    "suburb": "Centro",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-015",
+    "name": "UPA Valle Verde",
+    "type": "UPA / Pronto Atendimento",
+    "lat": -21.7246497,
+    "lon": -48.1579375,
+    "address": "Rua Henrique João Baptista Crisci",
+    "suburb": "Valle Verde",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-016",
+    "name": "Unidade Básica de Saúde Doutor Herculano Graeff",
+    "type": "UBS / CMS (Unidade Básica)",
+    "lat": -21.727972,
+    "lon": -48.1475016,
+    "address": "Avenida Olímpio Bolzan",
+    "suburb": "Jardim Roberto Selmi Dei IV",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-017",
+    "name": "Maternidade Gota de Leite",
+    "type": "Hospital / Maternidade Público-Filantrópico",
+    "lat": -21.7936743,
+    "lon": -48.1787087,
+    "address": "Rua Carlos Gomes",
+    "suburb": "Centro",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-018",
+    "name": "CMS Jardim Paulistano “Dr. Genaro Granata”",
+    "type": "UBS / CMS (Unidade Básica)",
+    "lat": -21.7739773,
+    "lon": -48.1611068,
+    "address": "Avenida Jorge Haddad",
+    "suburb": "Jd. Paulistano",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-019",
+    "name": "CMS/PACS Gustavo de Moraes Jr.",
+    "type": "UBS / CMS (Unidade Básica)",
+    "lat": -21.7845425,
+    "lon": -48.1345896,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-020",
+    "name": "Hospital Canasol",
+    "type": "Hospital / Maternidade Público-Filantrópico",
+    "lat": -21.8102539,
+    "lon": -48.1580192,
+    "address": "Rua Papa João Paulo I",
+    "suburb": "Jardim Higienópolis",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-021",
+    "name": "Hemocentro de Araraquara",
+    "type": "Centro de Referência e Especialidades",
+    "lat": -21.7940446,
+    "lon": -48.1817578,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-022",
+    "name": "SESA",
+    "type": "Centro de Referência e Especialidades",
+    "lat": -21.79454,
+    "lon": -48.1801092,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-023",
+    "name": "PSF",
+    "type": "USF (Saúde da Família)",
+    "lat": -21.7251579,
+    "lon": -48.1585244,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-024",
+    "name": "Centro Municipal de Saúde \"João Vitor Nascimento Maurício\"",
+    "type": "UBS / CMS (Unidade Básica)",
+    "lat": -21.7832439,
+    "lon": -48.1637525,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-025",
+    "name": "CISA - Centro Integrado de Saúde Auditiva",
+    "type": "Posto / Centro de Saúde Público",
+    "lat": -21.7657695,
+    "lon": -48.1812804,
+    "address": "Avenida Nove de Julho",
+    "suburb": "Vila Jose Bonifacio",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-026",
+    "name": "PSF Santana",
+    "type": "USF (Saúde da Família)",
+    "lat": -21.7885305,
+    "lon": -48.1911834,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-027",
+    "name": "Hospital Psiquiátrico Espírita Cairbar Schutel",
+    "type": "Hospital / Maternidade Público-Filantrópico",
+    "lat": -21.81133,
+    "lon": -48.1475172,
+    "address": "Avenida Cairbar Schutel",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-028",
+    "name": "Hospital São Francisco",
+    "type": "Hospital / Maternidade Público-Filantrópico",
+    "lat": -21.7901337,
+    "lon": -48.1776166,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-029",
+    "name": "CMS Carmo",
+    "type": "UBS / CMS (Unidade Básica)",
+    "lat": -21.809614,
+    "lon": -48.1827921,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-030",
+    "name": "ESF \"Prof. Dr. Ray de Paula e Silva\"",
+    "type": "Posto / Centro de Saúde Público",
+    "lat": -21.7820613,
+    "lon": -48.1248601,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-031",
+    "name": "UBS Dr. Giuseppe Aufiero Sobrinho",
+    "type": "UBS / CMS (Unidade Básica)",
+    "lat": -21.8096526,
+    "lon": -48.1664959,
+    "address": "Rua Capitão José Sabino Sampaio",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-032",
+    "name": "USF Parque das Laranjeiras",
+    "type": "USF (Saúde da Família)",
+    "lat": -21.7926302,
+    "lon": -48.2036181,
+    "address": "Avenida Rômulo Lupo",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-033",
+    "name": "USF Luis Alberto Marim Junior",
+    "type": "USF (Saúde da Família)",
+    "lat": -21.7671611,
+    "lon": -48.1360224,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-034",
+    "name": "Posto de Saúde Municipal",
+    "type": "Posto / Centro de Saúde Público",
+    "lat": -21.7251916,
+    "lon": -48.1583089,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-035",
+    "name": "Centro Municipal de Saúde “Dr. Francisco Oswaldo Castelucci”",
+    "type": "UBS / CMS (Unidade Básica)",
+    "lat": -21.7997891,
+    "lon": -48.1497433,
+    "address": "Rua Domingos Paulo Real",
+    "suburb": "Jardim Residencial Itália",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-036",
+    "name": "Centro de Referência do Idoso",
+    "type": "Centro de Referência e Especialidades",
+    "lat": -21.8013107,
+    "lon": -48.1978366,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-037",
+    "name": "USF Roxo",
+    "type": "USF (Saúde da Família)",
+    "lat": -21.7362868,
+    "lon": -48.1563495,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-038",
+    "name": "CAPS II - Centro de Atenção Psicossocial \"Dr. Nelson Fernandes\"",
+    "type": "CAPS (Atenção Psicossocial)",
+    "lat": -21.7765157,
+    "lon": -48.1400177,
+    "address": "Rua Danilo Alvarenga Reis",
+    "suburb": "Vila Joinville",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-039",
+    "name": "USF Vila Biagioni",
+    "type": "USF (Saúde da Família)",
+    "lat": -21.7713831,
+    "lon": -48.1411343,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-040",
+    "name": "USF Brasília Prof. Dr. Edmundo Juarez",
+    "type": "USF (Saúde da Família)",
+    "lat": -21.7683425,
+    "lon": -48.1582983,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  },
+  {
+    "id": "SUS-041",
+    "name": "Posto de Saúde Municipal",
+    "type": "Posto / Centro de Saúde Público",
+    "lat": -21.7885035,
+    "lon": -48.1910856,
+    "address": "",
+    "suburb": "Araraquara",
+    "network": "Rede Pública SUS / Filantrópico"
+  }
+]

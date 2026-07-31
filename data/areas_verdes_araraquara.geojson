@@ -1,0 +1,320 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.192,
+              -21.805
+            ],
+            [
+              -48.182,
+              -21.805
+            ],
+            [
+              -48.182,
+              -21.816
+            ],
+            [
+              -48.192,
+              -21.816
+            ],
+            [
+              -48.192,
+              -21.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Parque Botânico de Araraquara (Jardim Botânico)",
+        "type": "Parque Botânico / Reserva Florestal",
+        "city": "Araraquara"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.165,
+              -21.73
+            ],
+            [
+              -48.148,
+              -21.73
+            ],
+            [
+              -48.148,
+              -21.745
+            ],
+            [
+              -48.165,
+              -21.745
+            ],
+            [
+              -48.165,
+              -21.73
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Parque Ecológico do Pinheirinho",
+        "type": "Parque Ecológico & Represa",
+        "city": "Araraquara"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.178,
+              -21.789
+            ],
+            [
+              -48.174,
+              -21.789
+            ],
+            [
+              -48.174,
+              -21.792
+            ],
+            [
+              -48.178,
+              -21.792
+            ],
+            [
+              -48.178,
+              -21.789
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Parque Infantil (Praça Major Abel Fortes)",
+        "type": "Praça Arborizada Municipal",
+        "city": "Araraquara"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.177,
+              -21.792
+            ],
+            [
+              -48.175,
+              -21.792
+            ],
+            [
+              -48.175,
+              -21.794
+            ],
+            [
+              -48.177,
+              -21.794
+            ],
+            [
+              -48.177,
+              -21.792
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Praça Pedro de Toledo (Centro)",
+        "type": "Praça Cívica Arborizada",
+        "city": "Araraquara"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.188,
+              -21.818
+            ],
+            [
+              -48.18,
+              -21.818
+            ],
+            [
+              -48.18,
+              -21.825
+            ],
+            [
+              -48.188,
+              -21.825
+            ],
+            [
+              -48.188,
+              -21.818
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Bosque da Cidade / Área Verde Carmo",
+        "type": "Bosque Urbano",
+        "city": "Araraquara"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.205,
+              -21.812
+            ],
+            [
+              -48.198,
+              -21.812
+            ],
+            [
+              -48.198,
+              -21.82
+            ],
+            [
+              -48.205,
+              -21.82
+            ],
+            [
+              -48.205,
+              -21.812
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Parque das Hortênsias / Área Verde Sul",
+        "type": "Parque de Lazer & Vegetação",
+        "city": "Araraquara"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.158,
+              -21.722
+            ],
+            [
+              -48.148,
+              -21.722
+            ],
+            [
+              -48.148,
+              -21.728
+            ],
+            [
+              -48.158,
+              -21.728
+            ],
+            [
+              -48.158,
+              -21.722
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Área Verde & Bosque Selmi Dei",
+        "type": "Reserva de Amortecimento Térmico",
+        "city": "Araraquara"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.165,
+              -21.785
+            ],
+            [
+              -48.162,
+              -21.785
+            ],
+            [
+              -48.162,
+              -21.787
+            ],
+            [
+              -48.165,
+              -21.787
+            ],
+            [
+              -48.165,
+              -21.785
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Praça das Bandeiras (Vila Xavier)",
+        "type": "Praça Municipal",
+        "city": "Araraquara"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.175,
+              -21.804
+            ],
+            [
+              -48.168,
+              -21.804
+            ],
+            [
+              -48.168,
+              -21.809
+            ],
+            [
+              -48.175,
+              -21.809
+            ],
+            [
+              -48.175,
+              -21.804
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Área Verde do Melhado",
+        "type": "Corredor Ecológico",
+        "city": "Araraquara"
+      }
+    }
+  ]
+}
