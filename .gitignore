@@ -33,3 +33,5 @@ Thumbs.db
 
 # Vercel build output
 .vercel
+.playwright-mcp/
+pet-clima-*.png

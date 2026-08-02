@@ -1,0 +1,67 @@
+{
+  "SUS-003": {
+    "network_scope": "municipal",
+    "data_quality": "incompleto",
+    "canonical_name": "Unidade a confirmar — registro SUS-003",
+    "quality_note": "Nome genérico; confirmar bairro, nome oficial e CNES."
+  },
+  "SUS-011": {
+    "network_scope": "filantropico_sus",
+    "data_quality": "validar_escopo",
+    "quality_note": "Hospital filantrópico que atende ao SUS; não é unidade municipal."
+  },
+  "SUS-012": {
+    "network_scope": "privado",
+    "data_quality": "validar_escopo",
+    "quality_note": "Hospital privado; manter separado do recorte municipal."
+  },
+  "SUS-020": {
+    "network_scope": "privado",
+    "data_quality": "validar_escopo",
+    "quality_note": "Hospital privado; manter separado do recorte municipal."
+  },
+  "SUS-021": {
+    "network_scope": "estadual_universitario",
+    "data_quality": "validar_escopo",
+    "quality_note": "Hemocentro ligado à rede estadual/universitária; validar gestão atual."
+  },
+  "SUS-022": {
+    "network_scope": "estadual_universitario",
+    "data_quality": "validar_escopo",
+    "quality_note": "SESA/FSP-USP; não é unidade municipal."
+  },
+  "SUS-023": {
+    "network_scope": "municipal",
+    "data_quality": "incompleto",
+    "canonical_name": "USF a confirmar — registro SUS-023",
+    "quality_note": "Tipo informado como PSF, mas falta o nome oficial."
+  },
+  "SUS-027": {
+    "network_scope": "filantropico_sus",
+    "data_quality": "validar_escopo",
+    "quality_note": "Hospital filantrópico que atende ao SUS; não é unidade municipal."
+  },
+  "SUS-028": {
+    "network_scope": "privado",
+    "data_quality": "validar_escopo",
+    "quality_note": "Hospital privado; manter separado do recorte municipal."
+  },
+  "SUS-034": {
+    "network_scope": "municipal",
+    "data_quality": "incompleto",
+    "canonical_name": "Unidade a confirmar — registro SUS-034",
+    "quality_note": "Nome genérico; confirmar bairro, nome oficial e CNES."
+  },
+  "SUS-037": {
+    "network_scope": "municipal",
+    "data_quality": "padronizar_nome",
+    "canonical_name": "USF Adalberto Roxo",
+    "quality_note": "Padronização sugerida a partir da nomenclatura oficial da Atenção Básica."
+  },
+  "SUS-041": {
+    "network_scope": "municipal",
+    "data_quality": "incompleto",
+    "canonical_name": "Unidade a confirmar — registro SUS-041",
+    "quality_note": "Nome genérico; confirmar bairro, nome oficial e CNES."
+  }
+}

@@ -1,82 +1,71 @@
-# 🌿 PET Clima Araraquara: Análise Espacial de Risco Climático e Vulnerabilidade nas Unidades de Saúde
+# PET Clima Araraquara
 
-Este projeto realiza a sobreposição e correlação geográfica entre a **Rede de Atenção à Saúde de Araraquara/SP** (UBS, USF, UPA, CMS e Hospitais) e os dados socioambientais e microclimáticos da plataforma **UrbVerde (USP)**.
+Mapa didático para explorar a exposição térmica no entorno das unidades de saúde de Araraquara e transformar o ranking em hipóteses de ação pública.
 
----
+## O que mudou
 
-## 🎯 Objetivos do Estudo
+- `index.html` e `mapa_interativo_araraquara.html` agora usam o mesmo app e carregam os dados externos em tempo de execução.
+- O recorte padrão é a rede pública municipal. Hospitais privados, filantrópicos e unidades estaduais/universitárias podem ser comparados separadamente.
+- O catálogo principal passou a ter 55 registros: 41 analisados + 14 candidatas a validar. As candidatas têm `record_status: "pendente_validacao"`, não possuem coordenadas artificiais e não entram no ranking.
+- O ranking continua sendo calculado apenas a partir de `data/unidades_saude_analise_araraquara.geojson` e `data/ranking_risco_termico.csv`.
+- A interface mostra fontes públicas para validar CNES, endereço, gestão, população, vegetação e alertas de calor.
 
-1. **Identificar Microclimas Críticos:** Mapear quais postos de saúde estão localizados em **ilhas de calor intensas (temperatura de superfície elevada)** e em áreas com **baixa cobertura vegetal (NDVI baixo)**.
-2. **Buffer de Influência de 300 Metros:** Analisar o raio de 300m de caminhada ao redor de cada posto para compreender o conforto térmico do entorno imediato da comunidade atendida.
-3. **Índice de Exposição Climática e Social (IECS):** Ranquear as 95 unidades de saúde considerando:
-   - **45%** Peso da Temperatura de Superfície (°C)
-   - **25%** Peso da Falta de Vegetação (1 - NDVI)
-   - **30%** Peso da Vulnerabilidade Social / Demográfica do Bairro (IPVS)
-4. **Subsidiar Políticas Públicas:** Orientar a implantação de Soluções Baseadas na Natureza (SbN), arborização urbana e climatização prioritária nos postos mais críticos.
-
----
-
-## 📊 Principais Achados (Araraquara/SP)
-
-* **Total de Unidades Analisadas:** 95 postos e centros de saúde.
-* **Temperatura Média no Entorno (300m):** 32.4°C.
-* **Temperatura Máxima Registrada:** 36.7°C (Regiões Norte/Noroeste, como Valle Verde, Selmi Dei e Cecap).
-* **Unidades de Altíssimo Risco (Top 5 Críticas):**
-  1. **CAPS AD Dr. Calil Buainain** (IECS: 100.0 | Temp: 36.7°C | NDVI: 0.24)
-  2. **USF Roxo** (IECS: 99.8 | Temp: 36.7°C | NDVI: 0.24)
-  3. **UPA Valle Verde** (IECS: 96.2 | Temp: 36.5°C | NDVI: 0.25)
-  4. **USF Parque das Laranjeiras** (IECS: 94.1 | Temp: 36.3°C | NDVI: 0.26)
-  5. **CMS Cecap** (IECS: 92.5 | Temp: 36.1°C | NDVI: 0.26)
-
----
-
-## 📂 Estrutura do Projeto
+## Arquivos de dados
 
 ```text
-PET clima/
-├── data/
-│   ├── unidades_saude_araraquara.geojson       # Geometria dos postos de saúde (OSM/CNES)
-│   ├── urbverde_araraquara.geojson            # Grade microclimática UrbVerde (USP)
-│   ├── unidades_saude_analise_araraquara.geojson # Resultado consolidado com IECS e buffers
-│   ├── ranking_risco_termico.csv              # Tabela completa de ranking
-│   └── resumo_estatistico.json                # Resumo das métricas do município
-├── scripts/
-│   ├── fetch_data.py                           # Coleta e geração da malha
-│   ├── spatial_analysis.py                     # Geoprocessamento e cálculo dos buffers de 300m
-│   └── generate_charts.py                      # Geração dos gráficos analíticos
-├── web/
-│   └── charts/                                # Gráficos salvos em PNG
-├── css/
-│   └── styles.css                             # Estilização do Dashboard Web
-├── js/
-│   └── app.js                                 # Lógica do Mapa Interativo Leaflet
-├── index.html                                 # Dashboard Web Principal
-└── requirements.txt                           # Dependências Python
+data/
+├── unidades_saude_araraquara.json              # catálogo humano: 41 analisadas + 14 pendentes
+├── unidades_sugeridas_araraquara.json          # backlog de validação das 14 candidatas
+├── metadata_unidades_saude_araraquara.json     # escopo da rede e qualidade do cadastro atual
+├── unidades_saude_araraquara.geojson            # 41 pontos com coordenadas usados na análise
+├── unidades_saude_analise_araraquara.geojson   # 41 pontos com IECS e métricas do entorno
+├── ranking_risco_termico.csv                   # ranking tabular atual
+├── resumo_estatistico.json                      # métricas agregadas atuais
+└── fontes_publicas_saude_araraquara.json       # referências para atualização do cadastro
 ```
 
----
+## Como executar
 
-## 🚀 Como Executar
+Requer Python 3.10+ e um navegador moderno.
 
-### 1. Requisitos
-* Python 3.10+
-* Navegador Web Moderno (Chrome, Edge, Firefox)
-
-### 2. Instalar Dependências
 ```bash
 pip install -r requirements.txt
-```
-
-### 3. Rodar Análise Geográfica e Gráficos
-```bash
-python scripts/fetch_data.py
-python scripts/spatial_analysis.py
-python scripts/generate_charts.py
-```
-
-### 4. Abrir o Dashboard Web Interativo
-Abra o arquivo `index.html` diretamente no seu navegador ou inicie um servidor HTTP simples:
-```bash
 python -m http.server 8000
 ```
-Acesse em: `http://localhost:8000`
+
+Acesse `http://localhost:8000`.
+
+Para recalcular o ranking depois de adicionar unidades validadas ao GeoJSON:
+
+```bash
+python scripts/spatial_analysis.py
+python scripts/generate_charts.py
+python scripts/enrich_health_catalog.py
+```
+
+O catálogo pode ser enriquecido novamente sem alterar o GeoJSON analisado:
+
+```bash
+python scripts/enrich_health_catalog.py
+```
+
+## Interpretação responsável
+
+O círculo de 300 m é um buffer geométrico ao redor do ponto, não uma distância de caminhada. A temperatura exibida é temperatura de superfície, não temperatura do ar. O IECS é relativo ao conjunto analisado; ao incluir novos pontos é necessário recalcular todas as unidades para manter a comparação coerente.
+
+As 14 candidatas foram documentadas para orientar a validação, mas permanecem fora do ranking até que o CNES, o endereço e a coordenada sejam confirmados. A lista inclui a UPA Central, a base do SAMU, unidades básicas, serviços de saúde mental e atenção especializada.
+
+## Próximas evoluções recomendadas
+
+1. Incorporar os campos `CNES`, natureza jurídica, gestão e situação cadastral a partir do CNES.
+2. Cruzar população, domicílios, idosos e crianças por setor censitário do IBGE.
+3. Acrescentar um modo operacional com previsão e alertas do INMET para ondas de calor e baixa umidade.
+4. Atualizar a camada de vegetação com séries do MapBiomas e documentar a versão do UrbVerde utilizada.
+5. Validar os pontos rurais de Bela Vista e Monte Alegre com uma área de influência adequada ao acesso real, em vez de assumir automaticamente 300 m.
+
+## Verificações
+
+```bash
+python -m unittest discover -s tests -v
+node --check js/app.js
+```

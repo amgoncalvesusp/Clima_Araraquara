@@ -7,7 +7,12 @@
     "lon": -48.2072602,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "Estratégia de Saúde da Família Doutor Euclides Crocci",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-002",
@@ -17,7 +22,12 @@
     "lon": -48.198867,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "Estratégia de Saúde da Família João Francisco Alves",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-003",
@@ -27,7 +37,12 @@
     "lon": -48.1797266,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "incompleto",
+    "canonical_name": "Unidade a confirmar — registro SUS-003",
+    "quality_note": "Nome genérico; confirmar bairro, nome oficial e CNES."
   },
   {
     "id": "SUS-004",
@@ -37,7 +52,12 @@
     "lon": -48.1437854,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "USF Farmacêutico Cristovão Colombo",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-005",
@@ -47,7 +67,12 @@
     "lon": -48.1469706,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "CMS Cecap",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-006",
@@ -57,7 +82,12 @@
     "lon": -48.1930371,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "Programa de Saúde da Família Doutor José Ricardo de Carvalho Angelieri",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-007",
@@ -67,7 +97,12 @@
     "lon": -48.2117293,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "PSF Selma Rita Canelas Ferrari Nogueira",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-008",
@@ -77,7 +112,12 @@
     "lon": -48.1711288,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "Centro de Estabilização do Melhado",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-009",
@@ -87,7 +127,12 @@
     "lon": -48.1923563,
     "address": "Avenida Alfeu Gonçalves Belchior",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "Posto de Saúde da Família Doutora Neuza Maria Affini Dicenzo",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-010",
@@ -97,7 +142,12 @@
     "lon": -48.1595272,
     "address": "Rua José do Patrocínio",
     "suburb": "Vila Xavier",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "Unidade de Pronto Atendimento Doutor Antônio Alonso Martinez",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-011",
@@ -107,7 +157,12 @@
     "lon": -48.179867,
     "address": "Rua Voluntários da Pátria",
     "suburb": "Centro",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "filantropico_sus",
+    "data_quality": "validar_escopo",
+    "canonical_name": "Santa Casa de Araraquara",
+    "quality_note": "Hospital filantrópico que atende ao SUS; não é unidade municipal."
   },
   {
     "id": "SUS-012",
@@ -117,7 +172,12 @@
     "lon": -48.1760506,
     "address": "Rua Major Carvalho Filho",
     "suburb": "Fonte",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "privado",
+    "data_quality": "validar_escopo",
+    "canonical_name": "Hospital São Paulo",
+    "quality_note": "Hospital privado; manter separado do recorte municipal."
   },
   {
     "id": "SUS-013",
@@ -127,7 +187,12 @@
     "lon": -48.1585806,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "PSF \"Adolfo Léo\"",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-014",
@@ -137,7 +202,12 @@
     "lon": -48.1780795,
     "address": "Avenida José Bonifácio",
     "suburb": "Centro",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "NGA-3 -Núcleo de Gestão Ambulatorial \"Dr. Francisco Logatti\"",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-015",
@@ -147,7 +217,12 @@
     "lon": -48.1579375,
     "address": "Rua Henrique João Baptista Crisci",
     "suburb": "Valle Verde",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "UPA Valle Verde",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-016",
@@ -157,7 +232,12 @@
     "lon": -48.1475016,
     "address": "Avenida Olímpio Bolzan",
     "suburb": "Jardim Roberto Selmi Dei IV",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "Unidade Básica de Saúde Doutor Herculano Graeff",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-017",
@@ -167,7 +247,12 @@
     "lon": -48.1787087,
     "address": "Rua Carlos Gomes",
     "suburb": "Centro",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "Maternidade Gota de Leite",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-018",
@@ -177,7 +262,12 @@
     "lon": -48.1611068,
     "address": "Avenida Jorge Haddad",
     "suburb": "Jd. Paulistano",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "CMS Jardim Paulistano “Dr. Genaro Granata”",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-019",
@@ -187,7 +277,12 @@
     "lon": -48.1345896,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "CMS/PACS Gustavo de Moraes Jr.",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-020",
@@ -197,7 +292,12 @@
     "lon": -48.1580192,
     "address": "Rua Papa João Paulo I",
     "suburb": "Jardim Higienópolis",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "privado",
+    "data_quality": "validar_escopo",
+    "canonical_name": "Hospital Canasol",
+    "quality_note": "Hospital privado; manter separado do recorte municipal."
   },
   {
     "id": "SUS-021",
@@ -207,7 +307,12 @@
     "lon": -48.1817578,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "estadual_universitario",
+    "data_quality": "validar_escopo",
+    "canonical_name": "Hemocentro de Araraquara",
+    "quality_note": "Hemocentro ligado à rede estadual/universitária; validar gestão atual."
   },
   {
     "id": "SUS-022",
@@ -217,7 +322,12 @@
     "lon": -48.1801092,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "estadual_universitario",
+    "data_quality": "validar_escopo",
+    "canonical_name": "SESA",
+    "quality_note": "SESA/FSP-USP; não é unidade municipal."
   },
   {
     "id": "SUS-023",
@@ -227,7 +337,12 @@
     "lon": -48.1585244,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "incompleto",
+    "canonical_name": "USF a confirmar — registro SUS-023",
+    "quality_note": "Tipo informado como PSF, mas falta o nome oficial."
   },
   {
     "id": "SUS-024",
@@ -237,7 +352,12 @@
     "lon": -48.1637525,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "Centro Municipal de Saúde \"João Vitor Nascimento Maurício\"",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-025",
@@ -247,7 +367,12 @@
     "lon": -48.1812804,
     "address": "Avenida Nove de Julho",
     "suburb": "Vila Jose Bonifacio",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "CISA - Centro Integrado de Saúde Auditiva",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-026",
@@ -257,7 +382,12 @@
     "lon": -48.1911834,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "PSF Santana",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-027",
@@ -267,7 +397,12 @@
     "lon": -48.1475172,
     "address": "Avenida Cairbar Schutel",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "filantropico_sus",
+    "data_quality": "validar_escopo",
+    "canonical_name": "Hospital Psiquiátrico Espírita Cairbar Schutel",
+    "quality_note": "Hospital filantrópico que atende ao SUS; não é unidade municipal."
   },
   {
     "id": "SUS-028",
@@ -277,7 +412,12 @@
     "lon": -48.1776166,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "privado",
+    "data_quality": "validar_escopo",
+    "canonical_name": "Hospital São Francisco",
+    "quality_note": "Hospital privado; manter separado do recorte municipal."
   },
   {
     "id": "SUS-029",
@@ -287,7 +427,12 @@
     "lon": -48.1827921,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "CMS Carmo",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-030",
@@ -297,7 +442,12 @@
     "lon": -48.1248601,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "ESF \"Prof. Dr. Ray de Paula e Silva\"",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-031",
@@ -307,7 +457,12 @@
     "lon": -48.1664959,
     "address": "Rua Capitão José Sabino Sampaio",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "UBS Dr. Giuseppe Aufiero Sobrinho",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-032",
@@ -317,7 +472,12 @@
     "lon": -48.2036181,
     "address": "Avenida Rômulo Lupo",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "USF Parque das Laranjeiras",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-033",
@@ -327,7 +487,12 @@
     "lon": -48.1360224,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "USF Luis Alberto Marim Junior",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-034",
@@ -337,7 +502,12 @@
     "lon": -48.1583089,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "incompleto",
+    "canonical_name": "Unidade a confirmar — registro SUS-034",
+    "quality_note": "Nome genérico; confirmar bairro, nome oficial e CNES."
   },
   {
     "id": "SUS-035",
@@ -347,7 +517,12 @@
     "lon": -48.1497433,
     "address": "Rua Domingos Paulo Real",
     "suburb": "Jardim Residencial Itália",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "Centro Municipal de Saúde “Dr. Francisco Oswaldo Castelucci”",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-036",
@@ -357,7 +532,12 @@
     "lon": -48.1978366,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "Centro de Referência do Idoso",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-037",
@@ -367,7 +547,12 @@
     "lon": -48.1563495,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "padronizar_nome",
+    "canonical_name": "USF Adalberto Roxo",
+    "quality_note": "Padronização sugerida a partir da nomenclatura oficial da Atenção Básica."
   },
   {
     "id": "SUS-038",
@@ -377,7 +562,12 @@
     "lon": -48.1400177,
     "address": "Rua Danilo Alvarenga Reis",
     "suburb": "Vila Joinville",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "CAPS II - Centro de Atenção Psicossocial \"Dr. Nelson Fernandes\"",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-039",
@@ -387,7 +577,12 @@
     "lon": -48.1411343,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "USF Vila Biagioni",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-040",
@@ -397,7 +592,12 @@
     "lon": -48.1582983,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "USF Brasília Prof. Dr. Edmundo Juarez",
+    "quality_note": "Registro com métricas espaciais calculadas."
   },
   {
     "id": "SUS-041",
@@ -407,6 +607,319 @@
     "lon": -48.1910856,
     "address": "",
     "suburb": "Araraquara",
-    "network": "Rede Pública SUS / Filantrópico"
+    "network": "Rede Pública SUS / Filantrópico",
+    "record_status": "analisado",
+    "network_scope": "municipal",
+    "data_quality": "incompleto",
+    "canonical_name": "Unidade a confirmar — registro SUS-041",
+    "quality_note": "Nome genérico; confirmar bairro, nome oficial e CNES."
+  },
+  {
+    "id": "PEND-001",
+    "name": "UPA Central — Amélia Bernardini Cutrale",
+    "type": "UPA / Pronto Atendimento",
+    "network_scope": "municipal",
+    "suburb": "Vila Velosa",
+    "address": "Av. Maria Antonia Camargo de Oliveira, s/n",
+    "cnes": null,
+    "lat": null,
+    "lon": null,
+    "status": "pendente_validacao",
+    "incluir_no_ranking": false,
+    "evidence_level": "oficial_fungota",
+    "source_label": "FUNGOTA — edital de manutenção das UPAs",
+    "source_url": "https://fungota.araraquara.sp.gov.br/wp-content/uploads/2023/06/edital_10_2023_manut.ar.pdf",
+    "next_step": "Confirmar CNES, coordenada do acesso principal e situação operacional atual.",
+    "record_status": "pendente_validacao",
+    "network": "Rede pública municipal — cadastro a validar",
+    "data_quality": "pendente",
+    "canonical_name": "UPA Central — Amélia Bernardini Cutrale",
+    "quality_note": "Confirmar CNES, coordenada do acesso principal e situação operacional atual."
+  },
+  {
+    "id": "PEND-002",
+    "name": "Base do SAMU 192 — Regional Araraquara",
+    "type": "SAMU 192",
+    "network_scope": "municipal_regional",
+    "suburb": "Araraquara",
+    "address": null,
+    "cnes": null,
+    "lat": null,
+    "lon": null,
+    "status": "pendente_validacao",
+    "incluir_no_ranking": false,
+    "evidence_level": "a_confirmar",
+    "source_label": "CNES — consulta de estabelecimentos",
+    "source_url": "https://dadosabertos.saude.gov.br/dataset/cnes-cadastro-nacional-de-estabelecimentos-de-saude",
+    "next_step": "Localizar o estabelecimento no CNES e confirmar se a base deve compor o mapa de atendimento.",
+    "record_status": "pendente_validacao",
+    "network": "Rede pública municipal — cadastro a validar",
+    "data_quality": "pendente",
+    "canonical_name": "Base do SAMU 192 — Regional Araraquara",
+    "quality_note": "Localizar o estabelecimento no CNES e confirmar se a base deve compor o mapa de atendimento."
+  },
+  {
+    "id": "PEND-003",
+    "name": "USF Jardim São Bento — Selma Rita Canelas Ferrari Nogueira",
+    "type": "USF (Saúde da Família)",
+    "network_scope": "municipal",
+    "suburb": "Jardim São Bento",
+    "address": "Av. Augusto Bernardes, s/n",
+    "cnes": "0424838",
+    "lat": null,
+    "lon": null,
+    "status": "pendente_validacao",
+    "incluir_no_ranking": false,
+    "evidence_level": "oficial_municipal",
+    "source_label": "Prefeitura — Atenção Básica",
+    "source_url": "https://webnetserver.com.br/araraquara/secretarias/saude/sobre-a-secretaria-saude/atencao-basica",
+    "next_step": "Geocodificar o endereço e confirmar se o nome de referência do bairro deve ser Jardim São Bento.",
+    "record_status": "pendente_validacao",
+    "network": "Rede pública municipal — cadastro a validar",
+    "data_quality": "pendente",
+    "canonical_name": "USF Jardim São Bento — Selma Rita Canelas Ferrari Nogueira",
+    "quality_note": "Geocodificar o endereço e confirmar se o nome de referência do bairro deve ser Jardim São Bento."
+  },
+  {
+    "id": "PEND-004",
+    "name": "USF Ibirás / Jardim Ibirá",
+    "type": "USF (Saúde da Família)",
+    "network_scope": "municipal",
+    "suburb": "Jardim Ibirá",
+    "address": null,
+    "cnes": null,
+    "lat": null,
+    "lon": null,
+    "status": "pendente_validacao",
+    "incluir_no_ranking": false,
+    "evidence_level": "mencao_institucional",
+    "source_label": "Câmara Municipal — obras e construção de unidades",
+    "source_url": "https://camara-arq.sp.gov.br/noticias/araraquara-tera-quase-r-25-milhoes-para-reforma-e-construcao-de-unidades-da-saude",
+    "next_step": "Confirmar se a unidade está ativa, seu nome oficial, CNES e endereço de acesso.",
+    "record_status": "pendente_validacao",
+    "network": "Rede pública municipal — cadastro a validar",
+    "data_quality": "pendente",
+    "canonical_name": "USF Ibirás / Jardim Ibirá",
+    "quality_note": "Confirmar se a unidade está ativa, seu nome oficial, CNES e endereço de acesso."
+  },
+  {
+    "id": "PEND-005",
+    "name": "CMS Jardim Iguatemi — Enf.ª Kimiko Yuta",
+    "type": "UBS / CMS (Unidade Básica)",
+    "network_scope": "municipal",
+    "suburb": "Jardim Iguatemi",
+    "address": "Avenida Lourenço Rolfsen, s/n",
+    "cnes": "2065304",
+    "lat": null,
+    "lon": null,
+    "status": "pendente_validacao",
+    "incluir_no_ranking": false,
+    "evidence_level": "oficial_municipal",
+    "source_label": "Prefeitura — Atenção Básica",
+    "source_url": "https://webnetserver.com.br/araraquara/secretarias/saude/sobre-a-secretaria-saude/atencao-basica",
+    "next_step": "Confirmar coordenada e verificar se já existe registro equivalente no arquivo atual.",
+    "record_status": "pendente_validacao",
+    "network": "Rede pública municipal — cadastro a validar",
+    "data_quality": "pendente",
+    "canonical_name": "CMS Jardim Iguatemi — Enf.ª Kimiko Yuta",
+    "quality_note": "Confirmar coordenada e verificar se já existe registro equivalente no arquivo atual."
+  },
+  {
+    "id": "PEND-006",
+    "name": "CMS Jardim Santa Angelina — Rafael Sorbo",
+    "type": "UBS / CMS (Unidade Básica)",
+    "network_scope": "municipal",
+    "suburb": "Santa Angelina",
+    "address": "Rua Habbib Khodor, 560",
+    "cnes": "2063247",
+    "lat": null,
+    "lon": null,
+    "status": "pendente_validacao",
+    "incluir_no_ranking": false,
+    "evidence_level": "oficial_municipal",
+    "source_label": "Prefeitura — Atenção Básica",
+    "source_url": "https://webnetserver.com.br/araraquara/secretarias/saude/sobre-a-secretaria-saude/atencao-basica",
+    "next_step": "Confirmar coordenada e verificar se já existe registro equivalente no arquivo atual.",
+    "record_status": "pendente_validacao",
+    "network": "Rede pública municipal — cadastro a validar",
+    "data_quality": "pendente",
+    "canonical_name": "CMS Jardim Santa Angelina — Rafael Sorbo",
+    "quality_note": "Confirmar coordenada e verificar se já existe registro equivalente no arquivo atual."
+  },
+  {
+    "id": "PEND-007",
+    "name": "CMS Jardim Roberto Selmi Dei I — Dr. Ruy de Toledo",
+    "type": "UBS / CMS (Unidade Básica)",
+    "network_scope": "municipal",
+    "suburb": "Jardim Roberto Selmi Dei I",
+    "address": "Rua José de Freitas Madeira, 49",
+    "cnes": "2032716",
+    "lat": null,
+    "lon": null,
+    "status": "pendente_validacao",
+    "incluir_no_ranking": false,
+    "evidence_level": "oficial_municipal",
+    "source_label": "Prefeitura — Atenção Básica",
+    "source_url": "https://webnetserver.com.br/araraquara/secretarias/saude/sobre-a-secretaria-saude/atencao-basica",
+    "next_step": "Confirmar coordenada e verificar se já existe registro equivalente no arquivo atual.",
+    "record_status": "pendente_validacao",
+    "network": "Rede pública municipal — cadastro a validar",
+    "data_quality": "pendente",
+    "canonical_name": "CMS Jardim Roberto Selmi Dei I — Dr. Ruy de Toledo",
+    "quality_note": "Confirmar coordenada e verificar se já existe registro equivalente no arquivo atual."
+  },
+  {
+    "id": "PEND-008",
+    "name": "USF Jardim Victório De Santi — Nair Damásio Claudino",
+    "type": "USF (Saúde da Família)",
+    "network_scope": "municipal",
+    "suburb": "Jardim Victório De Santi II",
+    "address": "Rua Francisco de Paula Lombardi, 210",
+    "cnes": "9983848",
+    "lat": null,
+    "lon": null,
+    "status": "pendente_validacao",
+    "incluir_no_ranking": false,
+    "evidence_level": "oficial_municipal",
+    "source_label": "Prefeitura — Atenção Básica",
+    "source_url": "https://webnetserver.com.br/araraquara/secretarias/saude/sobre-a-secretaria-saude/atencao-basica",
+    "next_step": "Confirmar coordenada e verificar se já existe registro equivalente no arquivo atual.",
+    "record_status": "pendente_validacao",
+    "network": "Rede pública municipal — cadastro a validar",
+    "data_quality": "pendente",
+    "canonical_name": "USF Jardim Victório De Santi — Nair Damásio Claudino",
+    "quality_note": "Confirmar coordenada e verificar se já existe registro equivalente no arquivo atual."
+  },
+  {
+    "id": "PEND-009",
+    "name": "USF Assentamento Bela Vista — Dr. Elias Zakaib",
+    "type": "USF (Saúde da Família)",
+    "network_scope": "municipal",
+    "suburb": "Assentamento Bela Vista",
+    "address": "Rua Três, 04",
+    "cnes": "2032708",
+    "lat": null,
+    "lon": null,
+    "status": "pendente_validacao",
+    "incluir_no_ranking": false,
+    "evidence_level": "oficial_municipal",
+    "source_label": "Prefeitura — Atenção Básica",
+    "source_url": "https://webnetserver.com.br/araraquara/secretarias/saude/sobre-a-secretaria-saude/atencao-basica",
+    "next_step": "Confirmar coordenada rural e definir a área de influência adequada para o assentamento.",
+    "record_status": "pendente_validacao",
+    "network": "Rede pública municipal — cadastro a validar",
+    "data_quality": "pendente",
+    "canonical_name": "USF Assentamento Bela Vista — Dr. Elias Zakaib",
+    "quality_note": "Confirmar coordenada rural e definir a área de influência adequada para o assentamento."
+  },
+  {
+    "id": "PEND-010",
+    "name": "USF Assentamento Monte Alegre — Dirce Ragassi Cândido",
+    "type": "USF (Saúde da Família)",
+    "network_scope": "municipal",
+    "suburb": "Assentamento Monte Alegre III",
+    "address": "Assentamento Monte Alegre III",
+    "cnes": "4276582",
+    "lat": null,
+    "lon": null,
+    "status": "pendente_validacao",
+    "incluir_no_ranking": false,
+    "evidence_level": "oficial_municipal",
+    "source_label": "Prefeitura — Atenção Básica",
+    "source_url": "https://webnetserver.com.br/araraquara/secretarias/saude/sobre-a-secretaria-saude/atencao-basica",
+    "next_step": "Confirmar coordenada rural e definir a área de influência adequada para o assentamento.",
+    "record_status": "pendente_validacao",
+    "network": "Rede pública municipal — cadastro a validar",
+    "data_quality": "pendente",
+    "canonical_name": "USF Assentamento Monte Alegre — Dirce Ragassi Cândido",
+    "quality_note": "Confirmar coordenada rural e definir a área de influência adequada para o assentamento."
+  },
+  {
+    "id": "PEND-011",
+    "name": "CAPS Infantil (CAPS-i)",
+    "type": "CAPS (Atenção Psicossocial)",
+    "network_scope": "municipal",
+    "suburb": "Araraquara",
+    "address": null,
+    "cnes": null,
+    "lat": null,
+    "lon": null,
+    "status": "pendente_validacao",
+    "incluir_no_ranking": false,
+    "evidence_level": "a_confirmar",
+    "source_label": "CNES — consulta de estabelecimentos",
+    "source_url": "https://dadosabertos.saude.gov.br/dataset/cnes-cadastro-nacional-de-estabelecimentos-de-saude",
+    "next_step": "Confirmar existência/denominação no CNES e endereço antes de incluir na análise.",
+    "record_status": "pendente_validacao",
+    "network": "Rede pública municipal — cadastro a validar",
+    "data_quality": "pendente",
+    "canonical_name": "CAPS Infantil (CAPS-i)",
+    "quality_note": "Confirmar existência/denominação no CNES e endereço antes de incluir na análise."
+  },
+  {
+    "id": "PEND-012",
+    "name": "CAPS Álcool e Drogas (CAPS-AD)",
+    "type": "CAPS (Atenção Psicossocial)",
+    "network_scope": "municipal",
+    "suburb": "Araraquara",
+    "address": null,
+    "cnes": null,
+    "lat": null,
+    "lon": null,
+    "status": "pendente_validacao",
+    "incluir_no_ranking": false,
+    "evidence_level": "mencao_institucional",
+    "source_label": "Câmara Municipal — obras e construção de unidades",
+    "source_url": "https://camara-arq.sp.gov.br/noticias/araraquara-tera-quase-r-25-milhoes-para-reforma-e-construcao-de-unidades-da-saude",
+    "next_step": "Separar projeto/obra de unidade em operação e confirmar CNES e coordenada.",
+    "record_status": "pendente_validacao",
+    "network": "Rede pública municipal — cadastro a validar",
+    "data_quality": "pendente",
+    "canonical_name": "CAPS Álcool e Drogas (CAPS-AD)",
+    "quality_note": "Separar projeto/obra de unidade em operação e confirmar CNES e coordenada."
+  },
+  {
+    "id": "PEND-013",
+    "name": "Centro de Especialidades Odontológicas (CEO)",
+    "type": "Centro de Referência e Especialidades",
+    "network_scope": "municipal",
+    "suburb": "Araraquara",
+    "address": null,
+    "cnes": null,
+    "lat": null,
+    "lon": null,
+    "status": "pendente_validacao",
+    "incluir_no_ranking": false,
+    "evidence_level": "a_confirmar",
+    "source_label": "CNES — consulta de estabelecimentos",
+    "source_url": "https://dadosabertos.saude.gov.br/dataset/cnes-cadastro-nacional-de-estabelecimentos-de-saude",
+    "next_step": "Localizar o CEO no CNES, validar gestão municipal e geocodificar o endereço.",
+    "record_status": "pendente_validacao",
+    "network": "Rede pública municipal — cadastro a validar",
+    "data_quality": "pendente",
+    "canonical_name": "Centro de Especialidades Odontológicas (CEO)",
+    "quality_note": "Localizar o CEO no CNES, validar gestão municipal e geocodificar o endereço."
+  },
+  {
+    "id": "PEND-014",
+    "name": "Centro de Referência do Autismo",
+    "type": "Centro de Referência e Especialidades",
+    "network_scope": "municipal",
+    "suburb": "Araraquara",
+    "address": null,
+    "cnes": null,
+    "lat": null,
+    "lon": null,
+    "status": "pendente_validacao",
+    "incluir_no_ranking": false,
+    "evidence_level": "mencao_institucional",
+    "source_label": "Câmara Municipal — obras e construção de unidades",
+    "source_url": "https://camara-arq.sp.gov.br/noticias/araraquara-tera-quase-r-25-milhoes-para-reforma-e-construcao-de-unidades-da-saude",
+    "next_step": "Confirmar endereço atual, CNES e situação operacional antes de incluir na análise.",
+    "record_status": "pendente_validacao",
+    "network": "Rede pública municipal — cadastro a validar",
+    "data_quality": "pendente",
+    "canonical_name": "Centro de Referência do Autismo",
+    "quality_note": "Confirmar endereço atual, CNES e situação operacional antes de incluir na análise."
   }
 ]

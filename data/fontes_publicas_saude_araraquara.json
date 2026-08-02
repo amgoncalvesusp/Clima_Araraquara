@@ -1,0 +1,38 @@
+[
+  {
+    "id": "prefeitura-atencao-basica",
+    "title": "Prefeitura de Araraquara — Atenção Básica",
+    "url": "https://webnetserver.com.br/araraquara/secretarias/saude/sobre-a-secretaria-saude/atencao-basica",
+    "use": "Conferir nome oficial, endereço, telefone, horário e CNES das unidades municipais."
+  },
+  {
+    "id": "fungota-upas",
+    "title": "FUNGOTA — rede de UPAs",
+    "url": "https://fungota.araraquara.sp.gov.br/",
+    "use": "Validar a existência e a nomenclatura das unidades de urgência e emergência."
+  },
+  {
+    "id": "cnes-dados-abertos",
+    "title": "CNES — Dados Abertos do SUS",
+    "url": "https://dadosabertos.saude.gov.br/dataset/cnes-cadastro-nacional-de-estabelecimentos-de-saude",
+    "use": "Adicionar CNES, natureza jurídica, gestão, endereço e situação cadastral."
+  },
+  {
+    "id": "ibge-setores",
+    "title": "IBGE — setores censitários e Censo 2022",
+    "url": "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/26565-malhas-de-setores-censitarios-divisoes-intramunicipais.html",
+    "use": "Cruzar população, domicílios, faixa etária e vulnerabilidade em escala territorial."
+  },
+  {
+    "id": "inmet-alertas",
+    "title": "INMET — previsão e alertas meteorológicos",
+    "url": "https://portal.inmet.gov.br/",
+    "use": "Criar um modo de operação para ondas de calor, baixa umidade e eventos severos."
+  },
+  {
+    "id": "mapbiomas-10m",
+    "title": "MapBiomas — cobertura e uso da terra",
+    "url": "https://brasil.mapbiomas.org/2026/05/18/mapbiomas-publica-terceira-colecao-de-mapas-anuais-de-cobertura-e-uso-da-terra-do-brasil-com-resolucao-espacial-de-10-metros/",
+    "use": "Atualizar a leitura de vegetação, impermeabilização e evolução anual do entorno."
+  }
+]
