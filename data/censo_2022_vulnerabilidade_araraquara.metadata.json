@@ -1,0 +1,14 @@
+{
+  "source": "IBGE Censo Demografico 2022 — agregados por setores censitarios",
+  "source_urls": [
+    "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/Agregados_por_Setor_csv/Agregados_por_setores_basico_BR_20260520.zip",
+    "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/Agregados_por_Setor_csv/Agregados_por_setores_demografia_BR.zip",
+    "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios_Rendimento_do_Responsavel/Agregados_por_setores_renda_responsavel_BR_20260508_csv.zip",
+    "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/setores/shp/UF/SP_setores_CD2022.zip"
+  ],
+  "municipality_code": "3503208",
+  "sector_count": 547,
+  "sectors_with_population": 547,
+  "score_is_official": false,
+  "score_note": "Indice composto criado para este projeto; nao e um indice oficial do IBGE."
+}

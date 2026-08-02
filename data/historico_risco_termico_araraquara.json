@@ -1,0 +1,2302 @@
+{
+  "city": "Araraquara",
+  "ibge_code": 3503208,
+  "source": "UrbVerde — geodata_temperatura_por_setor",
+  "source_url": "https://urbverde.iau.usp.br/",
+  "source_layer_template": "public.geodata_temperatura_por_setor_{year}",
+  "metric": "c3",
+  "metric_label": "Temperatura máxima da superfície — média ponderada no buffer de 300m",
+  "history_years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "latest_map_year": 2024,
+  "buffer_radius_meters": 300,
+  "note": "O mapa atual continua mostrando a camada local de 2024; os gráficos históricos usam a série setorial UrbVerde disponível de 2016 a 2021.",
+  "summary": [
+    {
+      "year": 2016,
+      "unit_count": 48,
+      "mean_surface_temp_max_300m": 32.14,
+      "min_surface_temp_max_300m": 30.22,
+      "max_surface_temp_max_300m": 33.87
+    },
+    {
+      "year": 2017,
+      "unit_count": 48,
+      "mean_surface_temp_max_300m": 32.56,
+      "min_surface_temp_max_300m": 29.95,
+      "max_surface_temp_max_300m": 34.02
+    },
+    {
+      "year": 2018,
+      "unit_count": 48,
+      "mean_surface_temp_max_300m": 34.36,
+      "min_surface_temp_max_300m": 32.77,
+      "max_surface_temp_max_300m": 36.24
+    },
+    {
+      "year": 2019,
+      "unit_count": 48,
+      "mean_surface_temp_max_300m": 34.28,
+      "min_surface_temp_max_300m": 32.19,
+      "max_surface_temp_max_300m": 35.68
+    },
+    {
+      "year": 2020,
+      "unit_count": 48,
+      "mean_surface_temp_max_300m": 35.86,
+      "min_surface_temp_max_300m": 33.31,
+      "max_surface_temp_max_300m": 37.44
+    },
+    {
+      "year": 2021,
+      "unit_count": 48,
+      "mean_surface_temp_max_300m": 35.09,
+      "min_surface_temp_max_300m": 32.17,
+      "max_surface_temp_max_300m": 36.63
+    }
+  ],
+  "units": [
+    {
+      "id": "SUS-001",
+      "name": "Estratégia de Saúde da Família Doutor Euclides Crocci",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.02,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.89,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 33.62,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.66,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 36.61,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.37,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-002",
+      "name": "Estratégia de Saúde da Família João Francisco Alves",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.49,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 33.33,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 36.24,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.98,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 37.14,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.57,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-003",
+      "name": "Posto de Saúde Municipal",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.63,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 31.91,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.08,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 33.89,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 34.35,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.8,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-004",
+      "name": "USF Farmacêutico Cristovão Colombo",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 33.87,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 33.21,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 35.83,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 35.68,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 36.19,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.83,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-005",
+      "name": "CMS Cecap",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 31.34,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.74,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 33.55,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.38,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 34.95,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 33.22,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-006",
+      "name": "Programa de Saúde da Família Doutor José Ricardo de Carvalho Angelieri",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 31.66,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.01,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 32.83,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 33.97,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 36.3,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.04,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-007",
+      "name": "USF Jardim São Bento — Selma Rita Canelas Ferrari Nogueira",
+      "suburb": "Jardim São Bento",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.4,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 34.02,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 33.64,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 35.15,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 36.39,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 36.02,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-008",
+      "name": "Centro de Estabilização do Melhado",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 31.53,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.14,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.16,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 33.5,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 34.06,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.38,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-009",
+      "name": "Posto de Saúde da Família Doutora Neuza Maria Affini Dicenzo",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 31.79,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 31.91,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 33.34,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 33.42,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 36.09,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.64,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-010",
+      "name": "Unidade de Pronto Atendimento Doutor Antônio Alonso Martinez",
+      "suburb": "Vila Xavier",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.16,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.6,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 35.14,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.63,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.21,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.55,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-011",
+      "name": "Santa Casa de Araraquara",
+      "suburb": "Centro",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 33.14,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.49,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.39,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.55,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.8,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.73,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-012",
+      "name": "Hospital São Paulo",
+      "suburb": "Fonte",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.79,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.54,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 33.89,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.18,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 36.38,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.13,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-013",
+      "name": "PSF \"Adolfo Léo\"",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.43,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 33.17,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.87,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.8,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 36.48,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 36.0,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-014",
+      "name": "NGA-3 -Núcleo de Gestão Ambulatorial \"Dr. Francisco Logatti\"",
+      "suburb": "Centro",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.91,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.48,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.28,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.51,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.6,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.64,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-015",
+      "name": "UPA Valle Verde",
+      "suburb": "Valle Verde",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.47,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 33.53,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.56,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 35.06,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 37.32,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.93,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-016",
+      "name": "Unidade Básica de Saúde Doutor Herculano Graeff",
+      "suburb": "Jardim Roberto Selmi Dei IV",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.38,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 33.57,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.16,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.75,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 36.13,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.72,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-017",
+      "name": "Maternidade Gota de Leite",
+      "suburb": "Centro",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.62,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.23,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.07,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.19,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.0,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.29,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-018",
+      "name": "CMS Jardim Paulistano “Dr. Genaro Granata”",
+      "suburb": "Jd. Paulistano",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.57,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 33.02,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 35.08,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.29,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 36.41,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.53,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-019",
+      "name": "CMS/PACS Gustavo de Moraes Jr.",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 31.23,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 31.97,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.94,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 33.98,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 36.48,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.61,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-020",
+      "name": "Hospital Canasol",
+      "suburb": "Jardim Higienópolis",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 31.31,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.41,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.1,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.18,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 34.77,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.1,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-021",
+      "name": "Hemocentro de Araraquara",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.78,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.17,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 33.96,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.05,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.22,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.16,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-022",
+      "name": "SESA",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.74,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.19,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.02,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.06,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.09,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.18,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-023",
+      "name": "PSF",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.47,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 33.53,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.56,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 35.06,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 37.32,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.93,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-024",
+      "name": "Centro Municipal de Saúde \"João Vitor Nascimento Maurício\"",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 31.9,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.27,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.07,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 33.86,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.51,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.74,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-025",
+      "name": "CISA - Centro Integrado de Saúde Auditiva",
+      "suburb": "Vila Jose Bonifacio",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.08,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.85,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 33.44,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 33.84,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.31,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.8,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-026",
+      "name": "PSF Santana",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 31.94,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.21,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.32,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.28,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.71,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.88,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-027",
+      "name": "Hospital Psiquiátrico Espírita Cairbar Schutel",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 33.73,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 33.44,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 35.66,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 35.67,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 36.2,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.93,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-028",
+      "name": "Hospital São Francisco",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.8,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.44,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.23,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.49,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.51,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.6,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-029",
+      "name": "CMS Carmo",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 30.98,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.13,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 33.69,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 33.84,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 34.48,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.55,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-030",
+      "name": "ESF \"Prof. Dr. Ray de Paula e Silva\"",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 31.61,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 31.46,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 35.0,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 33.74,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 36.1,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.67,
+          "sector_count": 10,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-031",
+      "name": "UBS Dr. Giuseppe Aufiero Sobrinho",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 30.82,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.28,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.33,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 33.96,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 34.65,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 33.86,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-032",
+      "name": "USF Parque das Laranjeiras",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 31.87,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 33.41,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.22,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.58,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.99,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.08,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-033",
+      "name": "USF Luis Alberto Marim Junior",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 31.92,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.51,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 36.13,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 33.81,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 37.44,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 36.63,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-034",
+      "name": "Posto de Saúde Municipal",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.47,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 33.53,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.56,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 35.06,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 37.32,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.93,
+          "sector_count": 1,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-035",
+      "name": "Centro Municipal de Saúde “Dr. Francisco Oswaldo Castelucci”",
+      "suburb": "Jardim Residencial Itália",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 30.22,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 29.95,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 32.77,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 32.19,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 33.31,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 32.17,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-036",
+      "name": "Centro de Referência do Idoso",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 31.43,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.34,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 33.64,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 33.81,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.91,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.47,
+          "sector_count": 4,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-037",
+      "name": "USF Roxo",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.32,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 33.26,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.32,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.73,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 37.14,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.62,
+          "sector_count": 2,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-038",
+      "name": "CAPS II - Centro de Atenção Psicossocial \"Dr. Nelson Fernandes\"",
+      "suburb": "Vila Joinville",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 31.03,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 31.3,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 35.79,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.05,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 36.62,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.69,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-039",
+      "name": "USF Vila Biagioni",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 30.74,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 31.32,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 36.19,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.04,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 37.1,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 36.09,
+          "sector_count": 5,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-040",
+      "name": "USF Brasília Prof. Dr. Edmundo Juarez",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.9,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 33.26,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.83,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.25,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 36.66,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.69,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-041",
+      "name": "Posto de Saúde Municipal",
+      "suburb": "Araraquara",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 31.95,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.2,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.3,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.28,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.69,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.88,
+          "sector_count": 7,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-042",
+      "name": "CMS Santa Angelina \"Rafael Sorbo\"",
+      "suburb": "Santa Angelina",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.73,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.96,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 33.71,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.5,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.79,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.5,
+          "sector_count": 9,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-043",
+      "name": "UPA Central \"Amélia Bernardini Cutrale\"",
+      "suburb": "Vila Velosa",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.37,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.48,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.43,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 33.87,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.87,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.17,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-044",
+      "name": "CMS Jardim Iguatemi — Enf.ª Kimiko Yuta",
+      "suburb": "Jardim Iguatemi",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        }
+      ]
+    },
+    {
+      "id": "SUS-045",
+      "name": "CMS Jardim Roberto Selmi Dei I — Dr. Ruy de Toledo",
+      "suburb": "Jardim Roberto Selmi Dei I",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.11,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.48,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 33.79,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 33.83,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 36.72,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.67,
+          "sector_count": 3,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-046",
+      "name": "USF Jardim Victório De Santi — Nair Damásio Claudino",
+      "suburb": "Jardim Victório De Santi II",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        }
+      ]
+    },
+    {
+      "id": "SUS-047",
+      "name": "USF Assentamento Bela Vista — Dr. Elias Zakaib",
+      "suburb": "Assentamento Bela Vista",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        }
+      ]
+    },
+    {
+      "id": "SUS-048",
+      "name": "USF Assentamento Monte Alegre — Dirce Ragassi Cândido",
+      "suburb": "Assentamento Monte Alegre III",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": null,
+          "sector_count": 0,
+          "coverage": "sem_intersecao"
+        }
+      ]
+    },
+    {
+      "id": "SUS-049",
+      "name": "Espaço Crescer Infantojuvenil — Maria Augusta Gonçalves Mendes \"Guta\"",
+      "suburb": "São Geraldo",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.77,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.67,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 34.27,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.63,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.68,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.93,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-050",
+      "name": "CAPS-AD \"Dr. Calil Buainain\"",
+      "suburb": "Santa Angelina",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.19,
+          "sector_count": 13,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.9,
+          "sector_count": 13,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 33.59,
+          "sector_count": 13,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 33.93,
+          "sector_count": 13,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 34.94,
+          "sector_count": 13,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.06,
+          "sector_count": 13,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-051",
+      "name": "CEO \"Prof. Dr. Raphael Lia Rolfsen\"",
+      "suburb": "Vila Xavier",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.23,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.52,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 35.29,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 34.6,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.09,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 35.57,
+          "sector_count": 6,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    },
+    {
+      "id": "SUS-052",
+      "name": "Centro Municipal de Referência do Autismo \"Aldo Pavão Júnior\"",
+      "suburb": "Jardim Dom Pedro I",
+      "values": [
+        {
+          "year": 2016,
+          "surface_temp_max_300m": 32.11,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2017,
+          "surface_temp_max_300m": 32.84,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2018,
+          "surface_temp_max_300m": 33.42,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2019,
+          "surface_temp_max_300m": 33.89,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2020,
+          "surface_temp_max_300m": 35.34,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        },
+        {
+          "year": 2021,
+          "surface_temp_max_300m": 34.8,
+          "sector_count": 8,
+          "coverage": "intersecao_buffer_300m"
+        }
+      ]
+    }
+  ]
+}

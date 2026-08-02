@@ -126,18 +126,18 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -48.2117293,
-          -21.7618228
+          -48.211601,
+          -21.762065
         ]
       },
       "properties": {
         "id": "SUS-007",
-        "name": "PSF Selma Rita Canelas Ferrari Nogueira",
+        "name": "USF Jardim São Bento — Selma Rita Canelas Ferrari Nogueira",
         "type": "USF (Saúde da Família)",
-        "lat": -21.7618228,
-        "lon": -48.2117293,
+        "lat": -21.762065,
+        "lon": -48.211601,
         "address": "",
-        "suburb": "Araraquara",
+        "suburb": "Jardim São Bento",
         "network": "Rede Pública SUS / Filantrópico"
       }
     },
@@ -819,6 +819,207 @@
         "address": "",
         "suburb": "Araraquara",
         "network": "Rede Pública SUS / Filantrópico"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1878883,
+          -21.771494
+        ]
+      },
+      "properties": {
+        "id": "SUS-042",
+        "name": "CMS Santa Angelina \"Rafael Sorbo\"",
+        "type": "UBS / CMS (Unidade Básica)",
+        "lat": -21.771494,
+        "lon": -48.1878883,
+        "address": "Rua Habbib Khodor, 560",
+        "suburb": "Santa Angelina",
+        "cnes": "2063247",
+        "network": "Rede Pública SUS / Filantrópico"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1671244,
+          -21.7734194
+        ]
+      },
+      "properties": {
+        "id": "SUS-043",
+        "name": "UPA Central \"Amélia Bernardini Cutrale\"",
+        "type": "UPA / Pronto Atendimento",
+        "lat": -21.7734194,
+        "lon": -48.1671244,
+        "suburb": "Vila Velosa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.142236,
+          -21.830978
+        ]
+      },
+      "properties": {
+        "id": "SUS-044",
+        "name": "CMS Jardim Iguatemi — Enf.ª Kimiko Yuta",
+        "type": "UBS / CMS (Unidade Básica)",
+        "lat": -21.830978,
+        "lon": -48.142236,
+        "suburb": "Jardim Iguatemi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.151231,
+          -21.739931
+        ]
+      },
+      "properties": {
+        "id": "SUS-045",
+        "name": "CMS Jardim Roberto Selmi Dei I — Dr. Ruy de Toledo",
+        "type": "UBS / CMS (Unidade Básica)",
+        "lat": -21.739931,
+        "lon": -48.151231,
+        "suburb": "Jardim Roberto Selmi Dei I"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.13438,
+          -21.827171
+        ]
+      },
+      "properties": {
+        "id": "SUS-046",
+        "name": "USF Jardim Victório De Santi — Nair Damásio Claudino",
+        "type": "USF (Saúde da Família)",
+        "lat": -21.827171,
+        "lon": -48.13438,
+        "suburb": "Jardim Victório De Santi II"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.192962,
+          -21.914483
+        ]
+      },
+      "properties": {
+        "id": "SUS-047",
+        "name": "USF Assentamento Bela Vista — Dr. Elias Zakaib",
+        "type": "USF (Saúde da Família)",
+        "lat": -21.914483,
+        "lon": -48.192962,
+        "suburb": "Assentamento Bela Vista"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.245554,
+          -21.591459
+        ]
+      },
+      "properties": {
+        "id": "SUS-048",
+        "name": "USF Assentamento Monte Alegre — Dirce Ragassi Cândido",
+        "type": "USF (Saúde da Família)",
+        "lat": -21.591459,
+        "lon": -48.245554,
+        "suburb": "Assentamento Monte Alegre III"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.18717603953,
+          -21.781271007741
+        ]
+      },
+      "properties": {
+        "id": "SUS-049",
+        "name": "Espaço Crescer Infantojuvenil — Maria Augusta Gonçalves Mendes \"Guta\"",
+        "type": "Centro de Referência e Especialidades",
+        "lat": -21.781271007741,
+        "lon": -48.18717603953,
+        "suburb": "São Geraldo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.182134995322,
+          -21.771126013143
+        ]
+      },
+      "properties": {
+        "id": "SUS-050",
+        "name": "CAPS-AD \"Dr. Calil Buainain\"",
+        "type": "CAPS (Atenção Psicossocial)",
+        "lat": -21.771126013143,
+        "lon": -48.182134995322,
+        "suburb": "Santa Angelina"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.157116020171,
+          -21.784106982771
+        ]
+      },
+      "properties": {
+        "id": "SUS-051",
+        "name": "CEO \"Prof. Dr. Raphael Lia Rolfsen\"",
+        "type": "Centro de Referência e Especialidades",
+        "lat": -21.784106982771,
+        "lon": -48.157116020171,
+        "suburb": "Vila Xavier"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.181597511772,
+          -21.765828544108
+        ]
+      },
+      "properties": {
+        "id": "SUS-052",
+        "name": "Centro Municipal de Referência do Autismo \"Aldo Pavão Júnior\"",
+        "type": "Centro de Referência e Especialidades",
+        "lat": -21.765828544108,
+        "lon": -48.181597511772,
+        "suburb": "Jardim Dom Pedro I"
       }
     }
   ]

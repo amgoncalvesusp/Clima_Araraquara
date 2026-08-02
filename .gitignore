@@ -35,3 +35,7 @@ Thumbs.db
 .vercel
 .playwright-mcp/
 pet-clima-*.png
+
+# Raw public-data downloads are cached outside the deployable dataset.
+data/raw_ibge/
+data/raw_datasus/

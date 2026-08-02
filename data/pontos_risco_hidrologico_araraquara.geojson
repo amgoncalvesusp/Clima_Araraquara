@@ -1,0 +1,456 @@
+{
+  "type": "FeatureCollection",
+  "name": "Pontos de risco hidrológico de Araraquara",
+  "metadata": {
+    "source": "Prefeitura de Araraquara / Defesa Civil Municipal",
+    "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+    "source_date": "2025-11-11",
+    "count_published": 23,
+    "count_geocoded_for_map": 20,
+    "interpretation": "Pontos mapeados de alagamento, inundação e enxurrada; não são uma mancha contínua de inundação."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1362711,
+          -21.7520278
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-01",
+        "name": "Av. Manoel de Abreu — Jardim Zavanella",
+        "phenomenon": "Alagamento",
+        "intervention_code": "*",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1911453,
+          -21.7637873
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-02",
+        "name": "Av. Prof. Gustavo Fleury Charmillot — Residencial Paraíso",
+        "phenomenon": "Alagamento",
+        "intervention_code": "*",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1399171,
+          -21.7691842
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-03",
+        "name": "Av. Francisco Vaz Filho — Jardim América",
+        "phenomenon": "Alagamento",
+        "intervention_code": "*",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1598925,
+          -21.7972662
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-04",
+        "name": "Ponte da Nestlé — Av. Mário Zampieri — Parque Alvorada",
+        "phenomenon": "Alagamento",
+        "intervention_code": "**",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1249474,
+          -21.8015118
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-05",
+        "name": "Av. Dr. Seth-Hur Cardoso — Vila Nossa Senhora Aparecida",
+        "phenomenon": "Alagamento",
+        "intervention_code": "*",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1531728,
+          -21.8092575
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-06",
+        "name": "Av. Eng. Camillo Dinucci / Av. Ermano Biancardi — Jardim Arco-Íris",
+        "phenomenon": "Alagamento",
+        "intervention_code": "*",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1848305,
+          -21.7830783
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-07",
+        "name": "Av. Prof. Jorge Corrêa — Vila Santana",
+        "phenomenon": "Enxurrada",
+        "intervention_code": "**",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.171172,
+          -21.7707294
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-08",
+        "name": "Rua Napoleão Selmi Dei / Rua Henrique Lupo — Vila Harmonia",
+        "phenomenon": "Inundação",
+        "intervention_code": "***",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1884224,
+          -21.7813346
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-09",
+        "name": "Av. Pe. Francisco Sales Colturato / Rua Heitor Souza Pinheiro — Jardins dos Manacás",
+        "phenomenon": "Inundação",
+        "intervention_code": "***",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "HIDRO-10",
+        "name": "Estrada Abílio Augusto Corrêa — Bairro dos Machados",
+        "phenomenon": "Inundação",
+        "intervention_code": "***",
+        "coordinate_status": "pendente_geocodificacao",
+        "coordinate_note": "Ponto presente no boletim municipal, ainda sem coordenada usada no mapa.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1869424,
+          -21.7883005
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-11",
+        "name": "Rua Imaculada Conceição — Jardim Tamoio",
+        "phenomenon": "Inundação",
+        "intervention_code": "***",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.177,
+          -21.795
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-12",
+        "name": "Av. Maria Antônia Camargo de Oliveira — Centro",
+        "phenomenon": "Inundação",
+        "intervention_code": "***",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1730939,
+          -21.7995008
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-13",
+        "name": "Av. Maria Antônia Camargo de Oliveira — Vila Melhado",
+        "phenomenon": "Inundação",
+        "intervention_code": "***",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "HIDRO-14",
+        "name": "Rua Pe. José de Anchieta — Suconasa",
+        "phenomenon": "Inundação",
+        "intervention_code": "***",
+        "coordinate_status": "pendente_geocodificacao",
+        "coordinate_note": "Ponto presente no boletim municipal, ainda sem coordenada usada no mapa.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1627006,
+          -21.7511581
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-15",
+        "name": "Rua Maurício Galli",
+        "phenomenon": "Inundação / Assoreamento",
+        "intervention_code": "*",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1380062,
+          -21.7902864
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-16",
+        "name": "Rodovia Abdo Najn — acesso à SP-255",
+        "phenomenon": "Inundação",
+        "intervention_code": "*",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1335823,
+          -21.7933516
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-17",
+        "name": "Rodovia Abdo Najn — acesso à SP-255",
+        "phenomenon": "Inundação",
+        "intervention_code": "*",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.215352,
+          -21.7539009
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-18",
+        "name": "Rua Tirso Alves Corrêa — Parque Tropical",
+        "phenomenon": "Solapamento de margens fluvial",
+        "intervention_code": "*",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1792292,
+          -21.7584173
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-19",
+        "name": "Av. José Barbieri Neto — trecho DAAE / Auto Posto Flora",
+        "phenomenon": "Enxurrada",
+        "intervention_code": "**",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.205073,
+          -21.7821833
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-20",
+        "name": "Rua Dr. Giuseppe Aufiero Sobrinho — Jardim Nova Araraquara",
+        "phenomenon": "Enxurrada",
+        "intervention_code": "**",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "HIDRO-21",
+        "name": "Av. José Barbanti Neto — Jardim Nova Araraquara",
+        "phenomenon": "Enxurrada",
+        "intervention_code": "**",
+        "coordinate_status": "pendente_geocodificacao",
+        "coordinate_note": "Ponto presente no boletim municipal, ainda sem coordenada usada no mapa.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1808032,
+          -21.7694052
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-22",
+        "name": "Rua Nove de Julho",
+        "phenomenon": "Inundação",
+        "intervention_code": "**",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1896456,
+          -21.773721
+        ]
+      },
+      "properties": {
+        "id": "HIDRO-23",
+        "name": "Rua Armando Sales de Oliveira",
+        "phenomenon": "Inundação",
+        "intervention_code": "**",
+        "coordinate_status": "aproximada",
+        "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
+        "source_date": "2025-11-11"
+      }
+    }
+  ]
+}

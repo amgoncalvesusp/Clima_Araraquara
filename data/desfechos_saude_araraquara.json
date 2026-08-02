@@ -1,0 +1,169 @@
+{
+  "title": "Desfechos de saúde agregados — Araraquara",
+  "source": "Ministério da Saúde / DATASUS — Sistema de Informações Hospitalares do SUS (SIH/SUS)",
+  "source_url": "https://tabnet.datasus.gov.br/cgi/deftohtm.exe?sih/cnv/nrSP.def",
+  "coverage": {
+    "system": "SIH/SUS",
+    "geography": "município de residência do paciente",
+    "municipality": "Araraquara",
+    "municipality_code": "350320",
+    "period_start": "2024-01",
+    "period_end": "2024-12",
+    "months": 12,
+    "records_after_municipality_filter": 17823
+  },
+  "series": [
+    {
+      "period": "2024-01",
+      "hospitalizations_total": 1474,
+      "respiratory": 71,
+      "circulatory": 150,
+      "dehydration": 1,
+      "heat_related": 0,
+      "deaths": 70,
+      "records_after_municipality_filter": 1474
+    },
+    {
+      "period": "2024-02",
+      "hospitalizations_total": 1414,
+      "respiratory": 71,
+      "circulatory": 231,
+      "dehydration": 0,
+      "heat_related": 0,
+      "deaths": 62,
+      "records_after_municipality_filter": 1414
+    },
+    {
+      "period": "2024-03",
+      "hospitalizations_total": 1468,
+      "respiratory": 68,
+      "circulatory": 213,
+      "dehydration": 0,
+      "heat_related": 0,
+      "deaths": 45,
+      "records_after_municipality_filter": 1468
+    },
+    {
+      "period": "2024-04",
+      "hospitalizations_total": 1485,
+      "respiratory": 103,
+      "circulatory": 170,
+      "dehydration": 0,
+      "heat_related": 0,
+      "deaths": 61,
+      "records_after_municipality_filter": 1485
+    },
+    {
+      "period": "2024-05",
+      "hospitalizations_total": 1745,
+      "respiratory": 120,
+      "circulatory": 194,
+      "dehydration": 0,
+      "heat_related": 0,
+      "deaths": 70,
+      "records_after_municipality_filter": 1745
+    },
+    {
+      "period": "2024-06",
+      "hospitalizations_total": 1359,
+      "respiratory": 118,
+      "circulatory": 165,
+      "dehydration": 0,
+      "heat_related": 0,
+      "deaths": 63,
+      "records_after_municipality_filter": 1359
+    },
+    {
+      "period": "2024-07",
+      "hospitalizations_total": 1505,
+      "respiratory": 127,
+      "circulatory": 190,
+      "dehydration": 0,
+      "heat_related": 0,
+      "deaths": 67,
+      "records_after_municipality_filter": 1505
+    },
+    {
+      "period": "2024-08",
+      "hospitalizations_total": 1660,
+      "respiratory": 137,
+      "circulatory": 235,
+      "dehydration": 0,
+      "heat_related": 0,
+      "deaths": 82,
+      "records_after_municipality_filter": 1660
+    },
+    {
+      "period": "2024-09",
+      "hospitalizations_total": 1393,
+      "respiratory": 127,
+      "circulatory": 211,
+      "dehydration": 0,
+      "heat_related": 0,
+      "deaths": 70,
+      "records_after_municipality_filter": 1393
+    },
+    {
+      "period": "2024-10",
+      "hospitalizations_total": 1671,
+      "respiratory": 98,
+      "circulatory": 212,
+      "dehydration": 0,
+      "heat_related": 0,
+      "deaths": 62,
+      "records_after_municipality_filter": 1671
+    },
+    {
+      "period": "2024-11",
+      "hospitalizations_total": 1495,
+      "respiratory": 109,
+      "circulatory": 179,
+      "dehydration": 2,
+      "heat_related": 0,
+      "deaths": 74,
+      "records_after_municipality_filter": 1495
+    },
+    {
+      "period": "2024-12",
+      "hospitalizations_total": 1154,
+      "respiratory": 63,
+      "circulatory": 192,
+      "dehydration": 0,
+      "heat_related": 0,
+      "deaths": 55,
+      "records_after_municipality_filter": 1154
+    }
+  ],
+  "annual": [
+    {
+      "period": "2024",
+      "hospitalizations_total": 17823,
+      "respiratory": 1212,
+      "circulatory": 2342,
+      "dehydration": 3,
+      "heat_related": 0,
+      "deaths": 781
+    }
+  ],
+  "ambulatory_attendance": {
+    "status": "not_loaded",
+    "system": "SIA/SUS",
+    "note": "A produção ambulatorial exige uma extração separada do SIA/SUS; não foi misturada ao SIH para evitar comparar unidades de medida diferentes.",
+    "source_url": "https://tabnet.datasus.gov.br/cgi/deftohtm.exe?qauf.def"
+  },
+  "method": {
+    "unit_of_count": "AIH/registro de internação do SIH/SUS, filtrado por MUNIC_RES=350320",
+    "climate_sensitive_groups": {
+      "respiratory": "CID-10 começando por J",
+      "circulatory": "CID-10 começando por I",
+      "dehydration": "CID-10 E86",
+      "heat_related": "CID-10 T67"
+    }
+  },
+  "limitations": [
+    "Cobre somente internações financiadas pelo SUS; não representa toda a demanda assistencial.",
+    "É um contexto municipal de residência, não uma atribuição causal a uma unidade de saúde.",
+    "Os grupos CID são filtros amplos para exploração e não demonstram que o evento foi causado pelo clima.",
+    "Os dados administrativos podem ser atualizados retroativamente e devem ser reprocessados antes de uma análise final."
+  ]
+}

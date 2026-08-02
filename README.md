@@ -1,28 +1,43 @@
-# PET Clima Araraquara
+# PET Saúde - Clima Araraquara
 
-Mapa didático para explorar a exposição térmica no entorno das unidades de saúde de Araraquara e transformar o ranking em hipóteses de ação pública.
+Mapa didático do PET Saúde - Clima para explorar a exposição térmica e a proximidade de pontos de risco hidrológico no entorno das unidades de saúde de Araraquara.
 
-## O que mudou
+## O que o site mostra
 
-- `index.html` e `mapa_interativo_araraquara.html` agora usam o mesmo app e carregam os dados externos em tempo de execução.
-- O recorte padrão é a rede pública municipal. Hospitais privados, filantrópicos e unidades estaduais/universitárias podem ser comparados separadamente.
-- O catálogo principal passou a ter 55 registros: 41 analisados + 14 candidatas a validar. As candidatas têm `record_status: "pendente_validacao"`, não possuem coordenadas artificiais e não entram no ranking.
-- O ranking continua sendo calculado apenas a partir de `data/unidades_saude_analise_araraquara.geojson` e `data/ranking_risco_termico.csv`.
-- A interface mostra fontes públicas para validar CNES, endereço, gestão, população, vegetação e alertas de calor.
+- Mapa atual: camada térmica local de 2024, áreas verdes, unidades de saúde, buffers de 300 m e pontos municipais de alagamento, inundação e enxurrada.
+- Histórico: série anual de 2016 a 2021 da temperatura máxima da superfície por setor da UrbVerde, agregada para cada unidade e para a média da rede.
+- Catálogo: 52 unidades analisadas e 2 registros pendentes de validação. O CMS Santa Angelina “Rafael Sorbo” está no mapa como `SUS-042`, com CNES `2063247`.
+- Nesta rodada, foram confirmadas e incorporadas a UPA Central, seis unidades básicas, o Espaço Crescer, o CAPS-AD, o CEO e o Centro Municipal de Referência do Autismo. O antigo registro da USF Jardim São Bento foi reconciliado com o `SUS-007`, evitando duplicidade.
+- Comparação: o modal “Histórico” combina uma série temporal, comparação entre unidades e proximidade aproximada a pontos hidrológicos mapeados.
 
-## Arquivos de dados
+Risco térmico e risco hidrológico aparecem lado a lado, mas não são somados automaticamente: são medidas diferentes, com fontes e escalas distintas.
+
+### Vulnerabilidade social no IECS
+
+A dimensão social participa do cálculo atual com peso de 30%. Ela foi substituída por um índice social-sanitário composto com dados agregados do Censo 2022 do IBGE, calculado por setor censitário e ponderado no buffer de 300 m de cada unidade. A composição usada é: renda mediana inversa (50%), proporção de crianças (20%), proporção de pessoas idosas (20%) e média de moradores por domicílio (10%). Esse valor não é um índice oficial do IBGE; é uma ferramenta analítica do projeto, que deve ser discutida e calibrada pelo grupo antes de orientar uma decisão definitiva.
+
+## Dados
 
 ```text
 data/
-├── unidades_saude_araraquara.json              # catálogo humano: 41 analisadas + 14 pendentes
-├── unidades_sugeridas_araraquara.json          # backlog de validação das 14 candidatas
-├── metadata_unidades_saude_araraquara.json     # escopo da rede e qualidade do cadastro atual
-├── unidades_saude_araraquara.geojson            # 41 pontos com coordenadas usados na análise
-├── unidades_saude_analise_araraquara.geojson   # 41 pontos com IECS e métricas do entorno
-├── ranking_risco_termico.csv                   # ranking tabular atual
-├── resumo_estatistico.json                      # métricas agregadas atuais
-└── fontes_publicas_saude_araraquara.json       # referências para atualização do cadastro
+├── unidades_saude_araraquara.json              # catálogo: 52 analisadas + 2 pendentes
+├── unidades_sugeridas_araraquara.json          # backlog de validação das 2 pendências
+├── unidades_saude_araraquara.geojson            # 52 pontos usados na análise espacial
+├── unidades_saude_analise_araraquara.geojson   # 52 pontos com IECS e métricas de 2024
+├── ranking_risco_termico.csv                   # ranking térmico atual
+├── censo_2022_vulnerabilidade_araraquara.geojson # setores e índice social-sanitário composto
+├── sensibilidade_iecs_araraquara.json           # cenários alternativos de pesos do IECS
+├── desfechos_saude_araraquara.json              # SIH/SUS agregado por mês e município de residência
+├── historico_risco_termico_araraquara.json     # UrbVerde 2016–2021 por unidade
+├── pontos_risco_hidrologico_araraquara.geojson  # 23 pontos da Defesa Civil municipal
+├── urbverde_araraquara.geojson                  # camada térmica local usada no mapa atual
+├── areas_verdes_araraquara.geojson              # áreas verdes mapeadas
+└── fontes_publicas_saude_araraquara.json       # fontes e usos de cada cruzamento
 ```
+
+### Nota sobre a UrbVerde
+
+A plataforma disponibiliza o indicador `rinunda` — risco climático a inundações — por setor censitário em 2024. A camada foi conferida durante esta atualização, mas seus tiles públicos não retornaram setores para Araraquara. Para não transformar ausência de dado em “baixo risco”, o site usa os 23 pontos locais publicados pela Prefeitura/Defesa Civil e sinaliza que 20 possuem posição aproximada no mapa.
 
 ## Como executar
 
@@ -35,37 +50,45 @@ python -m http.server 8000
 
 Acesse `http://localhost:8000`.
 
-Para recalcular o ranking depois de adicionar unidades validadas ao GeoJSON:
+Para atualizar os dados derivados depois de validar novas unidades:
 
 ```bash
+python scripts/promote_confirmed_units.py
+python scripts/build_census_social.py --cache-dir C:/Temp/pet-clima-ibge
 python scripts/spatial_analysis.py
-python scripts/generate_charts.py
+python scripts/fetch_health_outcomes.py --cache-dir C:/Temp/pet-clima-datasus-sih
 python scripts/enrich_health_catalog.py
-```
-
-O catálogo pode ser enriquecido novamente sem alterar o GeoJSON analisado:
-
-```bash
-python scripts/enrich_health_catalog.py
+python scripts/build_historical_risk.py
+python scripts/build_hydrology_points.py
+python scripts/sync_index.py
 ```
 
 ## Interpretação responsável
 
-O círculo de 300 m é um buffer geométrico ao redor do ponto, não uma distância de caminhada. A temperatura exibida é temperatura de superfície, não temperatura do ar. O IECS é relativo ao conjunto analisado; ao incluir novos pontos é necessário recalcular todas as unidades para manter a comparação coerente.
+O círculo de 300 m é um buffer geométrico, não uma distância de caminhada. A temperatura é de superfície, não do ar. O IECS é relativo ao conjunto analisado e deve ser recalculado quando unidades entrarem ou saírem do recorte. O componente social do Censo é um índice composto deste projeto, não um indicador oficial do IBGE.
 
-As 14 candidatas foram documentadas para orientar a validação, mas permanecem fora do ranking até que o CNES, o endereço e a coordenada sejam confirmados. A lista inclui a UPA Central, a base do SAMU, unidades básicas, serviços de saúde mental e atenção especializada.
+O bloco de saúde usa internações de residentes de Araraquara no SIH/SUS em 2024, agregadas por mês e por grupos amplos de CID-10. A série serve como contexto municipal para comparar com o sinal climático; ela não prova causalidade, não representa atendimentos privados e não pode ser atribuída automaticamente a uma unidade. A produção ambulatorial do SIA/SUS permanece separada para não misturar unidades de medida.
 
-## Próximas evoluções recomendadas
+Os pontos hidrológicos são registros municipais de locais de atenção. Não representam uma mancha contínua, profundidade de água ou probabilidade de inundação. As coordenadas aproximadas servem para orientação e triagem; decisões de obra devem usar a fonte técnica original e vistoria local.
 
-1. Incorporar os campos `CNES`, natureza jurídica, gestão e situação cadastral a partir do CNES.
-2. Cruzar população, domicílios, idosos e crianças por setor censitário do IBGE.
-3. Acrescentar um modo operacional com previsão e alertas do INMET para ondas de calor e baixa umidade.
-4. Atualizar a camada de vegetação com séries do MapBiomas e documentar a versão do UrbVerde utilizada.
-5. Validar os pontos rurais de Bela Vista e Monte Alegre com uma área de influência adequada ao acesso real, em vez de assumir automaticamente 300 m.
+## Fontes principais
+
+- [UrbVerde](https://urbverde.iau.usp.br/) — séries térmicas e indicadores socioambientais.
+- [Prefeitura / Defesa Civil: áreas de risco](https://www.araraquara.sp.gov.br/atualizacao-das-areas-de-risco-de-alagamento-inundacao-e-enxurrada-e-dados-sobre-incendios-e-queimadas-de-araraquara) — 23 pontos municipais.
+- [CNES / DATASUS](https://dadosabertos.saude.gov.br/dataset/cnes-cadastro-nacional-de-estabelecimentos-de-saude) — cadastro e gestão das unidades.
+- [IBGE — Censo Demográfico 2022](https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html) — agregados por setor censitário e variáveis sociais usadas no índice composto.
+- [Ministério da Saúde — SIH/SUS por residência](https://tabnet.datasus.gov.br/cgi/deftohtm.exe?sih/cnv/nrSP.def) — fonte da série municipal de internações agregadas de 2024.
+- [Ministério da Saúde — SIH/SIA e TABNET](https://www.gov.br/saude/pt-br/acesso-a-informacao/sic/dados-em-transparencia-ativa/saes) — documentação institucional para desfechos agregados e futura camada ambulatorial.
+- [INMET — avisos meteorológicos](https://portal.inmet.gov.br/noticias/inmet-aprimora-interface-de-avisos-meteorol%C3%B3gicos) — referência para um modo operacional de alertas de calor, baixa umidade e chuva.
+- [Prefeitura — Atenção Básica](https://webnetserver.com.br/araraquara/secretarias/saude/sobre-a-secretaria-saude/atencao-basica) e [mapa oficial das unidades](https://www.google.com/maps/d/viewer?hl=pt-BR&ll=-21.79175544415152%2C-48.1768535&mid=1z547XaGQ4BgR__QfAc0f3a1bM55Xja3v&z=12) — nomes, endereços e coordenadas das unidades básicas.
+- [Prefeitura — Atenção Especializada](https://webnetserver.com.br/araraquara/secretarias/saude/sobre-a-secretaria-saude/atencao-especializada/atencao-especializada) — CAPS-AD, Espaço Crescer e Centro do Autismo.
+- [Prefeitura — Atendimento Odontológico](https://webnetserver.com.br/araraquara/servicos/guia-de-servicos/saude/atendimento-odontologico) — CEO municipal.
+- [CMS Santa Angelina no CNES](https://cnes2.datasus.gov.br/Mod_Ind_Especialidades_Listar.asp?VAmbu=&VAmbuSUS=&VClassificacao=&VComp=201702&VEstado=35&VHosp=&VHospSus=&VListar=1&VMun=350320&VServico=&VTerc=&VTipo=141) — confirmação do CNES `2063247`.
 
 ## Verificações
 
 ```bash
 python -m unittest discover -s tests -v
 node --check js/app.js
+git diff --check
 ```

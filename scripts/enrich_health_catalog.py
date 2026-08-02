@@ -17,7 +17,12 @@ def load_json(path):
 
 
 def enrich_catalog():
-    current = load_json(CATALOG)
+    current = [
+        item
+        for item in load_json(CATALOG)
+        if item.get("record_status") != "pendente_validacao"
+        and item.get("status") != "pendente_validacao"
+    ]
     metadata = load_json(METADATA)
     pending = load_json(PENDING)
 

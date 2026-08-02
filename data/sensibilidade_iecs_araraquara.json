@@ -1,0 +1,2490 @@
+{
+  "title": "Analise de sensibilidade do IECS",
+  "method": "Cada cenário recalcula o mesmo conjunto de componentes normalizados; apenas os pesos mudam.",
+  "default_scenario": "balanced",
+  "components": {
+    "heat": "Temperatura de superficie no buffer de 300m",
+    "vegetation": "Deficit de NDVI no buffer de 300m",
+    "social": "Indice social-sanitario composto com Censo 2022"
+  },
+  "scenarios": [
+    {
+      "id": "balanced",
+      "label": "Equilibrado (padrão)",
+      "description": "Mantém o peso atualmente adotado no IECS.",
+      "weights": {
+        "heat": 0.45,
+        "vegetation": 0.25,
+        "social": 0.3
+      },
+      "top_5": [
+        {
+          "id": "SUS-034",
+          "name": "Posto de Saúde Municipal",
+          "score": 97.0,
+          "ranking": 1,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-015",
+          "name": "UPA Valle Verde",
+          "score": 96.8,
+          "ranking": 2,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-023",
+          "name": "PSF",
+          "score": 96.8,
+          "ranking": 3,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-045",
+          "name": "CMS Jardim Roberto Selmi Dei I — Dr. Ruy de Toledo",
+          "score": 95.3,
+          "ranking": 4,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-016",
+          "name": "Unidade Básica de Saúde Doutor Herculano Graeff",
+          "score": 89.2,
+          "ranking": 5,
+          "rank_shift_vs_default": 0
+        }
+      ],
+      "units": [
+        {
+          "id": "SUS-034",
+          "name": "Posto de Saúde Municipal",
+          "score": 97.0,
+          "ranking": 1,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-015",
+          "name": "UPA Valle Verde",
+          "score": 96.8,
+          "ranking": 2,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-023",
+          "name": "PSF",
+          "score": 96.8,
+          "ranking": 3,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-045",
+          "name": "CMS Jardim Roberto Selmi Dei I — Dr. Ruy de Toledo",
+          "score": 95.3,
+          "ranking": 4,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-016",
+          "name": "Unidade Básica de Saúde Doutor Herculano Graeff",
+          "score": 89.2,
+          "ranking": 5,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-037",
+          "name": "USF Roxo",
+          "score": 87.7,
+          "ranking": 6,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-018",
+          "name": "CMS Jardim Paulistano “Dr. Genaro Granata”",
+          "score": 78.9,
+          "ranking": 7,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-039",
+          "name": "USF Vila Biagioni",
+          "score": 74.8,
+          "ranking": 8,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-024",
+          "name": "Centro Municipal de Saúde \"João Vitor Nascimento Maurício\"",
+          "score": 74.6,
+          "ranking": 9,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-040",
+          "name": "USF Brasília Prof. Dr. Edmundo Juarez",
+          "score": 73.9,
+          "ranking": 10,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-051",
+          "name": "CEO \"Prof. Dr. Raphael Lia Rolfsen\"",
+          "score": 73.3,
+          "ranking": 11,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-012",
+          "name": "Hospital São Paulo",
+          "score": 72.7,
+          "ranking": 12,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-010",
+          "name": "Unidade de Pronto Atendimento Doutor Antônio Alonso Martinez",
+          "score": 72.4,
+          "ranking": 13,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-038",
+          "name": "CAPS II - Centro de Atenção Psicossocial \"Dr. Nelson Fernandes\"",
+          "score": 69.4,
+          "ranking": 14,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-013",
+          "name": "PSF \"Adolfo Léo\"",
+          "score": 68.8,
+          "ranking": 15,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-033",
+          "name": "USF Luis Alberto Marim Junior",
+          "score": 68.6,
+          "ranking": 16,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-052",
+          "name": "Centro Municipal de Referência do Autismo \"Aldo Pavão Júnior\"",
+          "score": 68.4,
+          "ranking": 17,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-025",
+          "name": "CISA - Centro Integrado de Saúde Auditiva",
+          "score": 67.7,
+          "ranking": 18,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-050",
+          "name": "CAPS-AD \"Dr. Calil Buainain\"",
+          "score": 66.5,
+          "ranking": 19,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-019",
+          "name": "CMS/PACS Gustavo de Moraes Jr.",
+          "score": 66.3,
+          "ranking": 20,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-009",
+          "name": "Posto de Saúde da Família Doutora Neuza Maria Affini Dicenzo",
+          "score": 64.5,
+          "ranking": 21,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-035",
+          "name": "Centro Municipal de Saúde “Dr. Francisco Oswaldo Castelucci”",
+          "score": 60.8,
+          "ranking": 22,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-006",
+          "name": "Programa de Saúde da Família Doutor José Ricardo de Carvalho Angelieri",
+          "score": 60.0,
+          "ranking": 23,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-043",
+          "name": "UPA Central \"Amélia Bernardini Cutrale\"",
+          "score": 57.7,
+          "ranking": 24,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-030",
+          "name": "ESF \"Prof. Dr. Ray de Paula e Silva\"",
+          "score": 57.6,
+          "ranking": 25,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-041",
+          "name": "Posto de Saúde Municipal",
+          "score": 56.3,
+          "ranking": 26,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-026",
+          "name": "PSF Santana",
+          "score": 56.1,
+          "ranking": 27,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-021",
+          "name": "Hemocentro de Araraquara",
+          "score": 53.3,
+          "ranking": 28,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-042",
+          "name": "CMS Santa Angelina \"Rafael Sorbo\"",
+          "score": 52.4,
+          "ranking": 29,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-049",
+          "name": "Espaço Crescer Infantojuvenil — Maria Augusta Gonçalves Mendes \"Guta\"",
+          "score": 50.8,
+          "ranking": 30,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-011",
+          "name": "Santa Casa de Araraquara",
+          "score": 50.5,
+          "ranking": 31,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-014",
+          "name": "NGA-3 -Núcleo de Gestão Ambulatorial \"Dr. Francisco Logatti\"",
+          "score": 50.0,
+          "ranking": 32,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-022",
+          "name": "SESA",
+          "score": 49.8,
+          "ranking": 33,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-028",
+          "name": "Hospital São Francisco",
+          "score": 46.7,
+          "ranking": 34,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-003",
+          "name": "Posto de Saúde Municipal",
+          "score": 46.4,
+          "ranking": 35,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-027",
+          "name": "Hospital Psiquiátrico Espírita Cairbar Schutel",
+          "score": 46.4,
+          "ranking": 36,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-007",
+          "name": "USF Jardim São Bento — Selma Rita Canelas Ferrari Nogueira",
+          "score": 45.8,
+          "ranking": 37,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-031",
+          "name": "UBS Dr. Giuseppe Aufiero Sobrinho",
+          "score": 45.2,
+          "ranking": 38,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-004",
+          "name": "USF Farmacêutico Cristovão Colombo",
+          "score": 44.9,
+          "ranking": 39,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-002",
+          "name": "Estratégia de Saúde da Família João Francisco Alves",
+          "score": 44.8,
+          "ranking": 40,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-017",
+          "name": "Maternidade Gota de Leite",
+          "score": 44.1,
+          "ranking": 41,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-047",
+          "name": "USF Assentamento Bela Vista — Dr. Elias Zakaib",
+          "score": 42.4,
+          "ranking": 42,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-020",
+          "name": "Hospital Canasol",
+          "score": 42.3,
+          "ranking": 43,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-001",
+          "name": "Estratégia de Saúde da Família Doutor Euclides Crocci",
+          "score": 42.1,
+          "ranking": 44,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-008",
+          "name": "Centro de Estabilização do Melhado",
+          "score": 39.7,
+          "ranking": 45,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-029",
+          "name": "CMS Carmo",
+          "score": 36.7,
+          "ranking": 46,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-032",
+          "name": "USF Parque das Laranjeiras",
+          "score": 35.8,
+          "ranking": 47,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-048",
+          "name": "USF Assentamento Monte Alegre — Dirce Ragassi Cândido",
+          "score": 31.5,
+          "ranking": 48,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-005",
+          "name": "CMS Cecap",
+          "score": 29.6,
+          "ranking": 49,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-046",
+          "name": "USF Jardim Victório De Santi — Nair Damásio Claudino",
+          "score": 27.2,
+          "ranking": 50,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-044",
+          "name": "CMS Jardim Iguatemi — Enf.ª Kimiko Yuta",
+          "score": 26.1,
+          "ranking": 51,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-036",
+          "name": "Centro de Referência do Idoso",
+          "score": 15.9,
+          "ranking": 52,
+          "rank_shift_vs_default": 0
+        }
+      ]
+    },
+    {
+      "id": "climate_only",
+      "label": "Somente clima",
+      "description": "Remove o componente social para testar o quanto o ranking depende do contexto do Censo.",
+      "weights": {
+        "heat": 0.6,
+        "vegetation": 0.4,
+        "social": 0.0
+      },
+      "top_5": [
+        {
+          "id": "SUS-037",
+          "name": "USF Roxo",
+          "score": 100.0,
+          "ranking": 1,
+          "rank_shift_vs_default": 5
+        },
+        {
+          "id": "SUS-016",
+          "name": "Unidade Básica de Saúde Doutor Herculano Graeff",
+          "score": 98.1,
+          "ranking": 2,
+          "rank_shift_vs_default": 3
+        },
+        {
+          "id": "SUS-045",
+          "name": "CMS Jardim Roberto Selmi Dei I — Dr. Ruy de Toledo",
+          "score": 97.2,
+          "ranking": 3,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-015",
+          "name": "UPA Valle Verde",
+          "score": 96.1,
+          "ranking": 4,
+          "rank_shift_vs_default": -2
+        },
+        {
+          "id": "SUS-034",
+          "name": "Posto de Saúde Municipal",
+          "score": 95.7,
+          "ranking": 5,
+          "rank_shift_vs_default": -4
+        }
+      ],
+      "units": [
+        {
+          "id": "SUS-037",
+          "name": "USF Roxo",
+          "score": 100.0,
+          "ranking": 1,
+          "rank_shift_vs_default": 5
+        },
+        {
+          "id": "SUS-016",
+          "name": "Unidade Básica de Saúde Doutor Herculano Graeff",
+          "score": 98.1,
+          "ranking": 2,
+          "rank_shift_vs_default": 3
+        },
+        {
+          "id": "SUS-045",
+          "name": "CMS Jardim Roberto Selmi Dei I — Dr. Ruy de Toledo",
+          "score": 97.2,
+          "ranking": 3,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-015",
+          "name": "UPA Valle Verde",
+          "score": 96.1,
+          "ranking": 4,
+          "rank_shift_vs_default": -2
+        },
+        {
+          "id": "SUS-034",
+          "name": "Posto de Saúde Municipal",
+          "score": 95.7,
+          "ranking": 5,
+          "rank_shift_vs_default": -4
+        },
+        {
+          "id": "SUS-023",
+          "name": "PSF",
+          "score": 95.4,
+          "ranking": 6,
+          "rank_shift_vs_default": -3
+        },
+        {
+          "id": "SUS-013",
+          "name": "PSF \"Adolfo Léo\"",
+          "score": 89.2,
+          "ranking": 7,
+          "rank_shift_vs_default": 8
+        },
+        {
+          "id": "SUS-040",
+          "name": "USF Brasília Prof. Dr. Edmundo Juarez",
+          "score": 84.1,
+          "ranking": 8,
+          "rank_shift_vs_default": 2
+        },
+        {
+          "id": "SUS-018",
+          "name": "CMS Jardim Paulistano “Dr. Genaro Granata”",
+          "score": 80.9,
+          "ranking": 9,
+          "rank_shift_vs_default": -2
+        },
+        {
+          "id": "SUS-043",
+          "name": "UPA Central \"Amélia Bernardini Cutrale\"",
+          "score": 79.8,
+          "ranking": 10,
+          "rank_shift_vs_default": 14
+        },
+        {
+          "id": "SUS-033",
+          "name": "USF Luis Alberto Marim Junior",
+          "score": 77.8,
+          "ranking": 11,
+          "rank_shift_vs_default": 5
+        },
+        {
+          "id": "SUS-039",
+          "name": "USF Vila Biagioni",
+          "score": 74.9,
+          "ranking": 12,
+          "rank_shift_vs_default": -4
+        },
+        {
+          "id": "SUS-024",
+          "name": "Centro Municipal de Saúde \"João Vitor Nascimento Maurício\"",
+          "score": 74.6,
+          "ranking": 13,
+          "rank_shift_vs_default": -4
+        },
+        {
+          "id": "SUS-025",
+          "name": "CISA - Centro Integrado de Saúde Auditiva",
+          "score": 74.5,
+          "ranking": 14,
+          "rank_shift_vs_default": 4
+        },
+        {
+          "id": "SUS-052",
+          "name": "Centro Municipal de Referência do Autismo \"Aldo Pavão Júnior\"",
+          "score": 74.3,
+          "ranking": 15,
+          "rank_shift_vs_default": 2
+        },
+        {
+          "id": "SUS-051",
+          "name": "CEO \"Prof. Dr. Raphael Lia Rolfsen\"",
+          "score": 72.9,
+          "ranking": 16,
+          "rank_shift_vs_default": -5
+        },
+        {
+          "id": "SUS-038",
+          "name": "CAPS II - Centro de Atenção Psicossocial \"Dr. Nelson Fernandes\"",
+          "score": 72.5,
+          "ranking": 17,
+          "rank_shift_vs_default": -3
+        },
+        {
+          "id": "SUS-012",
+          "name": "Hospital São Paulo",
+          "score": 71.9,
+          "ranking": 18,
+          "rank_shift_vs_default": -6
+        },
+        {
+          "id": "SUS-010",
+          "name": "Unidade de Pronto Atendimento Doutor Antônio Alonso Martinez",
+          "score": 70.9,
+          "ranking": 19,
+          "rank_shift_vs_default": -6
+        },
+        {
+          "id": "SUS-050",
+          "name": "CAPS-AD \"Dr. Calil Buainain\"",
+          "score": 70.8,
+          "ranking": 20,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-028",
+          "name": "Hospital São Francisco",
+          "score": 64.6,
+          "ranking": 21,
+          "rank_shift_vs_default": 13
+        },
+        {
+          "id": "SUS-014",
+          "name": "NGA-3 -Núcleo de Gestão Ambulatorial \"Dr. Francisco Logatti\"",
+          "score": 64.1,
+          "ranking": 22,
+          "rank_shift_vs_default": 10
+        },
+        {
+          "id": "SUS-009",
+          "name": "Posto de Saúde da Família Doutora Neuza Maria Affini Dicenzo",
+          "score": 64.1,
+          "ranking": 23,
+          "rank_shift_vs_default": -2
+        },
+        {
+          "id": "SUS-011",
+          "name": "Santa Casa de Araraquara",
+          "score": 63.5,
+          "ranking": 24,
+          "rank_shift_vs_default": 7
+        },
+        {
+          "id": "SUS-042",
+          "name": "CMS Santa Angelina \"Rafael Sorbo\"",
+          "score": 63.1,
+          "ranking": 25,
+          "rank_shift_vs_default": 4
+        },
+        {
+          "id": "SUS-019",
+          "name": "CMS/PACS Gustavo de Moraes Jr.",
+          "score": 62.1,
+          "ranking": 26,
+          "rank_shift_vs_default": -6
+        },
+        {
+          "id": "SUS-006",
+          "name": "Programa de Saúde da Família Doutor José Ricardo de Carvalho Angelieri",
+          "score": 58.9,
+          "ranking": 27,
+          "rank_shift_vs_default": -4
+        },
+        {
+          "id": "SUS-017",
+          "name": "Maternidade Gota de Leite",
+          "score": 58.9,
+          "ranking": 28,
+          "rank_shift_vs_default": 13
+        },
+        {
+          "id": "SUS-049",
+          "name": "Espaço Crescer Infantojuvenil — Maria Augusta Gonçalves Mendes \"Guta\"",
+          "score": 58.8,
+          "ranking": 29,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-021",
+          "name": "Hemocentro de Araraquara",
+          "score": 57.1,
+          "ranking": 30,
+          "rank_shift_vs_default": -2
+        },
+        {
+          "id": "SUS-022",
+          "name": "SESA",
+          "score": 56.6,
+          "ranking": 31,
+          "rank_shift_vs_default": 2
+        },
+        {
+          "id": "SUS-030",
+          "name": "ESF \"Prof. Dr. Ray de Paula e Silva\"",
+          "score": 56.1,
+          "ranking": 32,
+          "rank_shift_vs_default": -7
+        },
+        {
+          "id": "SUS-003",
+          "name": "Posto de Saúde Municipal",
+          "score": 52.4,
+          "ranking": 33,
+          "rank_shift_vs_default": 2
+        },
+        {
+          "id": "SUS-035",
+          "name": "Centro Municipal de Saúde “Dr. Francisco Oswaldo Castelucci”",
+          "score": 52.3,
+          "ranking": 34,
+          "rank_shift_vs_default": -12
+        },
+        {
+          "id": "SUS-041",
+          "name": "Posto de Saúde Municipal",
+          "score": 47.8,
+          "ranking": 35,
+          "rank_shift_vs_default": -9
+        },
+        {
+          "id": "SUS-026",
+          "name": "PSF Santana",
+          "score": 47.5,
+          "ranking": 36,
+          "rank_shift_vs_default": -9
+        },
+        {
+          "id": "SUS-008",
+          "name": "Centro de Estabilização do Melhado",
+          "score": 42.9,
+          "ranking": 37,
+          "rank_shift_vs_default": 8
+        },
+        {
+          "id": "SUS-031",
+          "name": "UBS Dr. Giuseppe Aufiero Sobrinho",
+          "score": 39.8,
+          "ranking": 38,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-001",
+          "name": "Estratégia de Saúde da Família Doutor Euclides Crocci",
+          "score": 39.2,
+          "ranking": 39,
+          "rank_shift_vs_default": 5
+        },
+        {
+          "id": "SUS-020",
+          "name": "Hospital Canasol",
+          "score": 38.9,
+          "ranking": 40,
+          "rank_shift_vs_default": 3
+        },
+        {
+          "id": "SUS-007",
+          "name": "USF Jardim São Bento — Selma Rita Canelas Ferrari Nogueira",
+          "score": 37.3,
+          "ranking": 41,
+          "rank_shift_vs_default": -4
+        },
+        {
+          "id": "SUS-002",
+          "name": "Estratégia de Saúde da Família João Francisco Alves",
+          "score": 36.5,
+          "ranking": 42,
+          "rank_shift_vs_default": -2
+        },
+        {
+          "id": "SUS-004",
+          "name": "USF Farmacêutico Cristovão Colombo",
+          "score": 36.0,
+          "ranking": 43,
+          "rank_shift_vs_default": -4
+        },
+        {
+          "id": "SUS-027",
+          "name": "Hospital Psiquiátrico Espírita Cairbar Schutel",
+          "score": 34.3,
+          "ranking": 44,
+          "rank_shift_vs_default": -8
+        },
+        {
+          "id": "SUS-032",
+          "name": "USF Parque das Laranjeiras",
+          "score": 26.2,
+          "ranking": 45,
+          "rank_shift_vs_default": 2
+        },
+        {
+          "id": "SUS-029",
+          "name": "CMS Carmo",
+          "score": 25.6,
+          "ranking": 46,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-047",
+          "name": "USF Assentamento Bela Vista — Dr. Elias Zakaib",
+          "score": 22.8,
+          "ranking": 47,
+          "rank_shift_vs_default": -5
+        },
+        {
+          "id": "SUS-048",
+          "name": "USF Assentamento Monte Alegre — Dirce Ragassi Cândido",
+          "score": 22.8,
+          "ranking": 48,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-036",
+          "name": "Centro de Referência do Idoso",
+          "score": 22.5,
+          "ranking": 49,
+          "rank_shift_vs_default": 3
+        },
+        {
+          "id": "SUS-046",
+          "name": "USF Jardim Victório De Santi — Nair Damásio Claudino",
+          "score": 8.7,
+          "ranking": 50,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-044",
+          "name": "CMS Jardim Iguatemi — Enf.ª Kimiko Yuta",
+          "score": 7.0,
+          "ranking": 51,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-005",
+          "name": "CMS Cecap",
+          "score": 4.9,
+          "ranking": 52,
+          "rank_shift_vs_default": -3
+        }
+      ]
+    },
+    {
+      "id": "social_priority",
+      "label": "Prioridade social",
+      "description": "Aumenta a influência da vulnerabilidade social-sanitária do Censo.",
+      "weights": {
+        "heat": 0.35,
+        "vegetation": 0.15,
+        "social": 0.5
+      },
+      "top_5": [
+        {
+          "id": "SUS-034",
+          "name": "Posto de Saúde Municipal",
+          "score": 97.9,
+          "ranking": 1,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-023",
+          "name": "PSF",
+          "score": 97.7,
+          "ranking": 2,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-015",
+          "name": "UPA Valle Verde",
+          "score": 97.3,
+          "ranking": 3,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-045",
+          "name": "CMS Jardim Roberto Selmi Dei I — Dr. Ruy de Toledo",
+          "score": 94.1,
+          "ranking": 4,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-016",
+          "name": "Unidade Básica de Saúde Doutor Herculano Graeff",
+          "score": 83.2,
+          "ranking": 5,
+          "rank_shift_vs_default": 0
+        }
+      ],
+      "units": [
+        {
+          "id": "SUS-034",
+          "name": "Posto de Saúde Municipal",
+          "score": 97.9,
+          "ranking": 1,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-023",
+          "name": "PSF",
+          "score": 97.7,
+          "ranking": 2,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-015",
+          "name": "UPA Valle Verde",
+          "score": 97.3,
+          "ranking": 3,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-045",
+          "name": "CMS Jardim Roberto Selmi Dei I — Dr. Ruy de Toledo",
+          "score": 94.1,
+          "ranking": 4,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-016",
+          "name": "Unidade Básica de Saúde Doutor Herculano Graeff",
+          "score": 83.2,
+          "ranking": 5,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-037",
+          "name": "USF Roxo",
+          "score": 79.5,
+          "ranking": 6,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-018",
+          "name": "CMS Jardim Paulistano “Dr. Genaro Granata”",
+          "score": 77.6,
+          "ranking": 7,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-039",
+          "name": "USF Vila Biagioni",
+          "score": 74.6,
+          "ranking": 8,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-024",
+          "name": "Centro Municipal de Saúde \"João Vitor Nascimento Maurício\"",
+          "score": 74.6,
+          "ranking": 9,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-051",
+          "name": "CEO \"Prof. Dr. Raphael Lia Rolfsen\"",
+          "score": 73.6,
+          "ranking": 10,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-010",
+          "name": "Unidade de Pronto Atendimento Doutor Antônio Alonso Martinez",
+          "score": 73.4,
+          "ranking": 11,
+          "rank_shift_vs_default": 2
+        },
+        {
+          "id": "SUS-012",
+          "name": "Hospital São Paulo",
+          "score": 73.2,
+          "ranking": 12,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-019",
+          "name": "CMS/PACS Gustavo de Moraes Jr.",
+          "score": 69.1,
+          "ranking": 13,
+          "rank_shift_vs_default": 7
+        },
+        {
+          "id": "SUS-038",
+          "name": "CAPS II - Centro de Atenção Psicossocial \"Dr. Nelson Fernandes\"",
+          "score": 67.4,
+          "ranking": 14,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-040",
+          "name": "USF Brasília Prof. Dr. Edmundo Juarez",
+          "score": 67.1,
+          "ranking": 15,
+          "rank_shift_vs_default": -5
+        },
+        {
+          "id": "SUS-035",
+          "name": "Centro Municipal de Saúde “Dr. Francisco Oswaldo Castelucci”",
+          "score": 66.6,
+          "ranking": 16,
+          "rank_shift_vs_default": 6
+        },
+        {
+          "id": "SUS-009",
+          "name": "Posto de Saúde da Família Doutora Neuza Maria Affini Dicenzo",
+          "score": 64.8,
+          "ranking": 17,
+          "rank_shift_vs_default": 4
+        },
+        {
+          "id": "SUS-052",
+          "name": "Centro Municipal de Referência do Autismo \"Aldo Pavão Júnior\"",
+          "score": 64.5,
+          "ranking": 18,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-050",
+          "name": "CAPS-AD \"Dr. Calil Buainain\"",
+          "score": 63.6,
+          "ranking": 19,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-025",
+          "name": "CISA - Centro Integrado de Saúde Auditiva",
+          "score": 63.2,
+          "ranking": 20,
+          "rank_shift_vs_default": -2
+        },
+        {
+          "id": "SUS-033",
+          "name": "USF Luis Alberto Marim Junior",
+          "score": 62.5,
+          "ranking": 21,
+          "rank_shift_vs_default": -5
+        },
+        {
+          "id": "SUS-041",
+          "name": "Posto de Saúde Municipal",
+          "score": 62.0,
+          "ranking": 22,
+          "rank_shift_vs_default": 4
+        },
+        {
+          "id": "SUS-026",
+          "name": "PSF Santana",
+          "score": 61.8,
+          "ranking": 23,
+          "rank_shift_vs_default": 4
+        },
+        {
+          "id": "SUS-006",
+          "name": "Programa de Saúde da Família Doutor José Ricardo de Carvalho Angelieri",
+          "score": 60.7,
+          "ranking": 24,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-030",
+          "name": "ESF \"Prof. Dr. Ray de Paula e Silva\"",
+          "score": 58.6,
+          "ranking": 25,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-047",
+          "name": "USF Assentamento Bela Vista — Dr. Elias Zakaib",
+          "score": 55.5,
+          "ranking": 26,
+          "rank_shift_vs_default": 16
+        },
+        {
+          "id": "SUS-013",
+          "name": "PSF \"Adolfo Léo\"",
+          "score": 55.2,
+          "ranking": 27,
+          "rank_shift_vs_default": -12
+        },
+        {
+          "id": "SUS-027",
+          "name": "Hospital Psiquiátrico Espírita Cairbar Schutel",
+          "score": 54.5,
+          "ranking": 28,
+          "rank_shift_vs_default": 8
+        },
+        {
+          "id": "SUS-007",
+          "name": "USF Jardim São Bento — Selma Rita Canelas Ferrari Nogueira",
+          "score": 51.4,
+          "ranking": 29,
+          "rank_shift_vs_default": 8
+        },
+        {
+          "id": "SUS-004",
+          "name": "USF Farmacêutico Cristovão Colombo",
+          "score": 50.8,
+          "ranking": 30,
+          "rank_shift_vs_default": 9
+        },
+        {
+          "id": "SUS-021",
+          "name": "Hemocentro de Araraquara",
+          "score": 50.7,
+          "ranking": 31,
+          "rank_shift_vs_default": -3
+        },
+        {
+          "id": "SUS-002",
+          "name": "Estratégia de Saúde da Família João Francisco Alves",
+          "score": 50.2,
+          "ranking": 32,
+          "rank_shift_vs_default": 8
+        },
+        {
+          "id": "SUS-031",
+          "name": "UBS Dr. Giuseppe Aufiero Sobrinho",
+          "score": 48.8,
+          "ranking": 33,
+          "rank_shift_vs_default": 5
+        },
+        {
+          "id": "SUS-005",
+          "name": "CMS Cecap",
+          "score": 46.1,
+          "ranking": 34,
+          "rank_shift_vs_default": 15
+        },
+        {
+          "id": "SUS-049",
+          "name": "Espaço Crescer Infantojuvenil — Maria Augusta Gonçalves Mendes \"Guta\"",
+          "score": 45.4,
+          "ranking": 35,
+          "rank_shift_vs_default": -5
+        },
+        {
+          "id": "SUS-042",
+          "name": "CMS Santa Angelina \"Rafael Sorbo\"",
+          "score": 45.3,
+          "ranking": 36,
+          "rank_shift_vs_default": -7
+        },
+        {
+          "id": "SUS-022",
+          "name": "SESA",
+          "score": 45.2,
+          "ranking": 37,
+          "rank_shift_vs_default": -4
+        },
+        {
+          "id": "SUS-020",
+          "name": "Hospital Canasol",
+          "score": 44.7,
+          "ranking": 38,
+          "rank_shift_vs_default": 5
+        },
+        {
+          "id": "SUS-029",
+          "name": "CMS Carmo",
+          "score": 44.1,
+          "ranking": 39,
+          "rank_shift_vs_default": 7
+        },
+        {
+          "id": "SUS-001",
+          "name": "Estratégia de Saúde da Família Doutor Euclides Crocci",
+          "score": 44.0,
+          "ranking": 40,
+          "rank_shift_vs_default": 4
+        },
+        {
+          "id": "SUS-043",
+          "name": "UPA Central \"Amélia Bernardini Cutrale\"",
+          "score": 42.9,
+          "ranking": 41,
+          "rank_shift_vs_default": -17
+        },
+        {
+          "id": "SUS-003",
+          "name": "Posto de Saúde Municipal",
+          "score": 42.4,
+          "ranking": 42,
+          "rank_shift_vs_default": -7
+        },
+        {
+          "id": "SUS-032",
+          "name": "USF Parque das Laranjeiras",
+          "score": 42.2,
+          "ranking": 43,
+          "rank_shift_vs_default": 4
+        },
+        {
+          "id": "SUS-011",
+          "name": "Santa Casa de Araraquara",
+          "score": 41.8,
+          "ranking": 44,
+          "rank_shift_vs_default": -13
+        },
+        {
+          "id": "SUS-014",
+          "name": "NGA-3 -Núcleo de Gestão Ambulatorial \"Dr. Francisco Logatti\"",
+          "score": 40.6,
+          "ranking": 45,
+          "rank_shift_vs_default": -13
+        },
+        {
+          "id": "SUS-046",
+          "name": "USF Jardim Victório De Santi — Nair Damásio Claudino",
+          "score": 39.6,
+          "ranking": 46,
+          "rank_shift_vs_default": 4
+        },
+        {
+          "id": "SUS-044",
+          "name": "CMS Jardim Iguatemi — Enf.ª Kimiko Yuta",
+          "score": 38.8,
+          "ranking": 47,
+          "rank_shift_vs_default": 4
+        },
+        {
+          "id": "SUS-008",
+          "name": "Centro de Estabilização do Melhado",
+          "score": 37.5,
+          "ranking": 48,
+          "rank_shift_vs_default": -3
+        },
+        {
+          "id": "SUS-048",
+          "name": "USF Assentamento Monte Alegre — Dirce Ragassi Cândido",
+          "score": 37.3,
+          "ranking": 49,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-028",
+          "name": "Hospital São Francisco",
+          "score": 34.7,
+          "ranking": 50,
+          "rank_shift_vs_default": -16
+        },
+        {
+          "id": "SUS-017",
+          "name": "Maternidade Gota de Leite",
+          "score": 34.2,
+          "ranking": 51,
+          "rank_shift_vs_default": -10
+        },
+        {
+          "id": "SUS-036",
+          "name": "Centro de Referência do Idoso",
+          "score": 11.5,
+          "ranking": 52,
+          "rank_shift_vs_default": 0
+        }
+      ]
+    },
+    {
+      "id": "heat_priority",
+      "label": "Prioridade de calor",
+      "description": "Dá mais peso à temperatura de superfície do entorno.",
+      "weights": {
+        "heat": 0.6,
+        "vegetation": 0.15,
+        "social": 0.25
+      },
+      "top_5": [
+        {
+          "id": "SUS-034",
+          "name": "Posto de Saúde Municipal",
+          "score": 96.8,
+          "ranking": 1,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-015",
+          "name": "UPA Valle Verde",
+          "score": 96.8,
+          "ranking": 2,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-023",
+          "name": "PSF",
+          "score": 96.6,
+          "ranking": 3,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-045",
+          "name": "CMS Jardim Roberto Selmi Dei I — Dr. Ruy de Toledo",
+          "score": 95.7,
+          "ranking": 4,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-016",
+          "name": "Unidade Básica de Saúde Doutor Herculano Graeff",
+          "score": 90.9,
+          "ranking": 5,
+          "rank_shift_vs_default": 0
+        }
+      ],
+      "units": [
+        {
+          "id": "SUS-034",
+          "name": "Posto de Saúde Municipal",
+          "score": 96.8,
+          "ranking": 1,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-015",
+          "name": "UPA Valle Verde",
+          "score": 96.8,
+          "ranking": 2,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-023",
+          "name": "PSF",
+          "score": 96.6,
+          "ranking": 3,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-045",
+          "name": "CMS Jardim Roberto Selmi Dei I — Dr. Ruy de Toledo",
+          "score": 95.7,
+          "ranking": 4,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-016",
+          "name": "Unidade Básica de Saúde Doutor Herculano Graeff",
+          "score": 90.9,
+          "ranking": 5,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-037",
+          "name": "USF Roxo",
+          "score": 89.8,
+          "ranking": 6,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-018",
+          "name": "CMS Jardim Paulistano “Dr. Genaro Granata”",
+          "score": 79.3,
+          "ranking": 7,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-040",
+          "name": "USF Brasília Prof. Dr. Edmundo Juarez",
+          "score": 75.6,
+          "ranking": 8,
+          "rank_shift_vs_default": 2
+        },
+        {
+          "id": "SUS-024",
+          "name": "Centro Municipal de Saúde \"João Vitor Nascimento Maurício\"",
+          "score": 75.0,
+          "ranking": 9,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-039",
+          "name": "USF Vila Biagioni",
+          "score": 74.9,
+          "ranking": 10,
+          "rank_shift_vs_default": -2
+        },
+        {
+          "id": "SUS-051",
+          "name": "CEO \"Prof. Dr. Raphael Lia Rolfsen\"",
+          "score": 73.4,
+          "ranking": 11,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-012",
+          "name": "Hospital São Paulo",
+          "score": 72.8,
+          "ranking": 12,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-010",
+          "name": "Unidade de Pronto Atendimento Doutor Antônio Alonso Martinez",
+          "score": 72.4,
+          "ranking": 13,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-013",
+          "name": "PSF \"Adolfo Léo\"",
+          "score": 72.3,
+          "ranking": 14,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-033",
+          "name": "USF Luis Alberto Marim Junior",
+          "score": 70.3,
+          "ranking": 15,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-038",
+          "name": "CAPS II - Centro de Atenção Psicossocial \"Dr. Nelson Fernandes\"",
+          "score": 70.1,
+          "ranking": 16,
+          "rank_shift_vs_default": -2
+        },
+        {
+          "id": "SUS-052",
+          "name": "Centro Municipal de Referência do Autismo \"Aldo Pavão Júnior\"",
+          "score": 69.8,
+          "ranking": 17,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-025",
+          "name": "CISA - Centro Integrado de Saúde Auditiva",
+          "score": 69.2,
+          "ranking": 18,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-050",
+          "name": "CAPS-AD \"Dr. Calil Buainain\"",
+          "score": 67.6,
+          "ranking": 19,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-019",
+          "name": "CMS/PACS Gustavo de Moraes Jr.",
+          "score": 65.9,
+          "ranking": 20,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-009",
+          "name": "Posto de Saúde da Família Doutora Neuza Maria Affini Dicenzo",
+          "score": 64.8,
+          "ranking": 21,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-043",
+          "name": "UPA Central \"Amélia Bernardini Cutrale\"",
+          "score": 61.4,
+          "ranking": 22,
+          "rank_shift_vs_default": 2
+        },
+        {
+          "id": "SUS-006",
+          "name": "Programa de Saúde da Família Doutor José Ricardo de Carvalho Angelieri",
+          "score": 60.3,
+          "ranking": 23,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-035",
+          "name": "Centro Municipal de Saúde “Dr. Francisco Oswaldo Castelucci”",
+          "score": 60.1,
+          "ranking": 24,
+          "rank_shift_vs_default": -2
+        },
+        {
+          "id": "SUS-030",
+          "name": "ESF \"Prof. Dr. Ray de Paula e Silva\"",
+          "score": 58.0,
+          "ranking": 25,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-041",
+          "name": "Posto de Saúde Municipal",
+          "score": 55.3,
+          "ranking": 26,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-026",
+          "name": "PSF Santana",
+          "score": 55.1,
+          "ranking": 27,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-021",
+          "name": "Hemocentro de Araraquara",
+          "score": 54.5,
+          "ranking": 28,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-042",
+          "name": "CMS Santa Angelina \"Rafael Sorbo\"",
+          "score": 54.5,
+          "ranking": 29,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-011",
+          "name": "Santa Casa de Araraquara",
+          "score": 53.2,
+          "ranking": 30,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-014",
+          "name": "NGA-3 -Núcleo de Gestão Ambulatorial \"Dr. Francisco Logatti\"",
+          "score": 52.8,
+          "ranking": 31,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-049",
+          "name": "Espaço Crescer Infantojuvenil — Maria Augusta Gonçalves Mendes \"Guta\"",
+          "score": 52.5,
+          "ranking": 32,
+          "rank_shift_vs_default": -2
+        },
+        {
+          "id": "SUS-022",
+          "name": "SESA",
+          "score": 51.5,
+          "ranking": 33,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-028",
+          "name": "Hospital São Francisco",
+          "score": 50.1,
+          "ranking": 34,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-003",
+          "name": "Posto de Saúde Municipal",
+          "score": 48.1,
+          "ranking": 35,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-017",
+          "name": "Maternidade Gota de Leite",
+          "score": 47.1,
+          "ranking": 36,
+          "rank_shift_vs_default": 5
+        },
+        {
+          "id": "SUS-027",
+          "name": "Hospital Psiquiátrico Espírita Cairbar Schutel",
+          "score": 44.9,
+          "ranking": 37,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-007",
+          "name": "USF Jardim São Bento — Selma Rita Canelas Ferrari Nogueira",
+          "score": 44.8,
+          "ranking": 38,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-031",
+          "name": "UBS Dr. Giuseppe Aufiero Sobrinho",
+          "score": 44.7,
+          "ranking": 39,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-004",
+          "name": "USF Farmacêutico Cristovão Colombo",
+          "score": 44.1,
+          "ranking": 40,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-002",
+          "name": "Estratégia de Saúde da Família João Francisco Alves",
+          "score": 43.8,
+          "ranking": 41,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-020",
+          "name": "Hospital Canasol",
+          "score": 42.3,
+          "ranking": 42,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-001",
+          "name": "Estratégia de Saúde da Família Doutor Euclides Crocci",
+          "score": 42.0,
+          "ranking": 43,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-008",
+          "name": "Centro de Estabilização do Melhado",
+          "score": 40.6,
+          "ranking": 44,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-029",
+          "name": "CMS Carmo",
+          "score": 35.6,
+          "ranking": 45,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-032",
+          "name": "USF Parque das Laranjeiras",
+          "score": 34.8,
+          "ranking": 46,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-047",
+          "name": "USF Assentamento Bela Vista — Dr. Elias Zakaib",
+          "score": 32.0,
+          "ranking": 47,
+          "rank_shift_vs_default": -5
+        },
+        {
+          "id": "SUS-005",
+          "name": "CMS Cecap",
+          "score": 26.5,
+          "ranking": 48,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-046",
+          "name": "USF Jardim Victório De Santi — Nair Damásio Claudino",
+          "score": 25.0,
+          "ranking": 49,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-044",
+          "name": "CMS Jardim Iguatemi — Enf.ª Kimiko Yuta",
+          "score": 24.0,
+          "ranking": 50,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-048",
+          "name": "USF Assentamento Monte Alegre — Dirce Ragassi Cândido",
+          "score": 23.0,
+          "ranking": 51,
+          "rank_shift_vs_default": -3
+        },
+        {
+          "id": "SUS-036",
+          "name": "Centro de Referência do Idoso",
+          "score": 17.6,
+          "ranking": 52,
+          "rank_shift_vs_default": 0
+        }
+      ]
+    },
+    {
+      "id": "vegetation_priority",
+      "label": "Prioridade de vegetação",
+      "description": "Dá mais peso ao déficit de cobertura vegetal.",
+      "weights": {
+        "heat": 0.35,
+        "vegetation": 0.4,
+        "social": 0.25
+      },
+      "top_5": [
+        {
+          "id": "SUS-034",
+          "name": "Posto de Saúde Municipal",
+          "score": 96.7,
+          "ranking": 1,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-015",
+          "name": "UPA Valle Verde",
+          "score": 96.7,
+          "ranking": 2,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-023",
+          "name": "PSF",
+          "score": 96.5,
+          "ranking": 3,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-045",
+          "name": "CMS Jardim Roberto Selmi Dei I — Dr. Ruy de Toledo",
+          "score": 95.6,
+          "ranking": 4,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-016",
+          "name": "Unidade Básica de Saúde Doutor Herculano Graeff",
+          "score": 90.4,
+          "ranking": 5,
+          "rank_shift_vs_default": 0
+        }
+      ],
+      "units": [
+        {
+          "id": "SUS-034",
+          "name": "Posto de Saúde Municipal",
+          "score": 96.7,
+          "ranking": 1,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-015",
+          "name": "UPA Valle Verde",
+          "score": 96.7,
+          "ranking": 2,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-023",
+          "name": "PSF",
+          "score": 96.5,
+          "ranking": 3,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-045",
+          "name": "CMS Jardim Roberto Selmi Dei I — Dr. Ruy de Toledo",
+          "score": 95.6,
+          "ranking": 4,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-016",
+          "name": "Unidade Básica de Saúde Doutor Herculano Graeff",
+          "score": 90.4,
+          "ranking": 5,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-037",
+          "name": "USF Roxo",
+          "score": 89.8,
+          "ranking": 6,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-018",
+          "name": "CMS Jardim Paulistano “Dr. Genaro Granata”",
+          "score": 79.2,
+          "ranking": 7,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-040",
+          "name": "USF Brasília Prof. Dr. Edmundo Juarez",
+          "score": 75.6,
+          "ranking": 8,
+          "rank_shift_vs_default": 2
+        },
+        {
+          "id": "SUS-039",
+          "name": "USF Vila Biagioni",
+          "score": 74.7,
+          "ranking": 9,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-024",
+          "name": "Centro Municipal de Saúde \"João Vitor Nascimento Maurício\"",
+          "score": 74.2,
+          "ranking": 10,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-051",
+          "name": "CEO \"Prof. Dr. Raphael Lia Rolfsen\"",
+          "score": 73.1,
+          "ranking": 11,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-012",
+          "name": "Hospital São Paulo",
+          "score": 72.3,
+          "ranking": 12,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-013",
+          "name": "PSF \"Adolfo Léo\"",
+          "score": 72.1,
+          "ranking": 13,
+          "rank_shift_vs_default": 2
+        },
+        {
+          "id": "SUS-010",
+          "name": "Unidade de Pronto Atendimento Doutor Antônio Alonso Martinez",
+          "score": 71.9,
+          "ranking": 14,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-033",
+          "name": "USF Luis Alberto Marim Junior",
+          "score": 69.9,
+          "ranking": 15,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-038",
+          "name": "CAPS II - Centro de Atenção Psicossocial \"Dr. Nelson Fernandes\"",
+          "score": 69.7,
+          "ranking": 16,
+          "rank_shift_vs_default": -2
+        },
+        {
+          "id": "SUS-052",
+          "name": "Centro Municipal de Referência do Autismo \"Aldo Pavão Júnior\"",
+          "score": 69.0,
+          "ranking": 17,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-025",
+          "name": "CISA - Centro Integrado de Saúde Auditiva",
+          "score": 68.5,
+          "ranking": 18,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-050",
+          "name": "CAPS-AD \"Dr. Calil Buainain\"",
+          "score": 66.8,
+          "ranking": 19,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-019",
+          "name": "CMS/PACS Gustavo de Moraes Jr.",
+          "score": 65.2,
+          "ranking": 20,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-009",
+          "name": "Posto de Saúde da Família Doutora Neuza Maria Affini Dicenzo",
+          "score": 64.0,
+          "ranking": 21,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-043",
+          "name": "UPA Central \"Amélia Bernardini Cutrale\"",
+          "score": 61.3,
+          "ranking": 22,
+          "rank_shift_vs_default": 2
+        },
+        {
+          "id": "SUS-006",
+          "name": "Programa de Saúde da Família Doutor José Ricardo de Carvalho Angelieri",
+          "score": 59.3,
+          "ranking": 23,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-035",
+          "name": "Centro Municipal de Saúde “Dr. Francisco Oswaldo Castelucci”",
+          "score": 58.7,
+          "ranking": 24,
+          "rank_shift_vs_default": -2
+        },
+        {
+          "id": "SUS-030",
+          "name": "ESF \"Prof. Dr. Ray de Paula e Silva\"",
+          "score": 56.7,
+          "ranking": 25,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-041",
+          "name": "Posto de Saúde Municipal",
+          "score": 54.4,
+          "ranking": 26,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-026",
+          "name": "PSF Santana",
+          "score": 54.2,
+          "ranking": 27,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-042",
+          "name": "CMS Santa Angelina \"Rafael Sorbo\"",
+          "score": 53.9,
+          "ranking": 28,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-021",
+          "name": "Hemocentro de Araraquara",
+          "score": 53.3,
+          "ranking": 29,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-011",
+          "name": "Santa Casa de Araraquara",
+          "score": 52.1,
+          "ranking": 30,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-014",
+          "name": "NGA-3 -Núcleo de Gestão Ambulatorial \"Dr. Francisco Logatti\"",
+          "score": 51.8,
+          "ranking": 31,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-049",
+          "name": "Espaço Crescer Infantojuvenil — Maria Augusta Gonçalves Mendes \"Guta\"",
+          "score": 51.7,
+          "ranking": 32,
+          "rank_shift_vs_default": -2
+        },
+        {
+          "id": "SUS-022",
+          "name": "SESA",
+          "score": 50.3,
+          "ranking": 33,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-028",
+          "name": "Hospital São Francisco",
+          "score": 49.2,
+          "ranking": 34,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-003",
+          "name": "Posto de Saúde Municipal",
+          "score": 46.7,
+          "ranking": 35,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-047",
+          "name": "USF Assentamento Bela Vista — Dr. Elias Zakaib",
+          "score": 46.3,
+          "ranking": 36,
+          "rank_shift_vs_default": 6
+        },
+        {
+          "id": "SUS-017",
+          "name": "Maternidade Gota de Leite",
+          "score": 46.0,
+          "ranking": 37,
+          "rank_shift_vs_default": 4
+        },
+        {
+          "id": "SUS-007",
+          "name": "USF Jardim São Bento — Selma Rita Canelas Ferrari Nogueira",
+          "score": 43.9,
+          "ranking": 38,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-031",
+          "name": "UBS Dr. Giuseppe Aufiero Sobrinho",
+          "score": 43.9,
+          "ranking": 39,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-027",
+          "name": "Hospital Psiquiátrico Espírita Cairbar Schutel",
+          "score": 43.9,
+          "ranking": 40,
+          "rank_shift_vs_default": -4
+        },
+        {
+          "id": "SUS-002",
+          "name": "Estratégia de Saúde da Família João Francisco Alves",
+          "score": 42.9,
+          "ranking": 41,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-004",
+          "name": "USF Farmacêutico Cristovão Colombo",
+          "score": 42.8,
+          "ranking": 42,
+          "rank_shift_vs_default": -3
+        },
+        {
+          "id": "SUS-020",
+          "name": "Hospital Canasol",
+          "score": 41.2,
+          "ranking": 43,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-001",
+          "name": "Estratégia de Saúde da Família Doutor Euclides Crocci",
+          "score": 41.2,
+          "ranking": 44,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-008",
+          "name": "Centro de Estabilização do Melhado",
+          "score": 39.9,
+          "ranking": 45,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-048",
+          "name": "USF Assentamento Monte Alegre — Dirce Ragassi Cândido",
+          "score": 37.2,
+          "ranking": 46,
+          "rank_shift_vs_default": 2
+        },
+        {
+          "id": "SUS-029",
+          "name": "CMS Carmo",
+          "score": 34.2,
+          "ranking": 47,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-032",
+          "name": "USF Parque das Laranjeiras",
+          "score": 33.6,
+          "ranking": 48,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-005",
+          "name": "CMS Cecap",
+          "score": 24.5,
+          "ranking": 49,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-046",
+          "name": "USF Jardim Victório De Santi — Nair Damásio Claudino",
+          "score": 23.3,
+          "ranking": 50,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-044",
+          "name": "CMS Jardim Iguatemi — Enf.ª Kimiko Yuta",
+          "score": 21.8,
+          "ranking": 51,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-036",
+          "name": "Centro de Referência do Idoso",
+          "score": 16.3,
+          "ranking": 52,
+          "rank_shift_vs_default": 0
+        }
+      ]
+    },
+    {
+      "id": "equal",
+      "label": "Pesos iguais",
+      "description": "Distribui o peso igualmente entre calor, vegetação e dimensão social.",
+      "weights": {
+        "heat": 0.3333,
+        "vegetation": 0.3333,
+        "social": 0.3333
+      },
+      "top_5": [
+        {
+          "id": "SUS-034",
+          "name": "Posto de Saúde Municipal",
+          "score": 97.1,
+          "ranking": 1,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-023",
+          "name": "PSF",
+          "score": 96.9,
+          "ranking": 2,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-015",
+          "name": "UPA Valle Verde",
+          "score": 96.9,
+          "ranking": 3,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-045",
+          "name": "CMS Jardim Roberto Selmi Dei I — Dr. Ruy de Toledo",
+          "score": 95.0,
+          "ranking": 4,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-016",
+          "name": "Unidade Básica de Saúde Doutor Herculano Graeff",
+          "score": 88.0,
+          "ranking": 5,
+          "rank_shift_vs_default": 0
+        }
+      ],
+      "units": [
+        {
+          "id": "SUS-034",
+          "name": "Posto de Saúde Municipal",
+          "score": 97.1,
+          "ranking": 1,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-023",
+          "name": "PSF",
+          "score": 96.9,
+          "ranking": 2,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-015",
+          "name": "UPA Valle Verde",
+          "score": 96.9,
+          "ranking": 3,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-045",
+          "name": "CMS Jardim Roberto Selmi Dei I — Dr. Ruy de Toledo",
+          "score": 95.0,
+          "ranking": 4,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-016",
+          "name": "Unidade Básica de Saúde Doutor Herculano Graeff",
+          "score": 88.0,
+          "ranking": 5,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-037",
+          "name": "USF Roxo",
+          "score": 86.4,
+          "ranking": 6,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-018",
+          "name": "CMS Jardim Paulistano “Dr. Genaro Granata”",
+          "score": 78.7,
+          "ranking": 7,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-039",
+          "name": "USF Vila Biagioni",
+          "score": 74.6,
+          "ranking": 8,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-024",
+          "name": "Centro Municipal de Saúde \"João Vitor Nascimento Maurício\"",
+          "score": 74.3,
+          "ranking": 9,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-051",
+          "name": "CEO \"Prof. Dr. Raphael Lia Rolfsen\"",
+          "score": 73.2,
+          "ranking": 10,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-040",
+          "name": "USF Brasília Prof. Dr. Edmundo Juarez",
+          "score": 72.8,
+          "ranking": 11,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-012",
+          "name": "Hospital São Paulo",
+          "score": 72.5,
+          "ranking": 12,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-010",
+          "name": "Unidade de Pronto Atendimento Doutor Antônio Alonso Martinez",
+          "score": 72.4,
+          "ranking": 13,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-038",
+          "name": "CAPS II - Centro de Atenção Psicossocial \"Dr. Nelson Fernandes\"",
+          "score": 68.9,
+          "ranking": 14,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-052",
+          "name": "Centro Municipal de Referência do Autismo \"Aldo Pavão Júnior\"",
+          "score": 67.5,
+          "ranking": 15,
+          "rank_shift_vs_default": 2
+        },
+        {
+          "id": "SUS-033",
+          "name": "USF Luis Alberto Marim Junior",
+          "score": 67.4,
+          "ranking": 16,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-025",
+          "name": "CISA - Centro Integrado de Saúde Auditiva",
+          "score": 66.7,
+          "ranking": 17,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-019",
+          "name": "CMS/PACS Gustavo de Moraes Jr.",
+          "score": 66.5,
+          "ranking": 18,
+          "rank_shift_vs_default": 2
+        },
+        {
+          "id": "SUS-013",
+          "name": "PSF \"Adolfo Léo\"",
+          "score": 66.5,
+          "ranking": 19,
+          "rank_shift_vs_default": -4
+        },
+        {
+          "id": "SUS-050",
+          "name": "CAPS-AD \"Dr. Calil Buainain\"",
+          "score": 65.7,
+          "ranking": 20,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-009",
+          "name": "Posto de Saúde da Família Doutora Neuza Maria Affini Dicenzo",
+          "score": 64.2,
+          "ranking": 21,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-035",
+          "name": "Centro Municipal de Saúde “Dr. Francisco Oswaldo Castelucci”",
+          "score": 61.3,
+          "ranking": 22,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-006",
+          "name": "Programa de Saúde da Família Doutor José Ricardo de Carvalho Angelieri",
+          "score": 59.7,
+          "ranking": 23,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-030",
+          "name": "ESF \"Prof. Dr. Ray de Paula e Silva\"",
+          "score": 57.3,
+          "ranking": 24,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-041",
+          "name": "Posto de Saúde Municipal",
+          "score": 56.9,
+          "ranking": 25,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-026",
+          "name": "PSF Santana",
+          "score": 56.7,
+          "ranking": 26,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-043",
+          "name": "UPA Central \"Amélia Bernardini Cutrale\"",
+          "score": 55.2,
+          "ranking": 27,
+          "rank_shift_vs_default": -3
+        },
+        {
+          "id": "SUS-021",
+          "name": "Hemocentro de Araraquara",
+          "score": 52.4,
+          "ranking": 28,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-042",
+          "name": "CMS Santa Angelina \"Rafael Sorbo\"",
+          "score": 51.0,
+          "ranking": 29,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-047",
+          "name": "USF Assentamento Bela Vista — Dr. Elias Zakaib",
+          "score": 50.3,
+          "ranking": 30,
+          "rank_shift_vs_default": 12
+        },
+        {
+          "id": "SUS-049",
+          "name": "Espaço Crescer Infantojuvenil — Maria Augusta Gonçalves Mendes \"Guta\"",
+          "score": 49.6,
+          "ranking": 31,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-011",
+          "name": "Santa Casa de Araraquara",
+          "score": 48.6,
+          "ranking": 32,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-022",
+          "name": "SESA",
+          "score": 48.5,
+          "ranking": 33,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-014",
+          "name": "NGA-3 -Núcleo de Gestão Ambulatorial \"Dr. Francisco Logatti\"",
+          "score": 48.0,
+          "ranking": 34,
+          "rank_shift_vs_default": -2
+        },
+        {
+          "id": "SUS-027",
+          "name": "Hospital Psiquiátrico Espírita Cairbar Schutel",
+          "score": 47.3,
+          "ranking": 35,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-007",
+          "name": "USF Jardim São Bento — Selma Rita Canelas Ferrari Nogueira",
+          "score": 46.4,
+          "ranking": 36,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-031",
+          "name": "UBS Dr. Giuseppe Aufiero Sobrinho",
+          "score": 45.5,
+          "ranking": 37,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-004",
+          "name": "USF Farmacêutico Cristovão Colombo",
+          "score": 45.4,
+          "ranking": 38,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-002",
+          "name": "Estratégia de Saúde da Família João Francisco Alves",
+          "score": 45.3,
+          "ranking": 39,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-003",
+          "name": "Posto de Saúde Municipal",
+          "score": 45.2,
+          "ranking": 40,
+          "rank_shift_vs_default": -5
+        },
+        {
+          "id": "SUS-028",
+          "name": "Hospital São Francisco",
+          "score": 44.3,
+          "ranking": 41,
+          "rank_shift_vs_default": -7
+        },
+        {
+          "id": "SUS-020",
+          "name": "Hospital Canasol",
+          "score": 42.3,
+          "ranking": 42,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-001",
+          "name": "Estratégia de Saúde da Família Doutor Euclides Crocci",
+          "score": 42.1,
+          "ranking": 43,
+          "rank_shift_vs_default": 1
+        },
+        {
+          "id": "SUS-017",
+          "name": "Maternidade Gota de Leite",
+          "score": 42.0,
+          "ranking": 44,
+          "rank_shift_vs_default": -3
+        },
+        {
+          "id": "SUS-008",
+          "name": "Centro de Estabilização do Melhado",
+          "score": 39.0,
+          "ranking": 45,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-048",
+          "name": "USF Assentamento Monte Alegre — Dirce Ragassi Cândido",
+          "score": 38.2,
+          "ranking": 46,
+          "rank_shift_vs_default": 2
+        },
+        {
+          "id": "SUS-029",
+          "name": "CMS Carmo",
+          "score": 37.4,
+          "ranking": 47,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-032",
+          "name": "USF Parque das Laranjeiras",
+          "score": 36.3,
+          "ranking": 48,
+          "rank_shift_vs_default": -1
+        },
+        {
+          "id": "SUS-005",
+          "name": "CMS Cecap",
+          "score": 31.5,
+          "ranking": 49,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-046",
+          "name": "USF Jardim Victório De Santi — Nair Damásio Claudino",
+          "score": 28.6,
+          "ranking": 50,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-044",
+          "name": "CMS Jardim Iguatemi — Enf.ª Kimiko Yuta",
+          "score": 27.3,
+          "ranking": 51,
+          "rank_shift_vs_default": 0
+        },
+        {
+          "id": "SUS-036",
+          "name": "Centro de Referência do Idoso",
+          "score": 14.6,
+          "ranking": 52,
+          "rank_shift_vs_default": 0
+        }
+      ]
+    }
+  ]
+}

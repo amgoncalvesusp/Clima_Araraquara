@@ -12,14 +12,15 @@ class CatalogoSaudeTest(unittest.TestCase):
         with (DATA / filename).open(encoding="utf-8") as file:
             return json.load(file)
 
-    def test_pending_catalog_has_fourteen_candidates_and_no_analysis_values(self):
+    def test_pending_catalog_has_two_candidates_and_no_analysis_values(self):
         candidates = self.read_json("unidades_sugeridas_araraquara.json")
 
-        self.assertEqual(len(candidates), 14)
+        self.assertEqual(len(candidates), 2)
         self.assertTrue(all(item["status"] == "pendente_validacao" for item in candidates))
         self.assertTrue(all(item["incluir_no_ranking"] is False for item in candidates))
         self.assertTrue(all(item["lat"] is None and item["lon"] is None for item in candidates))
         self.assertTrue(all(item["source_url"] for item in candidates))
+        self.assertEqual({item["id"] for item in candidates}, {"PEND-002", "PEND-004"})
 
     def test_current_catalog_classifies_non_municipal_records(self):
         metadata = self.read_json("metadata_unidades_saude_araraquara.json")
@@ -47,12 +48,89 @@ class CatalogoSaudeTest(unittest.TestCase):
         catalog = self.read_json("unidades_saude_araraquara.json")
         analyzed_geojson = self.read_json("unidades_saude_araraquara.geojson")
 
-        self.assertEqual(len(catalog), 55)
-        self.assertEqual(len(analyzed_geojson["features"]), 41)
+        self.assertEqual(len(catalog), 54)
+        self.assertEqual(len(analyzed_geojson["features"]), 52)
         self.assertEqual(
             sum(item["record_status"] == "pendente_validacao" for item in catalog),
-            14,
+            2,
         )
+
+    def test_santa_angelina_is_present_in_the_analyzed_network(self):
+        catalog = self.read_json("unidades_saude_araraquara.json")
+        analyzed = self.read_json("unidades_saude_analise_araraquara.geojson")
+        santa = next(item for item in catalog if item["id"] == "SUS-042")
+        santa_analysis = next(
+            feature["properties"]
+            for feature in analyzed["features"]
+            if feature["properties"]["id"] == "SUS-042"
+        )
+
+        self.assertEqual(santa["cnes"], "2063247")
+        self.assertEqual(santa["suburb"], "Santa Angelina")
+        self.assertEqual(santa_analysis["record_status"] if "record_status" in santa_analysis else "analisado", "analisado")
+        self.assertTrue(santa_analysis["surface_temp_300m"])
+
+    def test_confirmed_units_have_cnes_coordinates_and_analysis_records(self):
+        catalog = self.read_json("unidades_saude_araraquara.json")
+        analyzed = self.read_json("unidades_saude_analise_araraquara.geojson")
+        analyzed_ids = {feature["properties"]["id"] for feature in analyzed["features"]}
+        promoted_ids = {
+            "SUS-043",
+            "SUS-044",
+            "SUS-045",
+            "SUS-046",
+            "SUS-047",
+            "SUS-048",
+            "SUS-049",
+            "SUS-050",
+            "SUS-051",
+            "SUS-052",
+        }
+
+        for unit in catalog:
+            if unit["id"] in promoted_ids or unit["id"] == "SUS-007":
+                self.assertEqual(unit["record_status"], "analisado")
+                self.assertTrue(unit["cnes"])
+                self.assertIsNotNone(unit["lat"])
+                self.assertIsNotNone(unit["lon"])
+                self.assertIn(unit["id"], analyzed_ids)
+
+    def test_history_and_hydrology_layers_have_traceable_coverage(self):
+        history = self.read_json("historico_risco_termico_araraquara.json")
+        hydrology = self.read_json("pontos_risco_hidrologico_araraquara.geojson")
+
+        self.assertEqual(history["history_years"], [2016, 2017, 2018, 2019, 2020, 2021])
+        self.assertEqual(len(history["units"]), 52)
+        self.assertEqual(len(hydrology["features"]), 23)
+        self.assertEqual(hydrology["metadata"]["count_geocoded_for_map"], 20)
+        self.assertTrue(all(len(unit["values"]) == 6 for unit in history["units"]))
+
+    def test_census_layer_is_local_and_explicitly_composite(self):
+        census = self.read_json("censo_2022_vulnerabilidade_araraquara.geojson")
+        self.assertGreaterEqual(len(census["features"]), 500)
+        self.assertTrue(all(feature["properties"]["vulnerability_source"] for feature in census["features"]))
+        scores = [feature["properties"]["vulnerability_score_5"] for feature in census["features"] if feature["properties"]["vulnerability_score_5"] is not None]
+        self.assertGreater(len(scores), 500)
+        self.assertTrue(all(0 <= score <= 5 for score in scores))
+        metadata = self.read_json("censo_2022_vulnerabilidade_araraquara.metadata.json")
+        self.assertFalse(metadata["score_is_official"])
+
+    def test_sensitivity_has_comparable_scenarios(self):
+        sensitivity = self.read_json("sensibilidade_iecs_araraquara.json")
+        self.assertEqual(sensitivity["default_scenario"], "balanced")
+        self.assertGreaterEqual(len(sensitivity["scenarios"]), 5)
+        for scenario in sensitivity["scenarios"]:
+            self.assertAlmostEqual(sum(scenario["weights"].values()), 1, places=3)
+            self.assertEqual(len(scenario["units"]), 52)
+            self.assertEqual(len(scenario["top_5"]), 5)
+
+    def test_health_outcomes_are_aggregate_and_traceable(self):
+        outcomes = self.read_json("desfechos_saude_araraquara.json")
+        self.assertEqual(outcomes["coverage"]["system"], "SIH/SUS")
+        self.assertEqual(outcomes["coverage"]["months"], 12)
+        self.assertGreater(outcomes["coverage"]["records_after_municipality_filter"], 0)
+        self.assertEqual(outcomes["ambulatory_attendance"]["status"], "not_loaded")
+        self.assertTrue(all("hospitalizations_total" in item for item in outcomes["series"]))
 
 
 if __name__ == "__main__":

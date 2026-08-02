@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Mapa didático do risco térmico no entorno das unidades de saúde de Araraquara." />
-  <title>PET Clima · Araraquara</title>
+  <title>PET Saúde - Clima · Araraquara</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" href="data:," />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <link rel="stylesheet" href="css/styles.css" />
@@ -18,14 +18,16 @@
       <div class="brand">
         <div class="brand-mark" aria-hidden="true">✦</div>
         <div>
-          <div class="eyebrow">PET Clima</div>
+          <div class="eyebrow">PET Saúde - Clima</div>
           <h1>Araraquara <span>· mapa de decisão</span></h1>
         </div>
       </div>
       <div class="topbar-actions">
         <div class="data-status"><span class="status-dot" aria-hidden="true"></span><span id="network-badge">carregando dados</span><span>·</span><span>300m</span></div>
-        <span class="topbar-button" id="pending-badge">14 para validar</span>
+        <span class="topbar-button" id="pending-badge">2 para validar</span>
         <button class="topbar-button" data-open-modal="guide-modal" type="button">Como ler</button>
+        <button class="topbar-button" data-open-modal="history-modal" type="button">Histórico</button>
+        <button class="topbar-button" data-open-modal="sensitivity-modal" type="button">Sensibilidade</button>
         <button class="topbar-button" data-open-modal="sources-modal" type="button">Fontes</button>
         <button class="topbar-button primary" data-open-modal="insights-modal" type="button">Decisões prioritárias</button>
       </div>
@@ -97,7 +99,7 @@
             <div class="pending-list" id="pending-list" aria-live="polite"></div>
           </section>
         </div>
-        <div class="panel-footer"><strong>Nota metodológica:</strong> o IECS é relativo aos registros analisados. Uma nova unidade só deve entrar no ranking depois de validar CNES, endereço e coordenada e rerodar a análise espacial.</div>
+        <div class="panel-footer"><strong>Nota metodológica:</strong> o IECS é relativo aos registros analisados. A dimensão social usa um índice composto do Censo 2022 (não oficial do IBGE), calculado com renda, composição etária e adensamento. Uma nova unidade só deve entrar no ranking depois de validar CNES, endereço e coordenada e rerodar a análise espacial.</div>
       </aside>
 
       <section class="map-stage" aria-label="Mapa interativo">
@@ -119,9 +121,9 @@
       <div class="guide-grid">
         <div class="guide-card"><b>01 · Calor</b><p>A grade UrbVerde colore a temperatura de superfície. Vermelho indica superfícies mais quentes; isso não é a temperatura do ar.</p></div>
         <div class="guide-card"><b>02 · Vegetação</b><p>O NDVI ajuda a enxergar cobertura vegetal. Valores menores sugerem menos proteção natural contra o aquecimento.</p></div>
-        <div class="guide-card"><b>03 · IECS</b><p>O índice combina temperatura, déficit de vegetação e vulnerabilidade social no entorno da unidade.</p></div>
+        <div class="guide-card"><b>03 · IECS</b><p>O índice combina temperatura, déficit de vegetação e um índice social-sanitário composto com dados do Censo 2022 no entorno da unidade. O componente social é uma construção analítica deste projeto, não um índice oficial do IBGE.</p></div>
       </div>
-      <div class="formula">IECS = 45% calor + 25% déficit de vegetação + 30% vulnerabilidade social</div>
+      <div class="formula">IECS = 45% calor + 25% déficit de vegetação + 30% Censo 2022 (índice composto)</div>
       <p class="modal-copy" style="margin-top:14px"><strong>Importante:</strong> o círculo de 300m é um raio cartográfico ao redor do ponto, não uma rota de caminhada. O IECS é uma ferramenta de priorização relativa e não substitui medição local ou decisão técnica.</p>
     </section>
   </div>
@@ -139,14 +141,47 @@
       <div class="insight-list">
         <article class="insight"><h3>Priorizar o entorno, não só o prédio</h3><p>Comece pelas unidades no topo do ranking e procure sombra, espera externa, bebedouros e rotas de acesso no raio de 300m.</p></article>
         <article class="insight"><h3>Separar rede municipal de contexto</h3><p>Hospitais privados, filantrópicos e unidades estaduais podem aparecer no mesmo território, mas pedem governanças diferentes.</p></article>
-        <article class="insight"><h3>Fechar o cadastro antes de ampliar o índice</h3><p>As 14 pendências estão visíveis, porém fora do ranking. O próximo passo é confirmar CNES, endereço e coordenada.</p></article>
+        <article class="insight"><h3>Fechar o cadastro antes de ampliar o índice</h3><p>Restam 2 pendências visíveis, porém fora do ranking. O próximo passo é confirmar o ponto atual do SAMU e a situação operacional da USF Ibirás.</p></article>
         <article class="insight"><h3>Operar nos dias de alerta</h3><p>Combine o ranking estrutural com alertas do INMET para acionar salas de hidratação e comunicação preventiva.</p></article>
       </div>
-      <div class="chart-grid"><img src="web/charts/top10_unidades_criticas.png" alt="Gráfico das dez unidades mais críticas" /><img src="web/charts/distribuicao_niveis_risco.png" alt="Gráfico da distribuição dos níveis de risco" /></div>
+      <div class="chart-note"><strong>Quer comparar os anos?</strong><p>Abra o histórico para acompanhar a variação da temperatura de superfície por unidade e ver quais pontos mapeados de risco hidrológico estão mais próximos da rede.</p><button class="topbar-button primary" data-open-modal="history-modal" type="button">Abrir comparação histórica</button></div>
     </section>
   </div>
 
   <div class="error-box" id="app-error" hidden><strong>Os dados não carregaram.</strong><p></p><small></small></div>
+
+  <div class="modal-backdrop" id="sensitivity-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="sensitivity-title">
+    <section class="modal sensitivity-modal">
+      <div class="modal-header"><div><div class="eyebrow">Robustez da priorização</div><h2 id="sensitivity-title">Quanto o ranking depende dos pesos?</h2><p>Compare cenários que alteram apenas os pesos do IECS. Se uma unidade permanece no topo, a prioridade é mais robusta ao critério escolhido.</p></div><button class="close-button" data-close-modal="sensitivity-modal" type="button" aria-label="Fechar">×</button></div>
+      <div class="sensitivity-controls"><label class="field-label" for="sensitivity-scenario">Cenário de pesos</label><select class="select-input" id="sensitivity-scenario"></select><p class="modal-copy" id="sensitivity-description"></p></div>
+      <div class="sensitivity-weight-grid" id="sensitivity-weights"></div>
+      <div class="sensitivity-summary" id="sensitivity-summary"></div>
+      <div class="sensitivity-ranking" id="sensitivity-ranking"></div>
+      <div class="popup-note"><strong>Como interpretar:</strong> a troca de posição é uma medida de sensibilidade, não uma nova verdade sobre o território. O cenário “Somente clima” é útil para mostrar o que muda quando a dimensão social é retirada.</div>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="history-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="history-title">
+    <section class="modal history-modal">
+      <div class="modal-header"><div><div class="eyebrow">Série temporal</div><h2 id="history-title">O que mudou ao longo dos anos?</h2><p>O mapa usa o recorte mais atual. Aqui, a série histórica mostra como a temperatura máxima da superfície variou entre 2016 e 2021.</p></div><button class="close-button" data-close-modal="history-modal" type="button" aria-label="Fechar">×</button></div>
+      <div class="history-controls"><label class="field-label" for="history-unit">Escolha uma unidade para acompanhar</label><select class="select-input" id="history-unit"></select></div>
+      <div class="history-summary" id="history-summary"></div>
+      <div class="history-chart chart-card" id="history-chart"><div class="empty-state">Carregando histórico…</div></div>
+      <p class="modal-copy history-method-note" id="history-method-note">A série usa dados setoriais públicos da UrbVerde.</p>
+      <div class="history-cross-grid">
+        <section class="history-cross-card" id="history-comparison"></section>
+        <section class="history-cross-card" id="hydrology-comparison"></section>
+      </div>
+      <section class="health-outcome-card" id="health-outcomes">
+        <div class="history-subheading"><strong>Contexto agregado de saúde</strong><span id="health-outcome-period">SIH/SUS</span></div>
+        <p class="modal-copy">Internações de residentes de Araraquara ajudam a contextualizar a exposição climática municipal. Elas não são distribuídas automaticamente entre as unidades e não demonstram causalidade.</p>
+        <div class="health-outcome-grid" id="health-outcome-grid"><div class="empty-state">Carregando desfechos agregados…</div></div>
+        <div class="health-series" id="health-series"></div>
+        <p class="modal-copy health-method-note" id="health-method-note"></p>
+      </section>
+      <div class="popup-note flood-note"><strong>Leitura responsável:</strong> risco térmico e risco hidrológico não são somados automaticamente. O primeiro é uma série de temperatura de superfície; o segundo é uma proximidade aproximada a pontos municipais de alagamento, inundação e enxurrada.</div>
+    </section>
+  </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="js/app.js"></script>

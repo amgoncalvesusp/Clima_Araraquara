@@ -21,18 +21,60 @@
     "id": "ibge-setores",
     "title": "IBGE — setores censitários e Censo 2022",
     "url": "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/26565-malhas-de-setores-censitarios-divisoes-intramunicipais.html",
-    "use": "Cruzar população, domicílios, faixa etária e vulnerabilidade em escala territorial."
+    "use": "Fonte usada no índice social-sanitário composto: cruzar população, domicílios, renda e faixa etária em escala territorial, sempre com dados agregados."
   },
   {
     "id": "inmet-alertas",
     "title": "INMET — previsão e alertas meteorológicos",
     "url": "https://portal.inmet.gov.br/",
-    "use": "Criar um modo de operação para ondas de calor, baixa umidade e eventos severos."
+    "use": "Criar um modo de operação para ondas de calor, baixa umidade e eventos severos; os avisos atuais podem orientar ações temporárias."
+  },
+  {
+    "id": "ministerio-saude-sih-sia",
+    "title": "Ministério da Saúde — SIH/SIA e TABNET",
+    "url": "https://www.gov.br/saude/pt-br/acesso-a-informacao/sic/dados-em-transparencia-ativa/saes",
+    "use": "SIH/SUS é usado na série municipal de internações de 2024; SIA/SUS permanece como camada separada para futura produção ambulatorial, sem expor dados individuais."
   },
   {
     "id": "mapbiomas-10m",
     "title": "MapBiomas — cobertura e uso da terra",
     "url": "https://brasil.mapbiomas.org/2026/05/18/mapbiomas-publica-terceira-colecao-de-mapas-anuais-de-cobertura-e-uso-da-terra-do-brasil-com-resolucao-espacial-de-10-metros/",
     "use": "Atualizar a leitura de vegetação, impermeabilização e evolução anual do entorno."
+  },
+  {
+    "id": "urbverde-risco-climatico",
+    "title": "UrbVerde — calor e risco climático",
+    "url": "https://urbverde.iau.usp.br/",
+    "use": "Usar as camadas setoriais e as séries anuais de temperatura; o indicador de inundação da plataforma foi conferido e não retornou tiles para Araraquara nesta versão."
+  },
+  {
+    "id": "defesa-civil-areas-risco",
+    "title": "Prefeitura / Defesa Civil — pontos de risco hidrológico",
+    "url": "https://www.araraquara.sp.gov.br/atualizacao-das-areas-de-risco-de-alagamento-inundacao-e-enxurrada-e-dados-sobre-incendios-e-queimadas-de-araraquara",
+    "use": "Cruzar os 23 pontos municipais mapeados de alagamento, inundação e enxurrada com as unidades de saúde."
+  },
+  {
+    "id": "cnes-santa-angelina",
+    "title": "CNES — CMS Santa Angelina Rafael Sorbo",
+    "url": "https://cnes2.datasus.gov.br/Mod_Ind_Especialidades_Listar.asp?VAmbu=&VAmbuSUS=&VClassificacao=&VComp=201702&VEstado=35&VHosp=&VHospSus=&VListar=1&VMun=350320&VServico=&VTerc=&VTipo=141",
+    "use": "Confirmar o CNES 2063247 e a natureza municipal da unidade promovida ao mapa."
+  },
+  {
+    "id": "prefeitura-mapa-atencao-basica",
+    "title": "Prefeitura / Secretaria Municipal de Saúde — mapa da Atenção Básica",
+    "url": "https://www.google.com/maps/d/viewer?hl=pt-BR&ll=-21.79175544415152%2C-48.1768535&mid=1z547XaGQ4BgR__QfAc0f3a1bM55Xja3v&z=12",
+    "use": "Confirmar a posição das unidades básicas, inclusive assentamentos rurais, antes de calcular o entorno de 300m."
+  },
+  {
+    "id": "prefeitura-atencao-especializada",
+    "title": "Prefeitura de Araraquara — Atenção Especializada",
+    "url": "https://webnetserver.com.br/araraquara/secretarias/saude/sobre-a-secretaria-saude/atencao-especializada/atencao-especializada",
+    "use": "Confirmar CAPS-AD, Espaço Crescer, Centro do Autismo, endereços e horários dos serviços especializados."
+  },
+  {
+    "id": "prefeitura-atendimento-odontologico",
+    "title": "Prefeitura de Araraquara — Atendimento Odontológico",
+    "url": "https://webnetserver.com.br/araraquara/servicos/guia-de-servicos/saude/atendimento-odontologico",
+    "use": "Confirmar o CEO municipal, nome oficial, endereço e serviço especializado."
   }
 ]

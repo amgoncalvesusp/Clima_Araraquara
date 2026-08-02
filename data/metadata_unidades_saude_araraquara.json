@@ -63,5 +63,77 @@
     "data_quality": "incompleto",
     "canonical_name": "Unidade a confirmar — registro SUS-041",
     "quality_note": "Nome genérico; confirmar bairro, nome oficial e CNES."
+  },
+  "SUS-042": {
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "CMS Santa Angelina \"Rafael Sorbo\"",
+    "quality_note": "CNES, endereço e coordenada confirmados em fontes públicas."
+  },
+  "SUS-043": {
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "UPA Central \"Amélia Bernardini Cutrale\"",
+    "quality_note": "CNES, endereço e coordenada confirmados. A Prefeitura noticiou a reinauguração após reforma em janeiro de 2026."
+  },
+  "SUS-044": {
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "CMS Jardim Iguatemi — Enf.ª Kimiko Yuta",
+    "quality_note": "CNES, endereço, operação e coordenada confirmados no cadastro municipal e no mapa oficial da Atenção Básica."
+  },
+  "SUS-045": {
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "CMS Jardim Roberto Selmi Dei I — Dr. Ruy de Toledo",
+    "quality_note": "CNES, endereço, operação e coordenada confirmados no cadastro municipal e no mapa oficial da Atenção Básica."
+  },
+  "SUS-046": {
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "USF Jardim Victório De Santi — Nair Damásio Claudino",
+    "quality_note": "CNES, endereço, operação e coordenada confirmados no cadastro municipal e no mapa oficial da Atenção Básica."
+  },
+  "SUS-047": {
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "USF Assentamento Bela Vista — Dr. Elias Zakaib",
+    "quality_note": "CNES, endereço rural, operação e coordenada confirmados no cadastro municipal e no mapa oficial da Atenção Básica."
+  },
+  "SUS-048": {
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "USF Assentamento Monte Alegre — Dirce Ragassi Cândido",
+    "quality_note": "CNES, operação e coordenada rural confirmados no cadastro municipal e no mapa oficial da Atenção Básica."
+  },
+  "SUS-049": {
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "Espaço Crescer Infantojuvenil — Maria Augusta Gonçalves Mendes \"Guta\"",
+    "quality_note": "A unidade não é um CAPS-i formal: a Prefeitura a descreve como ambulatório de saúde mental infantojuvenil, com proposta de transformação futura em CAPSij. CNES, endereço e operação confirmados."
+  },
+  "SUS-050": {
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "CAPS-AD \"Dr. Calil Buainain\"",
+    "quality_note": "CNES, gestão municipal, endereço, operação e coordenada confirmados."
+  },
+  "SUS-051": {
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "CEO \"Prof. Dr. Raphael Lia Rolfsen\"",
+    "quality_note": "CNES, serviço municipal, endereço, operação e coordenada confirmados."
+  },
+  "SUS-052": {
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "Centro Municipal de Referência do Autismo \"Aldo Pavão Júnior\"",
+    "quality_note": "CNES, serviço municipal, endereço, operação e coordenada confirmados."
+  },
+  "SUS-007": {
+    "network_scope": "municipal",
+    "data_quality": "ok",
+    "canonical_name": "USF Jardim São Bento — Selma Rita Canelas Ferrari Nogueira",
+    "quality_note": "Registro SUS-007 confirmado como a USF São Bento no CNES e no cadastro municipal; o item pendente era uma duplicata nominal."
   }
 }
