@@ -111,10 +111,10 @@ def risk_level(score: float) -> str:
     return "Baixo / Confortável"
 
 
-def numeric_or_none(value):
+def numeric_or_none(value, precision=4):
     if value is None or pd.isna(value):
         return None
-    return round(float(value), 4)
+    return round(float(value), precision)
 
 
 def intersect_metrics(unit_buffer, climate: gpd.GeoDataFrame, census: gpd.GeoDataFrame) -> dict:
@@ -231,6 +231,9 @@ def run_spatial_analysis() -> None:
         })
 
     result = pd.DataFrame(analyzed_units)
+    result["climate_data_quality"] = result["climate_data_coverage_pct"].map(
+        lambda coverage: "urbverde_2024" if float(coverage or 0) > 0 else "sem_intersecao_urbverde_fallback"
+    )
     for column, fallback in [("surface_temp_300m", 31.0), ("ndvi_300m", 0.35)]:
         result[column] = pd.to_numeric(result[column], errors="coerce").fillna(fallback)
     social = pd.to_numeric(result["vulnerability_score_300m"], errors="coerce")
@@ -254,7 +257,11 @@ def run_spatial_analysis() -> None:
     result.to_csv(OUTPUT_CSV, index=False, encoding="utf-8-sig")
     features = []
     for _, row in result.iterrows():
-        properties = {key: numeric_or_none(value) if isinstance(value, (float, int)) else value for key, value in row.to_dict().items()}
+        properties = {
+            key: numeric_or_none(value, 8 if key in {"lat", "lon"} else 4)
+            if isinstance(value, (float, int)) else value
+            for key, value in row.to_dict().items()
+        }
         features.append({
             "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [row["lon"], row["lat"]]},
@@ -269,6 +276,10 @@ def run_spatial_analysis() -> None:
         "social_index_is_official": False,
         "units_with_census_intersection": int((result["vulnerability_data_quality"] == "censo_2022").sum()),
         "units_with_social_imputation": int((result["vulnerability_data_quality"] == "imputada_mediana_municipal").sum()),
+        "units_with_climate_intersection": int((result["climate_data_quality"] == "urbverde_2024").sum()),
+        "units_with_climate_fallback": int((result["climate_data_quality"] != "urbverde_2024").sum()),
+        "mean_climate_data_coverage_pct": round(result["climate_data_coverage_pct"].mean(), 1),
+        "mean_social_data_coverage_pct": round(result["social_data_coverage_pct"].mean(), 1),
         "avg_surface_temp_araraquara": round(result["surface_temp_300m"].mean(), 2),
         "max_surface_temp": result["surface_temp_300m"].max(),
         "min_surface_temp": result["surface_temp_300m"].min(),

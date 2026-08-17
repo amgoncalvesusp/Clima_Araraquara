@@ -132,6 +132,32 @@ class CatalogoSaudeTest(unittest.TestCase):
         self.assertEqual(outcomes["ambulatory_attendance"]["status"], "not_loaded")
         self.assertTrue(all("hospitalizations_total" in item for item in outcomes["series"]))
 
+    def test_historical_health_explorer_has_ten_years_and_traceable_dimensions(self):
+        explorer = self.read_json("dados_historicos_saude_araraquara.json")
+
+        self.assertEqual(explorer["coverage"]["years"], list(range(2016, 2026)))
+        self.assertEqual(explorer["coverage"]["months_requested"], 120)
+        self.assertTrue(explorer["hospital"]["source_url"])
+        self.assertTrue(explorer["ambulatory"]["source_url"])
+        self.assertGreater(len(explorer["hospital"]["unit_year"]), 1000)
+        self.assertGreater(
+            sum(bool(item.get("cnes")) for item in explorer["hospital"]["unit_year"]),
+            1000,
+        )
+        self.assertGreater(len(explorer["hospital"]["chapters_year"]), 100)
+        self.assertGreater(len(explorer["ambulatory"]["groups_year"]), 50)
+        self.assertTrue(any("privada" in limitation for limitation in explorer["limitations"]))
+
+    def test_health_explorer_exposes_xlsx_export_and_analytical_views(self):
+        html = (ROOT / "index.html").read_text(encoding="utf-8")
+        app = (ROOT / "js" / "app.js").read_text(encoding="utf-8")
+
+        self.assertIn("xlsx-0.20.3/package/dist/xlsx.full.min.js", html)
+        self.assertIn('id="health-download-xlsx"', html)
+        self.assertIn('id="health-data-visuals"', html)
+        self.assertIn("function downloadHealthDataXlsx", app)
+        self.assertIn("function renderHealthDataVisuals", app)
+
 
 if __name__ == "__main__":
     unittest.main()

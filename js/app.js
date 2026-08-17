@@ -2,15 +2,16 @@ const DATA_FILES = {
   units: "data/unidades_saude_analise_araraquara.geojson",
   baseUnits: "data/unidades_saude_araraquara.json",
   climate: "data/urbverde_araraquara.geojson",
-  green: "data/areas_verdes_araraquara.geojson",
   summary: "data/resumo_estatistico.json",
+  censusMetadata: "data/censo_2022_vulnerabilidade_araraquara.metadata.json",
   suggestions: "data/unidades_sugeridas_araraquara.json",
   metadata: "data/metadata_unidades_saude_araraquara.json",
   sources: "data/fontes_publicas_saude_araraquara.json",
   history: "data/historico_risco_termico_araraquara.json",
   flood: "data/pontos_risco_hidrologico_araraquara.geojson",
   sensitivity: "data/sensibilidade_iecs_araraquara.json",
-  healthOutcomes: "data/desfechos_saude_araraquara.json"
+  healthOutcomes: "data/desfechos_saude_araraquara.json",
+  healthExplorer: "data/dados_historicos_saude_araraquara.json"
 };
 
 const SCOPE_LABELS = {
@@ -20,6 +21,8 @@ const SCOPE_LABELS = {
   estadual_universitario: "Estadual / universitário",
   municipal_regional: "Municipal / regional"
 };
+
+const HEALTH_CHART_COLORS = ["#17613a", "#2b8a5a", "#bc6c25", "#6b7280", "#8b5e83"];
 
 const state = {
   map: null,
@@ -32,10 +35,14 @@ const state = {
   features: [],
   suggestions: [],
   metadata: {},
+  summary: {},
+  censusMetadata: {},
   sources: [],
   history: null,
   sensitivity: null,
   healthOutcomes: null,
+  healthExplorer: null,
+  healthDataSource: "hospital",
   floodFeatures: [],
   layerVisible: { climate: true, green: true, flood: true, buffers: true },
   lastFocused: {},
@@ -56,23 +63,27 @@ async function loadData() {
     const data = Object.fromEntries(entries);
 
     state.metadata = data.metadata;
+    state.summary = data.summary;
+    state.censusMetadata = data.censusMetadata;
     state.sources = data.sources;
     state.suggestions = data.suggestions;
     state.history = data.history;
     state.sensitivity = data.sensitivity;
     state.healthOutcomes = data.healthOutcomes;
+    state.healthExplorer = data.healthExplorer;
     state.floodFeatures = data.flood.features;
     state.features = data.units.features.map(feature => mergeUnitMetadata(feature, data.baseUnits));
     state.units = state.features.map(feature => feature.properties);
 
     renderClimateLayer(data.climate);
-    renderGreenLayer(data.green);
+    renderGreenLayer(data.climate);
     renderFloodLayer(data.flood);
     renderSources(data.sources);
     renderPendingCatalog(data.suggestions);
     renderHistoryControls();
     renderSensitivityControls();
     renderHealthOutcomes();
+    renderHealthDataControls();
     renderFilteredState();
     updateNetworkBadge(data.units.features.length, data.suggestions.length);
     document.body.classList.add("is-ready");
@@ -102,7 +113,8 @@ function mergeUnitMetadata(feature, baseUnits) {
       data_quality: metadata.data_quality || "ok",
       quality_note: metadata.quality_note || "Registro com métricas espaciais calculadas.",
       address: base.address || "",
-      cnes: base.cnes || null
+      cnes: base.cnes || null,
+      coordinate_source: base.coordinate_source || ""
     }
   };
 }
@@ -156,13 +168,22 @@ function renderClimateLayer(geojson) {
 function renderGreenLayer(geojson) {
   if (state.greenLayer) state.map.removeLayer(state.greenLayer);
   state.greenLayer = L.geoJSON(geojson, {
-    style: { fillColor: "#2f855a", color: "#276749", weight: 1.2, fillOpacity: 0.32 },
+    style: feature => ({
+      fillColor: getNdviColor(feature.properties.ndvi),
+      color: "#276749",
+      weight: 0.8,
+      fillOpacity: 0.42
+    }),
     onEachFeature: (feature, layer) => {
       const p = feature.properties;
       layer.bindPopup(`<div class="map-popup">
-        <span class="popup-kicker green">Infraestrutura verde</span>
-        <h3>${escapeHtml(p.name || "Área verde")}</h3>
-        <p>${escapeHtml(p.type || "Área verde mapeada")} · potencial de amortecimento térmico.</p>
+        <span class="popup-kicker green">Vegetação observada</span>
+        <h3>Proxy NDVI · UrbVerde 2024</h3>
+        <dl class="popup-metrics">
+          <div><dt>NDVI</dt><dd>${formatNumber(p.ndvi, 2)}</dd></div>
+          <div><dt>Temperatura de superfície</dt><dd>${formatNumber(p.surface_temp)} °C</dd></div>
+        </dl>
+        <div class="popup-note"><strong>Limite da leitura:</strong> esta grade é um indicador espectral do entorno, não o limite cadastral de parques ou áreas verdes.</div>
       </div>`);
     }
   }).addTo(state.map);
@@ -237,6 +258,9 @@ function unitPopup(unit) {
   const quality = unit.data_quality !== "ok"
     ? `<div class="popup-note"><strong>Revisão de cadastro:</strong> ${escapeHtml(unit.quality_note)}</div>`
     : "";
+  const climateQuality = unit.climate_data_quality !== "urbverde_2024"
+    ? `<div class="popup-note"><strong>Cobertura climática:</strong> não houve interseção com a grade UrbVerde 2024; os valores climáticos exibidos usam fallback técnico e não devem ser comparados como medição local.</div>`
+    : "";
   const hydrology = hydrologyNote(unit);
 
   return `<div class="map-popup unit-popup">
@@ -244,12 +268,15 @@ function unitPopup(unit) {
     <h3>${escapeHtml(unit.display_name)}</h3>
     <p class="popup-type">${escapeHtml(unit.type)} · ${escapeHtml(unit.suburb || "Araraquara")}</p>
     <dl class="popup-metrics">
+      <div><dt>Endereço cadastrado</dt><dd>${escapeHtml(unit.address || "não informado")}</dd></div>
+      <div><dt>Coordenadas</dt><dd>${formatCoordinate(unit.lat)}, ${formatCoordinate(unit.lon)}</dd></div>
       <div><dt>Temperatura média · 300m</dt><dd>${formatNumber(unit.surface_temp_300m)} °C</dd></div>
       <div><dt>Vegetação · NDVI 300m</dt><dd>${formatNumber(unit.ndvi_300m, 2)}</dd></div>
       <div><dt>Vulnerabilidade social · Censo 2022</dt><dd>${formatNumber(unit.vulnerability_score_300m, 2)} / 5</dd></div>
     </dl>
     ${hydrology}
     ${quality}
+    ${climateQuality}
   </div>`;
 }
 
@@ -420,6 +447,277 @@ function renderHealthOutcomes() {
   setText("health-method-note", `${data.method?.unit_of_count || "Contagem agregada do SIH/SUS."} ${ambulatory}`);
 }
 
+function renderHealthDataControls() {
+  const data = state.healthExplorer;
+  const yearSelect = document.getElementById("health-data-year");
+  if (!data || !yearSelect) return;
+  const years = [...(data.coverage?.years || [])].sort((a, b) => b - a);
+  yearSelect.innerHTML = years.map(year => `<option value="${year}">${year}</option>`).join("");
+  yearSelect.value = String(years[0] || "");
+  renderHealthDataExplorer();
+}
+
+function healthRecordsForSource(source) {
+  const data = state.healthExplorer;
+  if (!data) return [];
+  return source === "hospital" ? data.hospital?.unit_year || [] : data.ambulatory?.groups_year || [];
+}
+
+function healthSeriesForSource(source) {
+  const records = healthRecordsForSource(source);
+  const validYears = new Set(state.healthExplorer?.coverage?.years || []);
+  const totals = new Map();
+  records.forEach(record => {
+    if (!validYears.has(Number(record.year))) return;
+    totals.set(Number(record.year), (totals.get(Number(record.year)) || 0) + Number(record.value || 0));
+  });
+  return [...totals.entries()].sort((a, b) => a[0] - b[0]).map(([year, value]) => ({ year, value }));
+}
+
+function healthUnitRows(year, search) {
+  const normalized = normalize(search);
+  const rows = healthRecordsForSource("hospital")
+    .filter(record => Number(record.year) === Number(year) && Number(record.value || 0) > 0)
+    .reduce((grouped, record) => {
+      const key = `${record.cnes || ""}|${record.establishment}`;
+      const current = grouped.get(key) || { cnes: record.cnes, establishment: record.establishment, value: 0 };
+      current.value += Number(record.value || 0);
+      grouped.set(key, current);
+      return grouped;
+    }, new Map());
+  return [...rows.values()]
+    .filter(row => !normalized || normalize(`${row.cnes || ""} ${row.establishment}`).includes(normalized))
+    .sort((a, b) => b.value - a.value);
+}
+
+function healthGroupRows(year) {
+  return healthRecordsForSource("ambulatory")
+    .filter(record => Number(record.year) === Number(year) && Number(record.value || 0) > 0)
+    .sort((a, b) => Number(b.value) - Number(a.value));
+}
+
+function healthChapterRows(year) {
+  return (state.healthExplorer?.hospital?.chapters_year || [])
+    .filter(record => Number(record.year) === Number(year) && Number(record.value || 0) > 0)
+    .sort((a, b) => Number(b.value) - Number(a.value));
+}
+
+function shortHealthLabel(value, limit = 42) {
+  const label = String(value || "");
+  return label.length > limit ? `${label.slice(0, limit - 1)}…` : label;
+}
+
+function healthTrendSeries(source, year) {
+  const data = state.healthExplorer;
+  const years = data?.coverage?.years || [];
+  const selectedRows = source === "hospital" ? healthChapterRows(year).slice(0, 5) : healthGroupRows(year).slice(0, 5);
+  const records = source === "hospital" ? data?.hospital?.chapters_year || [] : data?.ambulatory?.groups_year || [];
+  const key = source === "hospital" ? "chapter" : "procedure_group";
+
+  return selectedRows.map((row, index) => {
+    const values = new Map(records.filter(record => record[key] === row[key]).map(record => [Number(record.year), Number(record.value || 0)]));
+    return {
+      label: row[key],
+      color: HEALTH_CHART_COLORS[index],
+      values: years.map(chartYear => values.get(Number(chartYear)) || 0)
+    };
+  });
+}
+
+function healthTrendSvg(source, year) {
+  const data = state.healthExplorer;
+  const years = data?.coverage?.years || [];
+  const series = healthTrendSeries(source, year);
+  if (!series.length || !years.length) return `<p class="modal-copy">Não há dados suficientes para este gráfico.</p>`;
+
+  const width = 720;
+  const height = 250;
+  const left = 48;
+  const right = 14;
+  const top = 16;
+  const bottom = 34;
+  const chartWidth = width - left - right;
+  const chartHeight = height - top - bottom;
+  const max = Math.max(...series.flatMap(item => item.values), 1);
+  const x = index => left + (years.length === 1 ? chartWidth / 2 : index / (years.length - 1) * chartWidth);
+  const y = value => top + chartHeight - (value / max * chartHeight);
+  const gridValues = [0, max / 2, max];
+  const grid = gridValues.map(value => `<line class="grid-line" x1="${left}" x2="${width - right}" y1="${y(value)}" y2="${y(value)}"></line><text class="axis-label" text-anchor="end" x="${left - 7}" y="${y(value) + 3}">${formatNumber(value, 0)}</text>`).join("");
+  const xLabels = years.map((chartYear, index) => `<text class="axis-label" text-anchor="middle" x="${x(index)}" y="${height - 8}">${chartYear}</text>`).join("");
+  const lines = series.map(item => {
+    const points = item.values.map((value, index) => `${x(index)},${y(value)}`).join(" ");
+    const dots = item.values.map((value, index) => `<circle class="series-dot" cx="${x(index)}" cy="${y(value)}" fill="${item.color}" r="3.5"></circle>`).join("");
+    return `<polyline class="series-line" points="${points}" stroke="${item.color}"></polyline>${dots}`;
+  }).join("");
+  const legend = series.map(item => `<span><i style="background:${item.color}"></i>${escapeHtml(shortHealthLabel(item.label, 34))}</span>`).join("");
+
+  return `<svg class="health-data-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Evolução dos principais ${source === "hospital" ? "capítulos CID-10" : "grupos de procedimento"}">${grid}${xLabels}${lines}</svg><div class="health-data-legend">${legend}</div>`;
+}
+
+function healthDistributionRows(source, year) {
+  const rows = source === "hospital" ? healthUnitRows(year, "") : healthGroupRows(year);
+  const topRows = rows.slice(0, 7).map(row => ({
+    label: source === "hospital" ? row.establishment : row.procedure_group,
+    value: Number(row.value || 0)
+  }));
+  const remainder = rows.slice(7).reduce((sum, row) => sum + Number(row.value || 0), 0);
+  if (remainder > 0) topRows.push({ label: source === "hospital" ? "Demais estabelecimentos" : "Demais grupos", value: remainder });
+  return topRows;
+}
+
+function healthDistributionMarkup(source, year) {
+  const rows = healthDistributionRows(source, year);
+  const total = rows.reduce((sum, row) => sum + row.value, 0) || 1;
+  return rows.map(row => {
+    const share = row.value / total * 100;
+    return `<div class="health-data-distribution-row" title="${escapeHtml(row.label)}"><span class="health-data-distribution-label">${escapeHtml(shortHealthLabel(row.label))}</span><strong class="health-data-distribution-value">${formatNumber(row.value, 0)} · ${formatNumber(share, 1)}%</strong><span class="health-data-distribution-track"><i style="width:${Math.max(2, share)}%"></i></span></div>`;
+  }).join("");
+}
+
+function renderHealthDataVisuals(source, year) {
+  const target = document.getElementById("health-data-visuals");
+  if (!target) return;
+  const hospital = source === "hospital";
+  const profileLabel = hospital ? "capítulos CID-10" : "grupos de procedimento";
+  const concentrationLabel = hospital ? "estabelecimentos" : "grupos";
+  target.innerHTML = `
+    <section class="chart-card health-data-graph-card">
+      <div class="chart-caption"><div><strong>Evolução do perfil de cuidado</strong><span>as cinco categorias mais frequentes em ${year}</span></div><span>${profileLabel}</span></div>
+      ${healthTrendSvg(source, year)}
+    </section>
+    <section class="chart-card health-data-graph-card">
+      <div class="chart-caption"><div><strong>Concentração no ano selecionado</strong><span>participação por ${concentrationLabel}</span></div><span>${year}</span></div>
+      <div class="health-data-distribution">${healthDistributionMarkup(source, year)}</div>
+    </section>`;
+}
+
+function renderHealthDataExplorer() {
+  const data = state.healthExplorer;
+  const year = Number(document.getElementById("health-data-year")?.value);
+  const source = state.healthDataSource;
+  const summary = document.getElementById("health-data-summary");
+  const chart = document.getElementById("health-data-chart");
+  const visuals = document.getElementById("health-data-visuals");
+  const table = document.getElementById("health-data-table");
+  const notes = document.getElementById("health-data-notes");
+  const search = document.getElementById("health-data-unit")?.value || "";
+  if (!data || !summary || !chart || !visuals || !table || !notes || !year) return;
+
+  const hospital = source === "hospital";
+  const sourceData = hospital ? data.hospital : data.ambulatory;
+  const series = healthSeriesForSource(source);
+  const yearTotal = series.find(item => item.year === year)?.value || 0;
+  const rows = hospital ? healthUnitRows(year, search) : healthGroupRows(year);
+  const visibleRows = rows.slice(0, 40);
+  const totalEntities = hospital
+    ? healthUnitRows(year, "").length
+    : healthGroupRows(year).length;
+  const unitLabel = hospital ? "estabelecimentos com registro" : "grupos de procedimento";
+  const unitDimension = sourceData?.unit_dimension || "";
+
+  summary.innerHTML = [
+    ["Ano selecionado", year, "competência de atendimento"],
+    [hospital ? "Internações" : "Produção aprovada", formatNumber(yearTotal, 0), hospital ? "AIH/registro SIH" : "quantidade SIA"],
+    [unitLabel, formatNumber(totalEntities, 0), hospital ? "com valor acima de zero" : "com produção registrada"],
+    ["Período", `${data.coverage.start_year}–${data.coverage.end_year}`, "10 anos completos"],
+  ].map(([label, value, note]) => `<div class="health-data-stat"><span>${label}</span><strong>${value}</strong><small>${note}</small></div>`).join("");
+
+  const maxSeries = Math.max(...series.map(item => item.value), 1);
+  const chartTitle = hospital ? "Internações por ano" : "Produção ambulatorial aprovada por ano";
+  const chartSubtitle = hospital ? "residentes de Araraquara · todas as unidades de ocorrência" : "município de Araraquara · grupos de procedimento";
+  const chartBars = series.map(item => `<div class="health-data-bar-row ${item.year === year ? "is-selected" : ""}"><span>${item.year}</span><i><b style="width:${Math.max(3, item.value / maxSeries * 100)}%"></b></i><strong>${formatNumber(item.value, 0)}</strong></div>`).join("");
+  let breakdown = "";
+  if (hospital) {
+    const chapters = (data.hospital?.chapters_year || [])
+      .filter(item => Number(item.year) === year && Number(item.value || 0) > 0)
+      .sort((a, b) => Number(b.value) - Number(a.value))
+      .slice(0, 6);
+    breakdown = `<div class="health-data-breakdown"><div class="health-data-subheading"><strong>Capítulos CID-10 mais frequentes</strong><span>${year}</span></div>${chapters.map(item => `<div class="health-data-mini-row"><span>${escapeHtml(item.chapter)}</span><b>${formatNumber(item.value, 0)}</b></div>`).join("")}</div>`;
+  } else {
+    breakdown = `<div class="health-data-breakdown"><div class="health-data-subheading"><strong>O que esta fonte permite</strong><span>SIA/SUS</span></div><p class="modal-copy">A produção ambulatorial está consolidada por grupo de procedimento. A tabulação pública consultada não disponibiliza a unidade executante como dimensão nesta série, por isso ela não é atribuída automaticamente às unidades do mapa.</p></div>`;
+  }
+  chart.innerHTML = `<div class="chart-caption"><div><strong>${chartTitle}</strong><span>${chartSubtitle}</span></div><span>${escapeHtml(sourceData?.source || "Fonte pública")}</span></div><div class="health-data-bars">${chartBars}</div>${breakdown}`;
+  renderHealthDataVisuals(source, year);
+
+  const total = rows.reduce((sum, row) => sum + Number(row.value || 0), 0) || 1;
+  const tableTitle = hospital ? `Estabelecimentos no ano de ${year}` : `Grupos de procedimento em ${year}`;
+  const tableRows = visibleRows.map(row => {
+    const label = hospital ? `${row.establishment}${row.cnes ? ` · CNES ${row.cnes}` : ""}` : row.procedure_group;
+    const share = Number(row.value || 0) / total * 100;
+    return `<tr><td>${escapeHtml(label)}</td><td>${formatNumber(row.value, 0)}</td><td><span class="health-share"><i style="width:${Math.max(2, share)}%"></i></span>${formatNumber(share, 1)}%</td></tr>`;
+  }).join("");
+  table.innerHTML = `<div class="health-data-subheading"><strong>${tableTitle}</strong><span>${search ? `${visibleRows.length} encontrados` : `top ${Math.min(40, rows.length)} de ${rows.length}`}</span></div><div class="health-data-table-scroll"><table><thead><tr><th>${hospital ? "Estabelecimento / CNES" : "Grupo de procedimento"}</th><th>Quantidade</th><th>Participação</th></tr></thead><tbody>${tableRows || `<tr><td colspan="3" class="health-empty-cell">Nenhum registro encontrado para este filtro.</td></tr>`}</tbody></table></div>`;
+  notes.innerHTML = `<strong>Como interpretar:</strong> ${escapeHtml(unitDimension)}. ${escapeHtml((data.limitations || [])[0] || "A base é agregada e deve ser lida com a documentação da fonte.")} <a href="${safeUrl(sourceData?.source_url)}" target="_blank" rel="noreferrer">Abrir fonte no DATASUS ↗</a>`;
+}
+
+function healthExportRows(year, source) {
+  return source === "hospital" ? healthUnitRows(year, "") : healthGroupRows(year);
+}
+
+function downloadHealthDataCsv() {
+  const year = Number(document.getElementById("health-data-year")?.value);
+  const source = state.healthDataSource;
+  const rows = healthExportRows(year, source);
+  const header = source === "hospital" ? ["ano", "cnes", "estabelecimento", "quantidade"] : ["ano", "grupo_procedimento", "quantidade"];
+  const body = rows.map(row => source === "hospital"
+    ? [year, row.cnes || "", row.establishment, row.value]
+    : [year, row.procedure_group, row.value]);
+  const csv = [header, ...body].map(row => row.map(value => `"${String(value ?? "").replaceAll('"', '""')}"`).join(";")).join("\n");
+  const blob = new Blob(["\uFEFF", csv], { type: "text/csv;charset=utf-8" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `araraquara-${source}-${year}.csv`;
+  link.click();
+  URL.revokeObjectURL(link.href);
+}
+
+function downloadHealthDataXlsx() {
+  const data = state.healthExplorer;
+  const year = Number(document.getElementById("health-data-year")?.value);
+  const source = state.healthDataSource;
+  if (!data || !year) return;
+  if (!window.XLSX) {
+    window.alert("A biblioteca de exportação XLSX não foi carregada. Verifique a conexão e tente novamente.");
+    return;
+  }
+
+  const hospital = source === "hospital";
+  const rows = healthExportRows(year, source);
+  const series = healthSeriesForSource(source);
+  const profileRows = hospital ? healthChapterRows(year) : healthGroupRows(year);
+  const sourceData = hospital ? data.hospital : data.ambulatory;
+  const wb = XLSX.utils.book_new();
+  const summaryRows = [
+    ["Base", data.title],
+    ["Município", data.municipality],
+    ["Código IBGE", data.municipality_code],
+    ["Fonte", sourceData.source],
+    ["Ano selecionado", year],
+    ["Período da série", `${data.coverage.start_year}–${data.coverage.end_year}`],
+    ["Atualizado em", data.generated_at],
+    ["Observação", sourceData.unit_dimension],
+    ["Fonte original", sourceData.source_url]
+  ];
+  const seriesRows = [["ano", hospital ? "internacoes" : "producao_aprovada"], ...series.map(item => [item.year, item.value])];
+  const detailRows = hospital
+    ? [["ano", "cnes", "estabelecimento", "internacoes"], ...rows.map(row => [year, row.cnes || "", row.establishment, row.value])]
+    : [["ano", "grupo_procedimento", "quantidade_aprovada"], ...rows.map(row => [year, row.procedure_group, row.value])];
+  const profileSheetRows = hospital
+    ? [["ano", "capitulo_cid10", "internacoes"], ...profileRows.map(row => [year, row.chapter, row.value])]
+    : [["ano", "grupo_procedimento", "quantidade_aprovada"], ...profileRows.map(row => [year, row.procedure_group, row.value])];
+  const notesRows = [["limitação / nota"], ...(data.limitations || []).map(note => [note])];
+
+  [
+    ["Resumo", summaryRows],
+    ["Serie anual", seriesRows],
+    [hospital ? "Estabelecimentos" : "Procedimentos", detailRows],
+    [hospital ? "Capitulos CID10" : "Grupos", profileSheetRows],
+    ["Notas", notesRows]
+  ].forEach(([name, rowsToWrite]) => XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(rowsToWrite), name));
+
+  XLSX.writeFile(wb, `araraquara-${source}-${year}.xlsx`, { bookType: "xlsx", compression: true });
+}
+
 function renderSensitivityControls() {
   const select = document.getElementById("sensitivity-scenario");
   if (!select || !state.sensitivity) return;
@@ -510,6 +808,47 @@ function renderSources(sources) {
     <div><span class="source-index">${escapeHtml(source.id.split("-").pop().slice(0, 2))}</span><h3>${escapeHtml(source.title)}</h3></div>
     <p>${escapeHtml(source.use)}</p><a href="${safeUrl(source.url)}" target="_blank" rel="noreferrer">Abrir fonte ↗</a>
   </article>`).join("");
+  renderDataAudit();
+}
+
+function renderDataAudit() {
+  const target = document.getElementById("data-audit");
+  if (!target || !state.features.length) return;
+  const units = state.features.map(feature => feature.properties);
+  const coordinateMatches = state.features.filter(feature => {
+    const [lon, lat] = feature.geometry?.coordinates || [];
+    return Math.abs(Number(feature.properties.lon) - Number(lon)) <= 1e-8
+      && Math.abs(Number(feature.properties.lat) - Number(lat)) <= 1e-8;
+  }).length;
+  const addresses = units.filter(unit => String(unit.address || "").trim()).length;
+  const cnes = units.filter(unit => String(unit.cnes || "").trim()).length;
+  const climateCoverage = units.filter(unit => Number(unit.climate_data_coverage_pct) > 0).length;
+  const climateFallback = units.filter(unit => unit.climate_data_quality !== "urbverde_2024").length;
+  const censusCoverage = units.filter(unit => unit.vulnerability_data_quality === "censo_2022").length;
+  const reviewCount = units.filter(unit => unit.data_quality !== "ok").length;
+  const summary = state.summary || {};
+  const fields = [
+    "census_population_300m",
+    "census_income_median_300m",
+    "census_share_children_300m",
+    "census_share_elderly_300m",
+    "census_crowding_300m",
+    "vulnerability_score_300m"
+  ];
+  target.innerHTML = `<section class="data-audit" aria-labelledby="data-audit-title">
+    <div class="data-method"><strong id="data-audit-title">Auditoria da publicação</strong><span>Conferência programática do catálogo, geometrias e cobertura dos dados usados no IECS.</span></div>
+    <div class="audit-grid">
+      <div class="audit-stat"><span>Geometria ↔ coordenada</span><strong>${coordinateMatches}/${units.length}</strong><small>pontos analíticos coincidentes</small></div>
+      <div class="audit-stat"><span>Endereço no catálogo</span><strong>${addresses}/${units.length}</strong><small>registros com algum endereço</small></div>
+      <div class="audit-stat"><span>CNES informado</span><strong>${cnes}/${units.length}</strong><small>demais códigos aguardam conferência</small></div>
+      <div class="audit-stat"><span>Cobertura UrbVerde</span><strong>${climateCoverage}/${units.length}</strong><small>${climateFallback} usam fallback climático</small></div>
+      <div class="audit-stat"><span>Censo 2022</span><strong>${censusCoverage}/${units.length}</strong><small>com interseção territorial</small></div>
+      <div class="audit-stat"><span>Revisão cadastral</span><strong>${reviewCount}</strong><small>registros marcados para revisão</small></div>
+    </div>
+    <div class="method-list"><strong>Dados do Censo usados no cálculo</strong><span>${fields.map(field => `<code>${field}</code>`).join(" · ")}</span><span>Origem: IBGE Censo Demográfico 2022, setores censitários agregados. O <code>vulnerability_score_5</code> é um índice composto deste projeto, não um indicador oficial do IBGE.</span></div>
+    <div class="method-list"><strong>Regra do IECS</strong><span>45% temperatura de superfície + 25% déficit de NDVI + 30% vulnerabilidade social-sanitária do Censo 2022, calculados no buffer de 300 m.</span><span>O UrbVerde 2024 não cobre 100% do território dos registros analisados; as unidades rurais sem interseção aparecem identificadas na ficha e usam fallback técnico.</span></div>
+    <div class="source-note">Resumo registrado no conjunto publicado: ${escapeHtml(String(summary.total_units_analyzed || units.length))} unidades analisadas, ${escapeHtml(String(summary.units_with_social_imputation || 0))} imputações sociais e ${escapeHtml(String(summary.units_with_climate_fallback ?? climateFallback))} fallback(s) climáticos.</div>
+  </section>`;
 }
 
 function updateKpis(units) {
@@ -563,6 +902,26 @@ function setupEventListeners() {
   document.querySelectorAll("[data-open-modal]").forEach(button => {
     button.addEventListener("click", () => openModal(button.dataset.openModal));
   });
+  document.querySelectorAll("[data-health-source]").forEach(button => {
+    button.addEventListener("click", () => {
+      state.healthDataSource = button.dataset.healthSource;
+      document.querySelectorAll("[data-health-source]").forEach(tab => {
+        const active = tab === button;
+        tab.classList.toggle("is-active", active);
+        tab.setAttribute("aria-selected", String(active));
+      });
+      const unitSearch = document.getElementById("health-data-unit");
+      if (unitSearch) {
+        unitSearch.disabled = state.healthDataSource !== "hospital";
+        unitSearch.placeholder = state.healthDataSource === "hospital" ? "nome ou CNES" : "Não disponível para esta fonte";
+      }
+      renderHealthDataExplorer();
+    });
+  });
+  document.getElementById("health-data-year")?.addEventListener("change", renderHealthDataExplorer);
+  document.getElementById("health-data-unit")?.addEventListener("input", renderHealthDataExplorer);
+  document.getElementById("health-download-csv")?.addEventListener("click", downloadHealthDataCsv);
+  document.getElementById("health-download-xlsx")?.addEventListener("click", downloadHealthDataXlsx);
   document.querySelectorAll("[data-close-modal]").forEach(button => {
     button.addEventListener("click", () => closeModal(button.dataset.closeModal));
   });
@@ -634,7 +993,7 @@ function addMapLegend() {
   const legend = L.control({ position: "bottomright" });
   legend.onAdd = () => {
     const element = L.DomUtil.create("div", "map-legend");
-    element.innerHTML = `<strong>Como ler</strong><span><i class="legend-dot critical"></i>IECS mais alto</span><span><i class="legend-dot green"></i>área verde</span><span><i class="legend-line"></i>buffer de 300m</span>`;
+    element.innerHTML = `<strong>Como ler</strong><span><i class="legend-dot critical"></i>unidade · IECS crítico</span><span><i class="legend-dot high"></i>unidade · IECS alto</span><span><i class="legend-dot moderate"></i>unidade · IECS moderado</span><span><i class="legend-dot low"></i>unidade · IECS baixo</span><span><i class="legend-dot flood"></i>risco hídrico · ponto aproximado</span><span><i class="legend-dot vegetation"></i>vegetação observada · NDVI</span><span><i class="legend-line"></i>buffer de 300m</span>`;
     return element;
   };
   legend.addTo(state.map);
@@ -664,10 +1023,15 @@ function getRiskColor(riskLevel) {
 }
 
 function getFloodColor(phenomenon) {
-  const value = normalize(phenomenon);
-  if (value.includes("inundacao")) return "#2563eb";
-  if (value.includes("enxurrada")) return "#0f766e";
-  return "#7c3aed";
+  return "#2563eb";
+}
+
+function getNdviColor(ndvi) {
+  const value = Number(ndvi);
+  if (!Number.isFinite(value) || value < 0.2) return "#d9f0d8";
+  if (value < 0.35) return "#a8d5a2";
+  if (value < 0.5) return "#70b66b";
+  return "#2f855a";
 }
 
 function riskClass(riskLevel) {
@@ -688,6 +1052,11 @@ function formatNumber(value, decimals = 1) {
   const number = Number(value);
   if (!Number.isFinite(number)) return "—";
   return number.toLocaleString("pt-BR", { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+}
+
+function formatCoordinate(value) {
+  const number = Number(value);
+  return Number.isFinite(number) ? number.toFixed(6) : "não informado";
 }
 
 function normalize(value) {

@@ -1,4 +1,11 @@
 <!doctype html>
+<!--
+THESIS: transformar o mapa em uma bancada de investigação sobre clima, cuidado e rede.
+OWN-WORLD: interface editorial-operacional em verde profundo, papel claro, linhas finas e dados como matéria principal.
+STORY: a pessoa começa pelo território, abre a base histórica, compara anos e desce até a unidade ou capítulo CID.
+FIRST VIEWPORT: mapa e ranking seguem dominantes; a entrada da base de saúde fica no topo, com ação nomeada e rastreável.
+FORM: extensão local do app existente, modo Operate, com painel de consulta protegido, tabela densa e exportação simples.
+-->
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -27,6 +34,7 @@
         <span class="topbar-button" id="pending-badge">2 para validar</span>
         <button class="topbar-button" data-open-modal="guide-modal" type="button">Como ler</button>
         <button class="topbar-button" data-open-modal="history-modal" type="button">Histórico</button>
+        <button class="topbar-button primary" data-open-modal="health-data-modal" type="button">Dados de saúde</button>
         <button class="topbar-button" data-open-modal="sensitivity-modal" type="button">Sensibilidade</button>
         <button class="topbar-button" data-open-modal="sources-modal" type="button">Fontes</button>
         <button class="topbar-button primary" data-open-modal="insights-modal" type="button">Decisões prioritárias</button>
@@ -107,7 +115,7 @@
         <div id="map"></div>
         <div class="map-toolbar" role="group" aria-label="Camadas do mapa">
           <button class="map-tool is-active" data-layer="climate" aria-pressed="true" type="button">🌡 Calor</button>
-          <button class="map-tool is-active" data-layer="green" aria-pressed="true" type="button">🌿 Áreas verdes</button>
+          <button class="map-tool is-active" data-layer="green" aria-pressed="true" type="button">🌿 Vegetação</button>
           <button class="map-tool is-active" data-layer="buffers" aria-pressed="true" type="button">◌ 300m</button>
         </div>
         <div class="map-note"><strong>Leitura atual</strong><span id="map-note-text">Pontos coloridos mostram a prioridade relativa de cada unidade.</span></div>
@@ -120,7 +128,7 @@
       <div class="modal-header"><div><div class="eyebrow">Guia rápido</div><h2 id="guide-title">Como ler o mapa</h2><p>Três camadas ajudam a transformar o ranking em uma pergunta de política pública.</p></div><button class="close-button" data-close-modal="guide-modal" type="button" aria-label="Fechar">×</button></div>
       <div class="guide-grid">
         <div class="guide-card"><b>01 · Calor</b><p>A grade UrbVerde colore a temperatura de superfície. Vermelho indica superfícies mais quentes; isso não é a temperatura do ar.</p></div>
-        <div class="guide-card"><b>02 · Vegetação</b><p>O NDVI ajuda a enxergar cobertura vegetal. Valores menores sugerem menos proteção natural contra o aquecimento.</p></div>
+        <div class="guide-card"><b>02 · Vegetação</b><p>O NDVI ajuda a enxergar cobertura vegetal. Valores menores sugerem menos proteção natural contra o aquecimento. Esta é uma grade observacional, não um cadastro oficial de parques.</p></div>
         <div class="guide-card"><b>03 · IECS</b><p>O índice combina temperatura, déficit de vegetação e um índice social-sanitário composto com dados do Censo 2022 no entorno da unidade. O componente social é uma construção analítica deste projeto, não um índice oficial do IBGE.</p></div>
       </div>
       <div class="formula">IECS = 45% calor + 25% déficit de vegetação + 30% Censo 2022 (índice composto)</div>
@@ -132,6 +140,7 @@
     <section class="modal">
       <div class="modal-header"><div><div class="eyebrow">Rastreabilidade</div><h2 id="sources-title">Fontes públicas para validar a rede</h2><p>Use essas referências para atualizar cadastro, contexto territorial e operação em dias de calor.</p></div><button class="close-button" data-close-modal="sources-modal" type="button" aria-label="Fechar">×</button></div>
       <div class="source-list" id="sources-list"></div>
+      <div id="data-audit"></div>
     </section>
   </div>
 
@@ -183,7 +192,31 @@
     </section>
   </div>
 
+  <div class="modal-backdrop" id="health-data-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="health-data-title">
+    <section class="modal health-data-modal">
+      <div class="modal-header"><div><div class="eyebrow">Base de consulta</div><h2 id="health-data-title">Saúde em Araraquara, 2016–2025</h2><p>Dados públicos consolidados para leitura municipal e por estabelecimento. Use os filtros para investigar a rede antes de formular uma hipótese.</p></div><button class="close-button" data-close-modal="health-data-modal" type="button" aria-label="Fechar">×</button></div>
+      <div class="health-data-toolbar">
+        <div class="health-data-source-tabs" role="tablist" aria-label="Fonte dos dados">
+          <button class="data-tab is-active" data-health-source="hospital" type="button" role="tab" aria-selected="true">SIH/SUS · internações</button>
+          <button class="data-tab" data-health-source="ambulatory" type="button" role="tab" aria-selected="false">SIA/SUS · produção ambulatorial</button>
+        </div>
+        <div class="health-data-filters">
+          <label><span class="field-label">Ano</span><select class="select-input" id="health-data-year"></select></label>
+          <label class="health-unit-search"><span class="field-label">Filtrar estabelecimento</span><input class="search-input" id="health-data-unit" type="search" placeholder="nome ou CNES" /></label>
+          <div class="health-data-downloads"><button class="topbar-button primary" id="health-download-xlsx" type="button">Baixar XLSX</button><button class="topbar-button" id="health-download-csv" type="button">CSV</button></div>
+        </div>
+      </div>
+      <div class="health-data-summary" id="health-data-summary"></div>
+      <div class="health-data-chart chart-card" id="health-data-chart"></div>
+      <div class="health-data-visual-grid" id="health-data-visuals"></div>
+      <div class="health-data-table-wrap" id="health-data-table"></div>
+      <div class="health-data-notes" id="health-data-notes"></div>
+    </section>
+  </div>
+
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- SheetJS CE 0.20.3: exportação XLSX no navegador, versão fixada no CDN oficial. -->
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

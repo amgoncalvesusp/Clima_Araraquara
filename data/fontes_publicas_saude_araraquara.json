@@ -45,7 +45,7 @@
     "id": "urbverde-risco-climatico",
     "title": "UrbVerde — calor e risco climático",
     "url": "https://urbverde.iau.usp.br/",
-    "use": "Usar as camadas setoriais e as séries anuais de temperatura; o indicador de inundação da plataforma foi conferido e não retornou tiles para Araraquara nesta versão."
+    "use": "A aplicação usa a grade UrbVerde 2024 de temperatura de superfície e NDVI no entorno de 300 m; o NDVI é um proxy observacional de vegetação, não um cadastro de parques. O indicador de inundação da plataforma foi conferido e não retornou tiles para Araraquara nesta versão."
   },
   {
     "id": "defesa-civil-areas-risco",
