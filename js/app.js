@@ -186,16 +186,26 @@ function renderClimateLayer(geojson) {
 }
 
 function renderHeat2021Layer(geojson) {
+  const temperatures = (geojson.features || [])
+    .map(feature => Number(feature.properties?.surface_temp))
+    .filter(value => Number.isFinite(value) && value > 20);
+  const minTemperature = Math.min(...temperatures);
+  const maxTemperature = Math.max(...temperatures);
   state.heat2021Layer = L.geoJSON(geojson, {
     pane: "heat2021-pane",
-    style: feature => ({
-      color: "#9f3d32",
-      weight: 0.45,
-      fillColor: getTempColor(Number(feature.properties.surface_temp)),
-      fillOpacity: 0.34
-    }),
+    style: feature => {
+      const temperature = Number(feature.properties?.surface_temp);
+      const validTemperature = Number.isFinite(temperature) && temperature > 20;
+      return {
+        stroke: false,
+        color: "transparent",
+        weight: 0,
+        fillColor: validTemperature ? getHeatIslandColor(temperature, minTemperature, maxTemperature) : "transparent",
+        fillOpacity: validTemperature ? 0.76 : 0
+      };
+    },
     onEachFeature: (feature, layer) => layer.bindTooltip(
-      `Ilha de calor · UrbVerde 2021 · ${formatNumber(feature.properties.surface_temp)}°C`,
+      `Mancha de calor · UrbVerde 2021 · ${formatNumber(feature.properties.surface_temp)}°C`,
       { sticky: true }
     )
   });
@@ -1034,7 +1044,7 @@ function addFloodToolbarButton() {
   if (!toolbar) return;
   [
     ["flood", "💧 Risco hídrico"],
-    ["heat2021", "🔥 Ilhas de calor 2021"],
+    ["heat2021", "🔥 Manchas de calor 2021"],
     ["fire", "🔥 Incêndios 2025"]
   ].forEach(([layer, text]) => {
     if (toolbar.querySelector(`[data-layer="${layer}"]`)) return;
@@ -1082,7 +1092,7 @@ function addMapLegend() {
   const legend = L.control({ position: "bottomright" });
   legend.onAdd = () => {
     const element = L.DomUtil.create("div", "map-legend");
-    element.innerHTML = `<strong>Como ler</strong><span><i class="legend-symbol unit"></i>unidades de saúde · pontos pretos</span><span><i class="legend-triangle flood-atenuado"></i>* risco atenuado por obras</span><span><i class="legend-triangle flood-execucao"></i>** obras em execução</span><span><i class="legend-triangle flood-sem-intervencao"></i>*** sem intervenção</span><span><i class="legend-gradient vegetation-gradient"></i>NDVI · gradiente do proxy de vegetação</span><span><i class="legend-gradient heat-gradient"></i>ilhas de calor · UrbVerde 2021</span><span><i class="legend-symbol fire"></i>cicatrizes de fogo · MapBiomas 2025</span><span><i class="legend-line"></i>buffer de 300m</span>`;
+    element.innerHTML = `<strong>Como ler</strong><span><i class="legend-symbol unit"></i>unidades de saúde · pontos pretos</span><span><i class="legend-triangle flood-atenuado"></i>* risco atenuado por obras</span><span><i class="legend-triangle flood-execucao"></i>** obras em execução</span><span><i class="legend-triangle flood-sem-intervencao"></i>*** sem intervenção</span><span><i class="legend-gradient vegetation-gradient"></i>NDVI · gradiente do proxy de vegetação</span><span><i class="legend-gradient heat-gradient"></i>manchas de calor · UrbVerde 2021</span><span><i class="legend-symbol fire"></i>cicatrizes de fogo · MapBiomas 2025</span><span><i class="legend-line"></i>buffer de 300m</span>`;
     return element;
   };
   legend.addTo(state.map);
@@ -1098,6 +1108,16 @@ function showAppError(error) {
   errorBox.querySelector("small").textContent = openedAsFile
     ? "file:// não permite que o navegador carregue os dados locais por fetch."
     : error.message;
+}
+
+function getHeatIslandColor(value, min, max) {
+  const stops = [[0, [44, 123, 182]], [0.25, [171, 217, 233]], [0.5, [255, 255, 191]], [0.75, [253, 174, 107]], [1, [215, 25, 28]]];
+  const ratio = Math.max(0, Math.min(1, (Number(value) - min) / Math.max(max - min, 0.01)));
+  const upper = stops.find(stop => ratio <= stop[0]) || stops.at(-1);
+  const lower = stops[stops.indexOf(upper) - 1] || upper;
+  const localRatio = upper[0] === lower[0] ? 0 : (ratio - lower[0]) / (upper[0] - lower[0]);
+  const color = lower[1].map((channel, index) => Math.round(channel + (upper[1][index] - channel) * localRatio));
+  return `rgb(${color.join(",")})`;
 }
 
 function getTempColor(temp) {

@@ -82,6 +82,8 @@ class DataIntegrityTest(unittest.TestCase):
         self.assertGreater(len(fire["features"]), 0)
         app = (ROOT / "js" / "app.js").read_text(encoding="utf-8")
         self.assertIn("heat2021", app)
+        self.assertIn("getHeatIslandColor", app)
+        self.assertIn('stroke: false', app)
         self.assertIn("mapbiomas_fogo_araraquara_2025.geojson", app)
         self.assertIn("flood-triangle", app)
 
