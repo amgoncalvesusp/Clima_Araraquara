@@ -150,6 +150,23 @@ a { color: inherit; }
 .legend-dot.low { background: #15803d; }
 .legend-dot.flood { background: #2563eb; }
 .legend-dot.vegetation { background: var(--forest-mid); }
+.legend-symbol { border: 1px solid rgba(17, 33, 51, .45); display: inline-block; flex: 0 0 auto; height: 9px; width: 9px; }
+.legend-symbol.unit { background: #111111; border-radius: 50%; }
+.legend-symbol.fire { background: #f97316; border-radius: 2px; }
+.legend-triangle { clip-path: polygon(50% 0, 100% 100%, 0 100%); display: inline-block; flex: 0 0 auto; height: 11px; width: 12px; }
+.legend-triangle.flood-atenuado { background: #2563eb; }
+.legend-triangle.flood-execucao { background: #d97706; }
+.legend-triangle.flood-sem-intervencao { background: #dc2626; }
+.legend-gradient { border: 1px solid rgba(17, 33, 51, .22); display: inline-block; flex: 0 0 auto; height: 9px; width: 44px; }
+.vegetation-gradient { background: linear-gradient(90deg, #d9f0d8, #a8d5a2, #70b66b, #2f855a); }
+.heat-gradient { background: linear-gradient(90deg, #65a30d, #ca8a04, #d97706, #b42318); }
+.flood-marker { background: transparent; border: 0; }
+.flood-triangle { background: #2563eb; border: 1px solid #ffffff; box-shadow: 0 1px 2px rgba(17, 33, 51, .32); clip-path: polygon(50% 0, 100% 100%, 0 100%); display: block; height: 13px; width: 14px; }
+.flood-triangle.risco_atenuado { background: #2563eb; }
+.flood-triangle.obras_em_execucao { background: #d97706; }
+.flood-triangle.sem_intervencao { background: #dc2626; }
+.popup-kicker.fire { color: #c2410c; }
+.popup-note.fire-note { background: #fff7ed; color: #c2410c; }
 .legend-line { border-top: 2px dashed var(--red); display: inline-block; width: 11px; }
 
 .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #fff; }

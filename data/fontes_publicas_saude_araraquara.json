@@ -42,6 +42,12 @@
     "use": "Atualizar a leitura de vegetação, impermeabilização e evolução anual do entorno."
   },
   {
+    "id": "mapbiomas-fogo-col5",
+    "title": "MapBiomas Fogo — Coleção 5",
+    "url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+    "use": "Camada adicional de cicatrizes anuais de fogo de 2025 em Araraquara; não participa do IECS."
+  },
+  {
     "id": "urbverde-risco-climatico",
     "title": "UrbVerde — calor e risco climático",
     "url": "https://urbverde.iau.usp.br/",

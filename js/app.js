@@ -2,6 +2,8 @@ const DATA_FILES = {
   units: "data/unidades_saude_analise_araraquara.geojson",
   baseUnits: "data/unidades_saude_araraquara.json",
   climate: "data/urbverde_araraquara.geojson",
+  heat2021: "data/urbverde_ilhas_calor_2021_araraquara.geojson",
+  fire: "data/mapbiomas_fogo_araraquara_2025.geojson",
   summary: "data/resumo_estatistico.json",
   censusMetadata: "data/censo_2022_vulnerabilidade_araraquara.metadata.json",
   suggestions: "data/unidades_sugeridas_araraquara.json",
@@ -27,6 +29,8 @@ const HEALTH_CHART_COLORS = ["#17613a", "#2b8a5a", "#bc6c25", "#6b7280", "#8b5e8
 const state = {
   map: null,
   climateLayer: null,
+  heat2021Layer: null,
+  fireLayer: null,
   greenLayer: null,
   floodLayer: null,
   bufferLayer: null,
@@ -44,7 +48,8 @@ const state = {
   healthExplorer: null,
   healthDataSource: "hospital",
   floodFeatures: [],
-  layerVisible: { climate: true, green: true, flood: true, buffers: true },
+  selectedId: null,
+  layerVisible: { climate: true, heat2021: false, green: true, flood: true, fire: false, buffers: true },
   lastFocused: {},
   filters: { query: "", type: "ALL", risk: "ALL", scope: "municipal" }
 };
@@ -76,8 +81,10 @@ async function loadData() {
     state.units = state.features.map(feature => feature.properties);
 
     renderClimateLayer(data.climate);
+    renderHeat2021Layer(data.heat2021);
     renderGreenLayer(data.climate);
     renderFloodLayer(data.flood);
+    renderFireLayer(data.fire);
     renderSources(data.sources);
     renderPendingCatalog(data.suggestions);
     renderHistoryControls();
@@ -130,7 +137,19 @@ function inferNetworkScope(id) {
 }
 
 function initMap() {
-  state.map = L.map("map", { zoomControl: false }).setView([-21.794, -48.176], 13);
+  state.map = L.map("map", { zoomControl: false, preferCanvas: true }).setView([-21.794, -48.176], 13);
+  [
+    ["climate-pane", 200],
+    ["heat2021-pane", 250],
+    ["green-pane", 300],
+    ["fire-pane", 350],
+    ["flood-pane", 400],
+    ["units-pane", 500],
+    ["buffer-pane", 600]
+  ].forEach(([name, zIndex]) => {
+    const pane = state.map.createPane(name);
+    pane.style.zIndex = String(zIndex);
+  });
   L.control.zoom({ position: "topright" }).addTo(state.map);
   L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -143,6 +162,7 @@ function initMap() {
 function renderClimateLayer(geojson) {
   if (state.climateLayer) state.map.removeLayer(state.climateLayer);
   state.climateLayer = L.geoJSON(geojson, {
+    pane: "climate-pane",
     style: feature => ({
       fillColor: getTempColor(feature.properties.surface_temp),
       weight: 0.5,
@@ -165,9 +185,26 @@ function renderClimateLayer(geojson) {
   }).addTo(state.map);
 }
 
+function renderHeat2021Layer(geojson) {
+  state.heat2021Layer = L.geoJSON(geojson, {
+    pane: "heat2021-pane",
+    style: feature => ({
+      color: "#9f3d32",
+      weight: 0.45,
+      fillColor: getTempColor(Number(feature.properties.surface_temp)),
+      fillOpacity: 0.34
+    }),
+    onEachFeature: (feature, layer) => layer.bindTooltip(
+      `Ilha de calor · UrbVerde 2021 · ${formatNumber(feature.properties.surface_temp)}°C`,
+      { sticky: true }
+    )
+  });
+}
+
 function renderGreenLayer(geojson) {
   if (state.greenLayer) state.map.removeLayer(state.greenLayer);
   state.greenLayer = L.geoJSON(geojson, {
+    pane: "green-pane",
     style: feature => ({
       fillColor: getNdviColor(feature.properties.ndvi),
       color: "#276749",
@@ -193,27 +230,50 @@ function renderFloodLayer(geojson) {
   if (state.floodLayer) state.map.removeLayer(state.floodLayer);
   const mappedFeatures = geojson.features.filter(feature => feature.geometry);
   state.floodLayer = L.geoJSON({ type: "FeatureCollection", features: mappedFeatures }, {
-    pointToLayer: (feature, latlng) => L.circleMarker(latlng, {
-      radius: 7,
-      fillColor: getFloodColor(feature.properties.phenomenon),
-      color: "#ffffff",
-      weight: 2,
-      fillOpacity: 0.95
-    }),
+    pane: "flood-pane",
+    pointToLayer: (feature, latlng) => {
+      const properties = feature.properties;
+      const classification = hydrologyClass(properties);
+      const icon = L.divIcon({
+        className: `flood-marker ${classification}`,
+        html: `<span class="flood-triangle ${classification}" aria-hidden="true"></span>`,
+        iconSize: [16, 16],
+        iconAnchor: [8, 8]
+      });
+      return L.marker(latlng, { icon, pane: "flood-pane", title: properties.name || "Ponto hidrológico" });
+    },
     onEachFeature: (feature, layer) => layer.bindPopup(floodPopup(feature.properties))
   });
   if (state.layerVisible.flood) state.floodLayer.addTo(state.map);
   setText("map-note-text", `${geojson.metadata.count_published} pontos municipais mapeados; ${geojson.metadata.count_geocoded_for_map} aparecem com posição aproximada no mapa.`);
 }
 
+function renderFireLayer(geojson) {
+  state.fireLayer = L.geoJSON(geojson, {
+    pane: "fire-pane",
+    style: {
+      color: "#b45309",
+      weight: 0.7,
+      fillColor: "#f97316",
+      fillOpacity: 0.58
+    },
+    onEachFeature: (feature, layer) => {
+      const p = feature.properties;
+      layer.bindPopup(`<div class="map-popup"><span class="popup-kicker fire">MapBiomas Fogo · ${escapeHtml(p.year)}</span><h3>Cicatriz de fogo anual</h3><dl class="popup-metrics"><div><dt>Área mapeada</dt><dd>${formatNumber(p.burned_area_ha, 2)} ha</dd></div><div><dt>Produto</dt><dd>Área queimada anual</dd></div></dl><div class="popup-note fire-note">Camada adicional de contexto. Não entra no cálculo do IECS.</div></div>`);
+    }
+  });
+}
+
 function floodPopup(point) {
+  const classification = point.classification_label || "classificação não informada";
   return `<div class="map-popup">
     <span class="popup-kicker flood">Defesa Civil · risco hidrológico</span>
     <h3>${escapeHtml(point.name)}</h3>
     <p>${escapeHtml(point.phenomenon)}</p>
     <dl class="popup-metrics">
-      <div><dt>Código de intervenção</dt><dd>${escapeHtml(point.intervention_code)}</dd></div>
-      <div><dt>Precisão cartográfica</dt><dd>aproximada</dd></div>
+      <div><dt>Classificação</dt><dd>${escapeHtml(classification)}</dd></div>
+      <div><dt>Código / proporção</dt><dd>${escapeHtml(point.intervention_code)} · ${formatNumber(point.classification_share_pct, 0)}%</dd></div>
+      <div><dt>Precisão cartográfica</dt><dd>${escapeHtml(point.coordinate_status || "aproximada")}</dd></div>
     </dl>
     <div class="popup-note flood-note">O boletim publica o ponto/endereço. A coordenada exibida é uma aproximação do eixo viário e não representa uma mancha contínua.</div>
   </div>`;
@@ -225,31 +285,51 @@ function renderUnitsLayer(features) {
 
   state.bufferLayer = L.layerGroup();
   state.unitsLayer = L.geoJSON({ type: "FeatureCollection", features }, {
+    pane: "units-pane",
     pointToLayer: (feature, latlng) => {
-      const color = getRiskColor(feature.properties.risk_level);
       L.circle(latlng, {
         radius: 300,
-        color,
+        pane: "buffer-pane",
+        color: "#111111",
         weight: 1,
         opacity: 0.48,
-        fillColor: color,
-        fillOpacity: 0.08
+        fillColor: "#111111",
+        fillOpacity: 0.08,
+        interactive: false
       }).addTo(state.bufferLayer);
 
       return L.circleMarker(latlng, {
-        radius: 7,
-        fillColor: color,
+        radius: feature.properties.id === state.selectedId ? 9 : 6,
+        fillColor: "#111111",
         color: "#ffffff",
-        weight: 2,
-        fillOpacity: 0.96
+        weight: feature.properties.id === state.selectedId ? 2.5 : 1.5,
+        fillOpacity: 1,
+        bubblingMouseEvents: false
       });
     },
     onEachFeature: (feature, layer) => {
       layer.bindPopup(unitPopup(feature.properties));
+      layer.on("click", () => selectUnit(feature.properties.id));
     }
   }).addTo(state.map);
 
   if (state.layerVisible.buffers) state.bufferLayer.addTo(state.map);
+}
+
+function updateUnitMarkerStyles() {
+  state.unitsLayer?.eachLayer(layer => {
+    const selected = layer.feature?.properties?.id === state.selectedId;
+    layer.setStyle({ fillColor: "#111111", fillOpacity: 1, color: "#ffffff", weight: selected ? 2.5 : 1.5 });
+    layer.setRadius(selected ? 9 : 6);
+  });
+}
+
+function selectUnit(id) {
+  const unit = state.units.find(item => item.id === id);
+  if (!unit) return;
+  state.selectedId = id;
+  updateUnitMarkerStyles();
+  focusUnit(unit);
 }
 
 function unitPopup(unit) {
@@ -875,6 +955,8 @@ function updateNetworkBadge(total, pending) {
 }
 
 function focusUnit(unit) {
+  state.selectedId = unit.id;
+  updateUnitMarkerStyles();
   state.map.flyTo([unit.lat, unit.lon], 16, { duration: 0.8 });
   state.unitsLayer.eachLayer(layer => {
     if (layer.feature?.properties.id === unit.id) layer.openPopup();
@@ -949,18 +1031,25 @@ function setupEventListeners() {
 
 function addFloodToolbarButton() {
   const toolbar = document.querySelector(".map-toolbar");
-  if (!toolbar || toolbar.querySelector('[data-layer="flood"]')) return;
-  const button = document.createElement("button");
-  button.className = "map-tool is-active";
-  button.dataset.layer = "flood";
-  button.type = "button";
-  button.setAttribute("aria-pressed", "true");
-  button.textContent = "💧 Risco hídrico";
-  toolbar.appendChild(button);
+  if (!toolbar) return;
+  [
+    ["flood", "💧 Risco hídrico"],
+    ["heat2021", "🔥 Ilhas de calor 2021"],
+    ["fire", "🔥 Incêndios 2025"]
+  ].forEach(([layer, text]) => {
+    if (toolbar.querySelector(`[data-layer="${layer}"]`)) return;
+    const button = document.createElement("button");
+    button.className = `map-tool${state.layerVisible[layer] ? " is-active" : ""}`;
+    button.dataset.layer = layer;
+    button.type = "button";
+    button.setAttribute("aria-pressed", String(Boolean(state.layerVisible[layer])));
+    button.textContent = text;
+    toolbar.appendChild(button);
+  });
 }
 
 function toggleLayer(layerName, button) {
-  const layers = { climate: state.climateLayer, green: state.greenLayer, flood: state.floodLayer, buffers: state.bufferLayer };
+  const layers = { climate: state.climateLayer, heat2021: state.heat2021Layer, green: state.greenLayer, flood: state.floodLayer, fire: state.fireLayer, buffers: state.bufferLayer };
   const layer = layers[layerName];
   if (!layer) return;
   const visible = state.map.hasLayer(layer);
@@ -993,7 +1082,7 @@ function addMapLegend() {
   const legend = L.control({ position: "bottomright" });
   legend.onAdd = () => {
     const element = L.DomUtil.create("div", "map-legend");
-    element.innerHTML = `<strong>Como ler</strong><span><i class="legend-dot critical"></i>unidade · IECS crítico</span><span><i class="legend-dot high"></i>unidade · IECS alto</span><span><i class="legend-dot moderate"></i>unidade · IECS moderado</span><span><i class="legend-dot low"></i>unidade · IECS baixo</span><span><i class="legend-dot flood"></i>risco hídrico · ponto aproximado</span><span><i class="legend-dot vegetation"></i>vegetação observada · NDVI</span><span><i class="legend-line"></i>buffer de 300m</span>`;
+    element.innerHTML = `<strong>Como ler</strong><span><i class="legend-symbol unit"></i>unidades de saúde · pontos pretos</span><span><i class="legend-triangle flood-atenuado"></i>* risco atenuado por obras</span><span><i class="legend-triangle flood-execucao"></i>** obras em execução</span><span><i class="legend-triangle flood-sem-intervencao"></i>*** sem intervenção</span><span><i class="legend-gradient vegetation-gradient"></i>NDVI · gradiente do proxy de vegetação</span><span><i class="legend-gradient heat-gradient"></i>ilhas de calor · UrbVerde 2021</span><span><i class="legend-symbol fire"></i>cicatrizes de fogo · MapBiomas 2025</span><span><i class="legend-line"></i>buffer de 300m</span>`;
     return element;
   };
   legend.addTo(state.map);
@@ -1024,6 +1113,10 @@ function getRiskColor(riskLevel) {
 
 function getFloodColor(phenomenon) {
   return "#2563eb";
+}
+
+function hydrologyClass(point) {
+  return point.classification || (point.intervention_code === "***" ? "sem_intervencao" : point.intervention_code === "**" ? "obras_em_execucao" : "risco_atenuado");
 }
 
 function getNdviColor(ndvi) {

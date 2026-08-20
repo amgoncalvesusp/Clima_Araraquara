@@ -1,0 +1,4522 @@
+{
+  "type": "FeatureCollection",
+  "name": "Cicatrizes de fogo de Araraquara — MapBiomas Fogo Coleção 5",
+  "metadata": {
+    "city": "Araraquara",
+    "ibge_code": 3503208,
+    "year": 2025,
+    "collection": "MapBiomas Fogo Coleção 5",
+    "product": "Área queimada anual em formato vetorial",
+    "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+    "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+    "boundary_source": "IBGE malha municipal 3503208",
+    "count_scar_polygons": 58,
+    "resolution_m": 30,
+    "method_note": "Cicatrizes anuais derivadas de imagens Landsat e classificação do MapBiomas.",
+    "index_note": "Camada de contexto territorial. Não é componente do IECE nesta versão."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.226595017127,
+              -21.61292674674521
+            ],
+            [
+              -48.226595017127,
+              -21.61427421967139
+            ],
+            [
+              -48.23036794132031,
+              -21.61427421967139
+            ],
+            [
+              -48.23036794132031,
+              -21.613196241330446
+            ],
+            [
+              -48.22821198463842,
+              -21.613196241330446
+            ],
+            [
+              -48.22821198463842,
+              -21.61292674674521
+            ],
+            [
+              -48.226595017127,
+              -21.61292674674521
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-280899",
+        "year": 2025,
+        "burned_area_ha": 5.17,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.2656717319862,
+              -21.617777649279457
+            ],
+            [
+              -48.2656717319862,
+              -21.61939461679087
+            ],
+            [
+              -48.26594122657144,
+              -21.61939461679087
+            ],
+            [
+              -48.26594122657144,
+              -21.619664111376107
+            ],
+            [
+              -48.26755819408285,
+              -21.619664111376107
+            ],
+            [
+              -48.26755819408285,
+              -21.61804714386469
+            ],
+            [
+              -48.26728869949761,
+              -21.61804714386469
+            ],
+            [
+              -48.26728869949761,
+              -21.617777649279457
+            ],
+            [
+              -48.2656717319862,
+              -21.617777649279457
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-280944",
+        "year": 2025,
+        "burned_area_ha": 3.92,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.14817209282337,
+              -21.703476927384457
+            ],
+            [
+              -48.14817209282337,
+              -21.70482440031064
+            ],
+            [
+              -48.148441587408605,
+              -21.70482440031064
+            ],
+            [
+              -48.148441587408605,
+              -21.705363389481107
+            ],
+            [
+              -48.14951956574954,
+              -21.705363389481107
+            ],
+            [
+              -48.14951956574954,
+              -21.703476927384457
+            ],
+            [
+              -48.14817209282337,
+              -21.703476927384457
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-281643",
+        "year": 2025,
+        "burned_area_ha": 2.75,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.14655512531195,
+              -21.723689021277146
+            ],
+            [
+              -48.14655512531195,
+              -21.7255754833738
+            ],
+            [
+              -48.144129674044834,
+              -21.7255754833738
+            ],
+            [
+              -48.144129674044834,
+              -21.72611447254427
+            ],
+            [
+              -48.143590684874354,
+              -21.72611447254427
+            ],
+            [
+              -48.143590684874354,
+              -21.726383967129507
+            ],
+            [
+              -48.14332119028913,
+              -21.726383967129507
+            ],
+            [
+              -48.14332119028913,
+              -21.727731440055685
+            ],
+            [
+              -48.14547714697101,
+              -21.727731440055685
+            ],
+            [
+              -48.14547714697101,
+              -21.728270429226157
+            ],
+            [
+              -48.14655512531195,
+              -21.728270429226157
+            ],
+            [
+              -48.14655512531195,
+              -21.72800093464092
+            ],
+            [
+              -48.14682461989719,
+              -21.72800093464092
+            ],
+            [
+              -48.14682461989719,
+              -21.72665346171474
+            ],
+            [
+              -48.14817209282337,
+              -21.72665346171474
+            ],
+            [
+              -48.14817209282337,
+              -21.7255754833738
+            ],
+            [
+              -48.14763310365289,
+              -21.7255754833738
+            ],
+            [
+              -48.14763310365289,
+              -21.723689021277146
+            ],
+            [
+              -48.14655512531195,
+              -21.723689021277146
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-281854",
+        "year": 2025,
+        "burned_area_ha": 12.84,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -48.339243753755596,
+                -21.726383967129507
+              ],
+              [
+                -48.339984367951274,
+                -21.726383967129507
+              ],
+              [
+                -48.339243753755596,
+                -21.725624362826252
+              ],
+              [
+                -48.339243753755596,
+                -21.726383967129507
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -48.3400522375113,
+                -21.727731440055685
+              ],
+              [
+                -48.34049312594655,
+                -21.727731440055685
+              ],
+              [
+                -48.3400522375113,
+                -21.726541041280505
+              ],
+              [
+                -48.3400522375113,
+                -21.727731440055685
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-281869",
+        "year": 2025,
+        "burned_area_ha": 0.62,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.14709411448243,
+              -21.731773858834224
+            ],
+            [
+              -48.14709411448243,
+              -21.732851837175165
+            ],
+            [
+              -48.14817209282337,
+              -21.732851837175165
+            ],
+            [
+              -48.14817209282337,
+              -21.731773858834224
+            ],
+            [
+              -48.14709411448243,
+              -21.731773858834224
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-281890",
+        "year": 2025,
+        "burned_area_ha": 1.33,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.17269610007983,
+              -21.730426385908043
+            ],
+            [
+              -48.17269610007983,
+              -21.731773858834224
+            ],
+            [
+              -48.17242660549459,
+              -21.731773858834224
+            ],
+            [
+              -48.17242660549459,
+              -21.732312848004696
+            ],
+            [
+              -48.17215711090936,
+              -21.732312848004696
+            ],
+            [
+              -48.17215711090936,
+              -21.732851837175165
+            ],
+            [
+              -48.17188761632413,
+              -21.732851837175165
+            ],
+            [
+              -48.17188761632413,
+              -21.733390826345637
+            ],
+            [
+              -48.17134862715365,
+              -21.733390826345637
+            ],
+            [
+              -48.17134862715365,
+              -21.734738299271818
+            ],
+            [
+              -48.17161812173889,
+              -21.734738299271818
+            ],
+            [
+              -48.17161812173889,
+              -21.735007793857054
+            ],
+            [
+              -48.17269610007983,
+              -21.735007793857054
+            ],
+            [
+              -48.17269610007983,
+              -21.734738299271818
+            ],
+            [
+              -48.17296559466507,
+              -21.734738299271818
+            ],
+            [
+              -48.17296559466507,
+              -21.734468804686582
+            ],
+            [
+              -48.173235089250305,
+              -21.734468804686582
+            ],
+            [
+              -48.173235089250305,
+              -21.734199310101346
+            ],
+            [
+              -48.17377407842078,
+              -21.734199310101346
+            ],
+            [
+              -48.17377407842078,
+              -21.732851837175165
+            ],
+            [
+              -48.17404357300601,
+              -21.732851837175165
+            ],
+            [
+              -48.17404357300601,
+              -21.730426385908043
+            ],
+            [
+              -48.17269610007983,
+              -21.730426385908043
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-281906",
+        "year": 2025,
+        "burned_area_ha": 9.09,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.18293689431879,
+              -21.737702739709412
+            ],
+            [
+              -48.18293689431879,
+              -21.73905021263559
+            ],
+            [
+              -48.183206388904026,
+              -21.73905021263559
+            ],
+            [
+              -48.183206388904026,
+              -21.739589201806062
+            ],
+            [
+              -48.18455386183021,
+              -21.739589201806062
+            ],
+            [
+              -48.18455386183021,
+              -21.738241728879885
+            ],
+            [
+              -48.18401487265974,
+              -21.738241728879885
+            ],
+            [
+              -48.18401487265974,
+              -21.737702739709412
+            ],
+            [
+              -48.18293689431879,
+              -21.737702739709412
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-281956",
+        "year": 2025,
+        "burned_area_ha": 3.0,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.19021324812016,
+              -21.738780718050354
+            ],
+            [
+              -48.19021324812016,
+              -21.7398586963913
+            ],
+            [
+              -48.191291226461104,
+              -21.7398586963913
+            ],
+            [
+              -48.191291226461104,
+              -21.738780718050354
+            ],
+            [
+              -48.19021324812016,
+              -21.738780718050354
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-281959",
+        "year": 2025,
+        "burned_area_ha": 1.33,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.33547082956229,
+              -21.747404544777904
+            ],
+            [
+              -48.33547082956229,
+              -21.748482523118845
+            ],
+            [
+              -48.33654880790323,
+              -21.748482523118845
+            ],
+            [
+              -48.33654880790323,
+              -21.747404544777904
+            ],
+            [
+              -48.33547082956229,
+              -21.747404544777904
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282023",
+        "year": 2025,
+        "burned_area_ha": 1.33,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -47.98647534168185,
+              -21.750907974385967
+            ],
+            [
+              -47.98647534168185,
+              -21.752524941897384
+            ],
+            [
+              -47.98782281460804,
+              -21.752524941897384
+            ],
+            [
+              -47.98782281460804,
+              -21.750907974385967
+            ],
+            [
+              -47.98647534168185,
+              -21.750907974385967
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282055",
+        "year": 2025,
+        "burned_area_ha": 2.5,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.352448988432144,
+              -21.75144696355644
+            ],
+            [
+              -48.35379646135833,
+              -21.75144696355644
+            ],
+            [
+              -48.35379646135833,
+              -21.752524941897384
+            ],
+            [
+              -48.35406595594357,
+              -21.752524941897384
+            ],
+            [
+              -48.35406595594357,
+              -21.75279443648262
+            ],
+            [
+              -48.354335450528794,
+              -21.75279443648262
+            ],
+            [
+              -48.354335450528794,
+              -21.753063931067857
+            ],
+            [
+              -48.35487443969927,
+              -21.753063931067857
+            ],
+            [
+              -48.35487443969927,
+              -21.753333425653093
+            ],
+            [
+              -48.35595241804022,
+              -21.753333425653093
+            ],
+            [
+              -48.35595241804022,
+              -21.753063931067857
+            ],
+            [
+              -48.35622191262545,
+              -21.753063931067857
+            ],
+            [
+              -48.35622191262545,
+              -21.752255447312148
+            ],
+            [
+              -48.35649140721068,
+              -21.752255447312148
+            ],
+            [
+              -48.35649140721068,
+              -21.751169587259433
+            ],
+            [
+              -48.35527054713451,
+              -21.750907974385967
+            ],
+            [
+              -48.354335450528794,
+              -21.750907974385967
+            ],
+            [
+              -48.354335450528794,
+              -21.750707596541886
+            ],
+            [
+              -48.352448988432144,
+              -21.75030335466403
+            ],
+            [
+              -48.352448988432144,
+              -21.75144696355644
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282062",
+        "year": 2025,
+        "burned_area_ha": 8.02,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.02312660527393,
+              -21.754411403994034
+            ],
+            [
+              -48.02312660527393,
+              -21.755758876920215
+            ],
+            [
+              -48.02339609985917,
+              -21.755758876920215
+            ],
+            [
+              -48.02339609985917,
+              -21.75602837150545
+            ],
+            [
+              -48.026360540296764,
+              -21.75602837150545
+            ],
+            [
+              -48.026360540296764,
+              -21.754950393164506
+            ],
+            [
+              -48.026091045711524,
+              -21.754950393164506
+            ],
+            [
+              -48.026091045711524,
+              -21.75468089857927
+            ],
+            [
+              -48.02501306737058,
+              -21.75468089857927
+            ],
+            [
+              -48.02501306737058,
+              -21.754411403994034
+            ],
+            [
+              -48.02312660527393,
+              -21.754411403994034
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282086",
+        "year": 2025,
+        "burned_area_ha": 5.42,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.21743220122899,
+              -21.76114876862493
+            ],
+            [
+              -48.21743220122899,
+              -21.76195725238064
+            ],
+            [
+              -48.21689321205851,
+              -21.76195725238064
+            ],
+            [
+              -48.21689321205851,
+              -21.76303523072158
+            ],
+            [
+              -48.21797119039945,
+              -21.76303523072158
+            ],
+            [
+              -48.21797119039945,
+              -21.762496241551112
+            ],
+            [
+              -48.21851017956993,
+              -21.762496241551112
+            ],
+            [
+              -48.21851017956993,
+              -21.762226746965876
+            ],
+            [
+              -48.21877967415516,
+              -21.762226746965876
+            ],
+            [
+              -48.21877967415516,
+              -21.76114876862493
+            ],
+            [
+              -48.21743220122899,
+              -21.76114876862493
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282140",
+        "year": 2025,
+        "burned_area_ha": 3.0,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.189404764364454,
+              -21.765460681988706
+            ],
+            [
+              -48.189404764364454,
+              -21.766808154914884
+            ],
+            [
+              -48.19075223729064,
+              -21.766808154914884
+            ],
+            [
+              -48.19075223729064,
+              -21.76573017657394
+            ],
+            [
+              -48.1904827427054,
+              -21.76573017657394
+            ],
+            [
+              -48.1904827427054,
+              -21.765460681988706
+            ],
+            [
+              -48.189404764364454,
+              -21.765460681988706
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282169",
+        "year": 2025,
+        "burned_area_ha": 2.0,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.21554573913234,
+              -21.76896411159677
+            ],
+            [
+              -48.21554573913234,
+              -21.769503100767242
+            ],
+            [
+              -48.2152762445471,
+              -21.769503100767242
+            ],
+            [
+              -48.2152762445471,
+              -21.769772595352478
+            ],
+            [
+              -48.21500674996186,
+              -21.769772595352478
+            ],
+            [
+              -48.21500674996186,
+              -21.770850573693423
+            ],
+            [
+              -48.2160847283028,
+              -21.770850573693423
+            ],
+            [
+              -48.2160847283028,
+              -21.770581079108187
+            ],
+            [
+              -48.21635422288804,
+              -21.770581079108187
+            ],
+            [
+              -48.21635422288804,
+              -21.77031158452295
+            ],
+            [
+              -48.216623717473276,
+              -21.77031158452295
+            ],
+            [
+              -48.216623717473276,
+              -21.770042089937714
+            ],
+            [
+              -48.21689321205851,
+              -21.770042089937714
+            ],
+            [
+              -48.21689321205851,
+              -21.76896411159677
+            ],
+            [
+              -48.21554573913234,
+              -21.76896411159677
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282197",
+        "year": 2025,
+        "burned_area_ha": 3.17,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.127690504345445,
+              -21.769503100767242
+            ],
+            [
+              -48.127690504345445,
+              -21.770850573693423
+            ],
+            [
+              -48.12903797727162,
+              -21.770850573693423
+            ],
+            [
+              -48.12903797727162,
+              -21.769503100767242
+            ],
+            [
+              -48.127690504345445,
+              -21.769503100767242
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282198",
+        "year": 2025,
+        "burned_area_ha": 2.08,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.21338978245045,
+              -21.770850573693423
+            ],
+            [
+              -48.21338978245045,
+              -21.771928552034364
+            ],
+            [
+              -48.214737255376626,
+              -21.771928552034364
+            ],
+            [
+              -48.214737255376626,
+              -21.770850573693423
+            ],
+            [
+              -48.21338978245045,
+              -21.770850573693423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282210",
+        "year": 2025,
+        "burned_area_ha": 1.67,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.02177913234775,
+              -21.754141909408798
+            ],
+            [
+              -48.02177913234775,
+              -21.754411403994034
+            ],
+            [
+              -48.019892670251096,
+              -21.754411403994034
+            ],
+            [
+              -48.019892670251096,
+              -21.754950393164506
+            ],
+            [
+              -48.018275702739686,
+              -21.754950393164506
+            ],
+            [
+              -48.018275702739686,
+              -21.755219887749742
+            ],
+            [
+              -48.017736713569214,
+              -21.755219887749742
+            ],
+            [
+              -48.017736713569214,
+              -21.75548938233498
+            ],
+            [
+              -48.01746721898398,
+              -21.75548938233498
+            ],
+            [
+              -48.01746721898398,
+              -21.755758876920215
+            ],
+            [
+              -48.01719772439874,
+              -21.755758876920215
+            ],
+            [
+              -48.01719772439874,
+              -21.75602837150545
+            ],
+            [
+              -48.0169282298135,
+              -21.75602837150545
+            ],
+            [
+              -48.0169282298135,
+              -21.756297866090687
+            ],
+            [
+              -48.016389240643036,
+              -21.756297866090687
+            ],
+            [
+              -48.016389240643036,
+              -21.758453822772573
+            ],
+            [
+              -48.0161197460578,
+              -21.758453822772573
+            ],
+            [
+              -48.0161197460578,
+              -21.75980129569875
+            ],
+            [
+              -48.016389240643036,
+              -21.75980129569875
+            ],
+            [
+              -48.016389240643036,
+              -21.764652198232998
+            ],
+            [
+              -48.016658735228276,
+              -21.764652198232998
+            ],
+            [
+              -48.016658735228276,
+              -21.76788613325583
+            ],
+            [
+              -48.01719772439874,
+              -21.76788613325583
+            ],
+            [
+              -48.01719772439874,
+              -21.769233606182006
+            ],
+            [
+              -48.01746721898398,
+              -21.769233606182006
+            ],
+            [
+              -48.01746721898398,
+              -21.77031158452295
+            ],
+            [
+              -48.017736713569214,
+              -21.77031158452295
+            ],
+            [
+              -48.017736713569214,
+              -21.77300653037531
+            ],
+            [
+              -48.01908418649539,
+              -21.77300653037531
+            ],
+            [
+              -48.01908418649539,
+              -21.771928552034364
+            ],
+            [
+              -48.01881469191016,
+              -21.771928552034364
+            ],
+            [
+              -48.01881469191016,
+              -21.769503100767242
+            ],
+            [
+              -48.01908418649539,
+              -21.769503100767242
+            ],
+            [
+              -48.01908418649539,
+              -21.769233606182006
+            ],
+            [
+              -48.01935368108063,
+              -21.769233606182006
+            ],
+            [
+              -48.01935368108063,
+              -21.7684251224263
+            ],
+            [
+              -48.01962317566587,
+              -21.7684251224263
+            ],
+            [
+              -48.01962317566587,
+              -21.768155627841065
+            ],
+            [
+              -48.020162164836336,
+              -21.768155627841065
+            ],
+            [
+              -48.020162164836336,
+              -21.76788613325583
+            ],
+            [
+              -48.02285711068869,
+              -21.76788613325583
+            ],
+            [
+              -48.02285711068869,
+              -21.767616638670592
+            ],
+            [
+              -48.02312660527393,
+              -21.767616638670592
+            ],
+            [
+              -48.02312660527393,
+              -21.767347144085356
+            ],
+            [
+              -48.02339609985917,
+              -21.767347144085356
+            ],
+            [
+              -48.02339609985917,
+              -21.76707764950012
+            ],
+            [
+              -48.0236655944444,
+              -21.76707764950012
+            ],
+            [
+              -48.0236655944444,
+              -21.76573017657394
+            ],
+            [
+              -48.024204583614875,
+              -21.76573017657394
+            ],
+            [
+              -48.024204583614875,
+              -21.764652198232998
+            ],
+            [
+              -48.02474357278535,
+              -21.764652198232998
+            ],
+            [
+              -48.02474357278535,
+              -21.76195725238064
+            ],
+            [
+              -48.026091045711524,
+              -21.76195725238064
+            ],
+            [
+              -48.026091045711524,
+              -21.760070790283986
+            ],
+            [
+              -48.02716902405247,
+              -21.760070790283986
+            ],
+            [
+              -48.02716902405247,
+              -21.758992811943045
+            ],
+            [
+              -48.025821551126285,
+              -21.758992811943045
+            ],
+            [
+              -48.025821551126285,
+              -21.75980129569875
+            ],
+            [
+              -48.02555205654106,
+              -21.75980129569875
+            ],
+            [
+              -48.02555205654106,
+              -21.759531801113518
+            ],
+            [
+              -48.02501306737058,
+              -21.759531801113518
+            ],
+            [
+              -48.02501306737058,
+              -21.75926230652828
+            ],
+            [
+              -48.02474357278535,
+              -21.75926230652828
+            ],
+            [
+              -48.02474357278535,
+              -21.758992811943045
+            ],
+            [
+              -48.02339609985917,
+              -21.758992811943045
+            ],
+            [
+              -48.02339609985917,
+              -21.758453822772573
+            ],
+            [
+              -48.02285711068869,
+              -21.758453822772573
+            ],
+            [
+              -48.02285711068869,
+              -21.758184328187337
+            ],
+            [
+              -48.02177913234775,
+              -21.758184328187337
+            ],
+            [
+              -48.02177913234775,
+              -21.755758876920215
+            ],
+            [
+              -48.02285711068869,
+              -21.755758876920215
+            ],
+            [
+              -48.02285711068869,
+              -21.754141909408798
+            ],
+            [
+              -48.02177913234775,
+              -21.754141909408798
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282216",
+        "year": 2025,
+        "burned_area_ha": 122.89,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.30367046850446,
+              -21.771389562863895
+            ],
+            [
+              -48.30367046850446,
+              -21.771928552034364
+            ],
+            [
+              -48.303131479333985,
+              -21.771928552034364
+            ],
+            [
+              -48.303131479333985,
+              -21.773276024960545
+            ],
+            [
+              -48.30420945767493,
+              -21.773276024960545
+            ],
+            [
+              -48.30420945767493,
+              -21.772467541204836
+            ],
+            [
+              -48.3047484468454,
+              -21.772467541204836
+            ],
+            [
+              -48.3047484468454,
+              -21.771389562863895
+            ],
+            [
+              -48.30367046850446,
+              -21.771389562863895
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282218",
+        "year": 2025,
+        "burned_area_ha": 2.67,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.018006208154446,
+              -21.775162487057194
+            ],
+            [
+              -48.018006208154446,
+              -21.77624046539814
+            ],
+            [
+              -48.01935368108063,
+              -21.77624046539814
+            ],
+            [
+              -48.01935368108063,
+              -21.775162487057194
+            ],
+            [
+              -48.018006208154446,
+              -21.775162487057194
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282240",
+        "year": 2025,
+        "burned_area_ha": 1.67,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.28534483670842,
+              -21.777048949153848
+            ],
+            [
+              -48.28534483670842,
+              -21.777318443739084
+            ],
+            [
+              -48.28453635295271,
+              -21.777318443739084
+            ],
+            [
+              -48.28453635295271,
+              -21.77758793832432
+            ],
+            [
+              -48.28399736378224,
+              -21.77758793832432
+            ],
+            [
+              -48.28399736378224,
+              -21.777857432909553
+            ],
+            [
+              -48.282919385441296,
+              -21.777857432909553
+            ],
+            [
+              -48.282919385441296,
+              -21.77812692749479
+            ],
+            [
+              -48.282649890856064,
+              -21.77812692749479
+            ],
+            [
+              -48.282649890856064,
+              -21.778396422080025
+            ],
+            [
+              -48.282110901685584,
+              -21.778396422080025
+            ],
+            [
+              -48.282110901685584,
+              -21.77866591666526
+            ],
+            [
+              -48.28130241792988,
+              -21.77866591666526
+            ],
+            [
+              -48.28130241792988,
+              -21.779204905835734
+            ],
+            [
+              -48.28103292334465,
+              -21.779204905835734
+            ],
+            [
+              -48.28103292334465,
+              -21.780821873347147
+            ],
+            [
+              -48.28345837461177,
+              -21.780821873347147
+            ],
+            [
+              -48.28345837461177,
+              -21.78189985168809
+            ],
+            [
+              -48.28372786919701,
+              -21.78189985168809
+            ],
+            [
+              -48.28372786919701,
+              -21.784325302955214
+            ],
+            [
+              -48.28480584753795,
+              -21.784325302955214
+            ],
+            [
+              -48.28480584753795,
+              -21.784055808369978
+            ],
+            [
+              -48.28534483670842,
+              -21.784055808369978
+            ],
+            [
+              -48.28534483670842,
+              -21.78378631378474
+            ],
+            [
+              -48.28723129880507,
+              -21.78378631378474
+            ],
+            [
+              -48.28723129880507,
+              -21.783247324614273
+            ],
+            [
+              -48.28750079339031,
+              -21.783247324614273
+            ],
+            [
+              -48.28750079339031,
+              -21.782169346273328
+            ],
+            [
+              -48.286961804219835,
+              -21.782169346273328
+            ],
+            [
+              -48.286961804219835,
+              -21.78189985168809
+            ],
+            [
+              -48.28615332046412,
+              -21.78189985168809
+            ],
+            [
+              -48.28615332046412,
+              -21.779743895006206
+            ],
+            [
+              -48.28642281504936,
+              -21.779743895006206
+            ],
+            [
+              -48.28642281504936,
+              -21.77866591666526
+            ],
+            [
+              -48.2866923096346,
+              -21.77866591666526
+            ],
+            [
+              -48.2866923096346,
+              -21.777048949153848
+            ],
+            [
+              -48.28534483670842,
+              -21.777048949153848
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282303",
+        "year": 2025,
+        "burned_area_ha": 30.59,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.02716902405247,
+              -21.77947440042097
+            ],
+            [
+              -48.02716902405247,
+              -21.780552378761914
+            ],
+            [
+              -48.02743851863771,
+              -21.780552378761914
+            ],
+            [
+              -48.02743851863771,
+              -21.781091367932383
+            ],
+            [
+              -48.02770801322294,
+              -21.781091367932383
+            ],
+            [
+              -48.02770801322294,
+              -21.78189985168809
+            ],
+            [
+              -48.02932498073436,
+              -21.78189985168809
+            ],
+            [
+              -48.02932498073436,
+              -21.78351681919951
+            ],
+            [
+              -48.03175043200148,
+              -21.78351681919951
+            ],
+            [
+              -48.03175043200148,
+              -21.785133786710922
+            ],
+            [
+              -48.03282841034242,
+              -21.785133786710922
+            ],
+            [
+              -48.03282841034242,
+              -21.783247324614273
+            ],
+            [
+              -48.03525386160955,
+              -21.783247324614273
+            ],
+            [
+              -48.03525386160955,
+              -21.782977830029036
+            ],
+            [
+              -48.03606234536525,
+              -21.782977830029036
+            ],
+            [
+              -48.03606234536525,
+              -21.78189985168809
+            ],
+            [
+              -48.032558915757186,
+              -21.78189985168809
+            ],
+            [
+              -48.032558915757186,
+              -21.78136086251762
+            ],
+            [
+              -48.029863969904824,
+              -21.78136086251762
+            ],
+            [
+              -48.029863969904824,
+              -21.779743895006206
+            ],
+            [
+              -48.02959447531959,
+              -21.779743895006206
+            ],
+            [
+              -48.02959447531959,
+              -21.77947440042097
+            ],
+            [
+              -48.02716902405247,
+              -21.77947440042097
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282309",
+        "year": 2025,
+        "burned_area_ha": 21.66,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.09993256206615,
+              -21.782977830029036
+            ],
+            [
+              -48.09993256206615,
+              -21.78378631378474
+            ],
+            [
+              -48.09966306748092,
+              -21.78378631378474
+            ],
+            [
+              -48.09966306748092,
+              -21.784325302955214
+            ],
+            [
+              -48.09939357289568,
+              -21.784325302955214
+            ],
+            [
+              -48.09939357289568,
+              -21.78459479754045
+            ],
+            [
+              -48.09912407831044,
+              -21.78459479754045
+            ],
+            [
+              -48.09912407831044,
+              -21.784864292125686
+            ],
+            [
+              -48.098854583725206,
+              -21.784864292125686
+            ],
+            [
+              -48.098854583725206,
+              -21.786211765051867
+            ],
+            [
+              -48.10047155123662,
+              -21.786211765051867
+            ],
+            [
+              -48.10047155123662,
+              -21.78594227046663
+            ],
+            [
+              -48.10074104582186,
+              -21.78594227046663
+            ],
+            [
+              -48.10074104582186,
+              -21.785672775881395
+            ],
+            [
+              -48.101010540407096,
+              -21.785672775881395
+            ],
+            [
+              -48.101010540407096,
+              -21.78540328129616
+            ],
+            [
+              -48.10128003499233,
+              -21.78540328129616
+            ],
+            [
+              -48.10128003499233,
+              -21.785133786710922
+            ],
+            [
+              -48.10208851874803,
+              -21.785133786710922
+            ],
+            [
+              -48.10208851874803,
+              -21.784864292125686
+            ],
+            [
+              -48.10235801333327,
+              -21.784864292125686
+            ],
+            [
+              -48.10235801333327,
+              -21.78378631378474
+            ],
+            [
+              -48.10208851874803,
+              -21.78378631378474
+            ],
+            [
+              -48.10208851874803,
+              -21.78351681919951
+            ],
+            [
+              -48.1018190241628,
+              -21.78351681919951
+            ],
+            [
+              -48.1018190241628,
+              -21.78378631378474
+            ],
+            [
+              -48.10128003499233,
+              -21.78378631378474
+            ],
+            [
+              -48.10128003499233,
+              -21.78351681919951
+            ],
+            [
+              -48.101010540407096,
+              -21.78351681919951
+            ],
+            [
+              -48.101010540407096,
+              -21.782977830029036
+            ],
+            [
+              -48.09993256206615,
+              -21.782977830029036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282317",
+        "year": 2025,
+        "burned_area_ha": 8.25,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.213928771620914,
+              -21.78378631378474
+            ],
+            [
+              -48.213928771620914,
+              -21.786481259637103
+            ],
+            [
+              -48.21365927703568,
+              -21.786481259637103
+            ],
+            [
+              -48.21365927703568,
+              -21.787559237978044
+            ],
+            [
+              -48.21851017956993,
+              -21.787559237978044
+            ],
+            [
+              -48.21851017956993,
+              -21.787289743392808
+            ],
+            [
+              -48.21931866332564,
+              -21.787289743392808
+            ],
+            [
+              -48.21931866332564,
+              -21.786481259637103
+            ],
+            [
+              -48.2190491687404,
+              -21.786481259637103
+            ],
+            [
+              -48.2190491687404,
+              -21.786211765051867
+            ],
+            [
+              -48.21877967415516,
+              -21.786211765051867
+            ],
+            [
+              -48.21877967415516,
+              -21.78594227046663
+            ],
+            [
+              -48.21797119039945,
+              -21.78594227046663
+            ],
+            [
+              -48.21797119039945,
+              -21.785672775881395
+            ],
+            [
+              -48.21743220122899,
+              -21.785672775881395
+            ],
+            [
+              -48.21743220122899,
+              -21.78540328129616
+            ],
+            [
+              -48.21716270664375,
+              -21.78540328129616
+            ],
+            [
+              -48.21716270664375,
+              -21.785133786710922
+            ],
+            [
+              -48.216623717473276,
+              -21.785133786710922
+            ],
+            [
+              -48.216623717473276,
+              -21.784864292125686
+            ],
+            [
+              -48.2160847283028,
+              -21.784864292125686
+            ],
+            [
+              -48.2160847283028,
+              -21.784055808369978
+            ],
+            [
+              -48.21500674996186,
+              -21.784055808369978
+            ],
+            [
+              -48.21500674996186,
+              -21.78378631378474
+            ],
+            [
+              -48.213928771620914,
+              -21.78378631378474
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282327",
+        "year": 2025,
+        "burned_area_ha": 16.33,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -47.949824078089776,
+              -21.785133786710922
+            ],
+            [
+              -47.94907038386794,
+              -21.785133786710922
+            ],
+            [
+              -47.949824078089776,
+              -21.78591302988943
+            ],
+            [
+              -47.949824078089776,
+              -21.785133786710922
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282330",
+        "year": 2025,
+        "burned_area_ha": 0.34,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.0341758832686,
+              -21.787020248807572
+            ],
+            [
+              -48.0341758832686,
+              -21.788367721733753
+            ],
+            [
+              -48.03579285078001,
+              -21.788367721733753
+            ],
+            [
+              -48.03579285078001,
+              -21.787020248807572
+            ],
+            [
+              -48.0341758832686,
+              -21.787020248807572
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282331",
+        "year": 2025,
+        "burned_area_ha": 2.5,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.11367678591318,
+              -21.78863721631899
+            ],
+            [
+              -48.11367678591318,
+              -21.790254183830402
+            ],
+            [
+              -48.11421577508365,
+              -21.790254183830402
+            ],
+            [
+              -48.11421577508365,
+              -21.790793173000875
+            ],
+            [
+              -48.11448526966889,
+              -21.790793173000875
+            ],
+            [
+              -48.11448526966889,
+              -21.79187115134182
+            ],
+            [
+              -48.11637173176554,
+              -21.79187115134182
+            ],
+            [
+              -48.11637173176554,
+              -21.79052367841564
+            ],
+            [
+              -48.1161022371803,
+              -21.79052367841564
+            ],
+            [
+              -48.1161022371803,
+              -21.789984689245166
+            ],
+            [
+              -48.11583274259507,
+              -21.789984689245166
+            ],
+            [
+              -48.11583274259507,
+              -21.78971519465993
+            ],
+            [
+              -48.115563248009835,
+              -21.78971519465993
+            ],
+            [
+              -48.115563248009835,
+              -21.789445700074697
+            ],
+            [
+              -48.115293753424595,
+              -21.789445700074697
+            ],
+            [
+              -48.115293753424595,
+              -21.78917620548946
+            ],
+            [
+              -48.115024258839355,
+              -21.78917620548946
+            ],
+            [
+              -48.115024258839355,
+              -21.788906710904225
+            ],
+            [
+              -48.11475476425412,
+              -21.788906710904225
+            ],
+            [
+              -48.11475476425412,
+              -21.78863721631899
+            ],
+            [
+              -48.11367678591318,
+              -21.78863721631899
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282363",
+        "year": 2025,
+        "burned_area_ha": 6.83,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.278337977492285,
+              -21.78782873256328
+            ],
+            [
+              -48.278337977492285,
+              -21.788367721733753
+            ],
+            [
+              -48.27806848290705,
+              -21.788367721733753
+            ],
+            [
+              -48.27806848290705,
+              -21.789445700074697
+            ],
+            [
+              -48.27779898832182,
+              -21.789445700074697
+            ],
+            [
+              -48.27779898832182,
+              -21.789984689245166
+            ],
+            [
+              -48.27752949373658,
+              -21.789984689245166
+            ],
+            [
+              -48.27752949373658,
+              -21.790793173000875
+            ],
+            [
+              -48.27725999915134,
+              -21.790793173000875
+            ],
+            [
+              -48.27725999915134,
+              -21.792140645927056
+            ],
+            [
+              -48.27968545041847,
+              -21.792140645927056
+            ],
+            [
+              -48.27968545041847,
+              -21.79187115134182
+            ],
+            [
+              -48.282919385441296,
+              -21.79187115134182
+            ],
+            [
+              -48.282919385441296,
+              -21.790793173000875
+            ],
+            [
+              -48.282649890856064,
+              -21.790793173000875
+            ],
+            [
+              -48.282649890856064,
+              -21.79052367841564
+            ],
+            [
+              -48.282110901685584,
+              -21.79052367841564
+            ],
+            [
+              -48.282110901685584,
+              -21.790254183830402
+            ],
+            [
+              -48.28184140710036,
+              -21.790254183830402
+            ],
+            [
+              -48.28184140710036,
+              -21.789984689245166
+            ],
+            [
+              -48.28157191251512,
+              -21.789984689245166
+            ],
+            [
+              -48.28157191251512,
+              -21.78971519465993
+            ],
+            [
+              -48.28130241792988,
+              -21.78971519465993
+            ],
+            [
+              -48.28130241792988,
+              -21.789445700074697
+            ],
+            [
+              -48.28103292334465,
+              -21.789445700074697
+            ],
+            [
+              -48.28103292334465,
+              -21.78917620548946
+            ],
+            [
+              -48.280763428759414,
+              -21.78917620548946
+            ],
+            [
+              -48.280763428759414,
+              -21.788906710904225
+            ],
+            [
+              -48.280224439588935,
+              -21.788906710904225
+            ],
+            [
+              -48.280224439588935,
+              -21.788098227148517
+            ],
+            [
+              -48.2799549450037,
+              -21.788098227148517
+            ],
+            [
+              -48.2799549450037,
+              -21.78782873256328
+            ],
+            [
+              -48.278337977492285,
+              -21.78782873256328
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282365",
+        "year": 2025,
+        "burned_area_ha": 18.5,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.10020205665138,
+              -21.789984689245166
+            ],
+            [
+              -48.10020205665138,
+              -21.79106266758611
+            ],
+            [
+              -48.10047155123662,
+              -21.79106266758611
+            ],
+            [
+              -48.10047155123662,
+              -21.794027108023705
+            ],
+            [
+              -48.10208851874803,
+              -21.794027108023705
+            ],
+            [
+              -48.10208851874803,
+              -21.79375761343847
+            ],
+            [
+              -48.10505295918563,
+              -21.79375761343847
+            ],
+            [
+              -48.10505295918563,
+              -21.794027108023705
+            ],
+            [
+              -48.10828689420846,
+              -21.794027108023705
+            ],
+            [
+              -48.10828689420846,
+              -21.79294912968276
+            ],
+            [
+              -48.10666992669705,
+              -21.79294912968276
+            ],
+            [
+              -48.10666992669705,
+              -21.792679635097528
+            ],
+            [
+              -48.10451397001516,
+              -21.792679635097528
+            ],
+            [
+              -48.10451397001516,
+              -21.792410140512292
+            ],
+            [
+              -48.1018190241628,
+              -21.792410140512292
+            ],
+            [
+              -48.1018190241628,
+              -21.79052367841564
+            ],
+            [
+              -48.10154952957757,
+              -21.79052367841564
+            ],
+            [
+              -48.10154952957757,
+              -21.789984689245166
+            ],
+            [
+              -48.10020205665138,
+              -21.789984689245166
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282382",
+        "year": 2025,
+        "burned_area_ha": 15.83,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.003453500551714,
+              -21.816395158598283
+            ],
+            [
+              -48.003453500551714,
+              -21.817473136939224
+            ],
+            [
+              -48.00453147889266,
+              -21.817473136939224
+            ],
+            [
+              -48.00453147889266,
+              -21.816395158598283
+            ],
+            [
+              -48.003453500551714,
+              -21.816395158598283
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282555",
+        "year": 2025,
+        "burned_area_ha": 1.33,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.001297543869825,
+              -21.817473136939224
+            ],
+            [
+              -48.001297543869825,
+              -21.81855111528017
+            ],
+            [
+              -48.00237552221077,
+              -21.81855111528017
+            ],
+            [
+              -48.00237552221077,
+              -21.817473136939224
+            ],
+            [
+              -48.001297543869825,
+              -21.817473136939224
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282563",
+        "year": 2025,
+        "burned_area_ha": 1.33,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.11664122635077,
+              -21.825557974496302
+            ],
+            [
+              -48.11664122635077,
+              -21.826635952837243
+            ],
+            [
+              -48.11879718303266,
+              -21.826635952837243
+            ],
+            [
+              -48.11879718303266,
+              -21.825557974496302
+            ],
+            [
+              -48.11664122635077,
+              -21.825557974496302
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282637",
+        "year": 2025,
+        "burned_area_ha": 2.67,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.229020468394125,
+              -21.830408877030546
+            ],
+            [
+              -48.229020468394125,
+              -21.83148685537149
+            ],
+            [
+              -48.23009844673507,
+              -21.83148685537149
+            ],
+            [
+              -48.23009844673507,
+              -21.830408877030546
+            ],
+            [
+              -48.229020468394125,
+              -21.830408877030546
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282663",
+        "year": 2025,
+        "burned_area_ha": 1.33,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.161107832914695,
+              -21.83202584454196
+            ],
+            [
+              -48.161107832914695,
+              -21.832295339127196
+            ],
+            [
+              -48.160838338329455,
+              -21.832295339127196
+            ],
+            [
+              -48.160838338329455,
+              -21.83283432829767
+            ],
+            [
+              -48.16029934915898,
+              -21.83283432829767
+            ],
+            [
+              -48.16029934915898,
+              -21.833103822882904
+            ],
+            [
+              -48.16002985457375,
+              -21.833103822882904
+            ],
+            [
+              -48.16002985457375,
+              -21.83418180122385
+            ],
+            [
+              -48.16029934915898,
+              -21.83418180122385
+            ],
+            [
+              -48.16029934915898,
+              -21.83472079039432
+            ],
+            [
+              -48.16164682208516,
+              -21.83472079039432
+            ],
+            [
+              -48.16164682208516,
+              -21.83418180122385
+            ],
+            [
+              -48.164880757107994,
+              -21.83418180122385
+            ],
+            [
+              -48.164880757107994,
+              -21.83283432829767
+            ],
+            [
+              -48.164611262522754,
+              -21.83283432829767
+            ],
+            [
+              -48.164611262522754,
+              -21.832564833712432
+            ],
+            [
+              -48.16353328418181,
+              -21.832564833712432
+            ],
+            [
+              -48.16353328418181,
+              -21.832295339127196
+            ],
+            [
+              -48.16218581125563,
+              -21.832295339127196
+            ],
+            [
+              -48.16218581125563,
+              -21.83202584454196
+            ],
+            [
+              -48.161107832914695,
+              -21.83202584454196
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282692",
+        "year": 2025,
+        "burned_area_ha": 10.58,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.27133111827615,
+              -21.84577006838899
+            ],
+            [
+              -48.27133111827615,
+              -21.846848046729935
+            ],
+            [
+              -48.272409096617096,
+              -21.846848046729935
+            ],
+            [
+              -48.272409096617096,
+              -21.847387035900404
+            ],
+            [
+              -48.27348707495804,
+              -21.847387035900404
+            ],
+            [
+              -48.27348707495804,
+              -21.846309057559463
+            ],
+            [
+              -48.272409096617096,
+              -21.846309057559463
+            ],
+            [
+              -48.272409096617096,
+              -21.84577006838899
+            ],
+            [
+              -48.27133111827615,
+              -21.84577006838899
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282815",
+        "year": 2025,
+        "burned_area_ha": 2.67,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.14790259823813,
+              -21.84172764961045
+            ],
+            [
+              -48.14790259823813,
+              -21.842805627951396
+            ],
+            [
+              -48.14682461989719,
+              -21.842805627951396
+            ],
+            [
+              -48.14682461989719,
+              -21.84388360629234
+            ],
+            [
+              -48.14655512531195,
+              -21.84388360629234
+            ],
+            [
+              -48.14655512531195,
+              -21.844153100877573
+            ],
+            [
+              -48.14628563072672,
+              -21.844153100877573
+            ],
+            [
+              -48.14628563072672,
+              -21.84442259546281
+            ],
+            [
+              -48.14601613614148,
+              -21.84442259546281
+            ],
+            [
+              -48.14601613614148,
+              -21.845500573803754
+            ],
+            [
+              -48.14547714697101,
+              -21.845500573803754
+            ],
+            [
+              -48.14547714697101,
+              -21.84577006838899
+            ],
+            [
+              -48.143860179459594,
+              -21.84577006838899
+            ],
+            [
+              -48.143860179459594,
+              -21.84846501424135
+            ],
+            [
+              -48.143590684874354,
+              -21.84846501424135
+            ],
+            [
+              -48.143590684874354,
+              -21.849542992582293
+            ],
+            [
+              -48.1446686632153,
+              -21.849542992582293
+            ],
+            [
+              -48.1446686632153,
+              -21.84765653048564
+            ],
+            [
+              -48.14682461989719,
+              -21.84765653048564
+            ],
+            [
+              -48.14682461989719,
+              -21.845500573803754
+            ],
+            [
+              -48.14763310365289,
+              -21.845500573803754
+            ],
+            [
+              -48.14763310365289,
+              -21.844961584633282
+            ],
+            [
+              -48.14790259823813,
+              -21.844961584633282
+            ],
+            [
+              -48.14790259823813,
+              -21.844153100877573
+            ],
+            [
+              -48.14817209282337,
+              -21.844153100877573
+            ],
+            [
+              -48.14817209282337,
+              -21.842805627951396
+            ],
+            [
+              -48.14898057657908,
+              -21.842805627951396
+            ],
+            [
+              -48.14898057657908,
+              -21.84172764961045
+            ],
+            [
+              -48.14790259823813,
+              -21.84172764961045
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282833",
+        "year": 2025,
+        "burned_area_ha": 15.07,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.3228045840562,
+              -21.850620970923234
+            ],
+            [
+              -48.3228045840562,
+              -21.85169894926418
+            ],
+            [
+              -48.32442155156762,
+              -21.85169894926418
+            ],
+            [
+              -48.32442155156762,
+              -21.851968443849415
+            ],
+            [
+              -48.32549952990856,
+              -21.851968443849415
+            ],
+            [
+              -48.32549952990856,
+              -21.85089046550847
+            ],
+            [
+              -48.324152056982385,
+              -21.85089046550847
+            ],
+            [
+              -48.324152056982385,
+              -21.850620970923234
+            ],
+            [
+              -48.3228045840562,
+              -21.850620970923234
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282859",
+        "year": 2025,
+        "burned_area_ha": 3.25,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.202340504455776,
+              -21.860322775991726
+            ],
+            [
+              -48.202340504455776,
+              -21.860592270576962
+            ],
+            [
+              -48.20207100987054,
+              -21.860592270576962
+            ],
+            [
+              -48.20207100987054,
+              -21.861131259747435
+            ],
+            [
+              -48.201801515285304,
+              -21.861131259747435
+            ],
+            [
+              -48.201801515285304,
+              -21.861670248917907
+            ],
+            [
+              -48.20153202070007,
+              -21.861670248917907
+            ],
+            [
+              -48.20153202070007,
+              -21.862209238088376
+            ],
+            [
+              -48.20126252611483,
+              -21.862209238088376
+            ],
+            [
+              -48.20126252611483,
+              -21.86598216228168
+            ],
+            [
+              -48.202609999041016,
+              -21.86598216228168
+            ],
+            [
+              -48.202609999041016,
+              -21.86517367852597
+            ],
+            [
+              -48.20287949362625,
+              -21.86517367852597
+            ],
+            [
+              -48.20287949362625,
+              -21.864904183940737
+            ],
+            [
+              -48.20341848279672,
+              -21.864904183940737
+            ],
+            [
+              -48.20341848279672,
+              -21.863556711014557
+            ],
+            [
+              -48.2047659557229,
+              -21.863556711014557
+            ],
+            [
+              -48.2047659557229,
+              -21.862478732673612
+            ],
+            [
+              -48.204496461137666,
+              -21.862478732673612
+            ],
+            [
+              -48.204496461137666,
+              -21.861939743503143
+            ],
+            [
+              -48.204226966552426,
+              -21.861939743503143
+            ],
+            [
+              -48.204226966552426,
+              -21.861670248917907
+            ],
+            [
+              -48.20368797738195,
+              -21.861670248917907
+            ],
+            [
+              -48.20368797738195,
+              -21.8608617651622
+            ],
+            [
+              -48.20341848279672,
+              -21.8608617651622
+            ],
+            [
+              -48.20341848279672,
+              -21.860322775991726
+            ],
+            [
+              -48.202340504455776,
+              -21.860322775991726
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282975",
+        "year": 2025,
+        "burned_area_ha": 14.57,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.28938725548696,
+              -21.862748227258848
+            ],
+            [
+              -48.28938725548696,
+              -21.863556711014557
+            ],
+            [
+              -48.28777028797555,
+              -21.863556711014557
+            ],
+            [
+              -48.28777028797555,
+              -21.865712667696442
+            ],
+            [
+              -48.29019573924266,
+              -21.865712667696442
+            ],
+            [
+              -48.29019573924266,
+              -21.86598216228168
+            ],
+            [
+              -48.29154321216885,
+              -21.86598216228168
+            ],
+            [
+              -48.29154321216885,
+              -21.865712667696442
+            ],
+            [
+              -48.292890685095024,
+              -21.865712667696442
+            ],
+            [
+              -48.292890685095024,
+              -21.865443173111206
+            ],
+            [
+              -48.29316017968026,
+              -21.865443173111206
+            ],
+            [
+              -48.29316017968026,
+              -21.86517367852597
+            ],
+            [
+              -48.2934296742655,
+              -21.86517367852597
+            ],
+            [
+              -48.2934296742655,
+              -21.863826205599793
+            ],
+            [
+              -48.29316017968026,
+              -21.863826205599793
+            ],
+            [
+              -48.29316017968026,
+              -21.863556711014557
+            ],
+            [
+              -48.292890685095024,
+              -21.863556711014557
+            ],
+            [
+              -48.292890685095024,
+              -21.86328721642932
+            ],
+            [
+              -48.29262119050979,
+              -21.86328721642932
+            ],
+            [
+              -48.29262119050979,
+              -21.863017721844084
+            ],
+            [
+              -48.291004222998374,
+              -21.863017721844084
+            ],
+            [
+              -48.291004222998374,
+              -21.862748227258848
+            ],
+            [
+              -48.28938725548696,
+              -21.862748227258848
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-282977",
+        "year": 2025,
+        "burned_area_ha": 16.66,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.282110901685584,
+              -21.865712667696442
+            ],
+            [
+              -48.282110901685584,
+              -21.866790646037387
+            ],
+            [
+              -48.282919385441296,
+              -21.866790646037387
+            ],
+            [
+              -48.282919385441296,
+              -21.867599129793096
+            ],
+            [
+              -48.28399736378224,
+              -21.867599129793096
+            ],
+            [
+              -48.28399736378224,
+              -21.86652115145215
+            ],
+            [
+              -48.28318888002653,
+              -21.86652115145215
+            ],
+            [
+              -48.28318888002653,
+              -21.865712667696442
+            ],
+            [
+              -48.282110901685584,
+              -21.865712667696442
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283002",
+        "year": 2025,
+        "burned_area_ha": 2.58,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.234949349269314,
+              -21.864904183940737
+            ],
+            [
+              -48.234949349269314,
+              -21.86517367852597
+            ],
+            [
+              -48.234679854684074,
+              -21.86517367852597
+            ],
+            [
+              -48.234679854684074,
+              -21.865443173111206
+            ],
+            [
+              -48.23441036009884,
+              -21.865443173111206
+            ],
+            [
+              -48.23441036009884,
+              -21.866251656866915
+            ],
+            [
+              -48.23414086551361,
+              -21.866251656866915
+            ],
+            [
+              -48.23414086551361,
+              -21.866790646037387
+            ],
+            [
+              -48.23360187634314,
+              -21.866790646037387
+            ],
+            [
+              -48.23360187634314,
+              -21.867060140622623
+            ],
+            [
+              -48.233332381757904,
+              -21.867060140622623
+            ],
+            [
+              -48.233332381757904,
+              -21.868138118963564
+            ],
+            [
+              -48.23360187634314,
+              -21.868138118963564
+            ],
+            [
+              -48.23360187634314,
+              -21.868946602719273
+            ],
+            [
+              -48.23387137092837,
+              -21.868946602719273
+            ],
+            [
+              -48.23387137092837,
+              -21.86975508647498
+            ],
+            [
+              -48.23414086551361,
+              -21.86975508647498
+            ],
+            [
+              -48.23414086551361,
+              -21.87056357023069
+            ],
+            [
+              -48.23441036009884,
+              -21.87056357023069
+            ],
+            [
+              -48.23441036009884,
+              -21.87164154857163
+            ],
+            [
+              -48.23575783302502,
+              -21.87164154857163
+            ],
+            [
+              -48.23575783302502,
+              -21.871372053986395
+            ],
+            [
+              -48.23818328429215,
+              -21.871372053986395
+            ],
+            [
+              -48.23818328429215,
+              -21.87164154857163
+            ],
+            [
+              -48.23845277887738,
+              -21.87164154857163
+            ],
+            [
+              -48.23845277887738,
+              -21.87245003232734
+            ],
+            [
+              -48.23980025180356,
+              -21.87245003232734
+            ],
+            [
+              -48.23980025180356,
+              -21.871911043156867
+            ],
+            [
+              -48.2400697463888,
+              -21.871911043156867
+            ],
+            [
+              -48.2400697463888,
+              -21.87164154857163
+            ],
+            [
+              -48.24033924097403,
+              -21.87164154857163
+            ],
+            [
+              -48.24033924097403,
+              -21.87110255940116
+            ],
+            [
+              -48.24060873555926,
+              -21.87110255940116
+            ],
+            [
+              -48.24060873555926,
+              -21.87056357023069
+            ],
+            [
+              -48.2408782301445,
+              -21.87056357023069
+            ],
+            [
+              -48.2408782301445,
+              -21.870294075645454
+            ],
+            [
+              -48.24114772472974,
+              -21.870294075645454
+            ],
+            [
+              -48.24114772472974,
+              -21.868677108134037
+            ],
+            [
+              -48.2408782301445,
+              -21.868677108134037
+            ],
+            [
+              -48.2408782301445,
+              -21.8684076135488
+            ],
+            [
+              -48.24060873555926,
+              -21.8684076135488
+            ],
+            [
+              -48.24060873555926,
+              -21.868138118963564
+            ],
+            [
+              -48.2400697463888,
+              -21.868138118963564
+            ],
+            [
+              -48.2400697463888,
+              -21.867868624378332
+            ],
+            [
+              -48.23980025180356,
+              -21.867868624378332
+            ],
+            [
+              -48.23980025180356,
+              -21.867599129793096
+            ],
+            [
+              -48.239530757218326,
+              -21.867599129793096
+            ],
+            [
+              -48.239530757218326,
+              -21.86732963520786
+            ],
+            [
+              -48.23926126263309,
+              -21.86732963520786
+            ],
+            [
+              -48.23926126263309,
+              -21.867060140622623
+            ],
+            [
+              -48.23899176804785,
+              -21.867060140622623
+            ],
+            [
+              -48.23899176804785,
+              -21.866790646037387
+            ],
+            [
+              -48.23764429512167,
+              -21.866790646037387
+            ],
+            [
+              -48.23764429512167,
+              -21.865712667696442
+            ],
+            [
+              -48.236835811365964,
+              -21.865712667696442
+            ],
+            [
+              -48.236835811365964,
+              -21.865443173111206
+            ],
+            [
+              -48.2362968221955,
+              -21.865443173111206
+            ],
+            [
+              -48.2362968221955,
+              -21.86517367852597
+            ],
+            [
+              -48.23602732761026,
+              -21.86517367852597
+            ],
+            [
+              -48.23602732761026,
+              -21.864904183940737
+            ],
+            [
+              -48.234949349269314,
+              -21.864904183940737
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283033",
+        "year": 2025,
+        "burned_area_ha": 43.22,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.189135269779214,
+              -21.879456891543473
+            ],
+            [
+              -48.189135269779214,
+              -21.880534869884414
+            ],
+            [
+              -48.19021324812016,
+              -21.880534869884414
+            ],
+            [
+              -48.19021324812016,
+              -21.879456891543473
+            ],
+            [
+              -48.189135269779214,
+              -21.879456891543473
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283096",
+        "year": 2025,
+        "burned_area_ha": 1.33,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.197759096506765,
+              -21.877839924032056
+            ],
+            [
+              -48.197759096506765,
+              -21.87837891320253
+            ],
+            [
+              -48.19695061275106,
+              -21.87837891320253
+            ],
+            [
+              -48.19695061275106,
+              -21.878917902373
+            ],
+            [
+              -48.19668111816583,
+              -21.878917902373
+            ],
+            [
+              -48.19668111816583,
+              -21.879187396958237
+            ],
+            [
+              -48.19614212899535,
+              -21.879187396958237
+            ],
+            [
+              -48.19614212899535,
+              -21.880534869884414
+            ],
+            [
+              -48.19533364523964,
+              -21.880534869884414
+            ],
+            [
+              -48.19533364523964,
+              -21.88161284822536
+            ],
+            [
+              -48.19641162358059,
+              -21.88161284822536
+            ],
+            [
+              -48.19641162358059,
+              -21.880265375299178
+            ],
+            [
+              -48.197759096506765,
+              -21.880265375299178
+            ],
+            [
+              -48.197759096506765,
+              -21.879995880713945
+            ],
+            [
+              -48.198028591092,
+              -21.879995880713945
+            ],
+            [
+              -48.198028591092,
+              -21.87972638612871
+            ],
+            [
+              -48.19829808567724,
+              -21.87972638612871
+            ],
+            [
+              -48.19829808567724,
+              -21.879456891543473
+            ],
+            [
+              -48.19937606401818,
+              -21.879456891543473
+            ],
+            [
+              -48.19937606401818,
+              -21.878917902373
+            ],
+            [
+              -48.19964555860342,
+              -21.878917902373
+            ],
+            [
+              -48.19964555860342,
+              -21.877839924032056
+            ],
+            [
+              -48.197759096506765,
+              -21.877839924032056
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283105",
+        "year": 2025,
+        "burned_area_ha": 7.83,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.19209971021681,
+              -21.88403829949248
+            ],
+            [
+              -48.19209971021681,
+              -21.885116277833426
+            ],
+            [
+              -48.19344718314299,
+              -21.885116277833426
+            ],
+            [
+              -48.19344718314299,
+              -21.88403829949248
+            ],
+            [
+              -48.19209971021681,
+              -21.88403829949248
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283133",
+        "year": 2025,
+        "burned_area_ha": 1.67,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.181858915977855,
+              -21.891584147879087
+            ],
+            [
+              -48.181858915977855,
+              -21.892662126220028
+            ],
+            [
+              -48.18293689431879,
+              -21.892662126220028
+            ],
+            [
+              -48.18293689431879,
+              -21.891584147879087
+            ],
+            [
+              -48.181858915977855,
+              -21.891584147879087
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283182",
+        "year": 2025,
+        "burned_area_ha": 1.33,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.15221451160191,
+              -21.89131465329385
+            ],
+            [
+              -48.15221451160191,
+              -21.892662126220028
+            ],
+            [
+              -48.15167552243143,
+              -21.892662126220028
+            ],
+            [
+              -48.15167552243143,
+              -21.893740104560973
+            ],
+            [
+              -48.15275350077238,
+              -21.893740104560973
+            ],
+            [
+              -48.15275350077238,
+              -21.8932011153905
+            ],
+            [
+              -48.15329248994285,
+              -21.8932011153905
+            ],
+            [
+              -48.15329248994285,
+              -21.892931620805264
+            ],
+            [
+              -48.15410097369856,
+              -21.892931620805264
+            ],
+            [
+              -48.15410097369856,
+              -21.891853642464323
+            ],
+            [
+              -48.15329248994285,
+              -21.891853642464323
+            ],
+            [
+              -48.15329248994285,
+              -21.89131465329385
+            ],
+            [
+              -48.15221451160191,
+              -21.89131465329385
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283188",
+        "year": 2025,
+        "burned_area_ha": 4.33,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.16380277876705,
+              -21.8932011153905
+            ],
+            [
+              -48.16380277876705,
+              -21.894279093731445
+            ],
+            [
+              -48.1656892408637,
+              -21.894279093731445
+            ],
+            [
+              -48.1656892408637,
+              -21.8932011153905
+            ],
+            [
+              -48.16380277876705,
+              -21.8932011153905
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283196",
+        "year": 2025,
+        "burned_area_ha": 2.33,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.160838338329455,
+              -21.895626566657622
+            ],
+            [
+              -48.160838338329455,
+              -21.896704544998567
+            ],
+            [
+              -48.16137732749993,
+              -21.896704544998567
+            ],
+            [
+              -48.16137732749993,
+              -21.89724353416904
+            ],
+            [
+              -48.162724800426105,
+              -21.89724353416904
+            ],
+            [
+              -48.162724800426105,
+              -21.895626566657622
+            ],
+            [
+              -48.160838338329455,
+              -21.895626566657622
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283212",
+        "year": 2025,
+        "burned_area_ha": 3.16,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.168384186716054,
+              -21.898860501680453
+            ],
+            [
+              -48.168384186716054,
+              -21.900746963777106
+            ],
+            [
+              -48.16973165964224,
+              -21.900746963777106
+            ],
+            [
+              -48.16973165964224,
+              -21.90047746919187
+            ],
+            [
+              -48.17080963798318,
+              -21.90047746919187
+            ],
+            [
+              -48.17080963798318,
+              -21.900207974606634
+            ],
+            [
+              -48.17377407842078,
+              -21.900207974606634
+            ],
+            [
+              -48.17377407842078,
+              -21.89912999626569
+            ],
+            [
+              -48.17269610007983,
+              -21.89912999626569
+            ],
+            [
+              -48.17269610007983,
+              -21.899399490850925
+            ],
+            [
+              -48.17000115422748,
+              -21.899399490850925
+            ],
+            [
+              -48.17000115422748,
+              -21.89912999626569
+            ],
+            [
+              -48.169462165057,
+              -21.89912999626569
+            ],
+            [
+              -48.169462165057,
+              -21.898860501680453
+            ],
+            [
+              -48.168384186716054,
+              -21.898860501680453
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283231",
+        "year": 2025,
+        "burned_area_ha": 7.33,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.157065414136156,
+              -21.9037114042147
+            ],
+            [
+              -48.157065414136156,
+              -21.903980898799936
+            ],
+            [
+              -48.156795919550916,
+              -21.903980898799936
+            ],
+            [
+              -48.156795919550916,
+              -21.904519887970405
+            ],
+            [
+              -48.156256930380444,
+              -21.904519887970405
+            ],
+            [
+              -48.156256930380444,
+              -21.90478938255564
+            ],
+            [
+              -48.15598743579521,
+              -21.90478938255564
+            ],
+            [
+              -48.15598743579521,
+              -21.905058877140878
+            ],
+            [
+              -48.15571794120997,
+              -21.905058877140878
+            ],
+            [
+              -48.15571794120997,
+              -21.906136855481822
+            ],
+            [
+              -48.156256930380444,
+              -21.906136855481822
+            ],
+            [
+              -48.156256930380444,
+              -21.90640635006706
+            ],
+            [
+              -48.15733490872139,
+              -21.90640635006706
+            ],
+            [
+              -48.15733490872139,
+              -21.906136855481822
+            ],
+            [
+              -48.15760440330662,
+              -21.906136855481822
+            ],
+            [
+              -48.15760440330662,
+              -21.90559786631135
+            ],
+            [
+              -48.15787389789186,
+              -21.90559786631135
+            ],
+            [
+              -48.15787389789186,
+              -21.905328371726114
+            ],
+            [
+              -48.15841288706233,
+              -21.905328371726114
+            ],
+            [
+              -48.15841288706233,
+              -21.9037114042147
+            ],
+            [
+              -48.157065414136156,
+              -21.9037114042147
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283276",
+        "year": 2025,
+        "burned_area_ha": 5.83,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.14493815780054,
+              -21.905867360896586
+            ],
+            [
+              -48.14493815780054,
+              -21.90694533923753
+            ],
+            [
+              -48.14601613614148,
+              -21.90694533923753
+            ],
+            [
+              -48.14601613614148,
+              -21.905867360896586
+            ],
+            [
+              -48.14493815780054,
+              -21.905867360896586
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283284",
+        "year": 2025,
+        "burned_area_ha": 1.33,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.189943753534926,
+              -21.911796241771775
+            ],
+            [
+              -48.189943753534926,
+              -21.91287422011272
+            ],
+            [
+              -48.19102173187587,
+              -21.91287422011272
+            ],
+            [
+              -48.19102173187587,
+              -21.911796241771775
+            ],
+            [
+              -48.189943753534926,
+              -21.911796241771775
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283336",
+        "year": 2025,
+        "burned_area_ha": 1.33,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.193986172313465,
+              -21.9179946172322
+            ],
+            [
+              -48.193986172313465,
+              -21.919072595573144
+            ],
+            [
+              -48.1942556668987,
+              -21.919072595573144
+            ],
+            [
+              -48.1942556668987,
+              -21.919342090158377
+            ],
+            [
+              -48.195872634410115,
+              -21.919342090158377
+            ],
+            [
+              -48.195872634410115,
+              -21.9179946172322
+            ],
+            [
+              -48.193986172313465,
+              -21.9179946172322
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283378",
+        "year": 2025,
+        "burned_area_ha": 2.83,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.08807480031577,
+              -21.919072595573144
+            ],
+            [
+              -48.08807480031577,
+              -21.920150573914086
+            ],
+            [
+              -48.08915277865671,
+              -21.920150573914086
+            ],
+            [
+              -48.08915277865671,
+              -21.919072595573144
+            ],
+            [
+              -48.08807480031577,
+              -21.919072595573144
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283385",
+        "year": 2025,
+        "burned_area_ha": 1.33,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.11205981840176,
+              -21.920420068499322
+            ],
+            [
+              -48.11205981840176,
+              -21.921498046840266
+            ],
+            [
+              -48.113137796742706,
+              -21.921498046840266
+            ],
+            [
+              -48.113137796742706,
+              -21.920420068499322
+            ],
+            [
+              -48.11205981840176,
+              -21.920420068499322
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283404",
+        "year": 2025,
+        "burned_area_ha": 1.33,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.112329312987,
+              -21.92527097103357
+            ],
+            [
+              -48.112329312987,
+              -21.926618443959747
+            ],
+            [
+              -48.11394628049841,
+              -21.926618443959747
+            ],
+            [
+              -48.11394628049841,
+              -21.92527097103357
+            ],
+            [
+              -48.112329312987,
+              -21.92527097103357
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283451",
+        "year": 2025,
+        "burned_area_ha": 2.5,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -48.1761995296879,
+              -21.929313389812105
+            ],
+            [
+              -48.1761995296879,
+              -21.93039136815305
+            ],
+            [
+              -48.17754700261408,
+              -21.93039136815305
+            ],
+            [
+              -48.17754700261408,
+              -21.929313389812105
+            ],
+            [
+              -48.1761995296879,
+              -21.929313389812105
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "MBFOGO-2025-283494",
+        "year": 2025,
+        "burned_area_ha": 1.66,
+        "product": "Área queimada anual",
+        "collection": "MapBiomas Fogo Coleção 5",
+        "resolution_m": 30,
+        "source": "MapBiomas Fogo",
+        "source_url": "https://brasil.mapbiomas.org/mapbiomas-fogo/",
+        "download_url": "https://storage.googleapis.com/mapbiomas-public/initiatives/brasil/collection_10/fire-col5/annual_burned_vectors_v1/mapbiomas_fire_collection5_burned_area_2025.zip",
+        "layer_role": "visualização adicional; não entra no IECE"
+      }
+    }
+  ]
+}

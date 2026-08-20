@@ -5,6 +5,7 @@ Mapa didático do PET Saúde - Clima para explorar a exposição térmica e a pr
 ## O que o site mostra
 
 - Mapa atual: camada térmica local de 2024, áreas verdes, unidades de saúde, buffers de 300 m e pontos municipais de alagamento, inundação e enxurrada.
+- Camadas adicionais opcionais: ilhas de calor UrbVerde 2021 e cicatrizes de fogo anuais do MapBiomas Fogo Coleção 5 (2025), sem participação no IECS.
 - Histórico: série anual de 2016 a 2021 da temperatura máxima da superfície por setor da UrbVerde, agregada para cada unidade e para a média da rede.
 - Catálogo: 52 unidades analisadas e 2 registros pendentes de validação. O CMS Santa Angelina “Rafael Sorbo” está no mapa como `SUS-042`, com CNES `2063247`.
 - Nesta rodada, foram confirmadas e incorporadas a UPA Central, seis unidades básicas, o Espaço Crescer, o CAPS-AD, o CEO e o Centro Municipal de Referência do Autismo. O antigo registro da USF Jardim São Bento foi reconciliado com o `SUS-007`, evitando duplicidade.
@@ -35,6 +36,8 @@ data/
 ├── historico_risco_termico_araraquara.json     # UrbVerde 2016–2021 por unidade
 ├── pontos_risco_hidrologico_araraquara.geojson  # 23 pontos da Defesa Civil municipal
 ├── urbverde_araraquara.geojson                  # camada térmica local usada no mapa atual
+├── urbverde_ilhas_calor_2021_araraquara.geojson  # camada adicional UrbVerde 2021
+├── mapbiomas_fogo_araraquara_2025.geojson        # cicatrizes anuais MapBiomas Fogo
 ├── areas_verdes_araraquara.geojson              # legado sem fonte verificável; não carregado pela aplicação
 └── fontes_publicas_saude_araraquara.json       # fontes e usos de cada cruzamento
 ```

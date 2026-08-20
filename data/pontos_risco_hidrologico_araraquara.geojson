@@ -7,7 +7,28 @@
     "source_date": "2025-11-11",
     "count_published": 23,
     "count_geocoded_for_map": 20,
-    "interpretation": "Pontos mapeados de alagamento, inundação e enxurrada; não são uma mancha contínua de inundação."
+    "interpretation": "Pontos mapeados de alagamento, inundação e enxurrada; não são uma mancha contínua de inundação.",
+    "classification_legend": {
+      "risco_atenuado": {
+        "label": "Risco atenuado por obras estruturais",
+        "share_pct": 30
+      },
+      "obras_em_execucao": {
+        "label": "Obras estruturais em execução",
+        "share_pct": 35
+      },
+      "sem_intervencao": {
+        "label": "Sem intervenção",
+        "share_pct": 35
+      }
+    },
+    "classification_note": "Asteriscos do boletim: * risco atenuado por obras estruturais; ** obras estruturais em execução; *** sem intervenção.",
+    "deduplication_note": "Os 23 IDs publicados foram mantidos uma única vez. HIDRO-16 e HIDRO-17 são pontos distintos do boletim, apesar de compartilharem o mesmo eixo rodoviário.",
+    "count_by_classification": {
+      "risco_atenuado": 9,
+      "obras_em_execucao": 7,
+      "sem_intervencao": 7
+    }
   },
   "features": [
     {
@@ -27,7 +48,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "risco_atenuado",
+        "classification_label": "Risco atenuado por obras estruturais",
+        "classification_share_pct": 30
       }
     },
     {
@@ -47,7 +71,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "risco_atenuado",
+        "classification_label": "Risco atenuado por obras estruturais",
+        "classification_share_pct": 30
       }
     },
     {
@@ -67,7 +94,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "risco_atenuado",
+        "classification_label": "Risco atenuado por obras estruturais",
+        "classification_share_pct": 30
       }
     },
     {
@@ -87,7 +117,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "obras_em_execucao",
+        "classification_label": "Obras estruturais em execução",
+        "classification_share_pct": 35
       }
     },
     {
@@ -107,7 +140,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "risco_atenuado",
+        "classification_label": "Risco atenuado por obras estruturais",
+        "classification_share_pct": 30
       }
     },
     {
@@ -127,7 +163,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "risco_atenuado",
+        "classification_label": "Risco atenuado por obras estruturais",
+        "classification_share_pct": 30
       }
     },
     {
@@ -147,7 +186,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "obras_em_execucao",
+        "classification_label": "Obras estruturais em execução",
+        "classification_share_pct": 35
       }
     },
     {
@@ -167,7 +209,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "sem_intervencao",
+        "classification_label": "Sem intervenção",
+        "classification_share_pct": 35
       }
     },
     {
@@ -187,7 +232,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "sem_intervencao",
+        "classification_label": "Sem intervenção",
+        "classification_share_pct": 35
       }
     },
     {
@@ -201,7 +249,10 @@
         "coordinate_status": "pendente_geocodificacao",
         "coordinate_note": "Ponto presente no boletim municipal, ainda sem coordenada usada no mapa.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "sem_intervencao",
+        "classification_label": "Sem intervenção",
+        "classification_share_pct": 35
       }
     },
     {
@@ -221,7 +272,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "sem_intervencao",
+        "classification_label": "Sem intervenção",
+        "classification_share_pct": 35
       }
     },
     {
@@ -241,7 +295,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "sem_intervencao",
+        "classification_label": "Sem intervenção",
+        "classification_share_pct": 35
       }
     },
     {
@@ -261,7 +318,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "sem_intervencao",
+        "classification_label": "Sem intervenção",
+        "classification_share_pct": 35
       }
     },
     {
@@ -275,7 +335,10 @@
         "coordinate_status": "pendente_geocodificacao",
         "coordinate_note": "Ponto presente no boletim municipal, ainda sem coordenada usada no mapa.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "sem_intervencao",
+        "classification_label": "Sem intervenção",
+        "classification_share_pct": 35
       }
     },
     {
@@ -295,7 +358,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "risco_atenuado",
+        "classification_label": "Risco atenuado por obras estruturais",
+        "classification_share_pct": 30
       }
     },
     {
@@ -315,7 +381,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "risco_atenuado",
+        "classification_label": "Risco atenuado por obras estruturais",
+        "classification_share_pct": 30
       }
     },
     {
@@ -335,7 +404,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "risco_atenuado",
+        "classification_label": "Risco atenuado por obras estruturais",
+        "classification_share_pct": 30
       }
     },
     {
@@ -355,7 +427,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "risco_atenuado",
+        "classification_label": "Risco atenuado por obras estruturais",
+        "classification_share_pct": 30
       }
     },
     {
@@ -375,7 +450,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "obras_em_execucao",
+        "classification_label": "Obras estruturais em execução",
+        "classification_share_pct": 35
       }
     },
     {
@@ -395,7 +473,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "obras_em_execucao",
+        "classification_label": "Obras estruturais em execução",
+        "classification_share_pct": 35
       }
     },
     {
@@ -409,7 +490,10 @@
         "coordinate_status": "pendente_geocodificacao",
         "coordinate_note": "Ponto presente no boletim municipal, ainda sem coordenada usada no mapa.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "obras_em_execucao",
+        "classification_label": "Obras estruturais em execução",
+        "classification_share_pct": 35
       }
     },
     {
@@ -429,7 +513,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "obras_em_execucao",
+        "classification_label": "Obras estruturais em execução",
+        "classification_share_pct": 35
       }
     },
     {
@@ -449,7 +536,10 @@
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
         "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11"
+        "source_date": "2025-11-11",
+        "classification": "obras_em_execucao",
+        "classification_label": "Obras estruturais em execução",
+        "classification_share_pct": 35
       }
     }
   ]
