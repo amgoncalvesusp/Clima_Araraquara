@@ -2,10 +2,10 @@
   "title": "Base histórica de saúde — Araraquara",
   "municipality": "Araraquara",
   "municipality_code": "350320",
-  "generated_at": "2026-08-03T21:40:34.537254+00:00",
+  "generated_at": "2026-08-20T16:31:23.504422+00:00",
   "coverage": {
     "start_year": 2016,
-    "end_year": 2025,
+    "end_year": 2026,
     "years": [
       2016,
       2017,
@@ -16,9 +16,27 @@
       2022,
       2023,
       2024,
-      2025
+      2025,
+      2026
     ],
-    "months_requested": 120
+    "months_requested": 126,
+    "months_by_year": {
+      "2016": 12,
+      "2017": 12,
+      "2018": 12,
+      "2019": 12,
+      "2020": 12,
+      "2021": 12,
+      "2022": 12,
+      "2023": 12,
+      "2024": 12,
+      "2025": 12,
+      "2026": 6
+    },
+    "partial_years": [
+      2026
+    ],
+    "partial_year_note": "Anos parciais trazem menos meses publicados e por isso somam menos. Não leia essa diferença como queda no atendimento."
   },
   "hospital": {
     "source": "SIH/SUS — internações por local de residência",
@@ -86,6 +104,12 @@
         "cnes": "0008052"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL REGIONAL DR VIVALDO MARTINS SIMOES OSASCO",
+        "value": 0,
+        "cnes": "0008052"
+      },
+      {
         "year": 2016,
         "establishment": "CENTRO HOSPITALAR DE SANTO ANDRE DR NEWTON DA COSTA BRANDAO",
         "value": 0,
@@ -146,6 +170,12 @@
         "cnes": "0008923"
       },
       {
+        "year": 2026,
+        "establishment": "CENTRO HOSPITALAR DE SANTO ANDRE DR NEWTON DA COSTA BRANDAO",
+        "value": 0,
+        "cnes": "0008923"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL PIO XII",
         "value": 0,
@@ -206,6 +236,12 @@
         "cnes": "0009601"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL PIO XII",
+        "value": 0,
+        "cnes": "0009601"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL MUNICIPAL DR JOSE DE CARVALHO FLORENCE",
         "value": 1,
@@ -266,6 +302,12 @@
         "cnes": "0009628"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL MUNICIPAL DR JOSE DE CARVALHO FLORENCE",
+        "value": 0,
+        "cnes": "0009628"
+      },
+      {
         "year": 2016,
         "establishment": "UPA VILA LUZITA",
         "value": 0,
@@ -326,6 +368,12 @@
         "cnes": "0021520"
       },
       {
+        "year": 2026,
+        "establishment": "UPA VILA LUZITA",
+        "value": 0,
+        "cnes": "0021520"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL REGIONAL DO LITORAL NORTE",
         "value": 0,
@@ -383,6 +431,12 @@
         "year": 2025,
         "establishment": "HOSPITAL REGIONAL DO LITORAL NORTE",
         "value": 1,
+        "cnes": "0092894"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL REGIONAL DO LITORAL NORTE",
+        "value": 0,
         "cnes": "0092894"
       },
       {
@@ -446,6 +500,12 @@
         "cnes": "0102741"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL DE CAMPANHA COVID 19 ARARAQUARA",
+        "value": 0,
+        "cnes": "0102741"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL DE CAMPANHA COVID 19 UPA ZONA LESTE",
         "value": 0,
@@ -506,6 +566,12 @@
         "cnes": "0102806"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL DE CAMPANHA COVID 19 UPA ZONA LESTE",
+        "value": 0,
+        "cnes": "0102806"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL ESTADUAL DE CAMPANHA COVID 19 IBIRAPUERA",
         "value": 0,
@@ -566,6 +632,12 @@
         "cnes": "0127868"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL ESTADUAL DE CAMPANHA COVID 19 IBIRAPUERA",
+        "value": 0,
+        "cnes": "0127868"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL ESTADUAL COVID 19 BARRADAS",
         "value": 0,
@@ -621,6 +693,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL ESTADUAL COVID 19 BARRADAS",
+        "value": 0,
+        "cnes": "0127876"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL ESTADUAL COVID 19 BARRADAS",
         "value": 0,
         "cnes": "0127876"
@@ -686,6 +764,12 @@
         "cnes": "0255297"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL ESTADUAL COVID 19 BEBEDOURO",
+        "value": 0,
+        "cnes": "0255297"
+      },
+      {
         "year": 2016,
         "establishment": "MATERNIDADE DE CAMPINAS",
         "value": 0,
@@ -741,6 +825,12 @@
       },
       {
         "year": 2025,
+        "establishment": "MATERNIDADE DE CAMPINAS",
+        "value": 0,
+        "cnes": "2022621"
+      },
+      {
+        "year": 2026,
         "establishment": "MATERNIDADE DE CAMPINAS",
         "value": 0,
         "cnes": "2022621"
@@ -802,7 +892,13 @@
       {
         "year": 2025,
         "establishment": "HOSPITAL IRMAOS PENTEADO E SANTA CASA DE CAMPINAS",
-        "value": 1,
+        "value": 2,
+        "cnes": "2022648"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL IRMAOS PENTEADO E SANTA CASA DE CAMPINAS",
+        "value": 6,
         "cnes": "2022648"
       },
       {
@@ -866,6 +962,12 @@
         "cnes": "2023016"
       },
       {
+        "year": 2026,
+        "establishment": "CASA DE CARIDADE SAO VICENTE DE PAULO CAJURU",
+        "value": 0,
+        "cnes": "2023016"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL MUNICIPAL WALTER FERRARI",
         "value": 0,
@@ -926,6 +1028,12 @@
         "cnes": "2023474"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL MUNICIPAL WALTER FERRARI",
+        "value": 0,
+        "cnes": "2023474"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL E MATERNIDADE NOSSA SENHORA DA AJUDA",
         "value": 0,
@@ -981,6 +1089,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL E MATERNIDADE NOSSA SENHORA DA AJUDA",
+        "value": 0,
+        "cnes": "2024756"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL E MATERNIDADE NOSSA SENHORA DA AJUDA",
         "value": 0,
         "cnes": "2024756"
@@ -1043,6 +1157,12 @@
         "year": 2025,
         "establishment": "HOSPITAL E MATERNIDADE SANTA ISABEL DE JABOTICABAL",
         "value": 1,
+        "cnes": "2025477"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL E MATERNIDADE SANTA ISABEL DE JABOTICABAL",
+        "value": 0,
         "cnes": "2025477"
       },
       {
@@ -1106,6 +1226,12 @@
         "cnes": "2025507"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL DAS CLINICAS HCFAMEMA",
+        "value": 0,
+        "cnes": "2025507"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE SANTOS",
         "value": 0,
@@ -1166,6 +1292,12 @@
         "cnes": "2025752"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE SANTOS",
+        "value": 0,
+        "cnes": "2025752"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE GUARIBA",
         "value": 0,
@@ -1226,6 +1358,12 @@
         "cnes": "2026805"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE GUARIBA",
+        "value": 0,
+        "cnes": "2026805"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE MISERICORDIA DE ITAPEVA",
         "value": 0,
@@ -1286,6 +1424,12 @@
         "cnes": "2027186"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE MISERICORDIA DE ITAPEVA",
+        "value": 0,
+        "cnes": "2027186"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL DIA BUTANTA",
         "value": 0,
@@ -1343,6 +1487,12 @@
         "year": 2025,
         "establishment": "HOSPITAL DIA BUTANTA",
         "value": 1,
+        "cnes": "2027240"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL DIA BUTANTA",
+        "value": 0,
         "cnes": "2027240"
       },
       {
@@ -1406,6 +1556,12 @@
         "cnes": "2027356"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL DA MULHER",
+        "value": 0,
+        "cnes": "2027356"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE MONTE ALTO",
         "value": 1,
@@ -1466,6 +1622,12 @@
         "cnes": "2028204"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE MONTE ALTO",
+        "value": 0,
+        "cnes": "2028204"
+      },
+      {
         "year": 2016,
         "establishment": "INSTITUTO DE INFECTOLOGIA EMILIO RIBAS",
         "value": 1,
@@ -1526,6 +1688,12 @@
         "cnes": "2028840"
       },
       {
+        "year": 2026,
+        "establishment": "INSTITUTO DE INFECTOLOGIA EMILIO RIBAS",
+        "value": 0,
+        "cnes": "2028840"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL MATERNIDADE JESUS JOSE E MARIA",
         "value": 0,
@@ -1586,6 +1754,12 @@
         "cnes": "2040069"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL MATERNIDADE JESUS JOSE E MARIA",
+        "value": 0,
+        "cnes": "2040069"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL MUNICIPAL DR WALDEMAR TEBALDI",
         "value": 1,
@@ -1641,6 +1815,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL MUNICIPAL DR WALDEMAR TEBALDI",
+        "value": 0,
+        "cnes": "2058790"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL MUNICIPAL DR WALDEMAR TEBALDI",
         "value": 0,
         "cnes": "2058790"
@@ -1706,6 +1886,12 @@
         "cnes": "2066092"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL GERAL DE PEDREIRA",
+        "value": 0,
+        "cnes": "2066092"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL HELIOPOLIS UNIDADE DE GESTAO ASSISTENCIAL I",
         "value": 0,
@@ -1766,6 +1952,12 @@
         "cnes": "2066572"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL HELIOPOLIS UNIDADE DE GESTAO ASSISTENCIAL I",
+        "value": 0,
+        "cnes": "2066572"
+      },
+      {
         "year": 2016,
         "establishment": "AMBULATORIO DE ESPECIALIDADES DR GERALDO PAULO BOURROUL",
         "value": 1,
@@ -1826,6 +2018,12 @@
         "cnes": "2069008"
       },
       {
+        "year": 2026,
+        "establishment": "AMBULATORIO DE ESPECIALIDADES DR GERALDO PAULO BOURROUL",
+        "value": 0,
+        "cnes": "2069008"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL DE URGENCIA",
         "value": 0,
@@ -1881,6 +2079,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL DE URGENCIA",
+        "value": 0,
+        "cnes": "2069776"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL DE URGENCIA",
         "value": 0,
         "cnes": "2069776"
@@ -1946,6 +2150,12 @@
         "cnes": "2071371"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL INFANTIL DARCY VARGAS UGA III SAO PAULO",
+        "value": 0,
+        "cnes": "2071371"
+      },
+      {
         "year": 2016,
         "establishment": "HC DA FMUSP INSTITUTO DO CORACAO INCOR SAO PAULO",
         "value": 4,
@@ -2002,7 +2212,13 @@
       {
         "year": 2025,
         "establishment": "HC DA FMUSP INSTITUTO DO CORACAO INCOR SAO PAULO",
-        "value": 14,
+        "value": 16,
+        "cnes": "2071568"
+      },
+      {
+        "year": 2026,
+        "establishment": "HC DA FMUSP INSTITUTO DO CORACAO INCOR SAO PAULO",
+        "value": 11,
         "cnes": "2071568"
       },
       {
@@ -2061,6 +2277,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSP MUN MATERNIDADE PROFESSOR MARIO DEGNI",
+        "value": 0,
+        "cnes": "2075717"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSP MUN MATERNIDADE PROFESSOR MARIO DEGNI",
         "value": 0,
         "cnes": "2075717"
@@ -2126,6 +2348,144 @@
         "cnes": "2077396"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL DE BASE DE SAO JOSE DO RIO PRETO",
+        "value": 9,
+        "cnes": "2077396"
+      },
+      {
+        "year": 2016,
+        "establishment": "HOSPITAL DR LEOPOLDO BEVILACQUA",
+        "value": 0,
+        "cnes": "2077434"
+      },
+      {
+        "year": 2017,
+        "establishment": "HOSPITAL DR LEOPOLDO BEVILACQUA",
+        "value": 0,
+        "cnes": "2077434"
+      },
+      {
+        "year": 2018,
+        "establishment": "HOSPITAL DR LEOPOLDO BEVILACQUA",
+        "value": 0,
+        "cnes": "2077434"
+      },
+      {
+        "year": 2019,
+        "establishment": "HOSPITAL DR LEOPOLDO BEVILACQUA",
+        "value": 0,
+        "cnes": "2077434"
+      },
+      {
+        "year": 2020,
+        "establishment": "HOSPITAL DR LEOPOLDO BEVILACQUA",
+        "value": 0,
+        "cnes": "2077434"
+      },
+      {
+        "year": 2021,
+        "establishment": "HOSPITAL DR LEOPOLDO BEVILACQUA",
+        "value": 0,
+        "cnes": "2077434"
+      },
+      {
+        "year": 2022,
+        "establishment": "HOSPITAL DR LEOPOLDO BEVILACQUA",
+        "value": 0,
+        "cnes": "2077434"
+      },
+      {
+        "year": 2023,
+        "establishment": "HOSPITAL DR LEOPOLDO BEVILACQUA",
+        "value": 0,
+        "cnes": "2077434"
+      },
+      {
+        "year": 2024,
+        "establishment": "HOSPITAL DR LEOPOLDO BEVILACQUA",
+        "value": 0,
+        "cnes": "2077434"
+      },
+      {
+        "year": 2025,
+        "establishment": "HOSPITAL DR LEOPOLDO BEVILACQUA",
+        "value": 0,
+        "cnes": "2077434"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL DR LEOPOLDO BEVILACQUA",
+        "value": 1,
+        "cnes": "2077434"
+      },
+      {
+        "year": 2016,
+        "establishment": "HOSP STA MARCELINA SAO PAULO",
+        "value": 0,
+        "cnes": "2077477"
+      },
+      {
+        "year": 2017,
+        "establishment": "HOSP STA MARCELINA SAO PAULO",
+        "value": 0,
+        "cnes": "2077477"
+      },
+      {
+        "year": 2018,
+        "establishment": "HOSP STA MARCELINA SAO PAULO",
+        "value": 0,
+        "cnes": "2077477"
+      },
+      {
+        "year": 2019,
+        "establishment": "HOSP STA MARCELINA SAO PAULO",
+        "value": 0,
+        "cnes": "2077477"
+      },
+      {
+        "year": 2020,
+        "establishment": "HOSP STA MARCELINA SAO PAULO",
+        "value": 0,
+        "cnes": "2077477"
+      },
+      {
+        "year": 2021,
+        "establishment": "HOSP STA MARCELINA SAO PAULO",
+        "value": 0,
+        "cnes": "2077477"
+      },
+      {
+        "year": 2022,
+        "establishment": "HOSP STA MARCELINA SAO PAULO",
+        "value": 0,
+        "cnes": "2077477"
+      },
+      {
+        "year": 2023,
+        "establishment": "HOSP STA MARCELINA SAO PAULO",
+        "value": 0,
+        "cnes": "2077477"
+      },
+      {
+        "year": 2024,
+        "establishment": "HOSP STA MARCELINA SAO PAULO",
+        "value": 0,
+        "cnes": "2077477"
+      },
+      {
+        "year": 2025,
+        "establishment": "HOSP STA MARCELINA SAO PAULO",
+        "value": 0,
+        "cnes": "2077477"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSP STA MARCELINA SAO PAULO",
+        "value": 1,
+        "cnes": "2077477"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL SAO PAULO HOSPITAL DE ENSINO DA UNIFESP",
         "value": 2,
@@ -2183,6 +2543,12 @@
         "year": 2025,
         "establishment": "HOSPITAL SAO PAULO HOSPITAL DE ENSINO DA UNIFESP",
         "value": 0,
+        "cnes": "2077485"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL SAO PAULO HOSPITAL DE ENSINO DA UNIFESP",
+        "value": 1,
         "cnes": "2077485"
       },
       {
@@ -2246,6 +2612,12 @@
         "cnes": "2077493"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL GERAL DE SAO MATEUS SAO PAULO",
+        "value": 0,
+        "cnes": "2077493"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL LEFORTE LIBERDADE",
         "value": 0,
@@ -2306,6 +2678,78 @@
         "cnes": "2077507"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL LEFORTE LIBERDADE",
+        "value": 0,
+        "cnes": "2077507"
+      },
+      {
+        "year": 2016,
+        "establishment": "UNIDADE DE GESTAO ASSISTENCIAL II HOSPITAL IPIRANGA SP",
+        "value": 0,
+        "cnes": "2077523"
+      },
+      {
+        "year": 2017,
+        "establishment": "UNIDADE DE GESTAO ASSISTENCIAL II HOSPITAL IPIRANGA SP",
+        "value": 0,
+        "cnes": "2077523"
+      },
+      {
+        "year": 2018,
+        "establishment": "UNIDADE DE GESTAO ASSISTENCIAL II HOSPITAL IPIRANGA SP",
+        "value": 0,
+        "cnes": "2077523"
+      },
+      {
+        "year": 2019,
+        "establishment": "UNIDADE DE GESTAO ASSISTENCIAL II HOSPITAL IPIRANGA SP",
+        "value": 0,
+        "cnes": "2077523"
+      },
+      {
+        "year": 2020,
+        "establishment": "UNIDADE DE GESTAO ASSISTENCIAL II HOSPITAL IPIRANGA SP",
+        "value": 0,
+        "cnes": "2077523"
+      },
+      {
+        "year": 2021,
+        "establishment": "UNIDADE DE GESTAO ASSISTENCIAL II HOSPITAL IPIRANGA SP",
+        "value": 0,
+        "cnes": "2077523"
+      },
+      {
+        "year": 2022,
+        "establishment": "UNIDADE DE GESTAO ASSISTENCIAL II HOSPITAL IPIRANGA SP",
+        "value": 0,
+        "cnes": "2077523"
+      },
+      {
+        "year": 2023,
+        "establishment": "UNIDADE DE GESTAO ASSISTENCIAL II HOSPITAL IPIRANGA SP",
+        "value": 0,
+        "cnes": "2077523"
+      },
+      {
+        "year": 2024,
+        "establishment": "UNIDADE DE GESTAO ASSISTENCIAL II HOSPITAL IPIRANGA SP",
+        "value": 0,
+        "cnes": "2077523"
+      },
+      {
+        "year": 2025,
+        "establishment": "UNIDADE DE GESTAO ASSISTENCIAL II HOSPITAL IPIRANGA SP",
+        "value": 0,
+        "cnes": "2077523"
+      },
+      {
+        "year": 2026,
+        "establishment": "UNIDADE DE GESTAO ASSISTENCIAL II HOSPITAL IPIRANGA SP",
+        "value": 1,
+        "cnes": "2077523"
+      },
+      {
         "year": 2016,
         "establishment": "A C CAMARGO CANCER CENTER",
         "value": 3,
@@ -2366,6 +2810,12 @@
         "cnes": "2077531"
       },
       {
+        "year": 2026,
+        "establishment": "A C CAMARGO CANCER CENTER",
+        "value": 0,
+        "cnes": "2077531"
+      },
+      {
         "year": 2016,
         "establishment": "CONJUNTO HOSPITALAR DO MANDAQUI SAO PAULO",
         "value": 2,
@@ -2422,7 +2872,13 @@
       {
         "year": 2025,
         "establishment": "CONJUNTO HOSPITALAR DO MANDAQUI SAO PAULO",
-        "value": 0,
+        "value": 1,
+        "cnes": "2077574"
+      },
+      {
+        "year": 2026,
+        "establishment": "CONJUNTO HOSPITALAR DO MANDAQUI SAO PAULO",
+        "value": 2,
         "cnes": "2077574"
       },
       {
@@ -2486,6 +2942,12 @@
         "cnes": "2077590"
       },
       {
+        "year": 2026,
+        "establishment": "IBCC",
+        "value": 0,
+        "cnes": "2077590"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL GERAL SANTA MARCELINA DE ITAIM PAULISTA SAO PAULO",
         "value": 0,
@@ -2541,6 +3003,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL GERAL SANTA MARCELINA DE ITAIM PAULISTA SAO PAULO",
+        "value": 0,
+        "cnes": "2077620"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL GERAL SANTA MARCELINA DE ITAIM PAULISTA SAO PAULO",
         "value": 0,
         "cnes": "2077620"
@@ -2606,6 +3074,12 @@
         "cnes": "2077655"
       },
       {
+        "year": 2026,
+        "establishment": "ASSOC AACD V CLEMENTINO",
+        "value": 0,
+        "cnes": "2077655"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL GERAL DO GRAJAU PROF LIBER JOHN ALPHONSE DI DIO SP",
         "value": 0,
@@ -2661,6 +3135,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL GERAL DO GRAJAU PROF LIBER JOHN ALPHONSE DI DIO SP",
+        "value": 0,
+        "cnes": "2077671"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL GERAL DO GRAJAU PROF LIBER JOHN ALPHONSE DI DIO SP",
         "value": 0,
         "cnes": "2077671"
@@ -2722,7 +3202,13 @@
       {
         "year": 2025,
         "establishment": "HC DA FMUSP HOSPITAL DAS CLINICAS SAO PAULO",
-        "value": 11,
+        "value": 13,
+        "cnes": "2078015"
+      },
+      {
+        "year": 2026,
+        "establishment": "HC DA FMUSP HOSPITAL DAS CLINICAS SAO PAULO",
+        "value": 12,
         "cnes": "2078015"
       },
       {
@@ -2786,6 +3272,78 @@
         "cnes": "2078031"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL SANTA TEREZA DE RIBEIRAO PRETO",
+        "value": 0,
+        "cnes": "2078031"
+      },
+      {
+        "year": 2016,
+        "establishment": "HOSPITAL GERAL DE ITAPEVI",
+        "value": 0,
+        "cnes": "2078104"
+      },
+      {
+        "year": 2017,
+        "establishment": "HOSPITAL GERAL DE ITAPEVI",
+        "value": 0,
+        "cnes": "2078104"
+      },
+      {
+        "year": 2018,
+        "establishment": "HOSPITAL GERAL DE ITAPEVI",
+        "value": 0,
+        "cnes": "2078104"
+      },
+      {
+        "year": 2019,
+        "establishment": "HOSPITAL GERAL DE ITAPEVI",
+        "value": 0,
+        "cnes": "2078104"
+      },
+      {
+        "year": 2020,
+        "establishment": "HOSPITAL GERAL DE ITAPEVI",
+        "value": 0,
+        "cnes": "2078104"
+      },
+      {
+        "year": 2021,
+        "establishment": "HOSPITAL GERAL DE ITAPEVI",
+        "value": 0,
+        "cnes": "2078104"
+      },
+      {
+        "year": 2022,
+        "establishment": "HOSPITAL GERAL DE ITAPEVI",
+        "value": 0,
+        "cnes": "2078104"
+      },
+      {
+        "year": 2023,
+        "establishment": "HOSPITAL GERAL DE ITAPEVI",
+        "value": 0,
+        "cnes": "2078104"
+      },
+      {
+        "year": 2024,
+        "establishment": "HOSPITAL GERAL DE ITAPEVI",
+        "value": 0,
+        "cnes": "2078104"
+      },
+      {
+        "year": 2025,
+        "establishment": "HOSPITAL GERAL DE ITAPEVI",
+        "value": 0,
+        "cnes": "2078104"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL GERAL DE ITAPEVI",
+        "value": 1,
+        "cnes": "2078104"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL SANTA RITA DE SALES OLIVEIRA",
         "value": 0,
@@ -2841,6 +3399,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL SANTA RITA DE SALES OLIVEIRA",
+        "value": 0,
+        "cnes": "2078112"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL SANTA RITA DE SALES OLIVEIRA",
         "value": 0,
         "cnes": "2078112"
@@ -2906,6 +3470,12 @@
         "cnes": "2078287"
       },
       {
+        "year": 2026,
+        "establishment": "CENTRO DE REFERENCIA DA SAUDE DA MULHER",
+        "value": 0,
+        "cnes": "2078287"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE TAQUARITINGA",
         "value": 1,
@@ -2966,6 +3536,12 @@
         "cnes": "2078295"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE TAQUARITINGA",
+        "value": 2,
+        "cnes": "2078295"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL ESPIRITA",
         "value": 0,
@@ -3026,6 +3602,12 @@
         "cnes": "2078384"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL ESPIRITA",
+        "value": 0,
+        "cnes": "2078384"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE GUAIRA",
         "value": 0,
@@ -3086,6 +3668,12 @@
         "cnes": "2078414"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE GUAIRA",
+        "value": 0,
+        "cnes": "2078414"
+      },
+      {
         "year": 2016,
         "establishment": "REAL SOCIEDADE PORTUGUESA DE BENEFICENCIA",
         "value": 0,
@@ -3146,6 +3734,12 @@
         "cnes": "2078465"
       },
       {
+        "year": 2026,
+        "establishment": "REAL SOCIEDADE PORTUGUESA DE BENEFICENCIA",
+        "value": 0,
+        "cnes": "2078465"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL REGIONAL DE ILHA SOLTEIRA",
         "value": 0,
@@ -3206,6 +3800,12 @@
         "cnes": "2078511"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL REGIONAL DE ILHA SOLTEIRA",
+        "value": 0,
+        "cnes": "2078511"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE ARACATUBA HOSPITAL SAGRADO CORACAO DE JESUS",
         "value": 0,
@@ -3264,6 +3864,78 @@
         "establishment": "SANTA CASA DE ARACATUBA HOSPITAL SAGRADO CORACAO DE JESUS",
         "value": 0,
         "cnes": "2078775"
+      },
+      {
+        "year": 2026,
+        "establishment": "SANTA CASA DE ARACATUBA HOSPITAL SAGRADO CORACAO DE JESUS",
+        "value": 0,
+        "cnes": "2078775"
+      },
+      {
+        "year": 2016,
+        "establishment": "SANTA CASA DE CAPAO BONITO",
+        "value": 0,
+        "cnes": "2079097"
+      },
+      {
+        "year": 2017,
+        "establishment": "SANTA CASA DE CAPAO BONITO",
+        "value": 0,
+        "cnes": "2079097"
+      },
+      {
+        "year": 2018,
+        "establishment": "SANTA CASA DE CAPAO BONITO",
+        "value": 0,
+        "cnes": "2079097"
+      },
+      {
+        "year": 2019,
+        "establishment": "SANTA CASA DE CAPAO BONITO",
+        "value": 0,
+        "cnes": "2079097"
+      },
+      {
+        "year": 2020,
+        "establishment": "SANTA CASA DE CAPAO BONITO",
+        "value": 0,
+        "cnes": "2079097"
+      },
+      {
+        "year": 2021,
+        "establishment": "SANTA CASA DE CAPAO BONITO",
+        "value": 0,
+        "cnes": "2079097"
+      },
+      {
+        "year": 2022,
+        "establishment": "SANTA CASA DE CAPAO BONITO",
+        "value": 0,
+        "cnes": "2079097"
+      },
+      {
+        "year": 2023,
+        "establishment": "SANTA CASA DE CAPAO BONITO",
+        "value": 0,
+        "cnes": "2079097"
+      },
+      {
+        "year": 2024,
+        "establishment": "SANTA CASA DE CAPAO BONITO",
+        "value": 0,
+        "cnes": "2079097"
+      },
+      {
+        "year": 2025,
+        "establishment": "SANTA CASA DE CAPAO BONITO",
+        "value": 0,
+        "cnes": "2079097"
+      },
+      {
+        "year": 2026,
+        "establishment": "SANTA CASA DE CAPAO BONITO",
+        "value": 1,
+        "cnes": "2079097"
       },
       {
         "year": 2016,
@@ -3326,6 +3998,12 @@
         "cnes": "2079119"
       },
       {
+        "year": 2026,
+        "establishment": "CENTRO DE REF DA SAUDE DA MULHER DE R PRETO MATER",
+        "value": 0,
+        "cnes": "2079119"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE MISERICORDIA DE TATUI",
         "value": 0,
@@ -3386,6 +4064,12 @@
         "cnes": "2079135"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE MISERICORDIA DE TATUI",
+        "value": 0,
+        "cnes": "2079135"
+      },
+      {
         "year": 2016,
         "establishment": "HOSP MUN MAT ESC DR MARIO DE MORAES A SILVA",
         "value": 0,
@@ -3441,6 +4125,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSP MUN MAT ESC DR MARIO DE MORAES A SILVA",
+        "value": 0,
+        "cnes": "2079186"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSP MUN MAT ESC DR MARIO DE MORAES A SILVA",
         "value": 0,
         "cnes": "2079186"
@@ -3502,7 +4192,13 @@
       {
         "year": 2025,
         "establishment": "HOSPITAL NESTOR GOULART REIS AMERICO BRASILIENSE",
-        "value": 6,
+        "value": 7,
+        "cnes": "2079194"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL NESTOR GOULART REIS AMERICO BRASILIENSE",
+        "value": 9,
         "cnes": "2079194"
       },
       {
@@ -3566,6 +4262,12 @@
         "cnes": "2079240"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL GERAL JESUS TEIXEIRA DA COSTA GUAIANASES SAO PAULO",
+        "value": 0,
+        "cnes": "2079240"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL SAO FRANCISCO RIBEIRAO PRETO",
         "value": 1,
@@ -3621,6 +4323,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL SAO FRANCISCO RIBEIRAO PRETO",
+        "value": 0,
+        "cnes": "2079275"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL SAO FRANCISCO RIBEIRAO PRETO",
         "value": 0,
         "cnes": "2079275"
@@ -3686,6 +4394,12 @@
         "cnes": "2079348"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE IGARAPAVA",
+        "value": 0,
+        "cnes": "2079348"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE TANABI",
         "value": 1,
@@ -3746,6 +4460,12 @@
         "cnes": "2079356"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE TANABI",
+        "value": 0,
+        "cnes": "2079356"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE MISERICORDIA SAO MIGUEL TABATINGA SP",
         "value": 0,
@@ -3806,6 +4526,12 @@
         "cnes": "2079399"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE MISERICORDIA SAO MIGUEL TABATINGA SP",
+        "value": 0,
+        "cnes": "2079399"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA SAO VICENTE DE PAULO BOA ESPERANCA DO SUL",
         "value": 1,
@@ -3861,6 +4587,12 @@
       },
       {
         "year": 2025,
+        "establishment": "SANTA CASA SAO VICENTE DE PAULO BOA ESPERANCA DO SUL",
+        "value": 0,
+        "cnes": "2079402"
+      },
+      {
+        "year": 2026,
         "establishment": "SANTA CASA SAO VICENTE DE PAULO BOA ESPERANCA DO SUL",
         "value": 0,
         "cnes": "2079402"
@@ -3922,7 +4654,13 @@
       {
         "year": 2025,
         "establishment": "CASA CAIRBAR SCHUTEL",
-        "value": 202,
+        "value": 246,
+        "cnes": "2079763"
+      },
+      {
+        "year": 2026,
+        "establishment": "CASA CAIRBAR SCHUTEL",
+        "value": 62,
         "cnes": "2079763"
       },
       {
@@ -3982,7 +4720,13 @@
       {
         "year": 2025,
         "establishment": "HOSPITAL DAS CLINICAS DA UNICAMP DE CAMPINAS",
-        "value": 6,
+        "value": 7,
+        "cnes": "2079798"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL DAS CLINICAS DA UNICAMP DE CAMPINAS",
+        "value": 2,
         "cnes": "2079798"
       },
       {
@@ -4041,6 +4785,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL GERAL PIRAJUSSARA",
+        "value": 0,
+        "cnes": "2079828"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL GERAL PIRAJUSSARA",
         "value": 0,
         "cnes": "2079828"
@@ -4106,6 +4856,12 @@
         "cnes": "2079836"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE MISERICORDIA ITAPOLIS",
+        "value": 0,
+        "cnes": "2079836"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL E MATERNIDADE DE SUZANO",
         "value": 0,
@@ -4166,6 +4922,12 @@
         "cnes": "2079860"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL E MATERNIDADE DE SUZANO",
+        "value": 0,
+        "cnes": "2079860"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL MUNICIPAL DE DIADEMA HMD",
         "value": 1,
@@ -4226,6 +4988,12 @@
         "cnes": "2080028"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL MUNICIPAL DE DIADEMA HMD",
+        "value": 0,
+        "cnes": "2080028"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE SAO JOAQUIM DA BARRA",
         "value": 0,
@@ -4286,6 +5054,12 @@
         "cnes": "2080044"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE SAO JOAQUIM DA BARRA",
+        "value": 0,
+        "cnes": "2080044"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL NOSSA SENHORA APARECIDA",
         "value": 0,
@@ -4346,6 +5120,12 @@
         "cnes": "2080052"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL NOSSA SENHORA APARECIDA",
+        "value": 0,
+        "cnes": "2080052"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL DR OSIRIS FLORINDO COELHO",
         "value": 1,
@@ -4406,6 +5186,12 @@
         "cnes": "2080079"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL DR OSIRIS FLORINDO COELHO",
+        "value": 0,
+        "cnes": "2080079"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE MISERICORDIA DE TIETE",
         "value": 0,
@@ -4466,6 +5252,12 @@
         "cnes": "2080087"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE MISERICORDIA DE TIETE",
+        "value": 0,
+        "cnes": "2080087"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL PSIQUIATRICO ALLAN KARDEC FRANCA SP",
         "value": 0,
@@ -4521,6 +5313,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL PSIQUIATRICO ALLAN KARDEC FRANCA SP",
+        "value": 0,
+        "cnes": "2080117"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL PSIQUIATRICO ALLAN KARDEC FRANCA SP",
         "value": 0,
         "cnes": "2080117"
@@ -4586,6 +5384,12 @@
         "cnes": "2080125"
       },
       {
+        "year": 2026,
+        "establishment": "INSTITUTO DO CANCER ARNALDO VIEIRA DE CARVALHO",
+        "value": 0,
+        "cnes": "2080125"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL ESTADUAL MARIO COVAS DE SANTO ANDRE",
         "value": 1,
@@ -4646,6 +5450,12 @@
         "cnes": "2080273"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL ESTADUAL MARIO COVAS DE SANTO ANDRE",
+        "value": 0,
+        "cnes": "2080273"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL SAO JOSE DE HERCULANDIA",
         "value": 0,
@@ -4706,6 +5516,12 @@
         "cnes": "2080281"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL SAO JOSE DE HERCULANDIA",
+        "value": 0,
+        "cnes": "2080281"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL GERAL DE GUARULHOS PROF DR WALDEMAR DE CARVALHO",
         "value": 1,
@@ -4766,6 +5582,12 @@
         "cnes": "2080338"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL GERAL DE GUARULHOS PROF DR WALDEMAR DE CARVALHO",
+        "value": 0,
+        "cnes": "2080338"
+      },
+      {
         "year": 2016,
         "establishment": "HOSP MUN DR CARMINO CARICCHIO",
         "value": 1,
@@ -4826,6 +5648,12 @@
         "cnes": "2080346"
       },
       {
+        "year": 2026,
+        "establishment": "HOSP MUN DR CARMINO CARICCHIO",
+        "value": 0,
+        "cnes": "2080346"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL SANTO ANTONIO SANTOS",
         "value": 0,
@@ -4886,6 +5714,12 @@
         "cnes": "2080354"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL SANTO ANTONIO SANTOS",
+        "value": 0,
+        "cnes": "2080354"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE PIRAJUI",
         "value": 0,
@@ -4943,6 +5777,12 @@
         "year": 2025,
         "establishment": "SANTA CASA DE PIRAJUI",
         "value": 1,
+        "cnes": "2080370"
+      },
+      {
+        "year": 2026,
+        "establishment": "SANTA CASA DE PIRAJUI",
+        "value": 0,
         "cnes": "2080370"
       },
       {
@@ -5006,6 +5846,12 @@
         "cnes": "2080400"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL IMACULADA CONCEICAO",
+        "value": 1,
+        "cnes": "2080400"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE MISERICORDIA DE PEDREGULHO",
         "value": 0,
@@ -5061,6 +5907,12 @@
       },
       {
         "year": 2025,
+        "establishment": "SANTA CASA DE MISERICORDIA DE PEDREGULHO",
+        "value": 0,
+        "cnes": "2080478"
+      },
+      {
+        "year": 2026,
         "establishment": "SANTA CASA DE MISERICORDIA DE PEDREGULHO",
         "value": 0,
         "cnes": "2080478"
@@ -5126,6 +5978,12 @@
         "cnes": "2080575"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL BP",
+        "value": 0,
+        "cnes": "2080575"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL DAS CLINICAS LUZIA DE PINHO MELO",
         "value": 0,
@@ -5181,6 +6039,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL DAS CLINICAS LUZIA DE PINHO MELO",
+        "value": 0,
+        "cnes": "2080680"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL DAS CLINICAS LUZIA DE PINHO MELO",
         "value": 0,
         "cnes": "2080680"
@@ -5246,6 +6110,12 @@
         "cnes": "2080931"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE SAO CARLOS",
+        "value": 14,
+        "cnes": "2080931"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL MUNICIPAL DE PAULINIA",
         "value": 0,
@@ -5306,6 +6176,12 @@
         "cnes": "2081059"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL MUNICIPAL DE PAULINIA",
+        "value": 0,
+        "cnes": "2081059"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE ASSIS",
         "value": 0,
@@ -5366,6 +6242,12 @@
         "cnes": "2081083"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE ASSIS",
+        "value": 0,
+        "cnes": "2081083"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL MUNICIPAL DE ITAPIRA",
         "value": 0,
@@ -5426,6 +6308,12 @@
         "cnes": "2081091"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL MUNICIPAL DE ITAPIRA",
+        "value": 0,
+        "cnes": "2081091"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL SANTA LYDIA RIBEIRAO PRETO",
         "value": 0,
@@ -5486,6 +6374,12 @@
         "cnes": "2081164"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL SANTA LYDIA RIBEIRAO PRETO",
+        "value": 0,
+        "cnes": "2081164"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL SAO LUIZ DE ARARAS",
         "value": 0,
@@ -5541,6 +6435,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL SAO LUIZ DE ARARAS",
+        "value": 0,
+        "cnes": "2081253"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL SAO LUIZ DE ARARAS",
         "value": 0,
         "cnes": "2081253"
@@ -5601,6 +6501,12 @@
       },
       {
         "year": 2025,
+        "establishment": "SANTA CASA DE VOTUPORANGA",
+        "value": 0,
+        "cnes": "2081377"
+      },
+      {
+        "year": 2026,
         "establishment": "SANTA CASA DE VOTUPORANGA",
         "value": 0,
         "cnes": "2081377"
@@ -5666,6 +6572,12 @@
         "cnes": "2081458"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE LIMEIRA",
+        "value": 0,
+        "cnes": "2081458"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL NOSSA SENHORA DA DIVINA PROVIDENCIA",
         "value": 0,
@@ -5721,6 +6633,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL NOSSA SENHORA DA DIVINA PROVIDENCIA",
+        "value": 0,
+        "cnes": "2081466"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL NOSSA SENHORA DA DIVINA PROVIDENCIA",
         "value": 0,
         "cnes": "2081466"
@@ -5786,6 +6704,12 @@
         "cnes": "2081482"
       },
       {
+        "year": 2026,
+        "establishment": "BOLDRINI CAMPINAS",
+        "value": 1,
+        "cnes": "2081482"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL MUNICIPAL DR MARIO GATTI CAMPINAS",
         "value": 0,
@@ -5841,6 +6765,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL MUNICIPAL DR MARIO GATTI CAMPINAS",
+        "value": 0,
+        "cnes": "2081490"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL MUNICIPAL DR MARIO GATTI CAMPINAS",
         "value": 0,
         "cnes": "2081490"
@@ -5906,6 +6836,12 @@
         "cnes": "2081512"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE MISERICORDIA DE GUARATINGUETA",
+        "value": 0,
+        "cnes": "2081512"
+      },
+      {
         "year": 2016,
         "establishment": "CONJUNTO HOSPITALAR SOROCABA",
         "value": 0,
@@ -5966,6 +6902,12 @@
         "cnes": "2081695"
       },
       {
+        "year": 2026,
+        "establishment": "CONJUNTO HOSPITALAR SOROCABA",
+        "value": 0,
+        "cnes": "2081695"
+      },
+      {
         "year": 2016,
         "establishment": "CAIS CLEMENTE FERREIRA DE LINS",
         "value": 0,
@@ -6026,6 +6968,12 @@
         "cnes": "2081725"
       },
       {
+        "year": 2026,
+        "establishment": "CAIS CLEMENTE FERREIRA DE LINS",
+        "value": 1,
+        "cnes": "2081725"
+      },
+      {
         "year": 2016,
         "establishment": "SEARA HOSPITAL PSIQUIATRICO",
         "value": 0,
@@ -6086,6 +7034,12 @@
         "cnes": "2081733"
       },
       {
+        "year": 2026,
+        "establishment": "SEARA HOSPITAL PSIQUIATRICO",
+        "value": 0,
+        "cnes": "2081733"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL E MATERNIDADE DE RANCHARIA",
         "value": 0,
@@ -6146,6 +7100,12 @@
         "cnes": "2081873"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL E MATERNIDADE DE RANCHARIA",
+        "value": 0,
+        "cnes": "2081873"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL SAO SEBASTIAO DE BORBOREMA",
         "value": 0,
@@ -6206,6 +7166,78 @@
         "cnes": "2081989"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL SAO SEBASTIAO DE BORBOREMA",
+        "value": 0,
+        "cnes": "2081989"
+      },
+      {
+        "year": 2016,
+        "establishment": "SANTA CASA DE CARDOSO",
+        "value": 0,
+        "cnes": "2082071"
+      },
+      {
+        "year": 2017,
+        "establishment": "SANTA CASA DE CARDOSO",
+        "value": 0,
+        "cnes": "2082071"
+      },
+      {
+        "year": 2018,
+        "establishment": "SANTA CASA DE CARDOSO",
+        "value": 0,
+        "cnes": "2082071"
+      },
+      {
+        "year": 2019,
+        "establishment": "SANTA CASA DE CARDOSO",
+        "value": 0,
+        "cnes": "2082071"
+      },
+      {
+        "year": 2020,
+        "establishment": "SANTA CASA DE CARDOSO",
+        "value": 0,
+        "cnes": "2082071"
+      },
+      {
+        "year": 2021,
+        "establishment": "SANTA CASA DE CARDOSO",
+        "value": 0,
+        "cnes": "2082071"
+      },
+      {
+        "year": 2022,
+        "establishment": "SANTA CASA DE CARDOSO",
+        "value": 0,
+        "cnes": "2082071"
+      },
+      {
+        "year": 2023,
+        "establishment": "SANTA CASA DE CARDOSO",
+        "value": 0,
+        "cnes": "2082071"
+      },
+      {
+        "year": 2024,
+        "establishment": "SANTA CASA DE CARDOSO",
+        "value": 0,
+        "cnes": "2082071"
+      },
+      {
+        "year": 2025,
+        "establishment": "SANTA CASA DE CARDOSO",
+        "value": 0,
+        "cnes": "2082071"
+      },
+      {
+        "year": 2026,
+        "establishment": "SANTA CASA DE CARDOSO",
+        "value": 1,
+        "cnes": "2082071"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL E MATERNIDADE CELSO PIERRO",
         "value": 1,
@@ -6261,6 +7293,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL E MATERNIDADE CELSO PIERRO",
+        "value": 0,
+        "cnes": "2082128"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL E MATERNIDADE CELSO PIERRO",
         "value": 0,
         "cnes": "2082128"
@@ -6322,7 +7360,13 @@
       {
         "year": 2025,
         "establishment": "HOSPITAL DAS CLINICAS FAEPA RIBEIRAO PRETO",
-        "value": 434,
+        "value": 492,
+        "cnes": "2082187"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL DAS CLINICAS FAEPA RIBEIRAO PRETO",
+        "value": 224,
         "cnes": "2082187"
       },
       {
@@ -6381,6 +7425,12 @@
       },
       {
         "year": 2025,
+        "establishment": "PS E MATERNIDADE NAIR FONSECA LEITAO ARANTES",
+        "value": 0,
+        "cnes": "2082209"
+      },
+      {
+        "year": 2026,
         "establishment": "PS E MATERNIDADE NAIR FONSECA LEITAO ARANTES",
         "value": 0,
         "cnes": "2082209"
@@ -6446,6 +7496,12 @@
         "cnes": "2082322"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL DONA BALBINA",
+        "value": 4,
+        "cnes": "2082322"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL DE CLINICAS DR RADAMES NARDINI",
         "value": 0,
@@ -6506,6 +7562,12 @@
         "cnes": "2082349"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL DE CLINICAS DR RADAMES NARDINI",
+        "value": 0,
+        "cnes": "2082349"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL MUNICIPAL DE BEBEDOURO JULIA PINTO CALDEIRA",
         "value": 0,
@@ -6561,6 +7623,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL MUNICIPAL DE BEBEDOURO JULIA PINTO CALDEIRA",
+        "value": 0,
+        "cnes": "2082381"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL MUNICIPAL DE BEBEDOURO JULIA PINTO CALDEIRA",
         "value": 0,
         "cnes": "2082381"
@@ -6622,7 +7690,13 @@
       {
         "year": 2025,
         "establishment": "SANTA CASA DE ARARAQUARA",
-        "value": 9357,
+        "value": 9579,
+        "cnes": "2082527"
+      },
+      {
+        "year": 2026,
+        "establishment": "SANTA CASA DE ARARAQUARA",
+        "value": 4939,
         "cnes": "2082527"
       },
       {
@@ -6681,6 +7755,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL E MATERNIDADE SAO JOSE BARRA BONITA",
+        "value": 0,
+        "cnes": "2082632"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL E MATERNIDADE SAO JOSE BARRA BONITA",
         "value": 0,
         "cnes": "2082632"
@@ -6746,6 +7826,12 @@
         "cnes": "2082640"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE CARIDADE E MATERNIDADE IBITINGA",
+        "value": 2,
+        "cnes": "2082640"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL SAO BOM JESUS",
         "value": 0,
@@ -6806,6 +7892,12 @@
         "cnes": "2082667"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL SAO BOM JESUS",
+        "value": 0,
+        "cnes": "2082667"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE OLIMPIA",
         "value": 0,
@@ -6866,6 +7958,12 @@
         "cnes": "2082845"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE OLIMPIA",
+        "value": 0,
+        "cnes": "2082845"
+      },
+      {
         "year": 2016,
         "establishment": "HOSP MUNICIPAL DE URGENCIAS HMU",
         "value": 1,
@@ -6923,6 +8021,12 @@
         "year": 2025,
         "establishment": "HOSP MUNICIPAL DE URGENCIAS HMU",
         "value": 1,
+        "cnes": "2082861"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSP MUNICIPAL DE URGENCIAS HMU",
+        "value": 0,
         "cnes": "2082861"
       },
       {
@@ -6986,6 +8090,12 @@
         "cnes": "2082888"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE RIO CLARO",
+        "value": 0,
+        "cnes": "2082888"
+      },
+      {
         "year": 2016,
         "establishment": "CASA DE SAUDE STELLA MARIS",
         "value": 0,
@@ -7046,6 +8156,12 @@
         "cnes": "2082926"
       },
       {
+        "year": 2026,
+        "establishment": "CASA DE SAUDE STELLA MARIS",
+        "value": 0,
+        "cnes": "2082926"
+      },
+      {
         "year": 2016,
         "establishment": "UNIDADE INTEGRADA DE SAUDE DE MIRANDOPOLIS",
         "value": 0,
@@ -7101,6 +8217,12 @@
       },
       {
         "year": 2025,
+        "establishment": "UNIDADE INTEGRADA DE SAUDE DE MIRANDOPOLIS",
+        "value": 0,
+        "cnes": "2083019"
+      },
+      {
+        "year": 2026,
         "establishment": "UNIDADE INTEGRADA DE SAUDE DE MIRANDOPOLIS",
         "value": 0,
         "cnes": "2083019"
@@ -7162,7 +8284,13 @@
       {
         "year": 2025,
         "establishment": "HOSPITAL AMARAL CARVALHO JAU",
-        "value": 63,
+        "value": 64,
+        "cnes": "2083086"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL AMARAL CARVALHO JAU",
+        "value": 20,
         "cnes": "2083086"
       },
       {
@@ -7226,6 +8354,12 @@
         "cnes": "2083094"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL REGIONAL DE ASSIS",
+        "value": 0,
+        "cnes": "2083094"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE MARILIA",
         "value": 1,
@@ -7286,6 +8420,12 @@
         "cnes": "2083116"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE MARILIA",
+        "value": 0,
+        "cnes": "2083116"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL MUNICIPAL DE BERTIOGA",
         "value": 0,
@@ -7346,6 +8486,12 @@
         "cnes": "2083272"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL MUNICIPAL DE BERTIOGA",
+        "value": 0,
+        "cnes": "2083272"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE GUARA",
         "value": 0,
@@ -7401,6 +8547,12 @@
       },
       {
         "year": 2025,
+        "establishment": "SANTA CASA DE GUARA",
+        "value": 0,
+        "cnes": "2083973"
+      },
+      {
+        "year": 2026,
         "establishment": "SANTA CASA DE GUARA",
         "value": 0,
         "cnes": "2083973"
@@ -7466,6 +8618,12 @@
         "cnes": "2083981"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL ESTADUAL SUMARE",
+        "value": 0,
+        "cnes": "2083981"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE MISERICORDIA DE SANTA CRUZ DO RIO PARDO",
         "value": 0,
@@ -7523,6 +8681,12 @@
         "year": 2025,
         "establishment": "SANTA CASA DE MISERICORDIA DE SANTA CRUZ DO RIO PARDO",
         "value": 1,
+        "cnes": "2084058"
+      },
+      {
+        "year": 2026,
+        "establishment": "SANTA CASA DE MISERICORDIA DE SANTA CRUZ DO RIO PARDO",
+        "value": 0,
         "cnes": "2084058"
       },
       {
@@ -7581,6 +8745,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL ESTADUAL DE DIADEMA HOSPITAL SERRARIA",
+        "value": 0,
+        "cnes": "2084163"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL ESTADUAL DE DIADEMA HOSPITAL SERRARIA",
         "value": 0,
         "cnes": "2084163"
@@ -7646,6 +8816,12 @@
         "cnes": "2084171"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL E MATERNIDADE SAO JOSE",
+        "value": 1,
+        "cnes": "2084171"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE MISERICORDIA DONA CAROLINA MALHEIROS SJBV",
         "value": 0,
@@ -7701,6 +8877,12 @@
       },
       {
         "year": 2025,
+        "establishment": "SANTA CASA DE MISERICORDIA DONA CAROLINA MALHEIROS SJBV",
+        "value": 0,
+        "cnes": "2084228"
+      },
+      {
+        "year": 2026,
         "establishment": "SANTA CASA DE MISERICORDIA DONA CAROLINA MALHEIROS SJBV",
         "value": 0,
         "cnes": "2084228"
@@ -7763,6 +8945,12 @@
         "year": 2025,
         "establishment": "SOBRAPAR CAMPINAS",
         "value": 1,
+        "cnes": "2084252"
+      },
+      {
+        "year": 2026,
+        "establishment": "SOBRAPAR CAMPINAS",
+        "value": 0,
         "cnes": "2084252"
       },
       {
@@ -7826,6 +9014,12 @@
         "cnes": "2084414"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE RIBEIRAO PRETO",
+        "value": 2,
+        "cnes": "2084414"
+      },
+      {
         "year": 2016,
         "establishment": "INSTITUTO AMERICO BAIRRAL DE PSIQUIATRIA",
         "value": 0,
@@ -7886,6 +9080,12 @@
         "cnes": "2085143"
       },
       {
+        "year": 2026,
+        "establishment": "INSTITUTO AMERICO BAIRRAL DE PSIQUIATRIA",
+        "value": 1,
+        "cnes": "2085143"
+      },
+      {
         "year": 2016,
         "establishment": "MATERNIDADE MUNICIPAL ZORAIDE EVA DAS DORES",
         "value": 0,
@@ -7941,6 +9141,12 @@
       },
       {
         "year": 2025,
+        "establishment": "MATERNIDADE MUNICIPAL ZORAIDE EVA DAS DORES",
+        "value": 0,
+        "cnes": "2086271"
+      },
+      {
+        "year": 2026,
         "establishment": "MATERNIDADE MUNICIPAL ZORAIDE EVA DAS DORES",
         "value": 0,
         "cnes": "2086271"
@@ -8006,6 +9212,12 @@
         "cnes": "2087057"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL DOS FORNECEDORES DE CANA DE PIRACICABA",
+        "value": 0,
+        "cnes": "2087057"
+      },
+      {
         "year": 2016,
         "establishment": "SOCIEDADE OPERARIA HUMANITARIA LIMEIRA",
         "value": 0,
@@ -8066,6 +9278,12 @@
         "cnes": "2087103"
       },
       {
+        "year": 2026,
+        "establishment": "SOCIEDADE OPERARIA HUMANITARIA LIMEIRA",
+        "value": 0,
+        "cnes": "2087103"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL E MATERNIDADE MUNICIPAL GOVERNADOR MARIO COVAS",
         "value": 0,
@@ -8126,6 +9344,12 @@
         "cnes": "2087715"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL E MATERNIDADE MUNICIPAL GOVERNADOR MARIO COVAS",
+        "value": 0,
+        "cnes": "2087715"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL REGIONAL JORGE ROSSMANN DE ITANHAEM",
         "value": 0,
@@ -8181,6 +9405,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL REGIONAL JORGE ROSSMANN DE ITANHAEM",
+        "value": 0,
+        "cnes": "2087804"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL REGIONAL JORGE ROSSMANN DE ITANHAEM",
         "value": 0,
         "cnes": "2087804"
@@ -8241,6 +9471,12 @@
       },
       {
         "year": 2025,
+        "establishment": "SANTA CASA DE NOVO HORIZONTE",
+        "value": 0,
+        "cnes": "2088487"
+      },
+      {
+        "year": 2026,
         "establishment": "SANTA CASA DE NOVO HORIZONTE",
         "value": 0,
         "cnes": "2088487"
@@ -8306,6 +9542,12 @@
         "cnes": "2088495"
       },
       {
+        "year": 2026,
+        "establishment": "INSTITUTO DANTE PAZZANESE DE CARDIOLOGIA IDPC SAO PAULO",
+        "value": 0,
+        "cnes": "2088495"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL DE TRANSP DO EST DE SP EURYCLIDES DE JESUS ZERBINI",
         "value": 2,
@@ -8363,6 +9605,12 @@
         "year": 2025,
         "establishment": "HOSPITAL DE TRANSP DO EST DE SP EURYCLIDES DE JESUS ZERBINI",
         "value": 0,
+        "cnes": "2088576"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL DE TRANSP DO EST DE SP EURYCLIDES DE JESUS ZERBINI",
+        "value": 1,
         "cnes": "2088576"
       },
       {
@@ -8426,6 +9674,12 @@
         "cnes": "2089327"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL PADRE ALBINO CATANDUVA",
+        "value": 8,
+        "cnes": "2089327"
+      },
+      {
         "year": 2016,
         "establishment": "HOSP ESCOLA EMILIO CARLOS CATANDUVA",
         "value": 0,
@@ -8486,6 +9740,12 @@
         "cnes": "2089335"
       },
       {
+        "year": 2026,
+        "establishment": "HOSP ESCOLA EMILIO CARLOS CATANDUVA",
+        "value": 0,
+        "cnes": "2089335"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL GRAACC INSTITUTO DE ONCOLOGIA PEDIATRICA IOP",
         "value": 0,
@@ -8541,6 +9801,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL GRAACC INSTITUTO DE ONCOLOGIA PEDIATRICA IOP",
+        "value": 0,
+        "cnes": "2089696"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL GRAACC INSTITUTO DE ONCOLOGIA PEDIATRICA IOP",
         "value": 0,
         "cnes": "2089696"
@@ -8606,6 +9872,12 @@
         "cnes": "2089785"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL DO RIM E HIPERTENSAO",
+        "value": 13,
+        "cnes": "2089785"
+      },
+      {
         "year": 2016,
         "establishment": "PRONTO ATENDIMENTO DR JOSE NIGRO NETO AMERICO BRASILIENSE",
         "value": 11,
@@ -8666,6 +9938,12 @@
         "cnes": "2090171"
       },
       {
+        "year": 2026,
+        "establishment": "PRONTO ATENDIMENTO DR JOSE NIGRO NETO AMERICO BRASILIENSE",
+        "value": 3,
+        "cnes": "2090171"
+      },
+      {
         "year": 2016,
         "establishment": "FUNDACAO PIO XII BARRETOS",
         "value": 53,
@@ -8722,7 +10000,13 @@
       {
         "year": 2025,
         "establishment": "FUNDACAO PIO XII BARRETOS",
-        "value": 83,
+        "value": 86,
+        "cnes": "2090236"
+      },
+      {
+        "year": 2026,
+        "establishment": "FUNDACAO PIO XII BARRETOS",
+        "value": 48,
         "cnes": "2090236"
       },
       {
@@ -8781,6 +10065,12 @@
       },
       {
         "year": 2025,
+        "establishment": "CENTRO DE ATENCAO INTEGRAL A SAUDE CANTIDIO DE MOURA CAMPOS",
+        "value": 0,
+        "cnes": "2090309"
+      },
+      {
+        "year": 2026,
         "establishment": "CENTRO DE ATENCAO INTEGRAL A SAUDE CANTIDIO DE MOURA CAMPOS",
         "value": 0,
         "cnes": "2090309"
@@ -8842,7 +10132,13 @@
       {
         "year": 2025,
         "establishment": "HOSPITAL CARLOS FERNANDO MALZONI MATAO",
-        "value": 67,
+        "value": 70,
+        "cnes": "2090961"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL CARLOS FERNANDO MALZONI MATAO",
+        "value": 83,
         "cnes": "2090961"
       },
       {
@@ -8906,6 +10202,12 @@
         "cnes": "2091275"
       },
       {
+        "year": 2026,
+        "establishment": "CAIS CENTRO ATENCAO INTEGRAL SAUDE SANTA RITA PASSA QUATRO",
+        "value": 0,
+        "cnes": "2091275"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL REGIONAL SUL SAO PAULO",
         "value": 0,
@@ -8961,6 +10263,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL REGIONAL SUL SAO PAULO",
+        "value": 0,
+        "cnes": "2091313"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL REGIONAL SUL SAO PAULO",
         "value": 0,
         "cnes": "2091313"
@@ -9026,6 +10334,12 @@
         "cnes": "2091399"
       },
       {
+        "year": 2026,
+        "establishment": "ASSOCIACAO NOSSA SENHORA DO PARI",
+        "value": 0,
+        "cnes": "2091399"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL GERAL DE VILA PENTEADO DR JOSE PANGELLA SAO PAULO",
         "value": 0,
@@ -9084,6 +10398,78 @@
         "establishment": "HOSPITAL GERAL DE VILA PENTEADO DR JOSE PANGELLA SAO PAULO",
         "value": 1,
         "cnes": "2091755"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL GERAL DE VILA PENTEADO DR JOSE PANGELLA SAO PAULO",
+        "value": 0,
+        "cnes": "2091755"
+      },
+      {
+        "year": 2016,
+        "establishment": "HOSPITAL MUNICIPAL IBATE",
+        "value": 0,
+        "cnes": "2092395"
+      },
+      {
+        "year": 2017,
+        "establishment": "HOSPITAL MUNICIPAL IBATE",
+        "value": 0,
+        "cnes": "2092395"
+      },
+      {
+        "year": 2018,
+        "establishment": "HOSPITAL MUNICIPAL IBATE",
+        "value": 0,
+        "cnes": "2092395"
+      },
+      {
+        "year": 2019,
+        "establishment": "HOSPITAL MUNICIPAL IBATE",
+        "value": 0,
+        "cnes": "2092395"
+      },
+      {
+        "year": 2020,
+        "establishment": "HOSPITAL MUNICIPAL IBATE",
+        "value": 0,
+        "cnes": "2092395"
+      },
+      {
+        "year": 2021,
+        "establishment": "HOSPITAL MUNICIPAL IBATE",
+        "value": 0,
+        "cnes": "2092395"
+      },
+      {
+        "year": 2022,
+        "establishment": "HOSPITAL MUNICIPAL IBATE",
+        "value": 0,
+        "cnes": "2092395"
+      },
+      {
+        "year": 2023,
+        "establishment": "HOSPITAL MUNICIPAL IBATE",
+        "value": 0,
+        "cnes": "2092395"
+      },
+      {
+        "year": 2024,
+        "establishment": "HOSPITAL MUNICIPAL IBATE",
+        "value": 0,
+        "cnes": "2092395"
+      },
+      {
+        "year": 2025,
+        "establishment": "HOSPITAL MUNICIPAL IBATE",
+        "value": 0,
+        "cnes": "2092395"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL MUNICIPAL IBATE",
+        "value": 1,
+        "cnes": "2092395"
       },
       {
         "year": 2016,
@@ -9146,6 +10532,12 @@
         "cnes": "2092611"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE BARRETOS",
+        "value": 1,
+        "cnes": "2092611"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE SANTA FE DO SUL",
         "value": 0,
@@ -9206,6 +10598,12 @@
         "cnes": "2093332"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE SANTA FE DO SUL",
+        "value": 0,
+        "cnes": "2093332"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE MISERICORDIA DE JACAREI",
         "value": 0,
@@ -9266,6 +10664,12 @@
         "cnes": "2096412"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE MISERICORDIA DE JACAREI",
+        "value": 0,
+        "cnes": "2096412"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE MOGI GUACU",
         "value": 0,
@@ -9326,6 +10730,12 @@
         "cnes": "2096463"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE MOGI GUACU",
+        "value": 0,
+        "cnes": "2096463"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL GERAL DE VILA NOVA CACHOEIRINHA SAO PAULO",
         "value": 1,
@@ -9381,6 +10791,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL GERAL DE VILA NOVA CACHOEIRINHA SAO PAULO",
+        "value": 0,
+        "cnes": "2688573"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL GERAL DE VILA NOVA CACHOEIRINHA SAO PAULO",
         "value": 0,
         "cnes": "2688573"
@@ -9446,6 +10862,12 @@
         "cnes": "2688689"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE SAO PAULO HOSPITAL CENTRAL SAO PAULO",
+        "value": 1,
+        "cnes": "2688689"
+      },
+      {
         "year": 2016,
         "establishment": "SECAO HOSPITAL MUNICIPAL DR ARTHUR DOMINGUES PINTO",
         "value": 0,
@@ -9501,6 +10923,12 @@
       },
       {
         "year": 2025,
+        "establishment": "SECAO HOSPITAL MUNICIPAL DR ARTHUR DOMINGUES PINTO",
+        "value": 0,
+        "cnes": "2698471"
+      },
+      {
+        "year": 2026,
         "establishment": "SECAO HOSPITAL MUNICIPAL DR ARTHUR DOMINGUES PINTO",
         "value": 0,
         "cnes": "2698471"
@@ -9566,6 +10994,12 @@
         "cnes": "2702193"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE MISERICORDIA DE UBATUBA",
+        "value": 0,
+        "cnes": "2702193"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL UNIVERSITARIO SAO FRANCISCO NA PROV DE DEUS",
         "value": 0,
@@ -9626,6 +11060,12 @@
         "cnes": "2704900"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL UNIVERSITARIO SAO FRANCISCO NA PROV DE DEUS",
+        "value": 0,
+        "cnes": "2704900"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE FRANCA",
         "value": 0,
@@ -9681,6 +11121,12 @@
       },
       {
         "year": 2025,
+        "establishment": "SANTA CASA DE FRANCA",
+        "value": 0,
+        "cnes": "2705982"
+      },
+      {
+        "year": 2026,
         "establishment": "SANTA CASA DE FRANCA",
         "value": 0,
         "cnes": "2705982"
@@ -9746,6 +11192,12 @@
         "cnes": "2708566"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL UNIMED DE SOROCABA DR MIGUEL VILLA NOVA SOEIRO",
+        "value": 0,
+        "cnes": "2708566"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE SOROCABA",
         "value": 0,
@@ -9801,6 +11253,12 @@
       },
       {
         "year": 2025,
+        "establishment": "SANTA CASA DE SOROCABA",
+        "value": 0,
+        "cnes": "2708779"
+      },
+      {
+        "year": 2026,
         "establishment": "SANTA CASA DE SOROCABA",
         "value": 0,
         "cnes": "2708779"
@@ -9866,6 +11324,12 @@
         "cnes": "2716097"
       },
       {
+        "year": 2026,
+        "establishment": "COMPLEXO HOSPITALAR IRMA DULCE O S S",
+        "value": 0,
+        "cnes": "2716097"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL E MATERNIDADE MAE DO DIVINO AMOR NA PROV DEUS",
         "value": 1,
@@ -9926,6 +11390,12 @@
         "cnes": "2716275"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL E MATERNIDADE MAE DO DIVINO AMOR NA PROV DEUS",
+        "value": 0,
+        "cnes": "2716275"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL JOAO VELLOSO",
         "value": 1,
@@ -9986,6 +11456,12 @@
         "cnes": "2716291"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL JOAO VELLOSO",
+        "value": 0,
+        "cnes": "2716291"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL DE MISERICORDIA ALTINOPOLIS",
         "value": 0,
@@ -10046,6 +11522,12 @@
         "cnes": "2716593"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL DE MISERICORDIA ALTINOPOLIS",
+        "value": 0,
+        "cnes": "2716593"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE SANTA ROSA DE VITERBO",
         "value": 0,
@@ -10103,6 +11585,12 @@
         "year": 2025,
         "establishment": "SANTA CASA DE SANTA ROSA DE VITERBO",
         "value": 1,
+        "cnes": "2746298"
+      },
+      {
+        "year": 2026,
+        "establishment": "SANTA CASA DE SANTA ROSA DE VITERBO",
+        "value": 0,
         "cnes": "2746298"
       },
       {
@@ -10166,6 +11654,12 @@
         "cnes": "2747685"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE MISERICORDIA NOVA EUROPA",
+        "value": 0,
+        "cnes": "2747685"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL MUNICIPAL GOV MARIO COVAS JR",
         "value": 0,
@@ -10221,6 +11715,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL MUNICIPAL GOV MARIO COVAS JR",
+        "value": 1,
+        "cnes": "2747871"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL MUNICIPAL GOV MARIO COVAS JR",
         "value": 1,
         "cnes": "2747871"
@@ -10281,6 +11781,12 @@
       },
       {
         "year": 2025,
+        "establishment": "SANTA CASA DE SAO JOSE CAMPOS",
+        "value": 0,
+        "cnes": "2748029"
+      },
+      {
+        "year": 2026,
         "establishment": "SANTA CASA DE SAO JOSE CAMPOS",
         "value": 0,
         "cnes": "2748029"
@@ -10346,6 +11852,12 @@
         "cnes": "2748223"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL DAS CLINICAS DA FACULDADE DE MEDICINA DE BOTUCATU",
+        "value": 1,
+        "cnes": "2748223"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL ESTADUAL DR ODILO ANTUNES DE SIQUEIRA P PRUDENTE",
         "value": 0,
@@ -10406,6 +11918,12 @@
         "cnes": "2750511"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL ESTADUAL DR ODILO ANTUNES DE SIQUEIRA P PRUDENTE",
+        "value": 0,
+        "cnes": "2750511"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE DRACENA",
         "value": 0,
@@ -10466,6 +11984,12 @@
         "cnes": "2750988"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE DRACENA",
+        "value": 0,
+        "cnes": "2750988"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE JUNQUEIROPOLIS",
         "value": 0,
@@ -10526,6 +12050,12 @@
         "cnes": "2751003"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE JUNQUEIROPOLIS",
+        "value": 0,
+        "cnes": "2751003"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE PRESIDENTE EPITACIO",
         "value": 0,
@@ -10581,6 +12111,12 @@
       },
       {
         "year": 2025,
+        "establishment": "SANTA CASA DE PRESIDENTE EPITACIO",
+        "value": 0,
+        "cnes": "2751038"
+      },
+      {
+        "year": 2026,
         "establishment": "SANTA CASA DE PRESIDENTE EPITACIO",
         "value": 0,
         "cnes": "2751038"
@@ -10646,6 +12182,12 @@
         "cnes": "2751704"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE MISERICORDIA DE ITUVERAVA",
+        "value": 1,
+        "cnes": "2751704"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL SANTO AMARO",
         "value": 0,
@@ -10706,6 +12248,12 @@
         "cnes": "2754843"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL SANTO AMARO",
+        "value": 0,
+        "cnes": "2754843"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE PINDAMONHANGABA",
         "value": 0,
@@ -10763,6 +12311,12 @@
         "year": 2025,
         "establishment": "SANTA CASA DE PINDAMONHANGABA",
         "value": 1,
+        "cnes": "2755092"
+      },
+      {
+        "year": 2026,
+        "establishment": "SANTA CASA DE PINDAMONHANGABA",
+        "value": 0,
         "cnes": "2755092"
       },
       {
@@ -10823,6 +12377,12 @@
         "year": 2025,
         "establishment": "HOSPITAL DOMINGOS LEONARDO CERAVOLO PRESIDENTE PRUDENTE",
         "value": 1,
+        "cnes": "2755130"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL DOMINGOS LEONARDO CERAVOLO PRESIDENTE PRUDENTE",
+        "value": 0,
         "cnes": "2755130"
       },
       {
@@ -10886,6 +12446,12 @@
         "cnes": "2758245"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE LINS",
+        "value": 0,
+        "cnes": "2758245"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL DE CLINICAS DE SAO SEBASTIAO",
         "value": 0,
@@ -10946,6 +12512,12 @@
         "cnes": "2765934"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL DE CLINICAS DE SAO SEBASTIAO",
+        "value": 0,
+        "cnes": "2765934"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE PIRACICABA",
         "value": 0,
@@ -11006,6 +12578,12 @@
         "cnes": "2772310"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE PIRACICABA",
+        "value": 0,
+        "cnes": "2772310"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL DE AGUDOS",
         "value": 0,
@@ -11066,6 +12644,12 @@
         "cnes": "2774720"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL DE AGUDOS",
+        "value": 0,
+        "cnes": "2774720"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL AUGUSTO DE OLIVEIRA CAMARGO",
         "value": 0,
@@ -11126,6 +12710,12 @@
         "cnes": "2784602"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL AUGUSTO DE OLIVEIRA CAMARGO",
+        "value": 0,
+        "cnes": "2784602"
+      },
+      {
         "year": 2016,
         "establishment": "HCSVP HOSPITAL SAO VICENTE",
         "value": 0,
@@ -11181,6 +12771,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HCSVP HOSPITAL SAO VICENTE",
+        "value": 0,
+        "cnes": "2786435"
+      },
+      {
+        "year": 2026,
         "establishment": "HCSVP HOSPITAL SAO VICENTE",
         "value": 0,
         "cnes": "2786435"
@@ -11241,6 +12837,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL DE BASE DE BAURU",
+        "value": 1,
+        "cnes": "2790556"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL DE BASE DE BAURU",
         "value": 1,
         "cnes": "2790556"
@@ -11306,6 +12908,12 @@
         "cnes": "2790564"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL DE REABILITACAO DE ANOMALIAS CRANIOFACIAIS BAURU",
+        "value": 4,
+        "cnes": "2790564"
+      },
+      {
         "year": 2016,
         "establishment": "MATERNIDADE SANTA ISABEL",
         "value": 0,
@@ -11363,6 +12971,12 @@
         "year": 2025,
         "establishment": "MATERNIDADE SANTA ISABEL",
         "value": 2,
+        "cnes": "2790580"
+      },
+      {
+        "year": 2026,
+        "establishment": "MATERNIDADE SANTA ISABEL",
+        "value": 0,
         "cnes": "2790580"
       },
       {
@@ -11426,6 +13040,12 @@
         "cnes": "2790602"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL ESTADUAL BAURU",
+        "value": 7,
+        "cnes": "2790602"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL GERAL PREFEITO MIGUEL MARTIN GUALDA DE PROMISSAO",
         "value": 0,
@@ -11484,6 +13104,78 @@
         "establishment": "HOSPITAL GERAL PREFEITO MIGUEL MARTIN GUALDA DE PROMISSAO",
         "value": 0,
         "cnes": "2790610"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL GERAL PREFEITO MIGUEL MARTIN GUALDA DE PROMISSAO",
+        "value": 0,
+        "cnes": "2790610"
+      },
+      {
+        "year": 2016,
+        "establishment": "HOSPITAL SANTA LUZIA DUARTINA",
+        "value": 0,
+        "cnes": "2790637"
+      },
+      {
+        "year": 2017,
+        "establishment": "HOSPITAL SANTA LUZIA DUARTINA",
+        "value": 0,
+        "cnes": "2790637"
+      },
+      {
+        "year": 2018,
+        "establishment": "HOSPITAL SANTA LUZIA DUARTINA",
+        "value": 0,
+        "cnes": "2790637"
+      },
+      {
+        "year": 2019,
+        "establishment": "HOSPITAL SANTA LUZIA DUARTINA",
+        "value": 0,
+        "cnes": "2790637"
+      },
+      {
+        "year": 2020,
+        "establishment": "HOSPITAL SANTA LUZIA DUARTINA",
+        "value": 0,
+        "cnes": "2790637"
+      },
+      {
+        "year": 2021,
+        "establishment": "HOSPITAL SANTA LUZIA DUARTINA",
+        "value": 0,
+        "cnes": "2790637"
+      },
+      {
+        "year": 2022,
+        "establishment": "HOSPITAL SANTA LUZIA DUARTINA",
+        "value": 0,
+        "cnes": "2790637"
+      },
+      {
+        "year": 2023,
+        "establishment": "HOSPITAL SANTA LUZIA DUARTINA",
+        "value": 0,
+        "cnes": "2790637"
+      },
+      {
+        "year": 2024,
+        "establishment": "HOSPITAL SANTA LUZIA DUARTINA",
+        "value": 0,
+        "cnes": "2790637"
+      },
+      {
+        "year": 2025,
+        "establishment": "HOSPITAL SANTA LUZIA DUARTINA",
+        "value": 0,
+        "cnes": "2790637"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL SANTA LUZIA DUARTINA",
+        "value": 1,
+        "cnes": "2790637"
       },
       {
         "year": 2016,
@@ -11542,7 +13234,13 @@
       {
         "year": 2025,
         "establishment": "INSTITUTO LAURO DE SOUZA LIMA BAURU",
-        "value": 3,
+        "value": 5,
+        "cnes": "2790734"
+      },
+      {
+        "year": 2026,
+        "establishment": "INSTITUTO LAURO DE SOUZA LIMA BAURU",
+        "value": 1,
         "cnes": "2790734"
       },
       {
@@ -11606,6 +13304,12 @@
         "cnes": "2791676"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE BARIRI",
+        "value": 0,
+        "cnes": "2791676"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE CAFELANDIA",
         "value": 0,
@@ -11666,6 +13370,12 @@
         "cnes": "2791684"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE CAFELANDIA",
+        "value": 0,
+        "cnes": "2791684"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE DOIS CORREGOS",
         "value": 1,
@@ -11721,6 +13431,12 @@
       },
       {
         "year": 2025,
+        "establishment": "SANTA CASA DE DOIS CORREGOS",
+        "value": 0,
+        "cnes": "2791692"
+      },
+      {
+        "year": 2026,
         "establishment": "SANTA CASA DE DOIS CORREGOS",
         "value": 0,
         "cnes": "2791692"
@@ -11786,6 +13502,12 @@
         "cnes": "2791722"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE JAU",
+        "value": 5,
+        "cnes": "2791722"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE PEDERNEIRAS",
         "value": 0,
@@ -11846,6 +13568,12 @@
         "cnes": "2791749"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE PEDERNEIRAS",
+        "value": 0,
+        "cnes": "2791749"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL REGIONAL DE COTIA",
         "value": 0,
@@ -11904,6 +13632,78 @@
         "establishment": "HOSPITAL REGIONAL DE COTIA",
         "value": 0,
         "cnes": "2792141"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL REGIONAL DE COTIA",
+        "value": 0,
+        "cnes": "2792141"
+      },
+      {
+        "year": 2016,
+        "establishment": "HOSPITAL GERAL DE ITAPECERICA DA SERRA",
+        "value": 0,
+        "cnes": "2792176"
+      },
+      {
+        "year": 2017,
+        "establishment": "HOSPITAL GERAL DE ITAPECERICA DA SERRA",
+        "value": 0,
+        "cnes": "2792176"
+      },
+      {
+        "year": 2018,
+        "establishment": "HOSPITAL GERAL DE ITAPECERICA DA SERRA",
+        "value": 0,
+        "cnes": "2792176"
+      },
+      {
+        "year": 2019,
+        "establishment": "HOSPITAL GERAL DE ITAPECERICA DA SERRA",
+        "value": 0,
+        "cnes": "2792176"
+      },
+      {
+        "year": 2020,
+        "establishment": "HOSPITAL GERAL DE ITAPECERICA DA SERRA",
+        "value": 0,
+        "cnes": "2792176"
+      },
+      {
+        "year": 2021,
+        "establishment": "HOSPITAL GERAL DE ITAPECERICA DA SERRA",
+        "value": 0,
+        "cnes": "2792176"
+      },
+      {
+        "year": 2022,
+        "establishment": "HOSPITAL GERAL DE ITAPECERICA DA SERRA",
+        "value": 0,
+        "cnes": "2792176"
+      },
+      {
+        "year": 2023,
+        "establishment": "HOSPITAL GERAL DE ITAPECERICA DA SERRA",
+        "value": 0,
+        "cnes": "2792176"
+      },
+      {
+        "year": 2024,
+        "establishment": "HOSPITAL GERAL DE ITAPECERICA DA SERRA",
+        "value": 0,
+        "cnes": "2792176"
+      },
+      {
+        "year": 2025,
+        "establishment": "HOSPITAL GERAL DE ITAPECERICA DA SERRA",
+        "value": 0,
+        "cnes": "2792176"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL GERAL DE ITAPECERICA DA SERRA",
+        "value": 1,
+        "cnes": "2792176"
       },
       {
         "year": 2016,
@@ -11966,6 +13766,12 @@
         "cnes": "2812703"
       },
       {
+        "year": 2026,
+        "establishment": "FUNDACAO FACULDADE DE MEDICINAHCFMUSP INST DE PSIQUIATRIA SP",
+        "value": 0,
+        "cnes": "2812703"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL SAO VICENTE DE PAULO",
         "value": 0,
@@ -12021,6 +13827,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL SAO VICENTE DE PAULO",
+        "value": 0,
+        "cnes": "2888491"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL SAO VICENTE DE PAULO",
         "value": 0,
         "cnes": "2888491"
@@ -12086,6 +13898,12 @@
         "cnes": "3001466"
       },
       {
+        "year": 2026,
+        "establishment": "CENTRO HOSPITALAR DO SISTEMA PENITENCIARIO SAO PAULO",
+        "value": 2,
+        "cnes": "3001466"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL REGIONAL DE BEBEDOURO HRB",
         "value": 0,
@@ -12146,6 +13964,12 @@
         "cnes": "3058808"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL REGIONAL DE BEBEDOURO HRB",
+        "value": 1,
+        "cnes": "3058808"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL REGIONAL DO VALE DO PARAIBA",
         "value": 1,
@@ -12206,6 +14030,12 @@
         "cnes": "3126838"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL REGIONAL DO VALE DO PARAIBA",
+        "value": 0,
+        "cnes": "3126838"
+      },
+      {
         "year": 2016,
         "establishment": "HOSP MUN VER JOSE STOROPOLLI",
         "value": 1,
@@ -12261,6 +14091,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSP MUN VER JOSE STOROPOLLI",
+        "value": 0,
+        "cnes": "3212130"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSP MUN VER JOSE STOROPOLLI",
         "value": 0,
         "cnes": "3212130"
@@ -12323,6 +14159,12 @@
         "year": 2025,
         "establishment": "HOSPITAL LEONOR MENDES DE BARROS",
         "value": 2,
+        "cnes": "3753433"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL LEONOR MENDES DE BARROS",
+        "value": 0,
         "cnes": "3753433"
       },
       {
@@ -12386,6 +14228,12 @@
         "cnes": "3880966"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL DAS CLINICAS DE BAURU HCB",
+        "value": 4,
+        "cnes": "3880966"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL MUNICIPAL PIMENTAS BONSUCESSO MANUEL DE PAIVA",
         "value": 0,
@@ -12446,6 +14294,12 @@
         "cnes": "5200105"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL MUNICIPAL PIMENTAS BONSUCESSO MANUEL DE PAIVA",
+        "value": 0,
+        "cnes": "5200105"
+      },
+      {
         "year": 2016,
         "establishment": "SANTA CASA DE ATIBAIA",
         "value": 0,
@@ -12506,6 +14360,12 @@
         "cnes": "5366828"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE ATIBAIA",
+        "value": 0,
+        "cnes": "5366828"
+      },
+      {
         "year": 2016,
         "establishment": "HOSP MUN CARMEN PRUDENTE",
         "value": 0,
@@ -12566,6 +14426,12 @@
         "cnes": "5420938"
       },
       {
+        "year": 2026,
+        "establishment": "HOSP MUN CARMEN PRUDENTE",
+        "value": 0,
+        "cnes": "5420938"
+      },
+      {
         "year": 2016,
         "establishment": "INSTITUTO DE REABILITACAO LUCY MONTORO",
         "value": 0,
@@ -12621,6 +14487,12 @@
       },
       {
         "year": 2025,
+        "establishment": "INSTITUTO DE REABILITACAO LUCY MONTORO",
+        "value": 0,
+        "cnes": "5451612"
+      },
+      {
+        "year": 2026,
         "establishment": "INSTITUTO DE REABILITACAO LUCY MONTORO",
         "value": 0,
         "cnes": "5451612"
@@ -12682,7 +14554,13 @@
       {
         "year": 2025,
         "establishment": "HOSPITAL UNIVERSITARIO DA UFSCAR",
-        "value": 176,
+        "value": 206,
+        "cnes": "5586348"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL UNIVERSITARIO DA UFSCAR",
+        "value": 108,
         "cnes": "5586348"
       },
       {
@@ -12741,6 +14619,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSP MUN M BOI MIRIM",
+        "value": 0,
+        "cnes": "5718368"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSP MUN M BOI MIRIM",
         "value": 0,
         "cnes": "5718368"
@@ -12806,6 +14690,12 @@
         "cnes": "5887623"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL ESTADUAL DE RIB PRETO DR CARLOS EDUARDO MARTINELLI",
+        "value": 0,
+        "cnes": "5887623"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL DA MULHER MARIA JOSE DOS SANTOS STEIN",
         "value": 0,
@@ -12866,6 +14756,12 @@
         "cnes": "6020917"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL DA MULHER MARIA JOSE DOS SANTOS STEIN",
+        "value": 0,
+        "cnes": "6020917"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL MUNICIPAL DE BARUERI DR FRANCISCO MORAN",
         "value": 0,
@@ -12921,6 +14817,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL MUNICIPAL DE BARUERI DR FRANCISCO MORAN",
+        "value": 0,
+        "cnes": "6095666"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL MUNICIPAL DE BARUERI DR FRANCISCO MORAN",
         "value": 0,
         "cnes": "6095666"
@@ -12986,6 +14888,12 @@
         "cnes": "6123740"
       },
       {
+        "year": 2026,
+        "establishment": "INSTITUTO DO CANCER DO ESTADO DE SAO PAULO",
+        "value": 0,
+        "cnes": "6123740"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL ESTADUAL AMERICO BRASILIENSE",
         "value": 1336,
@@ -13042,7 +14950,13 @@
       {
         "year": 2025,
         "establishment": "HOSPITAL ESTADUAL AMERICO BRASILIENSE",
-        "value": 2251,
+        "value": 2266,
+        "cnes": "6164366"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL ESTADUAL AMERICO BRASILIENSE",
+        "value": 1229,
         "cnes": "6164366"
       },
       {
@@ -13106,6 +15020,12 @@
         "cnes": "6236596"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL ESTADUAL JOAO PAULO II SAO JOSE DO RIO PRETO",
+        "value": 0,
+        "cnes": "6236596"
+      },
+      {
         "year": 2016,
         "establishment": "AME PIRACICABA DR OSWALDO CAMBIAGHI",
         "value": 0,
@@ -13166,6 +15086,12 @@
         "cnes": "6284582"
       },
       {
+        "year": 2026,
+        "establishment": "AME PIRACICABA DR OSWALDO CAMBIAGHI",
+        "value": 0,
+        "cnes": "6284582"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL ESTADUAL DR ALBANO DA FRANCA ROCHA SOBRINHO",
         "value": 0,
@@ -13221,6 +15147,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL ESTADUAL DR ALBANO DA FRANCA ROCHA SOBRINHO",
+        "value": 0,
+        "cnes": "6878687"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL ESTADUAL DR ALBANO DA FRANCA ROCHA SOBRINHO",
         "value": 0,
         "cnes": "6878687"
@@ -13282,7 +15214,13 @@
       {
         "year": 2025,
         "establishment": "MATERNIDADE GOTA DE LEITE DE ARARAQUARA",
-        "value": 2608,
+        "value": 2896,
+        "cnes": "6943284"
+      },
+      {
+        "year": 2026,
+        "establishment": "MATERNIDADE GOTA DE LEITE DE ARARAQUARA",
+        "value": 1146,
         "cnes": "6943284"
       },
       {
@@ -13341,6 +15279,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL DE AMOR JALES",
+        "value": 0,
+        "cnes": "7066376"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL DE AMOR JALES",
         "value": 0,
         "cnes": "7066376"
@@ -13406,6 +15350,12 @@
         "cnes": "7711980"
       },
       {
+        "year": 2026,
+        "establishment": "HOSP MUN GILSON DE CASSIA MARQUES DE CARVALHO",
+        "value": 0,
+        "cnes": "7711980"
+      },
+      {
         "year": 2016,
         "establishment": "UNIDADE DE RETAGUARDA DE URGENCIA E DIAGNOSTICO DO MELHADO",
         "value": 0,
@@ -13462,7 +15412,13 @@
       {
         "year": 2025,
         "establishment": "UNIDADE DE RETAGUARDA DE URGENCIA E DIAGNOSTICO DO MELHADO",
-        "value": 864,
+        "value": 953,
+        "cnes": "9267263"
+      },
+      {
+        "year": 2026,
+        "establishment": "UNIDADE DE RETAGUARDA DE URGENCIA E DIAGNOSTICO DO MELHADO",
+        "value": 303,
         "cnes": "9267263"
       },
       {
@@ -13526,6 +15482,12 @@
         "cnes": "9314687"
       },
       {
+        "year": 2026,
+        "establishment": "AME TAQUARITINGA",
+        "value": 7,
+        "cnes": "9314687"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL REGIONAL DE PIRACICABA",
         "value": 0,
@@ -13586,6 +15548,12 @@
         "cnes": "9425802"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL REGIONAL DE PIRACICABA",
+        "value": 1,
+        "cnes": "9425802"
+      },
+      {
         "year": 2016,
         "establishment": "DR RUBENS SAVASTANO HOSPITAL REGIONAL DE SAO JOSE DOS CAMPOS",
         "value": 0,
@@ -13646,6 +15614,12 @@
         "cnes": "9491252"
       },
       {
+        "year": 2026,
+        "establishment": "DR RUBENS SAVASTANO HOSPITAL REGIONAL DE SAO JOSE DOS CAMPOS",
+        "value": 0,
+        "cnes": "9491252"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL REGIONAL DE REGISTRO REGISTRO",
         "value": 0,
@@ -13701,6 +15675,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL REGIONAL DE REGISTRO REGISTRO",
+        "value": 0,
+        "cnes": "9556095"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL REGIONAL DE REGISTRO REGISTRO",
         "value": 0,
         "cnes": "9556095"
@@ -13766,6 +15746,12 @@
         "cnes": "9639659"
       },
       {
+        "year": 2026,
+        "establishment": "SANTA CASA DE MISERICORDIA REGIONAL",
+        "value": 0,
+        "cnes": "9639659"
+      },
+      {
         "year": 2016,
         "establishment": "HOSPITAL DE AMOR NOSSA SENHORA",
         "value": 0,
@@ -13821,6 +15807,12 @@
       },
       {
         "year": 2025,
+        "establishment": "HOSPITAL DE AMOR NOSSA SENHORA",
+        "value": 0,
+        "cnes": "9662561"
+      },
+      {
+        "year": 2026,
         "establishment": "HOSPITAL DE AMOR NOSSA SENHORA",
         "value": 0,
         "cnes": "9662561"
@@ -13886,6 +15878,78 @@
         "cnes": "9773657"
       },
       {
+        "year": 2026,
+        "establishment": "HOSPITAL ESTADUAL DE SERRANA",
+        "value": 3,
+        "cnes": "9773657"
+      },
+      {
+        "year": 2016,
+        "establishment": "HOSPITAL DIA SANTO AMARO",
+        "value": 0,
+        "cnes": "9950931"
+      },
+      {
+        "year": 2017,
+        "establishment": "HOSPITAL DIA SANTO AMARO",
+        "value": 0,
+        "cnes": "9950931"
+      },
+      {
+        "year": 2018,
+        "establishment": "HOSPITAL DIA SANTO AMARO",
+        "value": 0,
+        "cnes": "9950931"
+      },
+      {
+        "year": 2019,
+        "establishment": "HOSPITAL DIA SANTO AMARO",
+        "value": 0,
+        "cnes": "9950931"
+      },
+      {
+        "year": 2020,
+        "establishment": "HOSPITAL DIA SANTO AMARO",
+        "value": 0,
+        "cnes": "9950931"
+      },
+      {
+        "year": 2021,
+        "establishment": "HOSPITAL DIA SANTO AMARO",
+        "value": 0,
+        "cnes": "9950931"
+      },
+      {
+        "year": 2022,
+        "establishment": "HOSPITAL DIA SANTO AMARO",
+        "value": 0,
+        "cnes": "9950931"
+      },
+      {
+        "year": 2023,
+        "establishment": "HOSPITAL DIA SANTO AMARO",
+        "value": 0,
+        "cnes": "9950931"
+      },
+      {
+        "year": 2024,
+        "establishment": "HOSPITAL DIA SANTO AMARO",
+        "value": 0,
+        "cnes": "9950931"
+      },
+      {
+        "year": 2025,
+        "establishment": "HOSPITAL DIA SANTO AMARO",
+        "value": 0,
+        "cnes": "9950931"
+      },
+      {
+        "year": 2026,
+        "establishment": "HOSPITAL DIA SANTO AMARO",
+        "value": 1,
+        "cnes": "9950931"
+      },
+      {
         "year": 2016,
         "establishment": "&",
         "value": 0,
@@ -13941,6 +16005,12 @@
       },
       {
         "year": 2025,
+        "establishment": "&",
+        "value": 0,
+        "cnes": null
+      },
+      {
+        "year": 2026,
         "establishment": "&",
         "value": 0,
         "cnes": null
@@ -13995,7 +16065,12 @@
       {
         "year": 2025,
         "chapter": "I.   Algumas doenças infecciosas e parasitárias",
-        "value": 632
+        "value": 652
+      },
+      {
+        "year": 2026,
+        "chapter": "I.   Algumas doenças infecciosas e parasitárias",
+        "value": 202
       },
       {
         "year": 2016,
@@ -14045,7 +16120,12 @@
       {
         "year": 2025,
         "chapter": "II.  Neoplasias (tumores)",
-        "value": 1697
+        "value": 1760
+      },
+      {
+        "year": 2026,
+        "chapter": "II.  Neoplasias (tumores)",
+        "value": 907
       },
       {
         "year": 2016,
@@ -14095,7 +16175,12 @@
       {
         "year": 2025,
         "chapter": "III. Doenças sangue órgãos hemat e transt imunitár",
-        "value": 141
+        "value": 146
+      },
+      {
+        "year": 2026,
+        "chapter": "III. Doenças sangue órgãos hemat e transt imunitár",
+        "value": 84
       },
       {
         "year": 2016,
@@ -14145,7 +16230,12 @@
       {
         "year": 2025,
         "chapter": "IV.  Doenças endócrinas nutricionais e metabólicas",
-        "value": 272
+        "value": 286
+      },
+      {
+        "year": 2026,
+        "chapter": "IV.  Doenças endócrinas nutricionais e metabólicas",
+        "value": 141
       },
       {
         "year": 2016,
@@ -14195,7 +16285,12 @@
       {
         "year": 2025,
         "chapter": "V.   Transtornos mentais e comportamentais",
-        "value": 271
+        "value": 319
+      },
+      {
+        "year": 2026,
+        "chapter": "V.   Transtornos mentais e comportamentais",
+        "value": 99
       },
       {
         "year": 2016,
@@ -14245,7 +16340,12 @@
       {
         "year": 2025,
         "chapter": "VI.  Doenças do sistema nervoso",
-        "value": 362
+        "value": 377
+      },
+      {
+        "year": 2026,
+        "chapter": "VI.  Doenças do sistema nervoso",
+        "value": 244
       },
       {
         "year": 2016,
@@ -14295,7 +16395,12 @@
       {
         "year": 2025,
         "chapter": "VII. Doenças do olho e anexos",
-        "value": 951
+        "value": 953
+      },
+      {
+        "year": 2026,
+        "chapter": "VII. Doenças do olho e anexos",
+        "value": 549
       },
       {
         "year": 2016,
@@ -14348,6 +16453,11 @@
         "value": 41
       },
       {
+        "year": 2026,
+        "chapter": "VIII.Doenças do ouvido e da apófise mastóide",
+        "value": 17
+      },
+      {
         "year": 2016,
         "chapter": "IX.  Doenças do aparelho circulatório",
         "value": 1066
@@ -14395,7 +16505,12 @@
       {
         "year": 2025,
         "chapter": "IX.  Doenças do aparelho circulatório",
-        "value": 2202
+        "value": 2280
+      },
+      {
+        "year": 2026,
+        "chapter": "IX.  Doenças do aparelho circulatório",
+        "value": 991
       },
       {
         "year": 2016,
@@ -14445,7 +16560,12 @@
       {
         "year": 2025,
         "chapter": "X.   Doenças do aparelho respiratório",
-        "value": 1083
+        "value": 1144
+      },
+      {
+        "year": 2026,
+        "chapter": "X.   Doenças do aparelho respiratório",
+        "value": 518
       },
       {
         "year": 2016,
@@ -14495,7 +16615,12 @@
       {
         "year": 2025,
         "chapter": "XI.  Doenças do aparelho digestivo",
-        "value": 1620
+        "value": 1667
+      },
+      {
+        "year": 2026,
+        "chapter": "XI.  Doenças do aparelho digestivo",
+        "value": 831
       },
       {
         "year": 2016,
@@ -14545,7 +16670,12 @@
       {
         "year": 2025,
         "chapter": "XII. Doenças da pele e do tecido subcutâneo",
-        "value": 192
+        "value": 210
+      },
+      {
+        "year": 2026,
+        "chapter": "XII. Doenças da pele e do tecido subcutâneo",
+        "value": 105
       },
       {
         "year": 2016,
@@ -14595,7 +16725,12 @@
       {
         "year": 2025,
         "chapter": "XIII.Doenças sist osteomuscular e tec conjuntivo",
-        "value": 416
+        "value": 420
+      },
+      {
+        "year": 2026,
+        "chapter": "XIII.Doenças sist osteomuscular e tec conjuntivo",
+        "value": 215
       },
       {
         "year": 2016,
@@ -14645,7 +16780,12 @@
       {
         "year": 2025,
         "chapter": "XIV. Doenças do aparelho geniturinário",
-        "value": 1128
+        "value": 1182
+      },
+      {
+        "year": 2026,
+        "chapter": "XIV. Doenças do aparelho geniturinário",
+        "value": 545
       },
       {
         "year": 2016,
@@ -14695,7 +16835,12 @@
       {
         "year": 2025,
         "chapter": "XV.  Gravidez parto e puerpério",
-        "value": 1793
+        "value": 2003
+      },
+      {
+        "year": 2026,
+        "chapter": "XV.  Gravidez parto e puerpério",
+        "value": 817
       },
       {
         "year": 2016,
@@ -14745,7 +16890,12 @@
       {
         "year": 2025,
         "chapter": "XVI. Algumas afec originadas no período perinatal",
-        "value": 225
+        "value": 252
+      },
+      {
+        "year": 2026,
+        "chapter": "XVI. Algumas afec originadas no período perinatal",
+        "value": 120
       },
       {
         "year": 2016,
@@ -14795,7 +16945,12 @@
       {
         "year": 2025,
         "chapter": "XVII.Malf cong deformid e anomalias cromossômicas",
-        "value": 88
+        "value": 94
+      },
+      {
+        "year": 2026,
+        "chapter": "XVII.Malf cong deformid e anomalias cromossômicas",
+        "value": 54
       },
       {
         "year": 2016,
@@ -14845,7 +17000,12 @@
       {
         "year": 2025,
         "chapter": "XVIII.Sint sinais e achad anorm ex clín e laborat",
-        "value": 1605
+        "value": 1619
+      },
+      {
+        "year": 2026,
+        "chapter": "XVIII.Sint sinais e achad anorm ex clín e laborat",
+        "value": 1070
       },
       {
         "year": 2016,
@@ -14895,7 +17055,12 @@
       {
         "year": 2025,
         "chapter": "XIX. Lesões enven e alg out conseq causas externas",
-        "value": 1231
+        "value": 1275
+      },
+      {
+        "year": 2026,
+        "chapter": "XIX. Lesões enven e alg out conseq causas externas",
+        "value": 641
       },
       {
         "year": 2016,
@@ -14945,7 +17110,12 @@
       {
         "year": 2025,
         "chapter": "XXI. Contatos com serviços de saúde",
-        "value": 461
+        "value": 497
+      },
+      {
+        "year": 2026,
+        "chapter": "XXI. Contatos com serviços de saúde",
+        "value": 178
       },
       {
         "year": 2016,
@@ -14994,6 +17164,11 @@
       },
       {
         "year": 2025,
+        "chapter": "&",
+        "value": 0
+      },
+      {
+        "year": 2026,
         "chapter": "&",
         "value": 0
       }
@@ -15055,6 +17230,11 @@
         "value": 181964
       },
       {
+        "year": 2026,
+        "procedure_group": "01 Acoes de promocao e prevencao em saude",
+        "value": 101636
+      },
+      {
         "year": 2016,
         "procedure_group": "02 Procedimentos com finalidade diagnostica",
         "value": 1184302
@@ -15102,7 +17282,12 @@
       {
         "year": 2025,
         "procedure_group": "02 Procedimentos com finalidade diagnostica",
-        "value": 2225198
+        "value": 2225208
+      },
+      {
+        "year": 2026,
+        "procedure_group": "02 Procedimentos com finalidade diagnostica",
+        "value": 1108257
       },
       {
         "year": 2016,
@@ -15155,6 +17340,11 @@
         "value": 2037160
       },
       {
+        "year": 2026,
+        "procedure_group": "03 Procedimentos clinicos",
+        "value": 1127023
+      },
+      {
         "year": 2016,
         "procedure_group": "04 Procedimentos cirurgicos",
         "value": 30115
@@ -15203,6 +17393,11 @@
         "year": 2025,
         "procedure_group": "04 Procedimentos cirurgicos",
         "value": 20803
+      },
+      {
+        "year": 2026,
+        "procedure_group": "04 Procedimentos cirurgicos",
+        "value": 12489
       },
       {
         "year": 2016,
@@ -15255,6 +17450,11 @@
         "value": 1
       },
       {
+        "year": 2026,
+        "procedure_group": "05 Transplantes de orgaos, tecidos e celulas",
+        "value": 0
+      },
+      {
         "year": 2016,
         "procedure_group": "06 Medicamentos",
         "value": 7791947
@@ -15302,7 +17502,12 @@
       {
         "year": 2025,
         "procedure_group": "06 Medicamentos",
-        "value": 15776326
+        "value": 15776962
+      },
+      {
+        "year": 2026,
+        "procedure_group": "06 Medicamentos",
+        "value": 7431871
       },
       {
         "year": 2016,
@@ -15355,6 +17560,11 @@
         "value": 20354
       },
       {
+        "year": 2026,
+        "procedure_group": "07 Orteses, proteses e materiais especiais",
+        "value": 7661
+      },
+      {
         "year": 2016,
         "procedure_group": "08 Acoes complementares da atencao a saude",
         "value": 182
@@ -15401,6 +17611,11 @@
       },
       {
         "year": 2025,
+        "procedure_group": "08 Acoes complementares da atencao a saude",
+        "value": 0
+      },
+      {
+        "year": 2026,
         "procedure_group": "08 Acoes complementares da atencao a saude",
         "value": 0
       },
@@ -15455,6 +17670,11 @@
         "value": 274
       },
       {
+        "year": 2026,
+        "procedure_group": "09 \nProcedimentos para Ofertas de Cuidados Integrados",
+        "value": 365
+      },
+      {
         "year": 2016,
         "procedure_group": "&",
         "value": 0
@@ -15501,6 +17721,11 @@
       },
       {
         "year": 2025,
+        "procedure_group": "&",
+        "value": 0
+      },
+      {
+        "year": 2026,
         "procedure_group": "&",
         "value": 0
       }

@@ -3,10 +3,10 @@
   "name": "Pontos de risco hidrológico de Araraquara",
   "metadata": {
     "source": "Prefeitura de Araraquara / Defesa Civil Municipal",
-    "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-    "source_date": "2025-11-11",
+    "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+    "source_date": "2026-01-22",
     "count_published": 23,
-    "count_geocoded_for_map": 20,
+    "count_geocoded_for_map": 23,
     "interpretation": "Pontos mapeados de alagamento, inundação e enxurrada; não são uma mancha contínua de inundação.",
     "classification_legend": {
       "risco_atenuado": {
@@ -47,8 +47,8 @@
         "intervention_code": "*",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "risco_atenuado",
         "classification_label": "Risco atenuado por obras estruturais",
         "classification_share_pct": 30
@@ -70,8 +70,8 @@
         "intervention_code": "*",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "risco_atenuado",
         "classification_label": "Risco atenuado por obras estruturais",
         "classification_share_pct": 30
@@ -93,8 +93,8 @@
         "intervention_code": "*",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "risco_atenuado",
         "classification_label": "Risco atenuado por obras estruturais",
         "classification_share_pct": 30
@@ -116,8 +116,8 @@
         "intervention_code": "**",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "obras_em_execucao",
         "classification_label": "Obras estruturais em execução",
         "classification_share_pct": 35
@@ -139,8 +139,8 @@
         "intervention_code": "*",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "risco_atenuado",
         "classification_label": "Risco atenuado por obras estruturais",
         "classification_share_pct": 30
@@ -162,8 +162,8 @@
         "intervention_code": "*",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "risco_atenuado",
         "classification_label": "Risco atenuado por obras estruturais",
         "classification_share_pct": 30
@@ -185,8 +185,8 @@
         "intervention_code": "**",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "obras_em_execucao",
         "classification_label": "Obras estruturais em execução",
         "classification_share_pct": 35
@@ -208,8 +208,8 @@
         "intervention_code": "***",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "sem_intervencao",
         "classification_label": "Sem intervenção",
         "classification_share_pct": 35
@@ -231,8 +231,8 @@
         "intervention_code": "***",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "sem_intervencao",
         "classification_label": "Sem intervenção",
         "classification_share_pct": 35
@@ -240,7 +240,13 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.2190504,
+          -21.8411661
+        ]
+      },
       "properties": {
         "id": "HIDRO-10",
         "name": "Estrada Abílio Augusto Corrêa — Bairro dos Machados",
@@ -248,8 +254,8 @@
         "intervention_code": "***",
         "coordinate_status": "pendente_geocodificacao",
         "coordinate_note": "Ponto presente no boletim municipal, ainda sem coordenada usada no mapa.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "sem_intervencao",
         "classification_label": "Sem intervenção",
         "classification_share_pct": 35
@@ -271,8 +277,8 @@
         "intervention_code": "***",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "sem_intervencao",
         "classification_label": "Sem intervenção",
         "classification_share_pct": 35
@@ -294,8 +300,8 @@
         "intervention_code": "***",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "sem_intervencao",
         "classification_label": "Sem intervenção",
         "classification_share_pct": 35
@@ -317,8 +323,8 @@
         "intervention_code": "***",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "sem_intervencao",
         "classification_label": "Sem intervenção",
         "classification_share_pct": 35
@@ -326,7 +332,13 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.171031,
+          -21.798318
+        ]
+      },
       "properties": {
         "id": "HIDRO-14",
         "name": "Rua Pe. José de Anchieta — Suconasa",
@@ -334,8 +346,8 @@
         "intervention_code": "***",
         "coordinate_status": "pendente_geocodificacao",
         "coordinate_note": "Ponto presente no boletim municipal, ainda sem coordenada usada no mapa.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "sem_intervencao",
         "classification_label": "Sem intervenção",
         "classification_share_pct": 35
@@ -357,8 +369,8 @@
         "intervention_code": "*",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "risco_atenuado",
         "classification_label": "Risco atenuado por obras estruturais",
         "classification_share_pct": 30
@@ -380,8 +392,8 @@
         "intervention_code": "*",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "risco_atenuado",
         "classification_label": "Risco atenuado por obras estruturais",
         "classification_share_pct": 30
@@ -403,8 +415,8 @@
         "intervention_code": "*",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "risco_atenuado",
         "classification_label": "Risco atenuado por obras estruturais",
         "classification_share_pct": 30
@@ -426,8 +438,8 @@
         "intervention_code": "*",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "risco_atenuado",
         "classification_label": "Risco atenuado por obras estruturais",
         "classification_share_pct": 30
@@ -449,8 +461,8 @@
         "intervention_code": "**",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "obras_em_execucao",
         "classification_label": "Obras estruturais em execução",
         "classification_share_pct": 35
@@ -472,8 +484,8 @@
         "intervention_code": "**",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "obras_em_execucao",
         "classification_label": "Obras estruturais em execução",
         "classification_share_pct": 35
@@ -481,7 +493,13 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.20044,
+          -21.776706
+        ]
+      },
       "properties": {
         "id": "HIDRO-21",
         "name": "Av. José Barbanti Neto — Jardim Nova Araraquara",
@@ -489,8 +507,8 @@
         "intervention_code": "**",
         "coordinate_status": "pendente_geocodificacao",
         "coordinate_note": "Ponto presente no boletim municipal, ainda sem coordenada usada no mapa.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "obras_em_execucao",
         "classification_label": "Obras estruturais em execução",
         "classification_share_pct": 35
@@ -512,8 +530,8 @@
         "intervention_code": "**",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "obras_em_execucao",
         "classification_label": "Obras estruturais em execução",
         "classification_share_pct": 35
@@ -535,8 +553,8 @@
         "intervention_code": "**",
         "coordinate_status": "aproximada",
         "coordinate_note": "Eixo viário aproximado; o boletim publica endereço/interseção, não coordenada oficial.",
-        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf",
-        "source_date": "2025-11-11",
+        "source_url": "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf",
+        "source_date": "2026-01-22",
         "classification": "obras_em_execucao",
         "classification_label": "Obras estruturais em execução",
         "classification_share_pct": 35

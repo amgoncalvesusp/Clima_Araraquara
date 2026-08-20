@@ -102,7 +102,8 @@ class CatalogoSaudeTest(unittest.TestCase):
         self.assertEqual(history["history_years"], [2016, 2017, 2018, 2019, 2020, 2021])
         self.assertEqual(len(history["units"]), 52)
         self.assertEqual(len(hydrology["features"]), 23)
-        self.assertEqual(hydrology["metadata"]["count_geocoded_for_map"], 20)
+        self.assertEqual(hydrology["metadata"]["count_geocoded_for_map"], 23)
+        self.assertIn("a_286_0_1_22012026101246.pdf", hydrology["metadata"]["source_url"])
         self.assertTrue(all(len(unit["values"]) == 6 for unit in history["units"]))
 
     def test_census_layer_is_local_and_explicitly_composite(self):
@@ -132,11 +133,19 @@ class CatalogoSaudeTest(unittest.TestCase):
         self.assertEqual(outcomes["ambulatory_attendance"]["status"], "not_loaded")
         self.assertTrue(all("hospitalizations_total" in item for item in outcomes["series"]))
 
-    def test_historical_health_explorer_has_ten_years_and_traceable_dimensions(self):
+    def test_historical_health_explorer_covers_every_published_year(self):
         explorer = self.read_json("dados_historicos_saude_araraquara.json")
+        coverage = explorer["coverage"]
 
-        self.assertEqual(explorer["coverage"]["years"], list(range(2016, 2026)))
-        self.assertEqual(explorer["coverage"]["months_requested"], 120)
+        self.assertEqual(coverage["years"][0], 2016)
+        self.assertGreaterEqual(coverage["end_year"], 2026)
+        self.assertEqual(coverage["years"], list(range(2016, coverage["end_year"] + 1)))
+        # Um ano so pode ser declarado completo quando os doze meses foram publicados.
+        self.assertEqual(coverage["months_requested"], sum(coverage["months_by_year"].values()))
+        self.assertEqual(
+            sorted(coverage["partial_years"]),
+            sorted(int(year) for year, months in coverage["months_by_year"].items() if months < 12),
+        )
         self.assertTrue(explorer["hospital"]["source_url"])
         self.assertTrue(explorer["ambulatory"]["source_url"])
         self.assertGreater(len(explorer["hospital"]["unit_year"]), 1000)

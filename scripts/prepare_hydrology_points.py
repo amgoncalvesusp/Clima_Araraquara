@@ -9,7 +9,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "pontos_risco_hidrologico_araraquara.geojson"
-SOURCE_URL = "https://ecrie.com.br/sistema/conteudos/arquivo/a_138_0_1_11112025143530.pdf"
+SOURCE_URL = (
+    "https://ecrie.com.br/sistema/conteudos/arquivo/a_286_0_1_22012026101246.pdf"
+)
+
+SOURCE_DATE = "2026-01-22"
 
 CLASSIFICATION = {
     "*": ("risco_atenuado", "Risco atenuado por obras estruturais", 30),
@@ -24,7 +28,9 @@ def main() -> None:
     features = data["features"]
     ids = [feature["properties"]["id"] for feature in features]
     if set(ids) != EXPECTED_IDS or len(ids) != len(set(ids)):
-        raise ValueError("O boletim deve estar representado uma única vez por cada ID HIDRO-01…HIDRO-23.")
+        raise ValueError(
+            "O boletim deve estar representado uma única vez por cada ID HIDRO-01…HIDRO-23."
+        )
 
     for feature in features:
         properties = feature["properties"]
@@ -36,14 +42,14 @@ def main() -> None:
                 "classification_label": label,
                 "classification_share_pct": share,
                 "source_url": SOURCE_URL,
-                "source_date": "2025-11-11",
+                "source_date": SOURCE_DATE,
             }
         )
 
     data["metadata"].update(
         {
             "source_url": SOURCE_URL,
-            "source_date": "2025-11-11",
+            "source_date": SOURCE_DATE,
             "classification_legend": {
                 key: {"label": label, "share_pct": share}
                 for key, label, share in CLASSIFICATION.values()
@@ -52,9 +58,21 @@ def main() -> None:
             "deduplication_note": "Os 23 IDs publicados foram mantidos uma única vez. HIDRO-16 e HIDRO-17 são pontos distintos do boletim, apesar de compartilharem o mesmo eixo rodoviário.",
         }
     )
-    data["metadata"]["count_by_classification"] = dict(Counter(properties["classification"] for properties in (feature["properties"] for feature in features)))
-    OUTPUT.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Pontos hidrológicos preparados: {OUTPUT} ({len(features)} registros únicos)")
+    data["metadata"]["count_geocoded_for_map"] = sum(
+        feature["geometry"] is not None for feature in features
+    )
+    data["metadata"]["count_by_classification"] = dict(
+        Counter(
+            properties["classification"]
+            for properties in (feature["properties"] for feature in features)
+        )
+    )
+    OUTPUT.write_text(
+        json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    print(
+        f"Pontos hidrológicos preparados: {OUTPUT} ({len(features)} registros únicos)"
+    )
 
 
 if __name__ == "__main__":

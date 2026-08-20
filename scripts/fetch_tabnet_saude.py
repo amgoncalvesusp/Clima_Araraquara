@@ -25,19 +25,45 @@ DATA_DIR = ROOT / "data"
 DEFAULT_OUTPUT = DATA_DIR / "dados_historicos_saude_araraquara.json"
 MUNICIPALITY_CODE = "350320"
 MUNICIPALITY_OPTION = "38"
-YEARS = list(range(2016, 2026))
+YEARS = list(range(2016, 2027))
 TABNET_HEADERS = {
     "Content-Type": "application/x-www-form-urlencoded",
     "User-Agent": "PET-Saude-Clima-Araraquara/1.0 (pesquisa acadêmica)",
 }
 
 
-def files_for(prefix: str) -> list[str]:
-    return [
-        f"{prefix}{year % 100:02d}{month:02d}.dbf"
-        for year in YEARS
-        for month in range(1, 13)
-    ]
+def available_files(def_url: str, prefix: str) -> list[str]:
+    """List the monthly files TabNet actually publishes for this endpoint.
+
+    Asking for a month that does not exist yet makes TabNet reject the whole
+    query, so the current competence has to be discovered instead of assumed.
+    """
+    response = requests.get(
+        def_url, headers={"User-Agent": TABNET_HEADERS["User-Agent"]}, timeout=180
+    )
+    response.raise_for_status()
+    text = response.content.decode("iso-8859-1", errors="replace")
+    found = re.findall(
+        rf'value="({prefix}(\d{{2}})(\d{{2}})\.dbf)"', text, flags=re.IGNORECASE
+    )
+    files = sorted(
+        {
+            name
+            for name, year, month in found
+            if 2000 + int(year) in YEARS and 1 <= int(month) <= 12
+        }
+    )
+    if not files:
+        raise RuntimeError(f"O TabNet não listou arquivos {prefix}* em {def_url}.")
+    return files
+
+
+def months_by_year(files: list[str], prefix: str) -> dict[str, int]:
+    counter: dict[str, int] = {}
+    for name in files:
+        year = str(2000 + int(name[len(prefix) : len(prefix) + 2]))
+        counter[year] = counter.get(year, 0) + 1
+    return dict(sorted(counter.items()))
 
 
 def query_tabnet(endpoint: str, line: str, increment: str, files: list[str]) -> str:
@@ -75,7 +101,9 @@ def query_tabnet(endpoint: str, line: str, increment: str, files: list[str]) -> 
 
 
 def parse_tabnet_table(response_text: str) -> list[list[str]]:
-    match = re.search(r"<pre>(.*?)</pre>", response_text, flags=re.IGNORECASE | re.DOTALL)
+    match = re.search(
+        r"<pre>(.*?)</pre>", response_text, flags=re.IGNORECASE | re.DOTALL
+    )
     if not match:
         raise ValueError("A resposta do TabNet não contém uma tabela PRE.")
     table_text = html.unescape(match.group(1)).replace("\r", "")
@@ -118,7 +146,9 @@ def split_cnes(label: str) -> tuple[str | None, str]:
     return (match.group(1), match.group(2)) if match else (None, label.strip())
 
 
-def flatten_values(records: list[dict], key: str, extra_keys: tuple[str, ...] = ()) -> list[dict]:
+def flatten_values(
+    records: list[dict], key: str, extra_keys: tuple[str, ...] = ()
+) -> list[dict]:
     flattened: list[dict] = []
     for record in records:
         for year, value in record["values"].items():
@@ -137,20 +167,31 @@ def build_dataset() -> dict:
     sih_endpoint = "https://tabnet.datasus.gov.br/cgi/tabcgi.exe?sih/cnv/nrSP.def"
     sia_endpoint = "https://tabnet.datasus.gov.br/cgi/tabcgi.exe?sia/cnv/qasp.def"
 
+    sih_def = "https://tabnet.datasus.gov.br/cgi/deftohtm.exe?sih/cnv/nrSP.def"
+    sia_def = "https://tabnet.datasus.gov.br/cgi/deftohtm.exe?sia/cnv/qasp.def"
+
+    sih_files = available_files(sih_def, "nrsp")
+    sia_files = available_files(sia_def, "qasp")
+    sih_months = months_by_year(sih_files, "nrsp")
+    covered_years = sorted(int(year) for year in sih_months)
+    partial_years = [int(year) for year, months in sih_months.items() if months < 12]
+
     unit_rows = parse_tabnet_table(
-        query_tabnet(sih_endpoint, "Estabelecimento", "Internações", files_for("nrsp"))
+        query_tabnet(sih_endpoint, "Estabelecimento", "Internações", sih_files)
     )
     chapter_rows = parse_tabnet_table(
-        query_tabnet(sih_endpoint, "Capítulo_CID-10", "Internações", files_for("nrsp"))
+        query_tabnet(sih_endpoint, "Capítulo_CID-10", "Internações", sih_files)
     )
     ambulatory_rows = parse_tabnet_table(
-        query_tabnet(sia_endpoint, "Grupo_procedimento", "Qtd.aprovada", files_for("qasp"))
+        query_tabnet(sia_endpoint, "Grupo_procedimento", "Qtd.aprovada", sia_files)
     )
 
     unit_records: list[dict] = []
     for row in matrix_to_records(unit_rows, "establishment_label"):
         cnes, name = split_cnes(row["establishment_label"])
-        unit_records.append({"cnes": cnes, "establishment": name, "values": row["values"]})
+        unit_records.append(
+            {"cnes": cnes, "establishment": name, "values": row["values"]}
+        )
 
     chapter_records = matrix_to_records(chapter_rows, "chapter")
     ambulatory_records = matrix_to_records(ambulatory_rows, "procedure_group")
@@ -160,10 +201,16 @@ def build_dataset() -> dict:
         "municipality_code": MUNICIPALITY_CODE,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "coverage": {
-            "start_year": YEARS[0],
-            "end_year": YEARS[-1],
-            "years": YEARS,
-            "months_requested": len(YEARS) * 12,
+            "start_year": covered_years[0],
+            "end_year": covered_years[-1],
+            "years": covered_years,
+            "months_requested": len(sih_files),
+            "months_by_year": sih_months,
+            "partial_years": partial_years,
+            "partial_year_note": (
+                "Anos parciais trazem menos meses publicados e por isso somam menos. "
+                "Não leia essa diferença como queda no atendimento."
+            ),
         },
         "hospital": {
             "source": "SIH/SUS — internações por local de residência",
@@ -198,5 +245,13 @@ if __name__ == "__main__":
     args = parse_args()
     result = build_dataset()
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"output": str(args.output), "coverage": result["coverage"]}, ensure_ascii=False, indent=2))
+    args.output.write_text(
+        json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    print(
+        json.dumps(
+            {"output": str(args.output), "coverage": result["coverage"]},
+            ensure_ascii=False,
+            indent=2,
+        )
+    )

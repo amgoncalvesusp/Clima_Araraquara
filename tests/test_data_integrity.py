@@ -64,26 +64,50 @@ class DataIntegrityTest(unittest.TestCase):
             self.assertIn(field, app)
         self.assertNotRegex(app, re.compile(r"getFloodColor[\s\S]{0,250}#7c3aed"))
 
+    def test_every_map_layer_is_explained_and_sourced(self):
+        app = (ROOT / "js" / "app.js").read_text(encoding="utf-8")
+        html = (ROOT / "index.html").read_text(encoding="utf-8")
+
+        # Os botoes vem de dois lugares: a barra fixa do HTML e os que o app adiciona.
+        toolbar = re.findall(r'data-layer="[^"]+"[^>]*>([^<]+)</button>', html)
+        injected = re.findall(r'\["[A-Za-z]+", "([^"]+)"\]', app)
+        labels = {re.sub(r"^[^\w]+", "", label).strip() for label in toolbar + injected}
+        explained = set(re.findall(r'guide-layer-row"><strong>(.*?)</strong>', html))
+
+        self.assertEqual(len(labels), 7)
+        self.assertEqual(labels, explained)
+
+        sources = json.loads((DATA / "fontes_publicas_saude_araraquara.json").read_text(encoding="utf-8"))
+        titles = " ".join(source["title"] for source in sources)
+        for expected in ("UrbVerde", "IBGE", "Defesa Civil", "SGB/CPRM", "MapBiomas", "SIH/SIA"):
+            self.assertIn(expected, titles)
+
     def test_additional_layers_and_hydrology_classifications_are_traceable(self):
         flood = self.read_json("pontos_risco_hidrologico_araraquara.geojson")
-        heat2021 = self.read_json("urbverde_ilhas_calor_2021_araraquara.geojson")
+        flood_zones = self.read_json("suscetibilidade_hidrica_araraquara.geojson")
         fire = self.read_json("mapbiomas_fogo_araraquara_2025.geojson")
         ids = [feature["properties"]["id"] for feature in flood["features"]]
         self.assertEqual(len(ids), 23)
         self.assertEqual(len(ids), len(set(ids)))
-        self.assertEqual(sum(feature["geometry"] is not None for feature in flood["features"]), 20)
+        self.assertEqual(sum(feature["geometry"] is not None for feature in flood["features"]), 23)
         self.assertEqual(
             {feature["properties"]["classification"] for feature in flood["features"]},
             {"risco_atenuado", "obras_em_execucao", "sem_intervencao"},
         )
-        self.assertEqual(heat2021["metadata"]["year"], 2021)
         self.assertEqual(fire["metadata"]["year"], 2025)
-        self.assertGreater(len(heat2021["features"]), 0)
         self.assertGreater(len(fire["features"]), 0)
+        self.assertEqual(
+            {feature["properties"]["level"] for feature in flood_zones["features"]},
+            {"Alta", "Média", "Baixa"},
+        )
         app = (ROOT / "js" / "app.js").read_text(encoding="utf-8")
-        self.assertIn("heat2021", app)
-        self.assertIn("getHeatIslandColor", app)
+        self.assertIn("getFloodZoneColor", app)
+        self.assertIn('pane: "floodzone-pane"', app)
         self.assertIn('stroke: false', app)
+        self.assertIn("L.tileLayer.wms", app)
+        self.assertIn("urbverde:icu_", app)
+        self.assertNotIn("urbverde_ilhas_calor_2021", app)
+        self.assertIn('pointerEvents = "none"', app)
         self.assertIn("mapbiomas_fogo_araraquara_2025.geojson", app)
         self.assertIn("flood-triangle", app)
 

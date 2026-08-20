@@ -33,7 +33,7 @@
     "id": "ministerio-saude-sih-sia",
     "title": "Ministério da Saúde — SIH/SIA e TABNET",
     "url": "https://www.gov.br/saude/pt-br/acesso-a-informacao/sic/dados-em-transparencia-ativa/saes",
-    "use": "SIH/SUS é usado na série municipal de internações de 2024; SIA/SUS permanece como camada separada para futura produção ambulatorial, sem expor dados individuais."
+    "use": "internações do SIH/SUS e produção ambulatorial do SIA/SUS de 2016 a 2026, tabuladas por ano, capítulo CID-10, estabelecimento e grupo de procedimento; 2026 é ano parcial"
   },
   {
     "id": "mapbiomas-10m",
@@ -51,13 +51,19 @@
     "id": "urbverde-risco-climatico",
     "title": "UrbVerde — calor e risco climático",
     "url": "https://urbverde.iau.usp.br/",
-    "use": "A aplicação usa a grade UrbVerde 2024 de temperatura de superfície e NDVI no entorno de 300 m; o NDVI é um proxy observacional de vegetação, não um cadastro de parques. O indicador de inundação da plataforma foi conferido e não retornou tiles para Araraquara nesta versão."
+    "use": "temperatura de superfície e NDVI de 2024 usados no IECS, série histórica por setor e a mancha de ilhas de calor de 2024, carregada direto do servidor de mapas da UrbVerde; a mancha é leitura territorial e não entra no índice"
   },
   {
     "id": "defesa-civil-areas-risco",
     "title": "Prefeitura / Defesa Civil — pontos de risco hidrológico",
     "url": "https://www.araraquara.sp.gov.br/atualizacao-das-areas-de-risco-de-alagamento-inundacao-e-enxurrada-e-dados-sobre-incendios-e-queimadas-de-araraquara",
-    "use": "Cruzar os 23 pontos municipais mapeados de alagamento, inundação e enxurrada com as unidades de saúde."
+    "use": "os 23 pontos de alagamento, inundação e enxurrada do boletim municipal de janeiro de 2026; todos aparecem no mapa, com coordenada aproximada no eixo da rua, porque o boletim publica endereço e não coordenada"
+  },
+  {
+    "id": "sgb-cprm-suscetibilidade",
+    "title": "SGB/CPRM — Carta de Suscetibilidade a Inundações",
+    "url": "https://www.sgb.gov.br/sao-paulo-cartografia-de-suscetibilidade",
+    "use": "manchas de suscetibilidade alta, média e baixa a inundação, levantadas pelo Serviço Geológico do Brasil em 2021 e conferidas em campo; desenham a zona de risco hídrico como área e não como ponto, e não entram no IECS"
   },
   {
     "id": "cnes-santa-angelina",

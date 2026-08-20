@@ -5,7 +5,8 @@ Mapa didático do PET Saúde - Clima para explorar a exposição térmica e a pr
 ## O que o site mostra
 
 - Mapa atual: camada térmica local de 2024, áreas verdes, unidades de saúde, buffers de 300 m e pontos municipais de alagamento, inundação e enxurrada.
-- Camadas adicionais opcionais: ilhas de calor UrbVerde 2021, exibidas como manchas em gradiente contínuo, e cicatrizes de fogo anuais do MapBiomas Fogo Coleção 5 (2025), sem participação no IECS.
+- Risco hídrico em duas leituras: os 23 pontos do boletim municipal de janeiro de 2026, todos geocodificados, e as manchas de suscetibilidade alta, média e baixa a inundação do SGB/CPRM.
+- Camadas adicionais opcionais: ilhas de calor da UrbVerde de 2024, exibidas como manchas contínuas servidas pelo WMS da própria UrbVerde, e cicatrizes de fogo anuais do MapBiomas Fogo Coleção 5 (2025), sem participação no IECS.
 - Histórico: série anual de 2016 a 2021 da temperatura máxima da superfície por setor da UrbVerde, agregada para cada unidade e para a média da rede.
 - Catálogo: 52 unidades analisadas e 2 registros pendentes de validação. O CMS Santa Angelina “Rafael Sorbo” está no mapa como `SUS-042`, com CNES `2063247`.
 - Nesta rodada, foram confirmadas e incorporadas a UPA Central, seis unidades básicas, o Espaço Crescer, o CAPS-AD, o CEO e o Centro Municipal de Referência do Autismo. O antigo registro da USF Jardim São Bento foi reconciliado com o `SUS-007`, evitando duplicidade.
@@ -32,11 +33,11 @@ data/
 ├── censo_2022_vulnerabilidade_araraquara.geojson # setores e índice social-sanitário composto
 ├── sensibilidade_iecs_araraquara.json           # cenários alternativos de pesos do IECS
 ├── desfechos_saude_araraquara.json              # SIH/SUS agregado por mês e município de residência
-├── dados_historicos_saude_araraquara.json       # SIH/SUS e SIA/SUS, 2016–2025, para consulta no site
+├── dados_historicos_saude_araraquara.json       # SIH/SUS e SIA/SUS, 2016–2026 (2026 parcial), para consulta no site
 ├── historico_risco_termico_araraquara.json     # UrbVerde 2016–2021 por unidade
 ├── pontos_risco_hidrologico_araraquara.geojson  # 23 pontos da Defesa Civil municipal
 ├── urbverde_araraquara.geojson                  # camada térmica local usada no mapa atual
-├── urbverde_ilhas_calor_2021_araraquara.geojson  # camada adicional UrbVerde 2021
+├── suscetibilidade_hidrica_araraquara.geojson    # zonas de inundação alta/média/baixa do SGB/CPRM
 ├── mapbiomas_fogo_araraquara_2025.geojson        # cicatrizes anuais MapBiomas Fogo
 ├── areas_verdes_araraquara.geojson              # legado sem fonte verificável; não carregado pela aplicação
 └── fontes_publicas_saude_araraquara.json       # fontes e usos de cada cruzamento
@@ -44,7 +45,7 @@ data/
 
 ### Nota sobre a UrbVerde
 
-A plataforma disponibiliza o indicador `rinunda` — risco climático a inundações — por setor censitário em 2024. A camada foi conferida durante esta atualização, mas seus tiles públicos não retornaram setores para Araraquara. Para não transformar ausência de dado em “baixo risco”, o site usa os 23 pontos locais publicados pela Prefeitura/Defesa Civil e sinaliza que 20 possuem posição aproximada no mapa.
+A plataforma disponibiliza o indicador `rinunda` — risco climático a inundações — por setor censitário em 2024. A camada foi conferida durante esta atualização, mas seus tiles públicos não retornaram setores para Araraquara. Para não transformar ausência de dado em “baixo risco”, o site usa os 23 pontos locais publicados pela Prefeitura/Defesa Civil — todos com posição aproximada no mapa — somados às cartas de suscetibilidade a inundação do SGB/CPRM, que desenham a zona de risco como área contínua e não apenas como ponto.
 
 ## Como executar
 
@@ -68,6 +69,8 @@ python scripts/fetch_tabnet_saude.py
 python scripts/enrich_health_catalog.py
 python scripts/build_historical_risk.py
 python scripts/build_hydrology_points.py
+python scripts/prepare_hydrology_points.py
+python scripts/build_flood_susceptibility_layer.py
 python scripts/sync_index.py
 ```
 
@@ -77,7 +80,7 @@ O círculo de 300 m é um buffer geométrico, não uma distância de caminhada. 
 
 A janela “Fontes” mostra a auditoria do catálogo: correspondência entre geometria e coordenada, endereço e CNES informados, cobertura UrbVerde, cobertura do Censo e registros marcados para revisão. Duas unidades rurais têm coordenadas confirmadas no mapa oficial da Secretaria Municipal de Saúde, mas ficam fora da grade UrbVerde 2024 publicada; seus valores climáticos usam fallback técnico e aparecem sinalizadas na ficha.
 
-O bloco de saúde usa a base histórica `dados_historicos_saude_araraquara.json`, extraída do TABNET/DATASUS para dez anos completos (2016–2025). No SIH/SUS, o recorte é por município de residência: a tabela por unidade mostra o estabelecimento executante, que pode estar em outro município quando o residente foi internado fora de Araraquara. Ela não descreve o itinerário completo do usuário na APS, regulação, transporte ou acesso especializado, não prova causalidade, não representa atendimentos privados e não inclui dados identificáveis.
+O bloco de saúde usa a base histórica `dados_historicos_saude_araraquara.json`, extraída do TABNET/DATASUS. A extração descobre no próprio TABNET quais competências mensais já foram publicadas, em vez de supor doze meses por ano: hoje isso cobre 2016–2026, com 2026 ainda parcial e sinalizado como tal no site, para que um semestre não seja lido como queda no atendimento. No SIH/SUS, o recorte é por município de residência: a tabela por unidade mostra o estabelecimento executante, que pode estar em outro município quando o residente foi internado fora de Araraquara. Ela não descreve o itinerário completo do usuário na APS, regulação, transporte ou acesso especializado, não prova causalidade, não representa atendimentos privados e não inclui dados identificáveis.
 
 A produção ambulatorial do SIA/SUS permanece separada porque `Qtd.aprovada` é uma quantidade de produção, não número de pessoas ou internações. Nesta extração pública, ela está disponível por grupo de procedimento, mas não por unidade executante na mesma tabulação; portanto, não é distribuída artificialmente pelas unidades do mapa. Os valores podem sofrer atualização retroativa no DATASUS, e o campo `generated_at` registra a data de cada coleta.
 
@@ -96,6 +99,7 @@ Os pontos hidrológicos são registros municipais de locais de atenção. Não r
 
 - [UrbVerde](https://urbverde.iau.usp.br/) — séries térmicas e indicadores socioambientais.
 - [Prefeitura / Defesa Civil: áreas de risco](https://www.araraquara.sp.gov.br/atualizacao-das-areas-de-risco-de-alagamento-inundacao-e-enxurrada-e-dados-sobre-incendios-e-queimadas-de-araraquara) — 23 pontos municipais.
+- [SGB/CPRM](https://www.sgb.gov.br/sao-paulo-cartografia-de-suscetibilidade) — Carta de Suscetibilidade a Movimentos Gravitacionais de Massa e Inundações.
 - [CNES / DATASUS](https://dadosabertos.saude.gov.br/dataset/cnes-cadastro-nacional-de-estabelecimentos-de-saude) — cadastro e gestão das unidades.
 - [IBGE — Censo Demográfico 2022](https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html) — agregados por setor censitário e variáveis sociais usadas no índice composto.
 - [Ministério da Saúde — SIH/SUS por residência](https://tabnet.datasus.gov.br/cgi/deftohtm.exe?sih/cnv/nrSP.def) — fonte da série municipal de internações agregadas de 2024.

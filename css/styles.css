@@ -159,7 +159,8 @@ a { color: inherit; }
 .legend-triangle.flood-sem-intervencao { background: #dc2626; }
 .legend-gradient { border: 1px solid rgba(17, 33, 51, .22); display: inline-block; flex: 0 0 auto; height: 9px; width: 44px; }
 .vegetation-gradient { background: linear-gradient(90deg, #d9f0d8, #a8d5a2, #70b66b, #2f855a); }
-.heat-gradient { background: linear-gradient(90deg, #2c7bb6 0%, #abd9e9 25%, #ffffbf 50%, #fdae61 75%, #d7191c 100%); }
+.heat-gradient { background: linear-gradient(90deg, #3288bd 0%, #fee08b 50%, #d53e4f 100%); }
+.floodzone-gradient { background: linear-gradient(90deg, #93c5fd 0%, #3b82f6 55%, #1d4ed8 100%); }
 .flood-marker { background: transparent; border: 0; }
 .flood-triangle { background: #2563eb; border: 1px solid #ffffff; box-shadow: 0 1px 2px rgba(17, 33, 51, .32); clip-path: polygon(50% 0, 100% 100%, 0 100%); display: block; height: 13px; width: 14px; }
 .flood-triangle.risco_atenuado { background: #2563eb; }
@@ -167,6 +168,8 @@ a { color: inherit; }
 .flood-triangle.sem_intervencao { background: #dc2626; }
 .popup-kicker.fire { color: #c2410c; }
 .popup-note.fire-note { background: #fff7ed; color: #c2410c; }
+.popup-kicker.floodzone { color: #1d4ed8; }
+.popup-note.floodzone-note { background: #eff6ff; color: #1d4ed8; }
 .legend-line { border-top: 2px dashed var(--red); display: inline-block; width: 11px; }
 
 .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #fff; }
@@ -198,6 +201,14 @@ a { color: inherit; }
 .modal-header p { color: var(--ink-soft); line-height: 1.45; margin: 5px 0 0; max-width: 55ch; }
 .close-button { background: var(--paper); border: 1px solid var(--line); border-radius: 50%; color: var(--ink-soft); font-size: 20px; height: 32px; line-height: 1; width: 32px; }
 .guide-grid { display: grid; gap: 10px; grid-template-columns: repeat(3, 1fr); }
+.health-data-bar-row.is-partial span { opacity: .72; }
+.health-data-bar-row.is-partial b { opacity: .55; }
+.guide-layers { margin-top: 16px; }
+.guide-layer-list { display: grid; gap: 8px; margin-top: 12px; }
+.guide-layer-row { background: var(--paper); border-radius: 11px; padding: 12px 14px; }
+.guide-layer-row strong { color: var(--forest); display: block; font-family: var(--display); font-size: 14px; }
+.guide-layer-row p { color: var(--ink-soft); font-size: 12px; line-height: 1.5; margin: 5px 0 0; }
+.guide-layer-row .guide-layer-read { border-top: 1px dotted rgba(17, 33, 51, .18); margin-top: 7px; opacity: .85; padding-top: 6px; }
 .guide-card { background: var(--paper); border-radius: 11px; padding: 14px; }
 .guide-card b { color: var(--forest); display: block; font-family: var(--display); font-size: 16px; margin-bottom: 5px; }
 .guide-card p, .modal-copy { color: var(--ink-soft); font-size: 12px; line-height: 1.5; margin: 0; }

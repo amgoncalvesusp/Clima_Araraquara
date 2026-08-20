@@ -2,7 +2,7 @@ const DATA_FILES = {
   units: "data/unidades_saude_analise_araraquara.geojson",
   baseUnits: "data/unidades_saude_araraquara.json",
   climate: "data/urbverde_araraquara.geojson",
-  heat2021: "data/urbverde_ilhas_calor_2021_araraquara.geojson",
+  floodZones: "data/suscetibilidade_hidrica_araraquara.geojson",
   fire: "data/mapbiomas_fogo_araraquara_2025.geojson",
   summary: "data/resumo_estatistico.json",
   censusMetadata: "data/censo_2022_vulnerabilidade_araraquara.metadata.json",
@@ -14,6 +14,12 @@ const DATA_FILES = {
   sensitivity: "data/sensibilidade_iecs_araraquara.json",
   healthOutcomes: "data/desfechos_saude_araraquara.json",
   healthExplorer: "data/dados_historicos_saude_araraquara.json"
+};
+
+const HEAT_ISLAND = {
+  year: 2024,
+  service: "https://urbverde.iau.usp.br/geoserver/urbverde/wms",
+  page: "https://urbverde.iau.usp.br/mapa?code=3503208&viewMode=map&type=city&year=2024&category=climate&layer=surface_temp&scale=intraurbana"
 };
 
 const SCOPE_LABELS = {
@@ -29,7 +35,8 @@ const HEALTH_CHART_COLORS = ["#17613a", "#2b8a5a", "#bc6c25", "#6b7280", "#8b5e8
 const state = {
   map: null,
   climateLayer: null,
-  heat2021Layer: null,
+  heatIslandLayer: null,
+  floodZoneLayer: null,
   fireLayer: null,
   greenLayer: null,
   floodLayer: null,
@@ -49,7 +56,7 @@ const state = {
   healthDataSource: "hospital",
   floodFeatures: [],
   selectedId: null,
-  layerVisible: { climate: true, heat2021: false, green: true, flood: true, fire: false, buffers: true },
+  layerVisible: { climate: true, heatIsland: false, green: true, flood: true, floodZones: true, fire: false, buffers: true },
   lastFocused: {},
   filters: { query: "", type: "ALL", risk: "ALL", scope: "municipal" }
 };
@@ -81,8 +88,9 @@ async function loadData() {
     state.units = state.features.map(feature => feature.properties);
 
     renderClimateLayer(data.climate);
-    renderHeat2021Layer(data.heat2021);
+    renderHeatIslandLayer();
     renderGreenLayer(data.climate);
+    renderFloodZoneLayer(data.floodZones);
     renderFloodLayer(data.flood);
     renderFireLayer(data.fire);
     renderSources(data.sources);
@@ -140,8 +148,9 @@ function initMap() {
   state.map = L.map("map", { zoomControl: false, preferCanvas: true }).setView([-21.794, -48.176], 13);
   [
     ["climate-pane", 200],
-    ["heat2021-pane", 250],
+    ["heat-pane", 250],
     ["green-pane", 300],
+    ["floodzone-pane", 330],
     ["fire-pane", 350],
     ["flood-pane", 400],
     ["units-pane", 500],
@@ -150,6 +159,9 @@ function initMap() {
     const pane = state.map.createPane(name);
     pane.style.zIndex = String(zIndex);
   });
+  // Os buffers de 300 m ficam no pane mais alto e nunca são clicáveis. Sem isto o
+  // canvas do buffer cobre o mapa inteiro e engole o clique nas unidades abaixo.
+  state.map.getPane("buffer-pane").style.pointerEvents = "none";
   L.control.zoom({ position: "topright" }).addTo(state.map);
   L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -185,30 +197,37 @@ function renderClimateLayer(geojson) {
   }).addTo(state.map);
 }
 
-function renderHeat2021Layer(geojson) {
-  const temperatures = (geojson.features || [])
-    .map(feature => Number(feature.properties?.surface_temp))
-    .filter(value => Number.isFinite(value) && value > 20);
-  const minTemperature = Math.min(...temperatures);
-  const maxTemperature = Math.max(...temperatures);
-  state.heat2021Layer = L.geoJSON(geojson, {
-    pane: "heat2021-pane",
-    style: feature => {
-      const temperature = Number(feature.properties?.surface_temp);
-      const validTemperature = Number.isFinite(temperature) && temperature > 20;
-      return {
-        stroke: false,
-        color: "transparent",
-        weight: 0,
-        fillColor: validTemperature ? getHeatIslandColor(temperature, minTemperature, maxTemperature) : "transparent",
-        fillOpacity: validTemperature ? 0.76 : 0
-      };
-    },
-    onEachFeature: (feature, layer) => layer.bindTooltip(
-      `Mancha de calor · UrbVerde 2021 · ${formatNumber(feature.properties.surface_temp)}°C`,
-      { sticky: true }
-    )
+function renderHeatIslandLayer() {
+  // Mancha contínua publicada pela própria UrbVerde (ICU = ilha de calor urbana).
+  // Cada pixel é o desvio da temperatura em relação à média da cidade.
+  state.heatIslandLayer = L.tileLayer.wms(HEAT_ISLAND.service, {
+    layers: `urbverde:icu_${HEAT_ISLAND.year}`,
+    format: "image/png",
+    transparent: true,
+    version: "1.1.0",
+    pane: "heat-pane",
+    opacity: 0.65,
+    attribution: "UrbVerde · IAU/USP"
   });
+  if (state.layerVisible.heatIsland) state.heatIslandLayer.addTo(state.map);
+}
+
+function renderFloodZoneLayer(geojson) {
+  state.floodZoneLayer = L.geoJSON(geojson, {
+    pane: "floodzone-pane",
+    style: feature => ({
+      stroke: false,
+      weight: 0,
+      fillColor: getFloodZoneColor(feature.properties.level),
+      fillOpacity: 0.55
+    }),
+    onEachFeature: (feature, layer) => {
+      const zone = feature.properties;
+      layer.bindTooltip(`Zona de ${escapeHtml(zone.level_label)} · SGB/CPRM ${escapeHtml(zone.year)}`, { sticky: true });
+      layer.bindPopup(`<div class="map-popup"><span class="popup-kicker floodzone">SGB/CPRM · carta de suscetibilidade</span><h3>Suscetibilidade ${escapeHtml(String(zone.level).toLowerCase())} a ${escapeHtml(String(zone.process).toLowerCase())}</h3><p>${escapeHtml(zone.plain_language)}</p><dl class="popup-metrics"><div><dt>Área da classe</dt><dd>${formatNumber(zone.area_km2, 1)} km²</dd></div><div><dt>Levantamento</dt><dd>${escapeHtml(zone.executor)} · ${escapeHtml(zone.year)}</dd></div></dl><div class="popup-note floodzone-note">Mostra onde o terreno tende a acumular água. Não é previsão de enchente nem garantia de que o local vai alagar.</div></div>`);
+    }
+  });
+  if (state.layerVisible.floodZones) state.floodZoneLayer.addTo(state.map);
 }
 
 function renderGreenLayer(geojson) {
@@ -372,10 +391,15 @@ function unitPopup(unit) {
 
 function hydrologyNote(unit) {
   const nearest = getNearestFloodPoint(unit);
-  if (!nearest) {
-    return `<div class="popup-note flood-note"><strong>Risco hidrológico:</strong> sem ponto geocodificado próximo no recorte atual.</div>`;
-  }
-  return `<div class="popup-note flood-note"><strong>Risco hidrológico:</strong> ${formatDistance(nearest.distance)} do ponto ${escapeHtml(nearest.point.id)} · ${escapeHtml(nearest.point.phenomenon)}. Leitura aproximada.</div>`;
+  const pointLine = nearest
+    ? `${formatDistance(nearest.distance)} do ponto ${escapeHtml(nearest.point.id)} · ${escapeHtml(nearest.point.phenomenon)}`
+    : "sem ponto geocodificado próximo no recorte atual";
+  const zoneLine = unit.flood_zone_in_buffer
+    ? `zona de suscetibilidade ${escapeHtml(String(unit.flood_zone_in_buffer).toLowerCase())} dentro do raio de 300 m`
+    : Number.isFinite(Number(unit.flood_zone_distance_m))
+      ? `nenhuma zona no raio de 300 m · a mais próxima fica a ${formatDistance(Number(unit.flood_zone_distance_m))}`
+      : "sem dado de zona";
+  return `<div class="popup-note flood-note"><strong>Risco hidrológico:</strong> ${pointLine}. Zonas do SGB/CPRM: ${zoneLine}. Leitura aproximada; o dado oficial aponta o terreno propenso, não a data nem a altura da água.</div>`;
 }
 
 function getNearestFloodPoint(unit) {
@@ -542,9 +566,19 @@ function renderHealthDataControls() {
   const yearSelect = document.getElementById("health-data-year");
   if (!data || !yearSelect) return;
   const years = [...(data.coverage?.years || [])].sort((a, b) => b - a);
-  yearSelect.innerHTML = years.map(year => `<option value="${year}">${year}</option>`).join("");
+  yearSelect.innerHTML = years.map(year => `<option value="${year}">${healthYearLabel(year)}</option>`).join("");
   yearSelect.value = String(years[0] || "");
   renderHealthDataExplorer();
+}
+
+function isPartialHealthYear(year) {
+  return (state.healthExplorer?.coverage?.partial_years || []).includes(Number(year));
+}
+
+function healthYearLabel(year) {
+  if (!isPartialHealthYear(year)) return String(year);
+  const months = state.healthExplorer?.coverage?.months_by_year?.[String(year)];
+  return months ? `${year} · parcial (${months} meses)` : `${year} · parcial`;
 }
 
 function healthRecordsForSource(source) {
@@ -709,13 +743,13 @@ function renderHealthDataExplorer() {
     ["Ano selecionado", year, "competência de atendimento"],
     [hospital ? "Internações" : "Produção aprovada", formatNumber(yearTotal, 0), hospital ? "AIH/registro SIH" : "quantidade SIA"],
     [unitLabel, formatNumber(totalEntities, 0), hospital ? "com valor acima de zero" : "com produção registrada"],
-    ["Período", `${data.coverage.start_year}–${data.coverage.end_year}`, "10 anos completos"],
+    ["Período", `${data.coverage.start_year}–${data.coverage.end_year}`, healthCoverageNote()],
   ].map(([label, value, note]) => `<div class="health-data-stat"><span>${label}</span><strong>${value}</strong><small>${note}</small></div>`).join("");
 
   const maxSeries = Math.max(...series.map(item => item.value), 1);
   const chartTitle = hospital ? "Internações por ano" : "Produção ambulatorial aprovada por ano";
   const chartSubtitle = hospital ? "residentes de Araraquara · todas as unidades de ocorrência" : "município de Araraquara · grupos de procedimento";
-  const chartBars = series.map(item => `<div class="health-data-bar-row ${item.year === year ? "is-selected" : ""}"><span>${item.year}</span><i><b style="width:${Math.max(3, item.value / maxSeries * 100)}%"></b></i><strong>${formatNumber(item.value, 0)}</strong></div>`).join("");
+  const chartBars = series.map(item => `<div class="health-data-bar-row ${item.year === year ? "is-selected" : ""}${isPartialHealthYear(item.year) ? " is-partial" : ""}"><span>${item.year}${isPartialHealthYear(item.year) ? " *" : ""}</span><i><b style="width:${Math.max(3, item.value / maxSeries * 100)}%"></b></i><strong>${formatNumber(item.value, 0)}</strong></div>`).join("");
   let breakdown = "";
   if (hospital) {
     const chapters = (data.hospital?.chapters_year || [])
@@ -737,7 +771,18 @@ function renderHealthDataExplorer() {
     return `<tr><td>${escapeHtml(label)}</td><td>${formatNumber(row.value, 0)}</td><td><span class="health-share"><i style="width:${Math.max(2, share)}%"></i></span>${formatNumber(share, 1)}%</td></tr>`;
   }).join("");
   table.innerHTML = `<div class="health-data-subheading"><strong>${tableTitle}</strong><span>${search ? `${visibleRows.length} encontrados` : `top ${Math.min(40, rows.length)} de ${rows.length}`}</span></div><div class="health-data-table-scroll"><table><thead><tr><th>${hospital ? "Estabelecimento / CNES" : "Grupo de procedimento"}</th><th>Quantidade</th><th>Participação</th></tr></thead><tbody>${tableRows || `<tr><td colspan="3" class="health-empty-cell">Nenhum registro encontrado para este filtro.</td></tr>`}</tbody></table></div>`;
-  notes.innerHTML = `<strong>Como interpretar:</strong> ${escapeHtml(unitDimension)}. ${escapeHtml((data.limitations || [])[0] || "A base é agregada e deve ser lida com a documentação da fonte.")} <a href="${safeUrl(sourceData?.source_url)}" target="_blank" rel="noreferrer">Abrir fonte no DATASUS ↗</a>`;
+  const partialNote = (data.coverage?.partial_years || []).length
+    ? ` <strong>Anos marcados com *</strong> ainda não têm doze meses publicados: ${escapeHtml(data.coverage.partial_year_note || "somam menos por isso, não por queda no atendimento.")}`
+    : "";
+  notes.innerHTML = `<strong>Como interpretar:</strong> ${escapeHtml(unitDimension)}.${partialNote} ${escapeHtml((data.limitations || [])[0] || "A base é agregada e deve ser lida com a documentação da fonte.")} <a href="${safeUrl(sourceData?.source_url)}" target="_blank" rel="noreferrer">Abrir fonte no DATASUS ↗</a>`;
+}
+
+function healthCoverageNote() {
+  const coverage = state.healthExplorer?.coverage || {};
+  const complete = (coverage.years || []).filter(year => !isPartialHealthYear(year)).length;
+  const partial = coverage.partial_years || [];
+  if (!partial.length) return `${complete} anos completos`;
+  return `${complete} anos completos + ${partial.join(", ")} parcial`;
 }
 
 function healthExportRows(year, source) {
@@ -1043,8 +1088,9 @@ function addFloodToolbarButton() {
   const toolbar = document.querySelector(".map-toolbar");
   if (!toolbar) return;
   [
-    ["flood", "💧 Risco hídrico"],
-    ["heat2021", "🔥 Manchas de calor 2021"],
+    ["flood", "💧 Pontos de risco hídrico"],
+    ["floodZones", "🌊 Zonas de inundação"],
+    ["heatIsland", "🌡 Ilhas de calor 2024"],
     ["fire", "🔥 Incêndios 2025"]
   ].forEach(([layer, text]) => {
     if (toolbar.querySelector(`[data-layer="${layer}"]`)) return;
@@ -1059,7 +1105,7 @@ function addFloodToolbarButton() {
 }
 
 function toggleLayer(layerName, button) {
-  const layers = { climate: state.climateLayer, heat2021: state.heat2021Layer, green: state.greenLayer, flood: state.floodLayer, fire: state.fireLayer, buffers: state.bufferLayer };
+  const layers = { climate: state.climateLayer, heatIsland: state.heatIslandLayer, green: state.greenLayer, flood: state.floodLayer, floodZones: state.floodZoneLayer, fire: state.fireLayer, buffers: state.bufferLayer };
   const layer = layers[layerName];
   if (!layer) return;
   const visible = state.map.hasLayer(layer);
@@ -1092,7 +1138,7 @@ function addMapLegend() {
   const legend = L.control({ position: "bottomright" });
   legend.onAdd = () => {
     const element = L.DomUtil.create("div", "map-legend");
-    element.innerHTML = `<strong>Como ler</strong><span><i class="legend-symbol unit"></i>unidades de saúde · pontos pretos</span><span><i class="legend-triangle flood-atenuado"></i>* risco atenuado por obras</span><span><i class="legend-triangle flood-execucao"></i>** obras em execução</span><span><i class="legend-triangle flood-sem-intervencao"></i>*** sem intervenção</span><span><i class="legend-gradient vegetation-gradient"></i>NDVI · gradiente do proxy de vegetação</span><span><i class="legend-gradient heat-gradient"></i>manchas de calor · UrbVerde 2021</span><span><i class="legend-symbol fire"></i>cicatrizes de fogo · MapBiomas 2025</span><span><i class="legend-line"></i>buffer de 300m</span>`;
+    element.innerHTML = `<strong>Como ler</strong><span><i class="legend-symbol unit"></i>unidades de saúde · pontos pretos</span><span><i class="legend-triangle flood-atenuado"></i>ponto de risco hídrico · * atenuado por obras</span><span><i class="legend-triangle flood-execucao"></i>** obras em execução</span><span><i class="legend-triangle flood-sem-intervencao"></i>*** sem intervenção</span><span><i class="legend-gradient vegetation-gradient"></i>NDVI · gradiente do proxy de vegetação</span><span><i class="legend-gradient heat-gradient"></i>ilhas de calor · azul = mais frio, vermelho = mais quente que a média (UrbVerde 2024)</span><span><i class="legend-gradient floodzone-gradient"></i>zonas de inundação · claro = baixa, escuro = alta suscetibilidade (SGB/CPRM)</span><span><i class="legend-symbol fire"></i>cicatrizes de fogo · MapBiomas 2025</span><span><i class="legend-line"></i>buffer de 300m</span>`;
     return element;
   };
   legend.addTo(state.map);
@@ -1110,15 +1156,7 @@ function showAppError(error) {
     : error.message;
 }
 
-function getHeatIslandColor(value, min, max) {
-  const stops = [[0, [44, 123, 182]], [0.25, [171, 217, 233]], [0.5, [255, 255, 191]], [0.75, [253, 174, 107]], [1, [215, 25, 28]]];
-  const ratio = Math.max(0, Math.min(1, (Number(value) - min) / Math.max(max - min, 0.01)));
-  const upper = stops.find(stop => ratio <= stop[0]) || stops.at(-1);
-  const lower = stops[stops.indexOf(upper) - 1] || upper;
-  const localRatio = upper[0] === lower[0] ? 0 : (ratio - lower[0]) / (upper[0] - lower[0]);
-  const color = lower[1].map((channel, index) => Math.round(channel + (upper[1][index] - channel) * localRatio));
-  return `rgb(${color.join(",")})`;
-}
+function getFloodZoneColor(level) { return { Alta: "#1d4ed8", "Média": "#3b82f6", Baixa: "#93c5fd" }[level] || "#93c5fd"; }
 
 function getTempColor(temp) {
   return temp >= 35.5 ? "#b42318" : temp >= 33.5 ? "#d97706" : temp >= 31.5 ? "#ca8a04" : temp >= 29.5 ? "#65a30d" : "#0f766e";

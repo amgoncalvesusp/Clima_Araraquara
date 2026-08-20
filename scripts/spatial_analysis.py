@@ -16,6 +16,8 @@ DATA_DIR = BASE_DIR / "data"
 HEALTHCARE_GEOJSON = DATA_DIR / "unidades_saude_araraquara.geojson"
 URBVERDE_GEOJSON = DATA_DIR / "urbverde_araraquara.geojson"
 CENSUS_GEOJSON = DATA_DIR / "censo_2022_vulnerabilidade_araraquara.geojson"
+FLOOD_ZONES_GEOJSON = DATA_DIR / "suscetibilidade_hidrica_araraquara.geojson"
+FLOOD_POINTS_GEOJSON = DATA_DIR / "pontos_risco_hidrologico_araraquara.geojson"
 
 OUTPUT_GEOJSON = DATA_DIR / "unidades_saude_analise_araraquara.geojson"
 OUTPUT_CSV = DATA_DIR / "ranking_risco_termico.csv"
@@ -64,12 +66,17 @@ SCENARIOS = [
 ]
 
 
-def weighted_mean(frame: gpd.GeoDataFrame, value: str, weights: str = "overlap_area") -> float | None:
+def weighted_mean(
+    frame: gpd.GeoDataFrame, value: str, weights: str = "overlap_area"
+) -> float | None:
     values = pd.to_numeric(frame[value], errors="coerce")
     valid = values.notna() & frame[weights].notna() & (frame[weights] > 0)
     if not valid.any():
         return None
-    return float((values[valid] * frame.loc[valid, weights]).sum() / frame.loc[valid, weights].sum())
+    return float(
+        (values[valid] * frame.loc[valid, weights]).sum()
+        / frame.loc[valid, weights].sum()
+    )
 
 
 def min_max(series: pd.Series, inverse: bool = False) -> pd.Series:
@@ -82,13 +89,49 @@ def min_max(series: pd.Series, inverse: bool = False) -> pd.Series:
     return 1 - normalized if inverse else normalized
 
 
+def hydrology_context(
+    unit_point, unit_buffer, zones: gpd.GeoDataFrame, points: gpd.GeoDataFrame
+) -> dict:
+    """Relate one unit to the published water-risk data, without touching the IECS."""
+    result = {
+        "flood_zone_level": None,
+        "flood_zone_process": None,
+        "flood_zone_distance_m": None,
+        "flood_zone_in_buffer": None,
+        "flood_point_nearest_m": None,
+        "flood_point_nearest_name": None,
+        "flood_point_nearest_phenomenon": None,
+    }
+    if not zones.empty:
+        distances = zones.geometry.distance(unit_point)
+        nearest = zones.loc[distances.idxmin()]
+        result["flood_zone_level"] = nearest["level"]
+        result["flood_zone_process"] = nearest["process"]
+        result["flood_zone_distance_m"] = round(float(distances.min()), 1)
+        touching = zones.loc[zones.intersects(unit_buffer)]
+        if not touching.empty:
+            strongest = touching.loc[
+                pd.to_numeric(touching["level_order"], errors="coerce").idxmax()
+            ]
+            result["flood_zone_in_buffer"] = strongest["level"]
+    if not points.empty:
+        distances = points.geometry.distance(unit_point)
+        nearest = points.loc[distances.idxmin()]
+        result["flood_point_nearest_m"] = round(float(distances.min()), 1)
+        result["flood_point_nearest_name"] = nearest["name"]
+        result["flood_point_nearest_phenomenon"] = nearest["phenomenon"]
+    return result
+
+
 def calculate_components(frame: pd.DataFrame) -> pd.DataFrame:
     result = frame.copy()
     result["heat_component"] = min_max(result["surface_temp_300m"])
     result["vegetation_component"] = min_max(result["ndvi_300m"], inverse=True)
     result["social_component"] = min_max(result["vulnerability_score_300m"])
     result["heat_component_0_100"] = (result["heat_component"] * 100).round(1)
-    result["vegetation_component_0_100"] = (result["vegetation_component"] * 100).round(1)
+    result["vegetation_component_0_100"] = (result["vegetation_component"] * 100).round(
+        1
+    )
     result["social_component_0_100"] = (result["social_component"] * 100).round(1)
     return result
 
@@ -117,7 +160,9 @@ def numeric_or_none(value, precision=4):
     return round(float(value), precision)
 
 
-def intersect_metrics(unit_buffer, climate: gpd.GeoDataFrame, census: gpd.GeoDataFrame) -> dict:
+def intersect_metrics(
+    unit_buffer, climate: gpd.GeoDataFrame, census: gpd.GeoDataFrame
+) -> dict:
     result = {
         "surface_temp_300m": None,
         "ndvi_300m": None,
@@ -134,7 +179,9 @@ def intersect_metrics(unit_buffer, climate: gpd.GeoDataFrame, census: gpd.GeoDat
 
     climate_rows = climate[climate.intersects(unit_buffer)].copy()
     if not climate_rows.empty:
-        climate_rows["overlap_area"] = climate_rows.geometry.intersection(unit_buffer).area
+        climate_rows["overlap_area"] = climate_rows.geometry.intersection(
+            unit_buffer
+        ).area
         climate_rows = climate_rows.loc[climate_rows["overlap_area"] > 0]
         result["surface_temp_300m"] = weighted_mean(climate_rows, "surface_temp")
         result["ndvi_300m"] = weighted_mean(climate_rows, "ndvi")
@@ -144,12 +191,14 @@ def intersect_metrics(unit_buffer, climate: gpd.GeoDataFrame, census: gpd.GeoDat
 
     census_rows = census[census.intersects(unit_buffer)].copy()
     if not census_rows.empty:
-        census_rows["overlap_area"] = census_rows.geometry.intersection(unit_buffer).area
+        census_rows["overlap_area"] = census_rows.geometry.intersection(
+            unit_buffer
+        ).area
         census_rows = census_rows.loc[census_rows["overlap_area"] > 0].copy()
         census_rows["sector_area"] = census_rows.geometry.area.clip(lower=1)
-        census_rows["population_weight"] = pd.to_numeric(census_rows["census_population"], errors="coerce") * (
-            census_rows["overlap_area"] / census_rows["sector_area"]
-        )
+        census_rows["population_weight"] = pd.to_numeric(
+            census_rows["census_population"], errors="coerce"
+        ) * (census_rows["overlap_area"] / census_rows["sector_area"])
         census_rows["population_weight"] = census_rows["population_weight"].fillna(0)
         if census_rows["population_weight"].sum() > 0:
             census_rows["social_weight"] = census_rows["population_weight"]
@@ -181,23 +230,34 @@ def build_sensitivity(frame: pd.DataFrame) -> dict:
     scenarios = []
     for scenario in SCENARIOS:
         ranked = frame.assign(score=calculate_iecs(frame, scenario["weights"]))
-        ranked = ranked.sort_values(["score", "id"], ascending=[False, True]).reset_index(drop=True)
+        ranked = ranked.sort_values(
+            ["score", "id"], ascending=[False, True]
+        ).reset_index(drop=True)
         units = []
         for index, row in ranked.iterrows():
             current_rank = index + 1
-            units.append({
-                "id": row["id"],
-                "name": row["display_name"] if "display_name" in row else row["name"],
-                "score": round(float(row["score"]), 1),
-                "ranking": current_rank,
-                "rank_shift_vs_default": default_rank_by_id[row["id"]] - current_rank,
-            })
-        scenarios.append({
-            **scenario,
-            "weights": {key: round(value, 4) for key, value in scenario["weights"].items()},
-            "top_5": units[:5],
-            "units": units,
-        })
+            units.append(
+                {
+                    "id": row["id"],
+                    "name": row["display_name"]
+                    if "display_name" in row
+                    else row["name"],
+                    "score": round(float(row["score"]), 1),
+                    "ranking": current_rank,
+                    "rank_shift_vs_default": default_rank_by_id[row["id"]]
+                    - current_rank,
+                }
+            )
+        scenarios.append(
+            {
+                **scenario,
+                "weights": {
+                    key: round(value, 4) for key, value in scenario["weights"].items()
+                },
+                "top_5": units[:5],
+                "units": units,
+            }
+        )
     return {
         "title": "Analise de sensibilidade do IECS",
         "method": "Cada cenário recalcula o mesmo conjunto de componentes normalizados; apenas os pesos mudam.",
@@ -220,19 +280,42 @@ def run_spatial_analysis() -> None:
     gdf_units_utm = gdf_units.to_crs(epsg=31983)
     gdf_climate_utm = gdf_climate.to_crs(epsg=31983)
     gdf_census_utm = gdf_census.to_crs(epsg=31983)
+    gdf_flood_zones_utm = gpd.read_file(FLOOD_ZONES_GEOJSON).to_crs(epsg=31983)
+    gdf_flood_points_utm = (
+        gpd.read_file(FLOOD_POINTS_GEOJSON)
+        .dropna(subset=["geometry"])
+        .to_crs(epsg=31983)
+    )
     gdf_units_utm["buffer_geometry"] = gdf_units_utm.geometry.buffer(BUFFER_RADIUS)
 
     analyzed_units = []
     for _, row in gdf_units_utm.iterrows():
-        metrics = intersect_metrics(row["buffer_geometry"], gdf_climate_utm, gdf_census_utm)
-        analyzed_units.append({
-            **{key: row[key] for key in row.index if key not in {"geometry", "buffer_geometry"}},
-            **metrics,
-        })
+        metrics = intersect_metrics(
+            row["buffer_geometry"], gdf_climate_utm, gdf_census_utm
+        )
+        hydrology = hydrology_context(
+            row.geometry,
+            row["buffer_geometry"],
+            gdf_flood_zones_utm,
+            gdf_flood_points_utm,
+        )
+        analyzed_units.append(
+            {
+                **{
+                    key: row[key]
+                    for key in row.index
+                    if key not in {"geometry", "buffer_geometry"}
+                },
+                **metrics,
+                **hydrology,
+            }
+        )
 
     result = pd.DataFrame(analyzed_units)
     result["climate_data_quality"] = result["climate_data_coverage_pct"].map(
-        lambda coverage: "urbverde_2024" if float(coverage or 0) > 0 else "sem_intersecao_urbverde_fallback"
+        lambda coverage: "urbverde_2024"
+        if float(coverage or 0) > 0
+        else "sem_intersecao_urbverde_fallback"
     )
     for column, fallback in [("surface_temp_300m", 31.0), ("ndvi_300m", 0.35)]:
         result[column] = pd.to_numeric(result[column], errors="coerce").fillna(fallback)
@@ -240,15 +323,23 @@ def run_spatial_analysis() -> None:
     social_median = float(social.median()) if social.notna().any() else 2.5
     missing_social = social.isna()
     result.loc[missing_social, "vulnerability_score_300m"] = social_median
-    result.loc[missing_social, "vulnerability_data_quality"] = "imputada_mediana_municipal"
-    result["vulnerability_score_300m"] = pd.to_numeric(result["vulnerability_score_300m"], errors="coerce").round(2)
+    result.loc[missing_social, "vulnerability_data_quality"] = (
+        "imputada_mediana_municipal"
+    )
+    result["vulnerability_score_300m"] = pd.to_numeric(
+        result["vulnerability_score_300m"], errors="coerce"
+    ).round(2)
 
     result = calculate_components(result)
     result["iecs_score"] = calculate_iecs(result, DEFAULT_WEIGHTS).round(1)
     result["risk_level"] = result["iecs_score"].map(risk_level)
-    result = result.sort_values(["iecs_score", "id"], ascending=[False, True]).reset_index(drop=True)
+    result = result.sort_values(
+        ["iecs_score", "id"], ascending=[False, True]
+    ).reset_index(drop=True)
     result["ranking"] = result.index + 1
-    result["vulnerability_source"] = "IBGE Censo 2022 — índice social-sanitário composto do projeto"
+    result["vulnerability_source"] = (
+        "IBGE Censo 2022 — índice social-sanitário composto do projeto"
+    )
 
     print("Top 5 Most Impacted Healthcare Units in Araraquara (300m buffer):")
     for _, row in result.head(5).iterrows():
@@ -259,36 +350,76 @@ def run_spatial_analysis() -> None:
     for _, row in result.iterrows():
         properties = {
             key: numeric_or_none(value, 8 if key in {"lat", "lon"} else 4)
-            if isinstance(value, (float, int)) else value
+            if isinstance(value, (float, int))
+            else value
             for key, value in row.to_dict().items()
         }
-        features.append({
-            "type": "Feature",
-            "geometry": {"type": "Point", "coordinates": [row["lon"], row["lat"]]},
-            "properties": properties,
-        })
-    OUTPUT_GEOJSON.write_text(json.dumps({"type": "FeatureCollection", "features": features}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        features.append(
+            {
+                "type": "Feature",
+                "geometry": {"type": "Point", "coordinates": [row["lon"], row["lat"]]},
+                "properties": properties,
+            }
+        )
+    OUTPUT_GEOJSON.write_text(
+        json.dumps(
+            {"type": "FeatureCollection", "features": features},
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
 
     summary = {
         "total_units_analyzed": len(result),
         "buffer_radius_meters": BUFFER_RADIUS,
         "social_source": "IBGE Censo 2022",
         "social_index_is_official": False,
-        "units_with_census_intersection": int((result["vulnerability_data_quality"] == "censo_2022").sum()),
-        "units_with_social_imputation": int((result["vulnerability_data_quality"] == "imputada_mediana_municipal").sum()),
-        "units_with_climate_intersection": int((result["climate_data_quality"] == "urbverde_2024").sum()),
-        "units_with_climate_fallback": int((result["climate_data_quality"] != "urbverde_2024").sum()),
-        "mean_climate_data_coverage_pct": round(result["climate_data_coverage_pct"].mean(), 1),
-        "mean_social_data_coverage_pct": round(result["social_data_coverage_pct"].mean(), 1),
+        "units_with_census_intersection": int(
+            (result["vulnerability_data_quality"] == "censo_2022").sum()
+        ),
+        "units_with_social_imputation": int(
+            (result["vulnerability_data_quality"] == "imputada_mediana_municipal").sum()
+        ),
+        "units_with_climate_intersection": int(
+            (result["climate_data_quality"] == "urbverde_2024").sum()
+        ),
+        "units_with_climate_fallback": int(
+            (result["climate_data_quality"] != "urbverde_2024").sum()
+        ),
+        "mean_climate_data_coverage_pct": round(
+            result["climate_data_coverage_pct"].mean(), 1
+        ),
+        "mean_social_data_coverage_pct": round(
+            result["social_data_coverage_pct"].mean(), 1
+        ),
         "avg_surface_temp_araraquara": round(result["surface_temp_300m"].mean(), 2),
         "max_surface_temp": result["surface_temp_300m"].max(),
         "min_surface_temp": result["surface_temp_300m"].min(),
         "avg_ndvi": round(result["ndvi_300m"].mean(), 2),
         "units_by_risk_level": result["risk_level"].value_counts().to_dict(),
-        "top_5_critical_units": result.head(5)[["ranking", "name", "type", "suburb", "surface_temp_300m", "ndvi_300m", "vulnerability_score_300m", "iecs_score", "risk_level"]].to_dict(orient="records"),
+        "top_5_critical_units": result.head(5)[
+            [
+                "ranking",
+                "name",
+                "type",
+                "suburb",
+                "surface_temp_300m",
+                "ndvi_300m",
+                "vulnerability_score_300m",
+                "iecs_score",
+                "risk_level",
+            ]
+        ].to_dict(orient="records"),
     }
-    OUTPUT_SUMMARY.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    OUTPUT_SENSITIVITY.write_text(json.dumps(build_sensitivity(result), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    OUTPUT_SUMMARY.write_text(
+        json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    OUTPUT_SENSITIVITY.write_text(
+        json.dumps(build_sensitivity(result), ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
     print(f"Ranking CSV saved to {OUTPUT_CSV}")
     print(f"Analyzed GeoJSON saved to {OUTPUT_GEOJSON}")
     print(f"Sensitivity JSON saved to {OUTPUT_SENSITIVITY}")
