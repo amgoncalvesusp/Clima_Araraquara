@@ -1134,11 +1134,21 @@ function closeModal(id) {
   state.lastFocused[id]?.focus?.();
 }
 
+function collapseLegend(element, collapsed) {
+  element.classList.toggle("is-collapsed", collapsed);
+  element.querySelector(".legend-toggle").setAttribute("aria-expanded", String(!collapsed));
+}
+
 function addMapLegend() {
   const legend = L.control({ position: "bottomright" });
   legend.onAdd = () => {
     const element = L.DomUtil.create("div", "map-legend");
-    element.innerHTML = `<strong>Como ler</strong><span><i class="legend-symbol unit"></i>unidades de saúde · pontos pretos</span><span><i class="legend-triangle flood-atenuado"></i>ponto de risco hídrico · * atenuado por obras</span><span><i class="legend-triangle flood-execucao"></i>** obras em execução</span><span><i class="legend-triangle flood-sem-intervencao"></i>*** sem intervenção</span><span><i class="legend-gradient vegetation-gradient"></i>NDVI · gradiente do proxy de vegetação</span><span><i class="legend-gradient heat-gradient"></i>ilhas de calor · azul = mais frio, vermelho = mais quente que a média (UrbVerde 2024)</span><span><i class="legend-gradient floodzone-gradient"></i>zonas de inundação · claro = baixa, escuro = alta suscetibilidade (SGB/CPRM)</span><span><i class="legend-symbol fire"></i>cicatrizes de fogo · MapBiomas 2025</span><span><i class="legend-line"></i>buffer de 300m</span>`;
+    element.innerHTML = `<button class="legend-toggle" type="button" aria-expanded="true" aria-controls="map-legend-body"><strong>Como ler</strong><span class="legend-chevron" aria-hidden="true"></span></button><div class="legend-body" id="map-legend-body"><span><i class="legend-symbol unit"></i>unidades de saúde · pontos pretos</span><span><i class="legend-triangle flood-atenuado"></i>ponto de risco hídrico · * atenuado por obras</span><span><i class="legend-triangle flood-execucao"></i>** obras em execução</span><span><i class="legend-triangle flood-sem-intervencao"></i>*** sem intervenção</span><span><i class="legend-gradient vegetation-gradient"></i>NDVI · gradiente do proxy de vegetação</span><span><i class="legend-gradient heat-gradient"></i>ilhas de calor · azul = mais frio, vermelho = mais quente que a média (UrbVerde 2024)</span><span><i class="legend-gradient floodzone-gradient"></i>zonas de inundação · claro = baixa, escuro = alta suscetibilidade (SGB/CPRM)</span><span><i class="legend-symbol fire"></i>cicatrizes de fogo · MapBiomas 2025</span><span><i class="legend-line"></i>buffer de 300m</span></div>`;
+    if (window.matchMedia("(max-width: 900px)").matches) collapseLegend(element, true);
+    element.querySelector(".legend-toggle").addEventListener("click", () => {
+      collapseLegend(element, !element.classList.contains("is-collapsed"));
+    });
+    L.DomEvent.disableClickPropagation(element);
     return element;
   };
   legend.addTo(state.map);
