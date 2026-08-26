@@ -48,8 +48,8 @@ class CatalogoSaudeTest(unittest.TestCase):
         catalog = self.read_json("unidades_saude_araraquara.json")
         analyzed_geojson = self.read_json("unidades_saude_araraquara.geojson")
 
-        self.assertEqual(len(catalog), 54)
-        self.assertEqual(len(analyzed_geojson["features"]), 52)
+        self.assertEqual(len(catalog), 53)
+        self.assertEqual(len(analyzed_geojson["features"]), 51)
         self.assertEqual(
             sum(item["record_status"] == "pendente_validacao" for item in catalog),
             2,
@@ -100,7 +100,7 @@ class CatalogoSaudeTest(unittest.TestCase):
         hydrology = self.read_json("pontos_risco_hidrologico_araraquara.geojson")
 
         self.assertEqual(history["history_years"], [2016, 2017, 2018, 2019, 2020, 2021])
-        self.assertEqual(len(history["units"]), 52)
+        self.assertEqual(len(history["units"]), 51)
         self.assertEqual(len(hydrology["features"]), 23)
         self.assertEqual(hydrology["metadata"]["count_geocoded_for_map"], 23)
         self.assertIn("a_286_0_1_22012026101246.pdf", hydrology["metadata"]["source_url"])
@@ -122,7 +122,7 @@ class CatalogoSaudeTest(unittest.TestCase):
         self.assertGreaterEqual(len(sensitivity["scenarios"]), 5)
         for scenario in sensitivity["scenarios"]:
             self.assertAlmostEqual(sum(scenario["weights"].values()), 1, places=3)
-            self.assertEqual(len(scenario["units"]), 52)
+            self.assertEqual(len(scenario["units"]), 51)
             self.assertEqual(len(scenario["top_5"]), 5)
 
     def test_health_outcomes_are_aggregate_and_traceable(self):

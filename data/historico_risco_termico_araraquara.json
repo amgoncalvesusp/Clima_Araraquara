@@ -20,43 +20,43 @@
   "summary": [
     {
       "year": 2016,
-      "unit_count": 48,
+      "unit_count": 47,
       "mean_surface_temp_max_300m": 32.14,
       "min_surface_temp_max_300m": 30.22,
       "max_surface_temp_max_300m": 33.87
     },
     {
       "year": 2017,
-      "unit_count": 48,
-      "mean_surface_temp_max_300m": 32.56,
+      "unit_count": 47,
+      "mean_surface_temp_max_300m": 32.54,
       "min_surface_temp_max_300m": 29.95,
       "max_surface_temp_max_300m": 34.02
     },
     {
       "year": 2018,
-      "unit_count": 48,
+      "unit_count": 47,
       "mean_surface_temp_max_300m": 34.36,
       "min_surface_temp_max_300m": 32.77,
       "max_surface_temp_max_300m": 36.24
     },
     {
       "year": 2019,
-      "unit_count": 48,
-      "mean_surface_temp_max_300m": 34.28,
+      "unit_count": 47,
+      "mean_surface_temp_max_300m": 34.27,
       "min_surface_temp_max_300m": 32.19,
       "max_surface_temp_max_300m": 35.68
     },
     {
       "year": 2020,
-      "unit_count": 48,
-      "mean_surface_temp_max_300m": 35.86,
+      "unit_count": 47,
+      "mean_surface_temp_max_300m": 35.83,
       "min_surface_temp_max_300m": 33.31,
       "max_surface_temp_max_300m": 37.44
     },
     {
       "year": 2021,
-      "unit_count": 48,
-      "mean_surface_temp_max_300m": 35.09,
+      "unit_count": 47,
+      "mean_surface_temp_max_300m": 35.07,
       "min_surface_temp_max_300m": 32.17,
       "max_surface_temp_max_300m": 36.63
     }
@@ -666,8 +666,8 @@
     },
     {
       "id": "SUS-015",
-      "name": "UPA Valle Verde",
-      "suburb": "Valle Verde",
+      "name": "UPA Valle Verde “Nefália de Oliveira Lauar”",
+      "suburb": "Parque Residencial Laura Molina",
       "values": [
         {
           "year": 2016,
@@ -1004,49 +1004,6 @@
           "year": 2021,
           "surface_temp_max_300m": 35.18,
           "sector_count": 9,
-          "coverage": "intersecao_buffer_300m"
-        }
-      ]
-    },
-    {
-      "id": "SUS-023",
-      "name": "PSF",
-      "suburb": "Araraquara",
-      "values": [
-        {
-          "year": 2016,
-          "surface_temp_max_300m": 32.47,
-          "sector_count": 1,
-          "coverage": "intersecao_buffer_300m"
-        },
-        {
-          "year": 2017,
-          "surface_temp_max_300m": 33.53,
-          "sector_count": 1,
-          "coverage": "intersecao_buffer_300m"
-        },
-        {
-          "year": 2018,
-          "surface_temp_max_300m": 34.56,
-          "sector_count": 1,
-          "coverage": "intersecao_buffer_300m"
-        },
-        {
-          "year": 2019,
-          "surface_temp_max_300m": 35.06,
-          "sector_count": 1,
-          "coverage": "intersecao_buffer_300m"
-        },
-        {
-          "year": 2020,
-          "surface_temp_max_300m": 37.32,
-          "sector_count": 1,
-          "coverage": "intersecao_buffer_300m"
-        },
-        {
-          "year": 2021,
-          "surface_temp_max_300m": 35.93,
-          "sector_count": 1,
           "coverage": "intersecao_buffer_300m"
         }
       ]
@@ -1483,8 +1440,8 @@
     },
     {
       "id": "SUS-034",
-      "name": "Posto de Saúde Municipal",
-      "suburb": "Araraquara",
+      "name": "USF Valle Verde “Dr. Ednan Theodoro Nogueira”",
+      "suburb": "Valle Verde",
       "values": [
         {
           "year": 2016,

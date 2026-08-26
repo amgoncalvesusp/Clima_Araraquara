@@ -8,7 +8,7 @@ Mapa didático do PET Saúde - Clima para explorar a exposição térmica e a pr
 - Risco hídrico em duas leituras: os 23 pontos do boletim municipal de janeiro de 2026, todos geocodificados, e as manchas de suscetibilidade alta, média e baixa a inundação do SGB/CPRM.
 - Camadas adicionais opcionais: ilhas de calor da UrbVerde de 2024, exibidas como manchas contínuas servidas pelo WMS da própria UrbVerde, e cicatrizes de fogo anuais do MapBiomas Fogo Coleção 5 (2025), sem participação no IECS.
 - Histórico: série anual de 2016 a 2021 da temperatura máxima da superfície por setor da UrbVerde, agregada para cada unidade e para a média da rede.
-- Catálogo: 52 unidades analisadas e 2 registros pendentes de validação. O CMS Santa Angelina “Rafael Sorbo” está no mapa como `SUS-042`, com CNES `2063247`.
+- Catálogo: 51 unidades analisadas e 2 registros pendentes de validação. O CMS Santa Angelina “Rafael Sorbo” está no mapa como `SUS-042`, com CNES `2063247`.
 - Nesta rodada, foram confirmadas e incorporadas a UPA Central, seis unidades básicas, o Espaço Crescer, o CAPS-AD, o CEO e o Centro Municipal de Referência do Autismo. O antigo registro da USF Jardim São Bento foi reconciliado com o `SUS-007`, evitando duplicidade.
 - Comparação: o modal “Histórico” combina uma série temporal, comparação entre unidades e proximidade aproximada a pontos hidrológicos mapeados.
 - Base de consulta: o modal “Dados de saúde” permite explorar dez anos completos (2016–2025) do SIH/SUS por estabelecimento executante e capítulo CID-10, além da produção ambulatorial SIA/SUS por grupo de procedimento.
@@ -25,10 +25,10 @@ A dimensão social participa do cálculo atual com peso de 30%. Ela foi substitu
 
 ```text
 data/
-├── unidades_saude_araraquara.json              # catálogo: 52 analisadas + 2 pendentes
+├── unidades_saude_araraquara.json              # catálogo: 51 analisadas + 2 pendentes
 ├── unidades_sugeridas_araraquara.json          # backlog de validação das 2 pendências
-├── unidades_saude_araraquara.geojson            # 52 pontos usados na análise espacial
-├── unidades_saude_analise_araraquara.geojson   # 52 pontos com IECS e métricas de 2024
+├── unidades_saude_araraquara.geojson            # 51 pontos usados na análise espacial
+├── unidades_saude_analise_araraquara.geojson   # 51 pontos com IECS e métricas de 2024
 ├── ranking_risco_termico.csv                   # ranking térmico atual
 ├── censo_2022_vulnerabilidade_araraquara.geojson # setores e índice social-sanitário composto
 ├── sensibilidade_iecs_araraquara.json           # cenários alternativos de pesos do IECS

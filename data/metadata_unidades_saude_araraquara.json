@@ -30,11 +30,11 @@
     "data_quality": "validar_escopo",
     "quality_note": "SESA/FSP-USP; não é unidade municipal."
   },
-  "SUS-023": {
+  "SUS-015": {
     "network_scope": "municipal",
-    "data_quality": "incompleto",
-    "canonical_name": "USF a confirmar — registro SUS-023",
-    "quality_note": "Tipo informado como PSF, mas falta o nome oficial."
+    "data_quality": "ok",
+    "canonical_name": "UPA Valle Verde “Nefália de Oliveira Lauar”",
+    "quality_note": "CNES 9099581 e cadastro municipal confirmam a unidade e a operação 24 horas. O cadastro municipal informa Rua Henrique João Baptista Crisci, 1.160; o CNES vigente registra Avenida Leonardo Gomes, 1.153, para o mesmo estabelecimento. A coordenada foi ajustada para o edifício da UPA, não para o ponto de ônibus homônimo."
   },
   "SUS-027": {
     "network_scope": "filantropico_sus",
@@ -48,9 +48,9 @@
   },
   "SUS-034": {
     "network_scope": "municipal",
-    "data_quality": "incompleto",
-    "canonical_name": "Unidade a confirmar — registro SUS-034",
-    "quality_note": "Nome genérico; confirmar bairro, nome oficial e CNES."
+    "data_quality": "ok",
+    "canonical_name": "USF Valle Verde “Dr. Ednan Theodoro Nogueira”",
+    "quality_note": "CNES 3658481 e cadastro municipal confirmam a unidade, o endereço e a atenção básica. A coordenada coincide com o ponto publicado no mapa municipal de unidades de saúde."
   },
   "SUS-037": {
     "network_scope": "municipal",

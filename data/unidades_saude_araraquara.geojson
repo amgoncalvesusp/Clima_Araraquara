@@ -286,19 +286,19 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -48.1579375,
-          -21.7246497
+          -48.1578263,
+          -21.7245215
         ]
       },
       "properties": {
         "id": "SUS-015",
-        "name": "UPA Valle Verde",
+        "name": "UPA Valle Verde “Nefália de Oliveira Lauar”",
         "type": "UPA / Pronto Atendimento",
-        "lat": -21.7246497,
-        "lon": -48.1579375,
-        "address": "Rua Henrique João Baptista Crisci",
-        "suburb": "Valle Verde",
-        "network": "Rede Pública SUS / Filantrópico"
+        "lat": -21.7245215,
+        "lon": -48.1578263,
+        "address": "Rua Henrique João Baptista Crisci, 1.160",
+        "suburb": "Parque Residencial Laura Molina",
+        "network": "Rede pública municipal"
       }
     },
     {
@@ -436,26 +436,6 @@
         "type": "Centro de Referência e Especialidades",
         "lat": -21.79454,
         "lon": -48.1801092,
-        "address": "",
-        "suburb": "Araraquara",
-        "network": "Rede Pública SUS / Filantrópico"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -48.1585244,
-          -21.7251579
-        ]
-      },
-      "properties": {
-        "id": "SUS-023",
-        "name": "PSF",
-        "type": "USF (Saúde da Família)",
-        "lat": -21.7251579,
-        "lon": -48.1585244,
         "address": "",
         "suburb": "Araraquara",
         "network": "Rede Pública SUS / Filantrópico"
@@ -672,13 +652,13 @@
       },
       "properties": {
         "id": "SUS-034",
-        "name": "Posto de Saúde Municipal",
-        "type": "Posto / Centro de Saúde Público",
+        "name": "USF Valle Verde “Dr. Ednan Theodoro Nogueira”",
+        "type": "USF (Saúde da Família)",
         "lat": -21.7251916,
         "lon": -48.1583089,
-        "address": "",
-        "suburb": "Araraquara",
-        "network": "Rede Pública SUS / Filantrópico"
+        "address": "Rua Henrique João Baptista Crisci, 1.254",
+        "suburb": "Valle Verde",
+        "network": "Rede pública municipal"
       }
     },
     {

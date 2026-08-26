@@ -18,7 +18,7 @@ class DataIntegrityTest(unittest.TestCase):
         raw = self.read_json("unidades_saude_araraquara.geojson")
         analysis = self.read_json("unidades_saude_analise_araraquara.geojson")
 
-        self.assertEqual(len(raw["features"]), 52)
+        self.assertEqual(len(raw["features"]), 51)
         for collection in (raw, analysis):
             for feature in collection["features"]:
                 lon, lat = feature["geometry"]["coordinates"]
@@ -30,7 +30,7 @@ class DataIntegrityTest(unittest.TestCase):
         summary = self.read_json("resumo_estatistico.json")
         properties = [feature["properties"] for feature in analysis["features"]]
 
-        self.assertEqual(sum(item["climate_data_quality"] == "urbverde_2024" for item in properties), 50)
+        self.assertEqual(sum(item["climate_data_quality"] == "urbverde_2024" for item in properties), 49)
         self.assertEqual(sum(item["climate_data_quality"] != "urbverde_2024" for item in properties), 2)
         self.assertTrue(all(item["vulnerability_data_quality"] == "censo_2022" for item in properties))
         self.assertEqual(summary["units_with_climate_fallback"], 2)

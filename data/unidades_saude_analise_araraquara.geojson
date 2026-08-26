@@ -12,14 +12,14 @@
       },
       "properties": {
         "id": "SUS-034",
-        "name": "Posto de Saúde Municipal",
-        "type": "Posto / Centro de Saúde Público",
+        "name": "USF Valle Verde “Dr. Ednan Theodoro Nogueira”",
+        "type": "USF (Saúde da Família)",
         "lat": -21.7251916,
         "lon": -48.1583089,
-        "address": "",
-        "suburb": "Araraquara",
+        "address": "Rua Henrique João Baptista Crisci, 1.254",
+        "suburb": "Valle Verde",
         "cnes": null,
-        "network": "Rede Pública SUS / Filantrópico",
+        "network": "Rede pública municipal",
         "surface_temp_300m": 36.4398,
         "ndvi_300m": 0.253,
         "climate_data_coverage_pct": 100.0,
@@ -56,98 +56,48 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -48.1579375,
-          -21.7246497
+          -48.1578263,
+          -21.7245215
         ]
       },
       "properties": {
         "id": "SUS-015",
-        "name": "UPA Valle Verde",
+        "name": "UPA Valle Verde “Nefália de Oliveira Lauar”",
         "type": "UPA / Pronto Atendimento",
-        "lat": -21.7246497,
-        "lon": -48.1579375,
-        "address": "Rua Henrique João Baptista Crisci",
-        "suburb": "Valle Verde",
+        "lat": -21.7245215,
+        "lon": -48.1578263,
+        "address": "Rua Henrique João Baptista Crisci, 1.160",
+        "suburb": "Parque Residencial Laura Molina",
         "cnes": null,
-        "network": "Rede Pública SUS / Filantrópico",
-        "surface_temp_300m": 36.4638,
-        "ndvi_300m": 0.2518,
+        "network": "Rede pública municipal",
+        "surface_temp_300m": 36.4661,
+        "ndvi_300m": 0.2516,
         "climate_data_coverage_pct": 100.0,
-        "census_population_300m": 2272.0168,
-        "census_income_median_300m": 1401.7538,
-        "census_share_children_300m": 0.1995,
-        "census_share_elderly_300m": 0.0599,
+        "census_population_300m": 2292.9022,
+        "census_income_median_300m": 1403.1936,
+        "census_share_children_300m": 0.199,
+        "census_share_elderly_300m": 0.0593,
         "census_crowding_300m": null,
         "vulnerability_score_300m": 3.66,
         "social_data_coverage_pct": 100.0,
         "vulnerability_data_quality": "censo_2022",
         "flood_zone_level": "Baixa",
         "flood_zone_process": "Inundação",
-        "flood_zone_distance_m": 712.7,
+        "flood_zone_distance_m": 699.8,
         "flood_zone_in_buffer": null,
-        "flood_point_nearest_m": 2979.0,
+        "flood_point_nearest_m": 2994.9,
         "flood_point_nearest_name": "Rua Maurício Galli",
         "flood_point_nearest_phenomenon": "Inundação / Assoreamento",
         "climate_data_quality": "urbverde_2024",
-        "heat_component": 0.9628,
-        "vegetation_component": 0.9583,
+        "heat_component": 0.9632,
+        "vegetation_component": 0.959,
         "social_component": 0.9848,
         "heat_component_0_100": 96.3,
-        "vegetation_component_0_100": 95.8,
+        "vegetation_component_0_100": 95.9,
         "social_component_0_100": 98.5,
-        "iecs_score": 96.8,
+        "iecs_score": 96.9,
         "risk_level": "Crítico (Altíssimo Risco)",
         "ranking": 2.0,
-        "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -48.1585244,
-          -21.7251579
-        ]
-      },
-      "properties": {
-        "id": "SUS-023",
-        "name": "PSF",
-        "type": "USF (Saúde da Família)",
-        "lat": -21.7251579,
-        "lon": -48.1585244,
-        "address": "",
-        "suburb": "Araraquara",
-        "cnes": null,
-        "network": "Rede Pública SUS / Filantrópico",
-        "surface_temp_300m": 36.4239,
-        "ndvi_300m": 0.2538,
-        "climate_data_coverage_pct": 100.0,
-        "census_population_300m": 2103.8102,
-        "census_income_median_300m": 1399.5353,
-        "census_share_children_300m": 0.2007,
-        "census_share_elderly_300m": 0.0624,
-        "census_crowding_300m": null,
-        "vulnerability_score_300m": 3.67,
-        "social_data_coverage_pct": 100.0,
-        "vulnerability_data_quality": "censo_2022",
-        "flood_zone_level": "Baixa",
-        "flood_zone_process": "Inundação",
-        "flood_zone_distance_m": 762.3,
-        "flood_zone_in_buffer": null,
-        "flood_point_nearest_m": 2913.8,
-        "flood_point_nearest_name": "Rua Maurício Galli",
-        "flood_point_nearest_phenomenon": "Inundação / Assoreamento",
-        "climate_data_quality": "urbverde_2024",
-        "heat_component": 0.9558,
-        "vegetation_component": 0.9504,
-        "social_component": 1.0,
-        "heat_component_0_100": 95.6,
-        "vegetation_component_0_100": 95.0,
-        "social_component_0_100": 100.0,
-        "iecs_score": 96.8,
-        "risk_level": "Crítico (Altíssimo Risco)",
-        "ranking": 3.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -197,7 +147,7 @@
         "social_component_0_100": 90.9,
         "iecs_score": 95.3,
         "risk_level": "Crítico (Altíssimo Risco)",
-        "ranking": 4.0,
+        "ranking": 3.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -247,7 +197,7 @@
         "social_component_0_100": 68.2,
         "iecs_score": 89.2,
         "risk_level": "Crítico (Altíssimo Risco)",
-        "ranking": 5.0,
+        "ranking": 4.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -297,7 +247,7 @@
         "social_component_0_100": 59.1,
         "iecs_score": 87.7,
         "risk_level": "Crítico (Altíssimo Risco)",
-        "ranking": 6.0,
+        "ranking": 5.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -347,7 +297,7 @@
         "social_component_0_100": 74.2,
         "iecs_score": 78.9,
         "risk_level": "Crítico (Altíssimo Risco)",
-        "ranking": 7.0,
+        "ranking": 6.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -397,7 +347,7 @@
         "social_component_0_100": 74.2,
         "iecs_score": 74.8,
         "risk_level": "Alto",
-        "ranking": 8.0,
+        "ranking": 7.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -447,7 +397,7 @@
         "social_component_0_100": 74.2,
         "iecs_score": 74.6,
         "risk_level": "Alto",
-        "ranking": 9.0,
+        "ranking": 8.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -497,7 +447,7 @@
         "social_component_0_100": 50.0,
         "iecs_score": 73.9,
         "risk_level": "Alto",
-        "ranking": 10.0,
+        "ranking": 9.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -547,7 +497,7 @@
         "social_component_0_100": 74.2,
         "iecs_score": 73.3,
         "risk_level": "Alto",
-        "ranking": 11.0,
+        "ranking": 10.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -597,7 +547,7 @@
         "social_component_0_100": 74.2,
         "iecs_score": 72.7,
         "risk_level": "Alto",
-        "ranking": 12.0,
+        "ranking": 11.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -647,7 +597,7 @@
         "social_component_0_100": 75.8,
         "iecs_score": 72.4,
         "risk_level": "Alto",
-        "ranking": 13.0,
+        "ranking": 12.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -697,7 +647,7 @@
         "social_component_0_100": 62.1,
         "iecs_score": 69.4,
         "risk_level": "Alto",
-        "ranking": 14.0,
+        "ranking": 13.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -747,7 +697,7 @@
         "social_component_0_100": 21.2,
         "iecs_score": 68.8,
         "risk_level": "Alto",
-        "ranking": 15.0,
+        "ranking": 14.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -797,7 +747,7 @@
         "social_component_0_100": 47.0,
         "iecs_score": 68.6,
         "risk_level": "Alto",
-        "ranking": 16.0,
+        "ranking": 15.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -847,7 +797,7 @@
         "social_component_0_100": 54.5,
         "iecs_score": 68.4,
         "risk_level": "Alto",
-        "ranking": 17.0,
+        "ranking": 16.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -897,7 +847,7 @@
         "social_component_0_100": 51.5,
         "iecs_score": 67.7,
         "risk_level": "Alto",
-        "ranking": 18.0,
+        "ranking": 17.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -947,7 +897,7 @@
         "social_component_0_100": 56.1,
         "iecs_score": 66.5,
         "risk_level": "Alto",
-        "ranking": 19.0,
+        "ranking": 18.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -997,7 +947,7 @@
         "social_component_0_100": 75.8,
         "iecs_score": 66.3,
         "risk_level": "Alto",
-        "ranking": 20.0,
+        "ranking": 19.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1047,7 +997,7 @@
         "social_component_0_100": 65.2,
         "iecs_score": 64.5,
         "risk_level": "Alto",
-        "ranking": 21.0,
+        "ranking": 20.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1097,7 +1047,7 @@
         "social_component_0_100": 80.3,
         "iecs_score": 60.8,
         "risk_level": "Alto",
-        "ranking": 22.0,
+        "ranking": 21.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1147,7 +1097,7 @@
         "social_component_0_100": 62.1,
         "iecs_score": 60.0,
         "risk_level": "Alto",
-        "ranking": 23.0,
+        "ranking": 22.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1197,7 +1147,7 @@
         "social_component_0_100": 6.1,
         "iecs_score": 57.7,
         "risk_level": "Alto",
-        "ranking": 24.0,
+        "ranking": 23.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1247,7 +1197,7 @@
         "social_component_0_100": 60.6,
         "iecs_score": 57.6,
         "risk_level": "Alto",
-        "ranking": 25.0,
+        "ranking": 24.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1297,7 +1247,7 @@
         "social_component_0_100": 75.8,
         "iecs_score": 56.3,
         "risk_level": "Alto",
-        "ranking": 26.0,
+        "ranking": 25.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1347,7 +1297,7 @@
         "social_component_0_100": 75.8,
         "iecs_score": 56.1,
         "risk_level": "Alto",
-        "ranking": 27.0,
+        "ranking": 26.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1397,7 +1347,7 @@
         "social_component_0_100": 43.9,
         "iecs_score": 53.3,
         "risk_level": "Moderado",
-        "ranking": 28.0,
+        "ranking": 27.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1447,7 +1397,7 @@
         "social_component_0_100": 27.3,
         "iecs_score": 52.4,
         "risk_level": "Moderado",
-        "ranking": 29.0,
+        "ranking": 28.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1497,7 +1447,7 @@
         "social_component_0_100": 31.8,
         "iecs_score": 50.8,
         "risk_level": "Moderado",
-        "ranking": 30.0,
+        "ranking": 29.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1547,7 +1497,7 @@
         "social_component_0_100": 19.7,
         "iecs_score": 50.5,
         "risk_level": "Moderado",
-        "ranking": 31.0,
+        "ranking": 30.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1597,7 +1547,7 @@
         "social_component_0_100": 16.7,
         "iecs_score": 50.0,
         "risk_level": "Moderado",
-        "ranking": 32.0,
+        "ranking": 31.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1647,7 +1597,7 @@
         "social_component_0_100": 33.3,
         "iecs_score": 49.8,
         "risk_level": "Moderado",
-        "ranking": 33.0,
+        "ranking": 32.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1697,7 +1647,7 @@
         "social_component_0_100": 4.5,
         "iecs_score": 46.7,
         "risk_level": "Moderado",
-        "ranking": 34.0,
+        "ranking": 33.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1747,7 +1697,7 @@
         "social_component_0_100": 31.8,
         "iecs_score": 46.4,
         "risk_level": "Moderado",
-        "ranking": 35.0,
+        "ranking": 34.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1797,7 +1747,7 @@
         "social_component_0_100": 74.2,
         "iecs_score": 46.4,
         "risk_level": "Moderado",
-        "ranking": 36.0,
+        "ranking": 35.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1847,7 +1797,7 @@
         "social_component_0_100": 65.2,
         "iecs_score": 45.8,
         "risk_level": "Moderado",
-        "ranking": 37.0,
+        "ranking": 36.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1897,7 +1847,7 @@
         "social_component_0_100": 57.6,
         "iecs_score": 45.2,
         "risk_level": "Moderado",
-        "ranking": 38.0,
+        "ranking": 37.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1947,7 +1897,7 @@
         "social_component_0_100": 65.2,
         "iecs_score": 44.9,
         "risk_level": "Moderado",
-        "ranking": 39.0,
+        "ranking": 38.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -1997,7 +1947,7 @@
         "social_component_0_100": 63.6,
         "iecs_score": 44.8,
         "risk_level": "Moderado",
-        "ranking": 40.0,
+        "ranking": 39.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -2047,7 +1997,7 @@
         "social_component_0_100": 9.1,
         "iecs_score": 44.1,
         "risk_level": "Moderado",
-        "ranking": 41.0,
+        "ranking": 40.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -2097,7 +2047,7 @@
         "social_component_0_100": 93.9,
         "iecs_score": 42.4,
         "risk_level": "Moderado",
-        "ranking": 42.0,
+        "ranking": 41.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -2147,7 +2097,7 @@
         "social_component_0_100": 50.0,
         "iecs_score": 42.3,
         "risk_level": "Moderado",
-        "ranking": 43.0,
+        "ranking": 42.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -2197,7 +2147,7 @@
         "social_component_0_100": 48.5,
         "iecs_score": 42.1,
         "risk_level": "Moderado",
-        "ranking": 44.0,
+        "ranking": 43.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -2247,7 +2197,7 @@
         "social_component_0_100": 31.8,
         "iecs_score": 39.7,
         "risk_level": "Moderado",
-        "ranking": 45.0,
+        "ranking": 44.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -2297,7 +2247,7 @@
         "social_component_0_100": 62.1,
         "iecs_score": 36.7,
         "risk_level": "Moderado",
-        "ranking": 46.0,
+        "ranking": 45.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -2347,7 +2297,7 @@
         "social_component_0_100": 57.6,
         "iecs_score": 35.8,
         "risk_level": "Moderado",
-        "ranking": 47.0,
+        "ranking": 46.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -2397,7 +2347,7 @@
         "social_component_0_100": 57.6,
         "iecs_score": 31.5,
         "risk_level": "Baixo / Confortável",
-        "ranking": 48.0,
+        "ranking": 47.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -2447,7 +2397,7 @@
         "social_component_0_100": 86.4,
         "iecs_score": 29.6,
         "risk_level": "Baixo / Confortável",
-        "ranking": 49.0,
+        "ranking": 48.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -2497,7 +2447,7 @@
         "social_component_0_100": 69.7,
         "iecs_score": 27.2,
         "risk_level": "Baixo / Confortável",
-        "ranking": 50.0,
+        "ranking": 49.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -2547,7 +2497,7 @@
         "social_component_0_100": 69.7,
         "iecs_score": 26.1,
         "risk_level": "Baixo / Confortável",
-        "ranking": 51.0,
+        "ranking": 50.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     },
@@ -2597,7 +2547,7 @@
         "social_component_0_100": 0.0,
         "iecs_score": 15.9,
         "risk_level": "Baixo / Confortável",
-        "ranking": 52.0,
+        "ranking": 51.0,
         "vulnerability_source": "IBGE Censo 2022 — índice social-sanitário composto do projeto"
       }
     }
