@@ -17,7 +17,7 @@ FORM: extensão local do app existente, modo Operate, com painel de consulta pro
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" href="data:," />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <link rel="stylesheet" href="css/styles.css?v=20260820-legenda" />
+  <link rel="stylesheet" href="css/styles.css?v=20261029-boas-vindas" />
 </head>
 <body>
   <div class="app-shell">
@@ -32,6 +32,7 @@ FORM: extensão local do app existente, modo Operate, com painel de consulta pro
       <div class="topbar-actions">
         <div class="data-status"><span class="status-dot" aria-hidden="true"></span><span id="network-badge">carregando dados</span><span>·</span><span>300m</span></div>
         <span class="topbar-button" id="pending-badge">2 para validar</span>
+        <button class="topbar-button" data-open-modal="welcome-modal" type="button">Primeiros passos</button>
         <button class="topbar-button" data-open-modal="guide-modal" type="button">Como ler</button>
         <button class="topbar-button" data-open-modal="history-modal" type="button">Histórico</button>
         <button class="topbar-button primary" data-open-modal="health-data-modal" type="button">Dados de saúde</button>
@@ -121,6 +122,40 @@ FORM: extensão local do app existente, modo Operate, com painel de consulta pro
         <div class="map-note"><strong>Leitura atual</strong><span id="map-note-text">Pontos coloridos mostram a prioridade relativa de cada unidade.</span></div>
       </section>
     </main>
+  </div>
+
+  <div class="modal-backdrop" id="welcome-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="welcome-title">
+    <section class="modal welcome-modal">
+      <div class="modal-header"><div><div class="eyebrow">Primeira visita</div><h2 id="welcome-title">Boas-vindas ao mapa do PET Saúde - Clima</h2><p>Este site cruza calor, vegetação e condições sociais no entorno de cada unidade de saúde de Araraquara. Ele ajuda a decidir por onde começar quando o assunto é proteger pacientes e equipes nos dias mais quentes.</p></div><button class="close-button" data-close-modal="welcome-modal" type="button" aria-label="Fechar">×</button></div>
+      <div class="history-subheading"><strong>Como a tela está organizada</strong><span>três áreas</span></div>
+      <div class="welcome-steps">
+        <div class="guide-card"><b>1 · Painel da esquerda</b><p>Escolha a rede que quer comparar e procure uma unidade pelo nome, bairro ou tipo. Logo abaixo fica o ranking, da unidade mais exposta para a menos exposta. No celular, o painel abre pelo botão Abrir ranking.</p></div>
+        <div class="guide-card"><b>2 · Mapa</b><p>Clique em um nome do ranking ou em um ponto do mapa para ver a temperatura, a vegetação e o contexto social daquele entorno. Os botões sobre o mapa ligam e desligam as camadas. A legenda no canto inferior direito explica as cores.</p></div>
+        <div class="guide-card"><b>3 · Abas do topo</b><p>Cada botão da barra de cima abre uma janela com um tipo de informação. O resumo de cada uma está logo abaixo. No celular, arraste a barra para o lado para ver todas.</p></div>
+      </div>
+      <div class="history-subheading welcome-heading"><strong>O que tem em cada aba</strong><span>clique para abrir</span></div>
+      <div class="welcome-tabs">
+        <button class="welcome-tab" data-welcome-open="guide-modal" type="button"><strong>Como ler</strong><span>Explica cada camada do mapa e a conta do IECS, o Índice de Exposição Climática e Social. No índice, o calor pesa 45%, a falta de vegetação 25% e o contexto social do Censo 2022 30%.</span></button>
+        <button class="welcome-tab" data-welcome-open="history-modal" type="button"><strong>Histórico</strong><span>Mostra como a temperatura de superfície de cada unidade variou entre 2016 e 2021. Também lista os pontos de alagamento mais próximos da rede e traz o total de internações do município.</span></button>
+        <button class="welcome-tab" data-welcome-open="health-data-modal" type="button"><strong>Dados de saúde</strong><span>Internações (SIH/SUS) e produção ambulatorial (SIA/SUS) de 2016 a 2025. Dá para filtrar por ano e, nas internações, por estabelecimento. A tabela sai em XLSX ou CSV.</span></button>
+        <button class="welcome-tab" data-welcome-open="sensitivity-modal" type="button"><strong>Sensibilidade</strong><span>Recalcula o ranking com outros pesos. Quando uma unidade continua no topo em vários cenários, a prioridade dela depende menos do critério escolhido.</span></button>
+        <button class="welcome-tab" data-welcome-open="sources-modal" type="button"><strong>Fontes</strong><span>Lista as bases públicas usadas e como cada dado foi tratado. É o lugar para conferir de onde saiu um número.</span></button>
+        <button class="welcome-tab" data-welcome-open="insights-modal" type="button"><strong>Decisões prioritárias</strong><span>Sugestões para levar o ranking ao território, como checar sombra, bebedouros e espera externa, ou acionar salas de hidratação em alertas de calor do INMET.</span></button>
+      </div>
+      <div class="history-subheading welcome-heading"><strong>Procurando algo específico?</strong><span>atalhos</span></div>
+      <dl class="welcome-faq">
+        <div><dt>Qual a nota de uma unidade?</dt><dd>Busque o nome no painel da esquerda e clique nele. O mapa vai até a unidade e abre a ficha com os números do entorno.</dd></div>
+        <div><dt>O que significa uma cor do mapa?</dt><dd>Abra a legenda no canto inferior direito do mapa ou a aba Como ler.</dd></div>
+        <div><dt>O lugar esquentou com os anos?</dt><dd>Aba Histórico. Escolha a unidade na lista do alto da janela.</dd></div>
+        <div><dt>Onde baixo os dados?</dt><dd>Aba Dados de saúde, nos botões Baixar XLSX e CSV.</dd></div>
+        <div><dt>O que é o selo “para validar”?</dt><dd>São unidades com endereço, coordenada ou CNES ainda sem confirmação. Elas ficam fora do ranking e aparecem no fim do painel, em Cadastro a completar.</dd></div>
+      </dl>
+      <p class="popup-note">Antes de começar, um aviso. O IECS compara as unidades entre si e aponta onde olhar primeiro. Ele não substitui a visita ao local nem a avaliação técnica.</p>
+      <div class="welcome-footer">
+        <small>Esta janela abre sozinha só na primeira visita. Para rever, use o botão Primeiros passos no topo.</small>
+        <div class="welcome-actions"><button class="topbar-button" data-welcome-open="guide-modal" type="button">Abrir o guia completo</button><button class="topbar-button primary" data-close-modal="welcome-modal" type="button">Começar a explorar</button></div>
+      </div>
+    </section>
   </div>
 
   <div class="modal-backdrop" id="guide-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="guide-title">
@@ -217,6 +252,6 @@ FORM: extensão local do app existente, modo Operate, com painel de consulta pro
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <!-- SheetJS CE 0.20.3: exportação XLSX no navegador, versão fixada no CDN oficial. -->
   <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
-  <script src="js/app.js?v=20260828-osm-basemap"></script>
+  <script src="js/app.js?v=20261029-boas-vindas"></script>
 </body>
 </html>

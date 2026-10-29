@@ -65,7 +65,19 @@ document.addEventListener("DOMContentLoaded", () => {
   initMap();
   setupEventListeners();
   loadData();
+  if (!hasSeenWelcome()) openModal("welcome-modal");
 });
+
+const WELCOME_STORAGE_KEY = "petclima-welcome-seen";
+
+// O armazenamento pode falhar em janela anônima; nesse caso o pop-up apenas volta a abrir.
+function hasSeenWelcome() {
+  try { return window.localStorage.getItem(WELCOME_STORAGE_KEY) === "1"; } catch { return false; }
+}
+
+function rememberWelcomeSeen() {
+  try { window.localStorage.setItem(WELCOME_STORAGE_KEY, "1"); } catch { /* sem persistência */ }
+}
 
 async function loadData() {
   try {
@@ -1038,6 +1050,12 @@ function setupEventListeners() {
   document.querySelectorAll("[data-open-modal]").forEach(button => {
     button.addEventListener("click", () => openModal(button.dataset.openModal));
   });
+  document.querySelectorAll("[data-welcome-open]").forEach(button => {
+    button.addEventListener("click", () => {
+      closeModal("welcome-modal");
+      openModal(button.dataset.welcomeOpen);
+    });
+  });
   document.querySelectorAll("[data-health-source]").forEach(button => {
     button.addEventListener("click", () => {
       state.healthDataSource = button.dataset.healthSource;
@@ -1130,6 +1148,7 @@ function closeModal(id) {
   if (modal.contains(document.activeElement)) document.activeElement.blur();
   modal.classList.remove("is-open");
   modal.setAttribute("aria-hidden", "true");
+  if (id === "welcome-modal") rememberWelcomeSeen();
   state.lastFocused[id]?.focus?.();
 }
 

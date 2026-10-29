@@ -216,6 +216,23 @@ a { color: inherit; }
 .guide-layer-row p { color: var(--ink-soft); font-size: 12px; line-height: 1.5; margin: 5px 0 0; }
 .guide-layer-row .guide-layer-read { border-top: 1px dotted rgba(17, 33, 51, .18); margin-top: 7px; opacity: .85; padding-top: 6px; }
 .guide-card { background: var(--paper); border-radius: 11px; padding: 14px; }
+.welcome-modal { max-width: 880px; }
+.welcome-steps { display: grid; gap: 10px; grid-template-columns: repeat(3, 1fr); margin-top: 10px; }
+.welcome-heading { margin-top: 20px; }
+.welcome-tabs { display: grid; gap: 8px; grid-template-columns: repeat(3, 1fr); margin-top: 10px; }
+.welcome-tab { background: var(--paper-strong); border: 1px solid var(--line); border-radius: 11px; color: var(--ink); display: flex; flex-direction: column; gap: 5px; padding: 12px; text-align: left; transition: background .18s ease, border-color .18s ease, transform .18s ease; }
+.welcome-tab:hover, .welcome-tab:focus-visible { background: var(--mint); border-color: #a9d8b4; transform: translateY(-1px); }
+.welcome-tab strong { color: var(--forest); font-family: var(--display); font-size: 14px; }
+.welcome-tab strong::after { color: var(--forest-mid); content: " →"; }
+.welcome-tab span { color: var(--ink-soft); font-size: 12px; line-height: 1.45; }
+.welcome-faq { display: grid; gap: 1px; margin: 8px 0 0; }
+.welcome-faq div { border-bottom: 1px solid var(--line); display: grid; gap: 4px 16px; grid-template-columns: minmax(170px, 1fr) 2fr; padding: 9px 0; }
+.welcome-faq dt { color: var(--ink); font-size: 12px; font-weight: 700; }
+.welcome-faq dd { color: var(--ink-soft); font-size: 12px; line-height: 1.45; margin: 0; }
+.welcome-modal .popup-note { font-size: 11px; margin-top: 14px; padding: 10px 12px; }
+.welcome-footer { align-items: center; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; margin-top: 16px; }
+.welcome-footer small { color: var(--muted); font-size: 11px; max-width: 42ch; }
+.welcome-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 .guide-card b { color: var(--forest); display: block; font-family: var(--display); font-size: 16px; margin-bottom: 5px; }
 .guide-card p, .modal-copy { color: var(--ink-soft); font-size: 12px; line-height: 1.5; margin: 0; }
 .formula { background: var(--forest); border-radius: 11px; color: #e4f5e8; font-family: var(--display); font-size: 15px; margin-top: 12px; padding: 15px; }
@@ -397,6 +414,7 @@ a { color: inherit; }
   .leaflet-control-container { z-index: 400 !important; }
   .mobile-panel-open .leaflet-control-container { display: none; }
   .leaflet-bottom.leaflet-right { bottom: 12px !important; right: 9px !important; }
+  .welcome-tabs { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 560px) {
@@ -407,13 +425,14 @@ a { color: inherit; }
   .topbar-actions::-webkit-scrollbar { display: none; }
   .topbar-actions .topbar-button { flex: 0 0 auto; }
   .topbar-actions .topbar-button { padding: 8px; }
-  .topbar-actions .topbar-button:first-of-type { display: none; }
+  #pending-badge, .topbar-actions [data-open-modal="guide-modal"] { display: none; }
   .brand h1 { font-size: 16px; }
   .brand-mark { height: 34px; width: 34px; }
   .map-toolbar { flex-wrap: wrap; max-width: 235px; }
   .map-tool { font-size: 10px; padding: 8px; }
   .map-note { bottom: 17px; font-size: 10px; max-width: 210px; }
-  .guide-grid, .insight-list, .chart-grid, .history-summary, .history-cross-grid { grid-template-columns: 1fr; }
+  .guide-grid, .insight-list, .chart-grid, .history-summary, .history-cross-grid, .welcome-steps, .welcome-tabs { grid-template-columns: 1fr; }
+  .welcome-faq div { grid-template-columns: 1fr; }
   .health-outcome-grid { grid-template-columns: repeat(2, 1fr); }
   .health-data-summary { grid-template-columns: repeat(2, 1fr); }
   .health-data-filters { grid-template-columns: 1fr 1fr; }
